@@ -7,15 +7,15 @@
 # Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2007.
 # Fran Diéguez <frandieguez@ubuntu.com>, 2010.
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.
-# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013.
+# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-22 01:17+0200\n"
-"PO-Revision-Date: 2013-06-22 01:17+0200\n"
+"POT-Creation-Date: 2016-10-11 15:42+0200\n"
+"PO-Revision-Date: 2016-10-11 15:42+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
-"Language-Team: gnome-l10n-gl@gnome.org\n"
+"Language-Team: Galician\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,42 +23,51 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.7.1\n"
 
-#: ../src/nautilus-sendto.c:53
+#: ../src/nautilus-sendto.c:54
 msgid "Run from build directory (ignored)"
 msgstr "Executar desde o cartafol de construción (ignorada)"
 
-#: ../src/nautilus-sendto.c:54
+#: ../src/nautilus-sendto.c:55
 msgid "Use XID as parent to the send dialogue (ignored)"
 msgstr "Usar o XID como pai para o diálogo de envío (ignorada)"
 
-#: ../src/nautilus-sendto.c:55
+#: ../src/nautilus-sendto.c:56
 msgid "Files to send"
 msgstr "Ficheiros a enviar"
 
-#: ../src/nautilus-sendto.c:56
+#: ../src/nautilus-sendto.c:57
 msgid "Output version information and exit"
 msgstr "Mostrar a información de versión e saír"
 
 #. Translators: the default archive name if it
 #. * could not be deduced from the provided files
-#: ../src/nautilus-sendto.c:244
+#: ../src/nautilus-sendto.c:245
 msgid "Archive"
 msgstr "Arquivo"
 
-#: ../src/nautilus-sendto.c:511
+#: ../src/nautilus-sendto.c:543
 #, c-format
 msgid "Could not parse command-line options: %s\n"
 msgstr "Non foi posíbel analizar as opcións da liña de ordes: %s\n"
 
-#: ../src/nautilus-sendto.c:524
+#: ../src/nautilus-sendto.c:556
 #, c-format
 msgid "No mail client installed, not sending files\n"
-msgstr "Non ten instalado ningún cliente de correo, non se enviarán os ficheiros\n"
+msgstr ""
+"Non ten instalado ningún cliente de correo, non se enviarán os ficheiros\n"
 
-#: ../src/nautilus-sendto.c:530
+#: ../src/nautilus-sendto.c:562
 #, c-format
 msgid "Expects URIs or filenames to be passed as options\n"
 msgstr "Expera que se pasen como opcións URIs ou nomes de ficheiros\n"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:1
+msgid "Nautilus Send to"
+msgstr "Nautilus Enviar a"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:2
+msgid "Integrates mail clients into the Nautilus file manager"
+msgstr "Integra os clientes de correo no xestor de ficheiros de Nautilus"
 
 #~ msgid "Sharing %d folder"
 #~ msgid_plural "Sharing %d folders"

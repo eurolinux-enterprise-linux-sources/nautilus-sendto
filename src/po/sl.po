@@ -2,15 +2,15 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the nautilus-sendto package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2006 - 2013.
+# Matej Urbančič <mateju@svn.gnome.org>, 2006–2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: nautilus-sendto master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-06-13 16:11+0000\n"
-"PO-Revision-Date: 2013-06-13 21:18+0100\n"
+"POT-Creation-Date: 2016-11-15 19:44+0100\n"
+"PO-Revision-Date: 2016-11-15 19:45+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -20,44 +20,52 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.9\n"
 
-#: ../src/nautilus-sendto.c:53
+#: ../src/nautilus-sendto.c:54
 msgid "Run from build directory (ignored)"
 msgstr "Zaženi iz mape izgradnje (prezrto)"
 
-#: ../src/nautilus-sendto.c:54
+#: ../src/nautilus-sendto.c:55
 msgid "Use XID as parent to the send dialogue (ignored)"
 msgstr "Uporabi XID kot nadrejen predmet pogovornega okna pošiljanja (prezrto)"
 
-#: ../src/nautilus-sendto.c:55
+#: ../src/nautilus-sendto.c:56
 msgid "Files to send"
 msgstr "Datoteke za pošiljanje"
 
-#: ../src/nautilus-sendto.c:56
+#: ../src/nautilus-sendto.c:57
 msgid "Output version information and exit"
 msgstr "Izpiši podatke o različici in končaj"
 
 #. Translators: the default archive name if it
 #. * could not be deduced from the provided files
-#: ../src/nautilus-sendto.c:244
+#: ../src/nautilus-sendto.c:245
 msgid "Archive"
 msgstr "Arhiv"
 
-#: ../src/nautilus-sendto.c:511
+#: ../src/nautilus-sendto.c:543
 #, c-format
 msgid "Could not parse command-line options: %s\n"
 msgstr "Ni mogoče razčleniti možnosti ukazne vrstice: %s\n"
 
-#: ../src/nautilus-sendto.c:524
+#: ../src/nautilus-sendto.c:556
 #, c-format
 msgid "No mail client installed, not sending files\n"
 msgstr ""
 "Ni nameščenega poštnega odjemalca, zato pošiljanje sporočil ni mogoče.\n"
 
-#: ../src/nautilus-sendto.c:530
+#: ../src/nautilus-sendto.c:562
 #, c-format
 msgid "Expects URIs or filenames to be passed as options\n"
 msgstr ""
 "Pričakovani naslovi URI ali imena datotek, ki so na voljo kot možnosti "
 "ukaza\n"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:1
+msgid "Nautilus Send to"
+msgstr "Nautilus Send to"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:2
+msgid "Integrates mail clients into the Nautilus file manager"
+msgstr "Omogoča uporabo poštnega odjemalca v upravljalnik datotek Nautilus"

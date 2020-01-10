@@ -484,27 +484,42 @@ nautilus_sendto_init (NautilusSendto *nst)
 			filename = get_target_filename (file);
 			if (filename == NULL) {
 				g_object_unref (file);
+				g_debug ("Could not get a filename for '%s'", filenames[i]);
 				continue;
 			}
 		}
 
 		/* Get the mime-type, and whether the file is readable */
 		info = g_file_query_info (file,
-					  G_FILE_ATTRIBUTE_STANDARD_FAST_CONTENT_TYPE","G_FILE_ATTRIBUTE_ACCESS_CAN_READ,
+					  G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE","G_FILE_ATTRIBUTE_STANDARD_FAST_CONTENT_TYPE","G_FILE_ATTRIBUTE_ACCESS_CAN_READ,
 					  G_FILE_QUERY_INFO_NONE,
 					  NULL,
 					  NULL);
 		g_object_unref (file);
 
-		if (info == NULL)
-			continue;
-
-		if (g_file_info_get_attribute_boolean (info, G_FILE_ATTRIBUTE_ACCESS_CAN_READ) == FALSE) {
-			g_debug ("'%s' is not readable", filenames[i]);
-			g_object_unref (info);
+		if (info == NULL) {
+			g_debug ("Could not get info for '%s'", filenames[i]);
 			continue;
 		}
+
+		if (g_file_info_has_attribute (info, G_FILE_ATTRIBUTE_ACCESS_CAN_READ)) {
+			if (g_file_info_get_attribute_boolean (info, G_FILE_ATTRIBUTE_ACCESS_CAN_READ) == FALSE) {
+				g_debug ("'%s' is not readable", filenames[i]);
+				g_object_unref (info);
+				continue;
+			}
+		} else {
+			g_debug ("No can-read attribute for '%s', assuming it is", filenames[i]);
+		}
+
 		mimetype = g_file_info_get_attribute_string (info, G_FILE_ATTRIBUTE_STANDARD_FAST_CONTENT_TYPE);
+		if (!mimetype)
+			mimetype = g_file_info_get_attribute_string (info, G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE);
+		if (!mimetype) {
+			g_object_unref (info);
+			g_debug ("Could not get mime-type for '%s'", filenames[i]);
+			continue;
+		}
 		if (g_str_equal (mimetype, "inode/directory"))
 			nst->num_dirs++;
 

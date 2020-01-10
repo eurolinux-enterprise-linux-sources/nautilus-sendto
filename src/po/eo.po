@@ -1,357 +1,70 @@
 # Esperanto translation for nautilus-sendto.
-# Copyright (c) 2006-2011 Canonical Ltd, and Rosetta Contributors 2006.
+# Copyright (C) 2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the nautilus-sendto package.
 # Ed GLEZ <herzo2@gmail.com>, 2006.
 # Michael MORONI, <haikara90@gmail.com>, 2009.
-# Tiffany Antopolski <tiffany.antopolski@gmail.com>, 2011, 2012.
-# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010, 2011, 2012.
-#
+# Tiffany ANTOPOLSKI <tiffany.antopolski@gmail.com>, 2011, 2012.
+# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010, 2011, 2012, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: nautilus-sendto\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-03-06 16:52+0000\n"
-"PO-Revision-Date: 2012-03-09 19:08+0100\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product"
+"=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-02-24 00:45+0000\n"
+"PO-Revision-Date: 2017-06-10 02:26+0200\n"
 "Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
-"Language-Team: Esperanto <gnome-l10n-eo@lists.launchpad.net>\n"
+"Language-Team: Esperanto <gnome-eo-list@gnome.org>\n"
+"Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: eo\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.7.1\n"
-"X-Launchpad-Export-Date: 2010-06-29 16:36+0000\n"
 "X-Project-Style: gnome\n"
 
-#: ../src/nautilus-sendto-command.c:80
-msgid "Run from build directory"
-msgstr "Ruli de la kreo-dosierujo"
+#: ../src/nautilus-sendto.c:54
+#| msgid "Run from build directory"
+msgid "Run from build directory (ignored)"
+msgstr "Ruli de la kreo-dosierujo (ignorita)"
 
-#: ../src/nautilus-sendto-command.c:81
-msgid "Use XID as parent to the send dialogue"
-msgstr "Uzi \"XID\"-on kiel gepatro de la senddialogo"
+#: ../src/nautilus-sendto.c:55
+#| msgid "Use XID as parent to the send dialogue"
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr "Uzi XID-on kiel gepatro de la senddialogo (ignorita)"
 
-#: ../src/nautilus-sendto-command.c:82
+#: ../src/nautilus-sendto.c:56
 msgid "Files to send"
 msgstr "Sendotaj dosierojn"
 
-#: ../src/nautilus-sendto-command.c:83
+#: ../src/nautilus-sendto.c:57
 msgid "Output version information and exit"
 msgstr "Eligi versioinformon kaj eliri"
 
-#. FIXME, this needs to be done in UI now
-#: ../src/nautilus-sendto-command.c:664
-#, c-format
-msgid "Expects URIs or filenames to be passed as options\n"
-msgstr "Atendas URI-ojn aŭ dosiernomojn kiel opcioj\n"
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:245
+msgid "Archive"
+msgstr "Arkivo"
 
-#: ../src/nautilus-sendto-command.c:694
+#: ../src/nautilus-sendto.c:543
 #, c-format
 msgid "Could not parse command-line options: %s\n"
 msgstr "Ne eblas analizi komandliniajn opciojn: %s\n"
 
-#: ../src/nautilus-sendto-mimetype.c:50
+#: ../src/nautilus-sendto.c:556
 #, c-format
-msgid "Sharing %d folder"
-msgid_plural "Sharing %d folders"
-msgstr[0] "Komunigante %d dosierujon"
-msgstr[1] "Komunigante %d dosierujojn"
+msgid "No mail client installed, not sending files\n"
+msgstr "Neniu retpoŝt-programaro estas instalita, dosieroj ne estos senditaj\n"
 
-#: ../src/nautilus-sendto-mimetype.c:52
+#: ../src/nautilus-sendto.c:562
 #, c-format
-msgid "Sharing %d folders and files"
-msgstr "Komunigante %d dosierujojn kaj dosierojn."
-
-#: ../src/nautilus-sendto-mimetype.c:77
-#, c-format
-msgid "Sharing %d video"
-msgid_plural "Sharing %d videos"
-msgstr[0] "Komunigante %d videon"
-msgstr[1] "Komunigante %d videojn"
-
-#: ../src/nautilus-sendto-mimetype.c:79
-#, c-format
-msgid "Sharing %d photo"
-msgid_plural "Sharing %d photos"
-msgstr[0] "Komunigante %d fotaĵon"
-msgstr[1] "Komunigante %d fotaĵojn"
-
-#: ../src/nautilus-sendto-mimetype.c:81
-#, c-format
-msgid "Sharing %d image"
-msgid_plural "Sharing %d images"
-msgstr[0] "Komunigante %d bildon"
-msgstr[1] "Komunigante %d bildojn"
-
-#: ../src/nautilus-sendto-mimetype.c:83
-#, c-format
-msgid "Sharing %d text file"
-msgid_plural "Sharing %d text files"
-msgstr[0] "Komunigante %d tekstdosieron"
-msgstr[1] "Komunigante %d tekstdosierojn"
-
-#: ../src/nautilus-sendto-mimetype.c:85
-#, c-format
-msgid "Sharing %d file"
-msgid_plural "Sharing %d files"
-msgstr[0] "Komunigante %d dosieron"
-msgstr[1] "Komunigante %d dosierojn"
-
-#: ../data/nautilus-sendto.ui.h:1
-msgid "_Send"
-msgstr "_Sendi"
-
-#: ../src/plugins/nautilus-sendto-packer.c:200
-msgid "Files"
-msgstr "Dosieroj"
-
-#: ../src/plugins/nautilus-sendto-progress.c:187
-msgid "_Cancel"
-msgstr "_Nuligi"
-
-#: ../data/pack-entry.ui.h:1
-msgid "Send _packed in:"
-msgstr "Sendi _pakigite al:"
-
-#: ../src/plugins/evolution/evolution.c:308
-msgid "Mail"
-msgstr "Retpoŝto"
-
-#: ../src/plugins/evolution/e-contact-entry.c:153
-#, c-format
-msgid "Cannot get contact: %s"
-msgstr "Ne eblas akiri kontakton: %s"
-
-#: ../src/plugins/evolution/e-contact-entry.c:186
-#, c-format
-msgid "Could not find contact: %s"
-msgstr "Ne eblas trovi kontakton: %s"
-
-#: ../src/plugins/evolution/e-contact-entry.c:414
-msgid "Cannot create searchable view."
-msgstr "Ne eblas krei serĉeblan vidon."
-
-#: ../src/plugins/evolution/e-contact-entry.c:886
-msgid "Success"
-msgstr "Sukcesita"
-
-#: ../src/plugins/evolution/e-contact-entry.c:888
-msgid "An argument was invalid."
-msgstr "Argomento estis nevalida"
-
-#: ../src/plugins/evolution/e-contact-entry.c:890
-msgid "The address book is busy."
-msgstr "La adresaro estas okupita."
-
-#: ../src/plugins/evolution/e-contact-entry.c:892
-msgid "The address book is offline."
-msgstr "La adresaro estas malkonektita."
-
-#: ../src/plugins/evolution/e-contact-entry.c:894
-msgid "The address book does not exist."
-msgstr "La adresaro ne ekzistas."
-
-#: ../src/plugins/evolution/e-contact-entry.c:896
-msgid "The \"Me\" contact does not exist."
-msgstr "La \"Mi\"-kontakto ne ekzistas."
-
-#: ../src/plugins/evolution/e-contact-entry.c:898
-msgid "The address book is not loaded."
-msgstr "La adresaro ne estas ŝarĝita."
-
-#: ../src/plugins/evolution/e-contact-entry.c:900
-msgid "The address book is already loaded."
-msgstr "La adresro estas jam ŝarĝita."
-
-#: ../src/plugins/evolution/e-contact-entry.c:902
-msgid "Permission was denied when accessing the address book."
-msgstr "Permespeto estis malpermesita kiam aliranta al la adresaro."
-
-#: ../src/plugins/evolution/e-contact-entry.c:904
-msgid "The contact was not found."
-msgstr "La kontakto ne estis trovita."
-
-#: ../src/plugins/evolution/e-contact-entry.c:906
-msgid "This contact ID already exists."
-msgstr "La kontakta identigilo jam ekzistas."
-
-#: ../src/plugins/evolution/e-contact-entry.c:908
-msgid "The protocol is not supported."
-msgstr "La protokolo ne estas subtenata."
-
-#: ../src/plugins/evolution/e-contact-entry.c:910
-msgid "The operation was cancelled."
-msgstr "La ago estis nuligita."
-
-#: ../src/plugins/evolution/e-contact-entry.c:912
-msgid "The operation could not be cancelled."
-msgstr "La ago ne povas esti nuligita."
-
-#: ../src/plugins/evolution/e-contact-entry.c:914
-msgid "The address book authentication failed."
-msgstr "La adresara aŭtentigkontrolo fiaskis."
-
-#: ../src/plugins/evolution/e-contact-entry.c:916
-msgid ""
-"Authentication is required to access the address book and was not given."
-msgstr ""
-"Aŭtentokontrolo, kiu estas necesa por aliri al adresaro, ne estas donita."
-
-#: ../src/plugins/evolution/e-contact-entry.c:918
-msgid "A secure connection is not available."
-msgstr "Sekura konektado ne disponeblas."
-
-#: ../src/plugins/evolution/e-contact-entry.c:920
-msgid "A CORBA error occurred whilst accessing the address book."
-msgstr "CORBA eraro okazis dum aliranta al adresaro."
-
-#: ../src/plugins/evolution/e-contact-entry.c:922
-msgid "The address book source does not exist."
-msgstr "La adresara fonto ne ekzistas."
-
-#: ../src/plugins/evolution/e-contact-entry.c:924
-#: ../src/plugins/evolution/e-contact-entry.c:927
-msgid "An unknown error occurred."
-msgstr "Okazis nekonata eraro."
-
-#: ../src/plugins/gajim/gajim.c:417
-msgid "Unable to send file"
-msgstr "Ne eblis sendi dosieron"
-
-#: ../src/plugins/gajim/gajim.c:418
-msgid "There is no connection to gajim remote service."
-msgstr "Ne estas konekto al malloka servo gajim."
-
-#: ../src/plugins/gajim/gajim.c:442 ../src/plugins/gajim/gajim.c:482
-msgid "Sending file failed"
-msgstr "Malsukcesis sendado de dosiero"
-
-#: ../src/plugins/gajim/gajim.c:443
-msgid "Recipient is missing."
-msgstr "Celo mankas."
-
-#: ../src/plugins/gajim/gajim.c:482
-msgid "Unknown recipient."
-msgstr "Nekonata celo."
-
-#: ../src/plugins/gajim/gajim.c:505
-msgid "Instant Message (Gajim)"
-msgstr "Tujmesaĝo (Gajim)"
-
-#: ../src/plugins/nautilus-burn/nautilus-burn.c:90
-msgid "New CD/DVD"
-msgstr "Nova KD/DVD"
-
-#: ../src/plugins/nautilus-burn/nautilus-burn.c:97
-msgid "Existing CD/DVD"
-msgstr "Ekzistanta KD/DVD"
-
-#: ../src/plugins/nautilus-burn/nautilus-burn.c:176
-msgid "CD/DVD Creator"
-msgstr "KD/DVD-kreilo"
-
-#: ../src/plugins/pidgin/pidgin.c:464
-msgid "Instant Message (Pidgin)"
-msgstr "Tujmesaĝo (Piĝin)"
-
-#: ../src/plugins/removable-devices/removable-devices.c:274
-msgid "Removable disks and shares"
-msgstr "Demeteblaj diskoj kaj kunhavoj"
-
-#: ../src/plugins/socialweb/socialweb.c:186
-#, c-format
-msgid "Uploading '%s'"
-msgstr "Alŝutante \"%s\""
-
-#: ../src/plugins/socialweb/socialweb.c:256
-msgid "Preparing upload"
-msgstr "Praparas alŝuton"
-
-#: ../src/plugins/socialweb/socialweb.c:316
-#, c-format
-msgid "Service '%s' is not configured."
-msgstr "Servo \"%s\" ne estas agordite."
-
-#: ../src/plugins/socialweb/socialweb.c:319
-#: ../src/plugins/socialweb/socialweb.c:336
-msgid "_Configure"
-msgstr "_Agordi"
-
-#: ../src/plugins/socialweb/socialweb.c:323
-#: ../src/plugins/socialweb/socialweb.c:343
-#, c-format
-msgid "Logged in to service '%s'."
-msgstr "Ensalutinte al servo \"%s\"."
-
-#: ../src/plugins/socialweb/socialweb.c:333
-#, c-format
-msgid "Could not log in to service '%s'."
-msgstr "Ne eblas ensaluti al servo \"%s\"."
-
-#: ../src/plugins/upnp/upnp.c:309
-msgid "UPnP Media Server"
-msgstr "UPnP-aŭdvidea servilo"
-
-#~ msgid "Last plugin used to send"
-#~ msgstr "Lasta kromprogramo uzita por sendi"
-
-#~ msgid "Last type of archive used"
-#~ msgstr "Lasta arkivtipo uzita"
-
-#~ msgid "Send To..."
-#~ msgstr "Sendi al..."
-
-#~ msgid "Send file by mail, instant message..."
-#~ msgstr "Sendi dosieron per retpoŝto, tujmesaĝo..."
-
-#~ msgid "Send files by mail, instant message..."
-#~ msgstr "Sendi dosierojn per retpoŝto, tujmesaĝo..."
-
-#~ msgid "Could not load any plugins."
-#~ msgstr "Ne eblas ŝargi iun kromprogramaron."
-
-#~ msgid "Please verify your installation"
-#~ msgstr "Bonvolu kontroli vian instaladon"
-
-#~ msgid "<b>Compression</b>"
-#~ msgstr "<b>Kompaktigo</b>"
-
-#~ msgid "<b>Destination</b>"
-#~ msgstr "<b>Celo</b>"
-
-#~ msgid "Send _as:"
-#~ msgstr "Sendi _kiel:"
-
-#~ msgid "Send t_o:"
-#~ msgstr "Sendi _al:"
-
-#~ msgid "Email"
-#~ msgstr "Retpoŝto"
-
-#~ msgid "Programming error, could not find the device in the list"
-#~ msgstr "Programada eraro, ne eblas trovi la aparaton en la listo"
-
-#~ msgid "Obex Push file transfer unsupported"
-#~ msgstr "Nesubtenata 'Obex Push'-dosiertransigo"
-
-#~ msgid "Bluetooth (OBEX Push)"
-#~ msgstr "Bluetooth (OBEX Push)"
-
-#~ msgid "The contact selected cannot receive files."
-#~ msgstr "La elektita kontakto ne povas ricevi dosierojn."
-
-#~ msgid "The contact selected is offline."
-#~ msgstr "La elektita kontakto estas malkonektita."
-
-#~ msgid "No error message"
-#~ msgstr "Neniu erarmesaĝo"
-
-#~ msgid "Instant Message (Empathy)"
-#~ msgstr "Tujmesaĝo (Empathy)"
-
-#~ msgid "_Send to..."
-#~ msgstr "_Sendi al..."
-
-#~ msgid "Send to..."
-#~ msgstr "Sendi al..."
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "Atendas URI-ojn aŭ dosiernomojn kiel opcioj\n"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:1
+msgid "Nautilus Send to"
+msgstr "Naŭtilo Sendi al"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:2
+msgid "Integrates mail clients into the Nautilus file manager"
+msgstr "Integras retpoŝt-programoj en la dosieradministrilo Naŭtilo"

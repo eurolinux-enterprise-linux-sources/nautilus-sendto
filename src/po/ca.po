@@ -7,9 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: nautilus-sendto\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-06-13 15:08+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-09 20:23+0100\n"
 "PO-Revision-Date: 2013-07-05 02:19+0200\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
@@ -19,40 +18,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bits\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../src/nautilus-sendto.c:53
+#: ../src/nautilus-sendto.c:54
 msgid "Run from build directory (ignored)"
 msgstr "Executa des del directori de construcció (ignorat)"
 
-#: ../src/nautilus-sendto.c:54
+#: ../src/nautilus-sendto.c:55
 msgid "Use XID as parent to the send dialogue (ignored)"
 msgstr "Utilitza l'XID com a pare en el diàleg d'enviament (ignorat)"
 
-#: ../src/nautilus-sendto.c:55
+#: ../src/nautilus-sendto.c:56
 msgid "Files to send"
 msgstr "Fitxers per enviar"
 
-#: ../src/nautilus-sendto.c:56
+#: ../src/nautilus-sendto.c:57
 msgid "Output version information and exit"
 msgstr "Mostra la informació de la versió i surt"
 
 #. Translators: the default archive name if it
 #. * could not be deduced from the provided files
-#: ../src/nautilus-sendto.c:244
+#: ../src/nautilus-sendto.c:245
 msgid "Archive"
 msgstr "Arxiu"
 
-#: ../src/nautilus-sendto.c:511
+#: ../src/nautilus-sendto.c:543
 #, c-format
 msgid "Could not parse command-line options: %s\n"
 msgstr "No s'han pogut analitzar les opcions de línia d'ordres: %s\n"
 
-#: ../src/nautilus-sendto.c:524
+#: ../src/nautilus-sendto.c:556
 #, c-format
 msgid "No mail client installed, not sending files\n"
 msgstr ""
 "No hi ha cap client de correu instal·lat, no es poden enviar els fitxers\n"
 
-#: ../src/nautilus-sendto.c:530
+#: ../src/nautilus-sendto.c:562
 #, c-format
 msgid "Expects URIs or filenames to be passed as options\n"
 msgstr "Espera que es passin com a opcions els URI o noms de fitxers\n"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:1
+msgid "Nautilus Send to"
+msgstr "«Enviar a» del Nautilus"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:2
+msgid "Integrates mail clients into the Nautilus file manager"
+msgstr "Integra clients de correu al gestor de fitxers del Nautilus"

@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-09 11:05+0000\n"
-"PO-Revision-Date: 2014-07-09 12:50+0200\n"
+"POT-Creation-Date: 2016-09-29 11:36+0000\n"
+"PO-Revision-Date: 2016-10-06 10:57+0300\n"
 "Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: team@gnome.gr\n"
 "Language: el\n"
@@ -18,45 +18,54 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.8.9\n"
 "X-Project-Style: gnome\n"
 
-#: ../src/nautilus-sendto.c:53
+#: ../src/nautilus-sendto.c:54
 msgid "Run from build directory (ignored)"
 msgstr "Εκτέλεση από τον κατάλογο δόμησης (αγνοήθηκε)"
 
-#: ../src/nautilus-sendto.c:54
+#: ../src/nautilus-sendto.c:55
 msgid "Use XID as parent to the send dialogue (ignored)"
 msgstr "Χρήση του XID ως γονικό για αποστολή διαλόγου (αγνοήθηκε)"
 
-#: ../src/nautilus-sendto.c:55
+#: ../src/nautilus-sendto.c:56
 msgid "Files to send"
 msgstr "Αρχεία προς αποστολή"
 
-#: ../src/nautilus-sendto.c:56
+#: ../src/nautilus-sendto.c:57
 msgid "Output version information and exit"
 msgstr "Προβολή πληροφοριών έκδοσης και έξοδος"
 
 #. Translators: the default archive name if it
 #. * could not be deduced from the provided files
-#: ../src/nautilus-sendto.c:244
+#: ../src/nautilus-sendto.c:245
 msgid "Archive"
 msgstr "Αρχειοθήκη"
 
-#: ../src/nautilus-sendto.c:511
+#: ../src/nautilus-sendto.c:543
 #, c-format
 msgid "Could not parse command-line options: %s\n"
 msgstr "Δεν μπορούν να αναλυθούν οι επιλογές γραμμής εντολών: %s\n"
 
-#: ../src/nautilus-sendto.c:524
+#: ../src/nautilus-sendto.c:556
 #, c-format
 msgid "No mail client installed, not sending files\n"
 msgstr "Δεν έχει εγκατασταθεί πελάτης αλληλογραφίας, δεν στέλνονται αρχεία\n"
 
-#: ../src/nautilus-sendto.c:530
+#: ../src/nautilus-sendto.c:562
 #, c-format
 msgid "Expects URIs or filenames to be passed as options\n"
 msgstr "Αναμένει URI ή ονόματα αρχείων για να περασθούν ως επιλογές\n"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:1
+#| msgid "Nautilus Sendto"
+msgid "Nautilus Send to"
+msgstr "Nautilus Send to"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:2
+msgid "Integrates mail clients into the Nautilus file manager"
+msgstr "Ενσωματώση ηλεκτρονικής αλληλογραφίας στον διαχειριστή αρχείων Ναυτίλο"
 
 #~ msgid "Sharing %d folder"
 #~ msgid_plural "Sharing %d folders"
@@ -319,9 +328,6 @@ msgstr "Αναμένει URI ή ονόματα αρχείων για να περ
 
 #~ msgid "Default folder to use"
 #~ msgstr "Προεπιλεγμένος φάκελος για χρήση"
-
-#~ msgid "Nautilus Sendto"
-#~ msgstr "Αποστολή αρχείων Ναυτίλου"
 
 #~ msgid "Email (Balsa)"
 #~ msgstr "Ηλεκτρονικό ταχυδρομείο (Balsa)"

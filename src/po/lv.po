@@ -5,60 +5,69 @@
 #
 # Peteris Krisjanis <pecisk@gmail.com>, 2009.
 # Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012.
-# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2013.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2013, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: nautilus-sendto master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-07-24 09:46+0000\n"
-"PO-Revision-Date: 2013-09-12 09:39+0300\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=nautilus"
+"-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-09-29 11:36+0000\n"
+"PO-Revision-Date: 2016-10-09 19:00+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
-"2);\n"
-"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 :"
+" 2);\n"
+"X-Generator: Lokalize 2.0\n"
 
-#: ../src/nautilus-sendto.c:53
+#: ../src/nautilus-sendto.c:54
 msgid "Run from build directory (ignored)"
 msgstr "Palaist no būvējuma mapes (ignorēts)"
 
-#: ../src/nautilus-sendto.c:54
+#: ../src/nautilus-sendto.c:55
 msgid "Use XID as parent to the send dialogue (ignored)"
 msgstr "Lietojiet XID kā vecāku, lai aizsūtītu dialoglodziņu (ignorēts)"
 
-#: ../src/nautilus-sendto.c:55
+#: ../src/nautilus-sendto.c:56
 msgid "Files to send"
 msgstr "Sūtāmās datnes"
 
-#: ../src/nautilus-sendto.c:56
+#: ../src/nautilus-sendto.c:57
 msgid "Output version information and exit"
 msgstr "Izdrukāt versijas informāciju un iziet"
 
 #. Translators: the default archive name if it
 #. * could not be deduced from the provided files
-#: ../src/nautilus-sendto.c:244
+#: ../src/nautilus-sendto.c:245
 msgid "Archive"
 msgstr "Arhīvs"
 
-#: ../src/nautilus-sendto.c:511
+#: ../src/nautilus-sendto.c:543
 #, c-format
 msgid "Could not parse command-line options: %s\n"
 msgstr "Neizdevās parsēt komandrindas opcijas — %s\n"
 
-#: ../src/nautilus-sendto.c:524
+#: ../src/nautilus-sendto.c:556
 #, c-format
 msgid "No mail client installed, not sending files\n"
 msgstr "Nav instalēts pasta klients, datnes netiks sūtītas\n"
 
-#: ../src/nautilus-sendto.c:530
+#: ../src/nautilus-sendto.c:562
 #, c-format
 msgid "Expects URIs or filenames to be passed as options\n"
 msgstr "Sagaida URI vai datnes nosaukumus kā opcijas\n"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:1
+#| msgid "Nautilus Sendto"
+msgid "Nautilus Send to"
+msgstr "Nautilus “Sūtīt uz”"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:2
+msgid "Integrates mail clients into the Nautilus file manager"
+msgstr "Integrē pasta klientus Nautilus datņu pārvaldniekā"
 
 #~ msgid "Sharing %d folder"
 #~ msgid_plural "Sharing %d folders"
@@ -277,9 +286,6 @@ msgstr "Sagaida URI vai datnes nosaukumus kā opcijas\n"
 
 #~ msgid "Send files by mail, instant message..."
 #~ msgstr "Sūtīt failus izmantojot e-pastu, tūlītējo paziņojumu..."
-
-#~ msgid "Nautilus Sendto"
-#~ msgstr "Nautilus Sendto"
 
 #~ msgid "Could not load any plugins."
 #~ msgstr "Neizdevās ielādēt nevienu spraudni."

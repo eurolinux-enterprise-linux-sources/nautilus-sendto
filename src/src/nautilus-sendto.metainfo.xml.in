@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>nautilus-sendto</id>
+  <extends>nautilus.desktop</extends>
+  <name>Nautilus Send to</name>
+  <summary>Integrates mail clients into the Nautilus file manager</summary>
+  <url type="homepage">https://wiki.gnome.org/Apps/Nautilus/</url>
+  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=nautilus-sendto</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <update_contact>hadess@hadess.net</update_contact>
+</component>

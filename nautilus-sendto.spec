@@ -1,6 +1,6 @@
 Name:           nautilus-sendto
 Epoch:          1
-Version:        3.8.4
+Version:        3.8.6
 Release:        1%{?dist}
 Summary:        Nautilus context menu for sending files
 
@@ -12,7 +12,8 @@ Source0:        http://download.gnome.org/sources/%{name}/3.8/%{name}-%{version}
 BuildRequires:  gettext
 BuildRequires:  gobject-introspection-devel
 BuildRequires:  gtk3-devel
-BuildRequires:  perl-XML-Parser intltool
+BuildRequires:  libappstream-glib-devel
+BuildRequires:  meson
 
 # For compat with old nautilus-sendto packaging
 Provides: nautilus-sendto-gaim
@@ -30,23 +31,26 @@ additional features.
 %setup -q
 
 %build
-%configure
-make %{?_smp_mflags}
-
+%meson
+%meson_build
 
 %install
-make install DESTDIR=$RPM_BUILD_ROOT
-
-find $RPM_BUILD_ROOT \( -name '*.a' -o -name '*.la' \) -exec rm -f {} \;
+%meson_install
 
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog ChangeLog.pre-1.1.4.1 COPYING NEWS
+%doc AUTHORS COPYING NEWS
 %{_bindir}/nautilus-sendto
+%{_datadir}/appdata/nautilus-sendto.metainfo.xml
 %{_mandir}/man1/nautilus-sendto.1.gz
 
 %changelog
+* Tue Jun 05 2018 Bastien Nocera <bnocera@redhat.com> - 3.8.6-1
+ nautilus-sendto-3.8.6-1
+- Update to 3.8.6
+- Resolves: #1570015
+
 * Thu Mar 02 2017 Bastien Nocera <bnocera@redhat.com> - 3.8.4-1
 + nautilus-sendto-3.8.4-1
 - Update to 3.8.4

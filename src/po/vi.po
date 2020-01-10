@@ -1,73 +1,81 @@
 # Vietnamese translation for Nautilus SendTo.
-# Copyright © 2013 Gnome i18n Project for Vietnamese.
+# Copyright © 2016 Gnome i18n Project for Vietnamese.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2006.
 # Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2011.
 # Lê Trường An <xinemdungkhoc1@gmail.com>, 2011.
-# Trần Ngọc Quân <vnwildman@gmail.com>, 2013.
+# Trần Ngọc Quân <vnwildman@gmail.com>, 2013, 2016.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: nautilus-sendto Gnome HEAD\n"
+"Project-Id-Version: nautilus-sendto master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-07-05 00:20+0000\n"
-"PO-Revision-Date: 2013-07-06 18:44+0700\n"
+"POT-Creation-Date: 2016-09-30 01:38+0000\n"
+"PO-Revision-Date: 2016-09-30 13:32+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
-"Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
+"Language-Team: Vietnamese <gnome-vi-list@gnome.org>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.5\n"
-
-#: ../src/nautilus-sendto.c:53
-msgid "Run from build directory (ignored)"
-msgstr "Chạy từ thư mục xây dựng (bị bỏ qua)"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../src/nautilus-sendto.c:54
+msgid "Run from build directory (ignored)"
+msgstr "Chạy từ thư mục biên dịch (bị bỏ qua)"
+
+#: ../src/nautilus-sendto.c:55
 msgid "Use XID as parent to the send dialogue (ignored)"
 msgstr "Dùng XID như là mẹ cho hộp thoại gửi (bị bỏ qua)"
 
-#: ../src/nautilus-sendto.c:55
+#: ../src/nautilus-sendto.c:56
 msgid "Files to send"
 msgstr "Các tập tin gửi đi"
 
-#: ../src/nautilus-sendto.c:56
+#: ../src/nautilus-sendto.c:57
 msgid "Output version information and exit"
 msgstr "Xuất thông tin phiên bản và thoát"
 
 #. Translators: the default archive name if it
 #. * could not be deduced from the provided files
-#: ../src/nautilus-sendto.c:244
+#: ../src/nautilus-sendto.c:245
 msgid "Archive"
 msgstr "KhoLưu"
 
-#: ../src/nautilus-sendto.c:511
+#: ../src/nautilus-sendto.c:543
 #, c-format
 msgid "Could not parse command-line options: %s\n"
-msgstr "Không thể phân tích tuỳ chọn dòng lệnh: %s\n"
+msgstr "Không thể phân tích tùy chọn dòng lệnh: %s\n"
 
-#: ../src/nautilus-sendto.c:524
+#: ../src/nautilus-sendto.c:556
 #, c-format
 msgid "No mail client installed, not sending files\n"
 msgstr ""
 "Chưa cài đặt phần mềm gửi và nhận thư điện tử, nên không thể gửi các tập "
 "tin\n"
 
-#: ../src/nautilus-sendto.c:530
+#: ../src/nautilus-sendto.c:562
 #, c-format
 msgid "Expects URIs or filenames to be passed as options\n"
-msgstr "Muốn nhận URI hoặc tên tập tin như tuỳ chọn\n"
+msgstr "Muốn nhận URI hoặc tên tập tin như tùy chọn\n"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:1
+msgid "Nautilus Send to"
+msgstr "Nautilus Send to"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:2
+msgid "Integrates mail clients into the Nautilus file manager"
+msgstr "Tích hợp trình đọc và giửi thư điện tử vào bộ quản lý tập tin Nautilus"
 
 #~ msgid "Send To..."
-#~ msgstr "Gửi đi..."
+#~ msgstr "Gửi đi…"
 
 #~ msgid "Send file by mail, instant message..."
-#~ msgstr "Gửi tập tin bằng thư điện tử, tin nhắn tức thời..."
+#~ msgstr "Gửi tập tin bằng thư điện tử, tin nhắn tức thời…"
 
 #~ msgid "Send files by mail, instant message..."
-#~ msgstr "Gửi tập tin bằng thư điện tử, tin nhắn tức thời..."
+#~ msgstr "Gửi tập tin bằng thư điện tử, tin nhắn tức thời…"
 
 #~ msgid "Files"
 #~ msgstr "Tập tin"

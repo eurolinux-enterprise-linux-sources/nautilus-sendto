@@ -6,15 +6,15 @@
 #
 # Žygimantas Beručka <zygis@gnome.org>, 2004-2009.
 # Gintautas Miliauskas <gintas@akl.lt>, 2008.
-# Aurimas Černius <aurisc4@gmail.com>, 2013.
+# Aurimas Černius <aurisc4@gmail.com>, 2013, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: nautilus-sendto HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-01-05 01:56+0000\n"
-"PO-Revision-Date: 2016-01-05 15:06+0200\n"
+"POT-Creation-Date: 2016-09-29 11:36+0000\n"
+"PO-Revision-Date: 2016-10-15 21:40+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -23,41 +23,49 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
-#: ../src/nautilus-sendto.c:53
+#: ../src/nautilus-sendto.c:54
 msgid "Run from build directory (ignored)"
 msgstr "Paleisti iš kūrimo katalogo (nepaisoma)"
 
-#: ../src/nautilus-sendto.c:54
+#: ../src/nautilus-sendto.c:55
 msgid "Use XID as parent to the send dialogue (ignored)"
 msgstr "Naudoti XID kaip tėvą siuntimo dialogui (nepaisoma)"
 
-#: ../src/nautilus-sendto.c:55
+#: ../src/nautilus-sendto.c:56
 msgid "Files to send"
 msgstr "Siunčiami failai"
 
-#: ../src/nautilus-sendto.c:56
+#: ../src/nautilus-sendto.c:57
 msgid "Output version information and exit"
 msgstr "Išvesti versijos informaciją ir išeiti"
 
 #. Translators: the default archive name if it
 #. * could not be deduced from the provided files
-#: ../src/nautilus-sendto.c:244
+#: ../src/nautilus-sendto.c:245
 msgid "Archive"
 msgstr "Archyvas"
 
-#: ../src/nautilus-sendto.c:507
+#: ../src/nautilus-sendto.c:543
 #, c-format
 msgid "Could not parse command-line options: %s\n"
 msgstr "Nepavyko apdoroti komandų eilutės parametrų: %s\n"
 
-#: ../src/nautilus-sendto.c:520
+#: ../src/nautilus-sendto.c:556
 #, c-format
 msgid "No mail client installed, not sending files\n"
 msgstr "Nėra įdiegtos pašto programos, failai nesiunčiami\n"
 
-#: ../src/nautilus-sendto.c:526
+#: ../src/nautilus-sendto.c:562
 #, c-format
 msgid "Expects URIs or filenames to be passed as options\n"
 msgstr "Tikimasi URI arba failų pavadinimų, nurodytų kaip parametrų\n"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:1
+msgid "Nautilus Send to"
+msgstr "Nautilus siuntimas"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:2
+msgid "Integrates mail clients into the Nautilus file manager"
+msgstr "Integruoja pašto klientus su Nautilus failų valdykle"

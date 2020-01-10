@@ -3,365 +3,73 @@
 # This file is distributed under the same license as the Nautilus Sendto package.
 # Frank Arnold <frank@scirocco-5v-turbo.de>, 2004-2008.
 # Gerhard Stein <gerstrong@gmail.com>, 2008.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2013.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2013, 2016.
 # Lukas K. <lu@0x83.eu>, 2010.
 # Christian Kirbach <Christian.Kirbach@googelmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: nautilus-sendto master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-14 12:08+0200\n"
-"PO-Revision-Date: 2013-07-14 12:08+0100\n"
-"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-09-29 11:36+0000\n"
+"PO-Revision-Date: 2016-09-29 14:57+0200\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
-"Language: de_DE\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.9\n"
 
-#: ../src/nautilus-sendto.c:53
+#: ../src/nautilus-sendto.c:54
 msgid "Run from build directory (ignored)"
 msgstr "Aus dem Erstellungsordner ausführen (ignoriert)"
 
-#: ../src/nautilus-sendto.c:54
+#: ../src/nautilus-sendto.c:55
 msgid "Use XID as parent to the send dialogue (ignored)"
 msgstr "XID als Eltern für den Sendedialog verwenden (ignoriert)"
 
-#: ../src/nautilus-sendto.c:55
+#: ../src/nautilus-sendto.c:56
 msgid "Files to send"
 msgstr "Zu sendende Dateien"
 
-#: ../src/nautilus-sendto.c:56
+#: ../src/nautilus-sendto.c:57
 msgid "Output version information and exit"
 msgstr "Versionsinformationen ausgeben und beenden"
 
 #. Translators: the default archive name if it
 #. * could not be deduced from the provided files
-#: ../src/nautilus-sendto.c:244
+#: ../src/nautilus-sendto.c:245
 msgid "Archive"
 msgstr "Archiv"
 
-#: ../src/nautilus-sendto.c:511
+#: ../src/nautilus-sendto.c:543
 #, c-format
 msgid "Could not parse command-line options: %s\n"
+""
 msgstr "Befehlszeilenoptionen konnten nicht eingelesen werden: %s\n"
+""
 
-#: ../src/nautilus-sendto.c:524
+#: ../src/nautilus-sendto.c:556
 #, c-format
 msgid "No mail client installed, not sending files\n"
-msgstr ""
-"Es ist kein E-Mail-Programm installiert. Dateien werden nicht verschickt\n"
+""
+msgstr "Es ist kein E-Mail-Programm installiert. Dateien werden nicht verschickt\n"
+""
 
-#: ../src/nautilus-sendto.c:530
+#: ../src/nautilus-sendto.c:562
 #, c-format
 msgid "Expects URIs or filenames to be passed as options\n"
+""
 msgstr "URLs oder Dateinamen sollten als Optionen gesetzt werden\n"
+""
 
-#~ msgid "Sharing %d folder"
-#~ msgid_plural "Sharing %d folders"
-#~ msgstr[0] "%d Ordner wird freigegeben"
-#~ msgstr[1] "%d Ordner werden freigegeben"
+#: ../src/nautilus-sendto.metainfo.xml.in.h:1
+msgid "Nautilus Send to"
+msgstr "Nautilus Senden an"
 
-#~ msgid "Sharing %d folders and files"
-#~ msgstr "%d Ordner und Dateien werden freigegeben"
+#: ../src/nautilus-sendto.metainfo.xml.in.h:2
+msgid "Integrates mail clients into the Nautilus file manager"
+msgstr "Integriert E-Mail-Anwendungen in die Dateiverwaltung Nautilus"
 
-#~ msgid "Sharing %d video"
-#~ msgid_plural "Sharing %d videos"
-#~ msgstr[0] "%d Video wird freigegeben"
-#~ msgstr[1] "%d Videos werden freigegeben"
-
-#~ msgid "Sharing %d photo"
-#~ msgid_plural "Sharing %d photos"
-#~ msgstr[0] "%d Foto wird freigegeben"
-#~ msgstr[1] "%d Fotos werden freigegeben"
-
-#~ msgid "Sharing %d image"
-#~ msgid_plural "Sharing %d images"
-#~ msgstr[0] "%d Bild wird freigegeben"
-#~ msgstr[1] "%d Bilder werden freigegeben"
-
-#~ msgid "Sharing %d text file"
-#~ msgid_plural "Sharing %d text files"
-#~ msgstr[0] "%d Textdatei wird freigegeben"
-#~ msgstr[1] "%d Textdateien werden freigegeben"
-
-#~ msgid "Sharing %d file"
-#~ msgid_plural "Sharing %d files"
-#~ msgstr[0] "%d Datei wird freigegeben"
-#~ msgstr[1] "%d Dateien werden freigegeben"
-
-#~ msgid "_Send"
-#~ msgstr "_Senden"
-
-#~ msgid "Files"
-#~ msgstr "Dateien"
-
-#~ msgid "_Cancel"
-#~ msgstr "_Abbrechen"
-
-#~ msgid "Send _packed in:"
-#~ msgstr "Ge_packt senden in:"
-
-#~ msgid "Mail"
-#~ msgstr "Mail"
-
-#~ msgid "Cannot get contact: %s"
-#~ msgstr "Der Kontakt kann nicht eingelesen werden: %s"
-
-#~ msgid "Could not find contact: %s"
-#~ msgstr "Kontakt konnte nicht gefunden werden: %s"
-
-#~ msgid "Cannot create searchable view."
-#~ msgstr "Ansicht zum Suchen konnte nicht erstellt werden."
-
-#~ msgid "Success"
-#~ msgstr "Erfolg!"
-
-#~ msgid "An argument was invalid."
-#~ msgstr "Ungültiges Argument."
-
-#~ msgid "The address book is busy."
-#~ msgstr "Das Addressbuch ist bereits belegt."
-
-#~ msgid "The address book is offline."
-#~ msgstr "Das Adressbuch ist offline."
-
-#~ msgid "The address book does not exist."
-#~ msgstr "Das Addressbuch existiert nicht."
-
-#~ msgid "The \"Me\" contact does not exist."
-#~ msgstr "Der »Ich«-Kontakt existiert nicht"
-
-#~ msgid "The address book is not loaded."
-#~ msgstr "Das Adressbuch ist nicht geladen."
-
-#~ msgid "The address book is already loaded."
-#~ msgstr "Das Adressbuch wurde bereits geladen."
-
-#~ msgid "Permission was denied when accessing the address book."
-#~ msgstr "Erlaubnis für den Zugriff auf das Addressbuch wurde verweigert."
-
-#~ msgid "The contact was not found."
-#~ msgstr "Kontakt wurde nicht gefunden"
-
-#~ msgid "This contact ID already exists."
-#~ msgstr "Kontakt-Kennung exisitert bereits."
-
-#~ msgid "The protocol is not supported."
-#~ msgstr "Das Protokoll wird nicht unterstützt."
-
-#~ msgid "The operation was cancelled."
-#~ msgstr "Der Prozess wurde abgebrochen."
-
-#~ msgid "The operation could not be cancelled."
-#~ msgstr "Der Prozess konnte nicht abgebrochen werden."
-
-#~ msgid "The address book authentication failed."
-#~ msgstr "Legitimierung für das Addressbuch ist fehlgeschlagen."
-
-#~ msgid ""
-#~ "Authentication is required to access the address book and was not given."
-#~ msgstr ""
-#~ "Legitimierung wird benötigt, um auf das Adressbuch Zugriff zu erlangen "
-#~ "und wurde nicht gegeben."
-
-#~ msgid "A secure connection is not available."
-#~ msgstr "Eine sichere Verbindung ist nicht verfügbar."
-
-#~ msgid "A CORBA error occurred whilst accessing the address book."
-#~ msgstr ""
-#~ "Ein CORBA-Fehler wurde beim Versuch ausgelöst, auf das Adressbuch Zugriff "
-#~ "zu erlangen."
-
-#~ msgid "The address book source does not exist."
-#~ msgstr "Das Adressbuch existiert nicht."
-
-#~ msgid "An unknown error occurred."
-#~ msgstr "Ein unbekannter Fehler trat auf."
-
-#~ msgid "Unable to send file"
-#~ msgstr "Datei kann nicht gesendet werden"
-
-#~ msgid "There is no connection to gajim remote service."
-#~ msgstr "Keine Verbindung zu Gajim Remote Service."
-
-#~ msgid "Sending file failed"
-#~ msgstr "Senden der Datei fehlgeschlagen"
-
-#~ msgid "Recipient is missing."
-#~ msgstr "Empfänger fehlt."
-
-#~ msgid "Unknown recipient."
-#~ msgstr "Unbekannter Empfänger."
-
-#~ msgid "Instant Message (Gajim)"
-#~ msgstr "Sofortnachricht (Gajim)"
-
-#~ msgid "New CD/DVD"
-#~ msgstr "Neue CD/DVD"
-
-#~ msgid "Existing CD/DVD"
-#~ msgstr "Vorhandene CD/DVD"
-
-#~ msgid "CD/DVD Creator"
-#~ msgstr "CD/DVD-Ersteller"
-
-#~ msgid "Instant Message (Pidgin)"
-#~ msgstr "Sofortnachricht (Pidgin)"
-
-#~ msgid "Removable disks and shares"
-#~ msgstr "Entfernbare Medien und Freigaben"
-
-#~ msgid "Uploading '%s'"
-#~ msgstr "»%s« wird hochgeladen"
-
-#~ msgid "Preparing upload"
-#~ msgstr "Hochladen wird vorbereitet"
-
-#~ msgid "Service '%s' is not configured."
-#~ msgstr "Dienst »%s« ist nicht konfiguriert."
-
-#~ msgid "_Configure"
-#~ msgstr "_Einrichten"
-
-#~ msgid "Logged in to service '%s'."
-#~ msgstr "Am Dienst »%s« angemeldet."
-
-#~ msgid "Could not log in to service '%s'."
-#~ msgstr "Anmeldung am Dienst »%s« war nicht möglich."
-
-#~ msgid "UPnP Media Server"
-#~ msgstr "UPnP-Media-Server"
-
-#~ msgid "Send To..."
-#~ msgstr "Senden an …"
-
-#~ msgid "Send file by mail, instant message..."
-#~ msgstr "Datei per E-Mail, Sofortnachricht versenden …"
-
-#~ msgid "Send files by mail, instant message..."
-#~ msgstr "Dateien per E-Mail, Sofortnachricht versenden …"
-
-#~ msgid "Last plugin used to send"
-#~ msgstr "Zuletzt verwendetes Sende-Plugin"
-
-#~ msgid "Last type of archive used"
-#~ msgstr "Zuletzt verwendeter Archivtyp"
-
-#~ msgid ""
-#~ "Used to store which plugin was used the last time files were sent using "
-#~ "nautilus-sendto."
-#~ msgstr ""
-#~ "Wird verwendet um zu speichern, welches Plugin zuletzt zum Versenden von "
-#~ "Dateien verwendet wurde."
-
-#~ msgid ""
-#~ "Used to store which type of archive was used the last time (0: zip, 1: "
-#~ "tar.gz, 2: tar.bz2)."
-#~ msgstr ""
-#~ "Wird verwendet um zu speichern, welcher Archivtyp zuletzt verwendet wurde "
-#~ "(0: zip, 1: tar.gz, 2: tar.bz2)."
-
-#~ msgid "_Send to..."
-#~ msgstr "_Senden an …"
-
-#~ msgid "Send files to remote devices, or people"
-#~ msgstr "Dateien an entfernte Geräte oder an Personen versenden"
-
-#~ msgid "Send to..."
-#~ msgstr "Senden an …"
-
-#~ msgid "Nautilus Integration"
-#~ msgstr "Nautilus-Einbindung"
-
-#~ msgid "Provides integration with Nautilus"
-#~ msgstr "Ermöglicht Einbindung in Nautilus"
-
-#~ msgid "Nautilus Sendto"
-#~ msgstr "Nautilus Sendto"
-
-#~ msgid "Could not load any plugins."
-#~ msgstr "Kein Plugin konnte geladen werden."
-
-#~ msgid "Please verify your installation"
-#~ msgstr "Bitte überprüfen Sie Ihre Installation"
-
-#~ msgid "<b>Compression</b>"
-#~ msgstr "<b>Archiv anlegen</b>"
-
-#~ msgid "<b>Destination</b>"
-#~ msgstr "<b>Zielort</b>"
-
-#~ msgid "Send _as:"
-#~ msgstr "Senden _als:"
-
-#~ msgid "Send t_o:"
-#~ msgstr "Senden a_n:"
-
-#~ msgid "Programming error, could not find the device in the list"
-#~ msgstr "Programmierfehler, Gerät konnte nicht in der Liste gefunden werden"
-
-#~ msgid "Obex Push file transfer unsupported"
-#~ msgstr "Dateiübertragung mittels Obex-Push wird nicht unterstützt"
-
-#~ msgid "Bluetooth (OBEX Push)"
-#~ msgstr "Bluetooth (OBEX Push)"
-
-#~ msgid "The contact selected cannot receive files."
-#~ msgstr "Der ausgewählte Kontakt kann keine Dateien empfangen."
-
-#~ msgid "The contact selected is offline."
-#~ msgstr "Der ausgewählte Kontakt ist offline."
-
-#~ msgid "No error message"
-#~ msgstr "Keine Fehlermeldung"
-
-#~ msgid "Instant Message (Empathy)"
-#~ msgstr "Sofortnachricht (Empathy)"
-
-#~ msgid "Default folder to use"
-#~ msgstr "Vorgabe-Ordner"
-
-#~ msgid "Email (Balsa)"
-#~ msgstr "E-Mail (Balsa)"
-
-#~ msgid "Email (Claws Mail)"
-#~ msgstr "E-Mail (Claws)"
-
-#~ msgid "Email (Thunderbird)"
-#~ msgstr "E-Mail (Thunderbird)"
-
-#~ msgid "Device does not support Obex File Transfer"
-#~ msgstr "Gerät unterstützt keine Obex-Datei-Übertragung"
-
-#~ msgid "FOLDER"
-#~ msgstr "Verzeichnis"
-
-#~ msgid "You don't insert the package name"
-#~ msgstr "Sie haben keinen Namen für das Archiv angegeben"
-
-#~ msgid ""
-#~ ".zip\n"
-#~ ".tar.gz\n"
-#~ ".tar.bz2"
-#~ msgstr ""
-#~ ".zip\n"
-#~ ".tar.gz\n"
-#~ ".tar.bz2"
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "You don't insert any email address"
-#~ msgstr "Sie haben keine Email-Adresse eingegeben"
-
-#, fuzzy
-#~ msgid "Nautilus Sendto component"
-#~ msgstr "Nautilus Sendto"
-
-#, fuzzy
-#~ msgid "Sendo To..."
-#~ msgstr "Senden nach..."

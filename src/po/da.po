@@ -1,19 +1,20 @@
 # Danish translation of nautilus-sendto.
-# Copyright (C) 2004-07, 2013 Roberto Majadas
+# Copyright (C) 2004-07, 2013, 2016 Roberto Majadas
 # This file is distributed under the same license as the nautilus-sendto package.
 # David Nielsen <dnielsen@breakmygentoo.net>, 2004.
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2005.
 # Peter Bach <bach.peter@gmail.com>, 2007.
 # Mads Bille Lundby <lundbymads@gmail.com>, 2009.
 # Joe Hansen <joedalton2@yahoo.dk>, 2011.
-# Ask Hjorth Larsen <asklarsen@gmail.com>, 2013.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2013, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: nautilus-sendto\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 18:41+0200\n"
-"PO-Revision-Date: 2013-09-17 01:26+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-09-29 11:36+0000\n"
+"PO-Revision-Date: 2016-10-09 21:58+0200\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -22,45 +23,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/nautilus-sendto.c:53
+#: ../src/nautilus-sendto.c:54
 msgid "Run from build directory (ignored)"
 msgstr "Kør fra byggemappe (ignoreres)"
 
-#: ../src/nautilus-sendto.c:54
+#: ../src/nautilus-sendto.c:55
 msgid "Use XID as parent to the send dialogue (ignored)"
 msgstr "Brug XID som oprindelse for dialogen send (ignoreres)"
 
 # Måske bedre med:
 # Filer til afsendelse
-#: ../src/nautilus-sendto.c:55
+#: ../src/nautilus-sendto.c:56
 msgid "Files to send"
 msgstr "Filer at sende"
 
-#: ../src/nautilus-sendto.c:56
+#: ../src/nautilus-sendto.c:57
 msgid "Output version information and exit"
 msgstr "Udskriv versionsoplysninger og afslut"
 
 #. Translators: the default archive name if it
 #. * could not be deduced from the provided files
-#: ../src/nautilus-sendto.c:244
+#: ../src/nautilus-sendto.c:245
 msgid "Archive"
 msgstr "Arkiv"
 
-#: ../src/nautilus-sendto.c:511
+#: ../src/nautilus-sendto.c:543
 #, c-format
 msgid "Could not parse command-line options: %s\n"
 msgstr "Kunne ikke fortolke kommandolinjetilvalg: %s\n"
 
-#: ../src/nautilus-sendto.c:524
+#: ../src/nautilus-sendto.c:556
 #, c-format
 msgid "No mail client installed, not sending files\n"
 msgstr ""
 "Der er ikke installeret nogen e-mail-klient, så der sendes ingen filer\n"
 
-#: ../src/nautilus-sendto.c:530
+#: ../src/nautilus-sendto.c:562
 #, c-format
 msgid "Expects URIs or filenames to be passed as options\n"
 msgstr "Forventer at URI'er eller filnavne videregives som tilvalg\n"
+
+# Oversætte eller ikke?  Begge dele virker lidt underligt
+#: ../src/nautilus-sendto.metainfo.xml.in.h:1
+msgid "Nautilus Send to"
+msgstr "Nautilus Send til"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:2
+msgid "Integrates mail clients into the Nautilus file manager"
+msgstr "Integrerer e-mail-klienter i filhåndteringen Nautilus"
 
 #~ msgid "Sharing %d folder"
 #~ msgid_plural "Sharing %d folders"

@@ -2,61 +2,70 @@
 # Copyright © 2004, 2009, 2011, 2012, 2013 nautilus-sendto
 # This file is distributed under the same license as the nautilus-sendto package.
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2004.
-# António Lima <amrlima@gmail.com>, 2009, 2011, 2012, 2013., 2015.
+# António Lima <amrlima@gmail.com>, 2009, 2011, 2012, 2013.
+# Tiago Santos <tiagofsantos81@sapo.pt>, 2014 - 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.8\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-09-29 00:09+0000\n"
-"PO-Revision-Date: 2015-06-16 13:14+0100\n"
-"Last-Translator: António Lima <amrlima@gmail.com>\n"
+"POT-Creation-Date: 2016-09-29 11:36+0000\n"
+"PO-Revision-Date: 2016-10-05 16:20+0100\n"
+"Last-Translator: Tiago Santos <tiagofsantos81@sapo.pt>\n"
 "Language-Team: gnome_pt@yahoogroups.com\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../src/nautilus-sendto.c:53
+#: ../src/nautilus-sendto.c:54
 msgid "Run from build directory (ignored)"
 msgstr "Executar a partir de pasta de compilação (ignorado)"
 
-#: ../src/nautilus-sendto.c:54
+#: ../src/nautilus-sendto.c:55
 msgid "Use XID as parent to the send dialogue (ignored)"
 msgstr "Utilizar XID como mãe para o diálogo de envio (ignorado)"
 
-#: ../src/nautilus-sendto.c:55
+#: ../src/nautilus-sendto.c:56
 msgid "Files to send"
 msgstr "Ficheiros a enviar"
 
-#: ../src/nautilus-sendto.c:56
+#: ../src/nautilus-sendto.c:57
 msgid "Output version information and exit"
 msgstr "Mostrar informação de versão e sair"
 
 #. Translators: the default archive name if it
 #. * could not be deduced from the provided files
-#: ../src/nautilus-sendto.c:244
+#: ../src/nautilus-sendto.c:245
 msgid "Archive"
 msgstr "Arquivo"
 
-#: ../src/nautilus-sendto.c:507
+#: ../src/nautilus-sendto.c:543
 #, c-format
 msgid "Could not parse command-line options: %s\n"
 msgstr "Impossível processar opções de linha de comando: %s\n"
 
-#: ../src/nautilus-sendto.c:520
+#: ../src/nautilus-sendto.c:556
 #, c-format
 msgid "No mail client installed, not sending files\n"
 msgstr "Nenhum cliente de email instalado, ficheiros não enviados\n"
 
-#: ../src/nautilus-sendto.c:526
+#: ../src/nautilus-sendto.c:562
 #, c-format
 msgid "Expects URIs or filenames to be passed as options\n"
 msgstr "Esperados URIs ou nomes de ficheiros passados como opções\n"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:1
+msgid "Nautilus Send to"
+msgstr "Enviar para o Nautilus"
+
+#: ../src/nautilus-sendto.metainfo.xml.in.h:2
+msgid "Integrates mail clients into the Nautilus file manager"
+msgstr "Integra os clientes de email no gestor de ficheiros Nautilus"
 
 #~ msgid "Sharing %d folder"
 #~ msgid_plural "Sharing %d folders"
@@ -275,9 +284,6 @@ msgstr "Esperados URIs ou nomes de ficheiros passados como opções\n"
 
 #~ msgid "Send files by mail, instant message..."
 #~ msgstr "Enviar ficheiros por email, mensagem instantânea..."
-
-#~ msgid "Nautilus Sendto"
-#~ msgstr "EnviarPara Nautilus"
 
 #~ msgid "Could not load any plugins."
 #~ msgstr "Incapaz de carregar qualquer plugin"

@@ -1,4 +1,18 @@
 =============
+Version 3.8.6
+=============
+
+- Port to meson
+
+=============
+Version 3.8.5
+=============
+
+- Add AppData to make it show up as a Files extension in Software
+- Fix crash when fast-content-type is unavailable
+- Updated translations
+
+=============
 Version 3.8.4
 =============
 
