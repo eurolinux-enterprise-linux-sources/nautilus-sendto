@@ -1,0 +1,45 @@
+<!-- ##### SECTION ./tmpl/nst-common.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/nst-common.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/nst-common.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/nst-common.sgml:Stability_Level ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/nst-common.sgml:Title ##### -->
+nst-common
+
+
+<!-- ##### MACRO SOEXT ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO SOEXT_LEN ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION copy_files_to ##### -->
+<para>
+
+</para>
+
+@file_list: 
+@dest: 
+@Returns: 
+

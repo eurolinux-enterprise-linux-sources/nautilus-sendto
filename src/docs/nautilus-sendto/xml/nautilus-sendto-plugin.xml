@@ -1,0 +1,185 @@
+<refentry id="nautilus-sendto-nautilus-sendto-plugin">
+<refmeta>
+<refentrytitle role="top_of_page" id="nautilus-sendto-nautilus-sendto-plugin.top_of_page">nautilus-sendto-plugin</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>NAUTILUS-SENDTO Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>nautilus-sendto-plugin</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="nautilus-sendto-nautilus-sendto-plugin.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+                    <link linkend="NstPluginInfo">NstPluginInfo</link>;
+                    <link linkend="NstPlugin">NstPlugin</link>;
+enum                <link linkend="NstPluginCapabilities">NstPluginCapabilities</link>;
+#define             <link linkend="NST-INIT-PLUGIN--CAPS">NST_INIT_PLUGIN</link>                     (plugininfo)
+</synopsis>
+</refsynopsisdiv>
+
+
+
+
+
+
+
+
+
+<refsect1 id="nautilus-sendto-nautilus-sendto-plugin.description" role="desc">
+<title role="desc.title">Description</title>
+<para>
+</para>
+</refsect1>
+
+<refsect1 id="nautilus-sendto-nautilus-sendto-plugin.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="NstPluginInfo" role="struct">
+<title>NstPluginInfo</title>
+<indexterm zone="NstPluginInfo"><primary sortas="NstPluginInfo">NstPluginInfo</primary></indexterm><programlisting>typedef struct {
+	gchar                             *icon;
+	gchar                             *id;
+	gchar                             *description;
+	gchar                             *gettext_package;
+	gboolean                           never_unload;
+	NstPluginCapabilities              capabilities;
+	gboolean (*init)                  (NstPlugin *plugin);
+	GtkWidget* (*get_contacts_widget) (NstPlugin *plugin);
+	gboolean (*validate_destination)  (NstPlugin *plugin, GtkWidget *contact_widget, char **error);
+	gboolean (*send_files)            (NstPlugin *plugin,
+					   GtkWidget *contact_widget,
+					   GList *file_list);
+	gboolean (*destroy)               (NstPlugin *plugin) ;
+} NstPluginInfo;
+</programlisting>
+<para>
+A structure representing a nautilus-sendto plugin. You should also call <link linkend="NST-INIT-PLUGIN--CAPS"><function>NST_INIT_PLUGIN()</function></link> on the plugin structure to export it.</para>
+<para>
+</para><variablelist role="struct">
+<varlistentry>
+<term><link linkend="gchar">gchar</link>&#160;*<structfield>icon</structfield>;</term>
+<listitem><simpara> The icon name for the plugin selection drop-down
+</simpara></listitem>
+</varlistentry>
+<varlistentry>
+<term><link linkend="gchar">gchar</link>&#160;*<structfield>id</structfield>;</term>
+<listitem><simpara> A unique ID representing the plugin
+</simpara></listitem>
+</varlistentry>
+<varlistentry>
+<term><link linkend="gchar">gchar</link>&#160;*<structfield>description</structfield>;</term>
+<listitem><simpara> The label used in the plugin selection drop-down
+</simpara></listitem>
+</varlistentry>
+<varlistentry>
+<term><link linkend="gchar">gchar</link>&#160;*<structfield>gettext_package</structfield>;</term>
+<listitem><simpara> The domain to use to translate the description, <link linkend="NULL--CAPS"><literal>NULL</literal></link> if the plugin is part of nautilus-sendto
+</simpara></listitem>
+</varlistentry>
+<varlistentry>
+<term><link linkend="gboolean">gboolean</link>&#160;<structfield>never_unload</structfield>;</term>
+<listitem><simpara> Whether to unload the plugin on exit. Enable this if your plugin registers a new <link linkend="GType"><type>GType</type></link>
+</simpara></listitem>
+</varlistentry>
+<varlistentry>
+<term><link linkend="NstPluginCapabilities">NstPluginCapabilities</link>&#160;<structfield>capabilities</structfield>;</term>
+<listitem><simpara> a bitmask of <link linkend="NstPluginCapabilities"><type>NstPluginCapabilities</type></link>
+</simpara></listitem>
+</varlistentry>
+<varlistentry>
+<term><structfield>init</structfield>&#160;()</term>
+<listitem><simpara> Check for dependencies, and return <link linkend="FALSE--CAPS"><literal>FALSE</literal></link> if dependencies such as programs are missing.
+</simpara></listitem>
+</varlistentry>
+<varlistentry>
+<term><structfield>get_contacts_widget</structfield>&#160;()</term>
+<listitem><simpara> Return the contact widget, the widget to select the destination of the files
+</simpara></listitem>
+</varlistentry>
+<varlistentry>
+<term><structfield>validate_destination</structfield>&#160;()</term>
+<listitem><simpara> Validate whether the destination can receive the file. This callback is optional.
+</simpara></listitem>
+</varlistentry>
+<varlistentry>
+<term><structfield>send_files</structfield>&#160;()</term>
+<listitem><simpara> Actually send the files to the selected destination. The file list is a <link linkend="GList"><type>GList</type></link> of URI strings.
+</simpara></listitem>
+</varlistentry>
+<varlistentry>
+<term><structfield>destroy</structfield>&#160;()</term>
+<listitem><simpara> Free all the resources used by the plugin.
+</simpara></listitem>
+</varlistentry>
+</variablelist></refsect2>
+<refsect2 id="NstPlugin" role="struct">
+<title>NstPlugin</title>
+<indexterm zone="NstPlugin"><primary sortas="NstPlugin">NstPlugin</primary></indexterm><programlisting>typedef struct {
+	GModule *module;
+	NstPluginInfo *info;
+} NstPlugin;
+</programlisting>
+<para>
+A structure as used in nautilus-sendto.</para>
+<para>
+</para><variablelist role="struct">
+<varlistentry>
+<term><link linkend="GModule">GModule</link>&#160;*<structfield>module</structfield>;</term>
+<listitem><simpara> the <link linkend="GModule"><type>GModule</type></link> for the opened shared library
+</simpara></listitem>
+</varlistentry>
+<varlistentry>
+<term><link linkend="NstPluginInfo">NstPluginInfo</link>&#160;*<structfield>info</structfield>;</term>
+<listitem><simpara> a <link linkend="NstPluginInfo"><type>NstPluginInfo</type></link> structure
+</simpara></listitem>
+</varlistentry>
+</variablelist></refsect2>
+<refsect2 id="NstPluginCapabilities" role="enum">
+<title>enum NstPluginCapabilities</title>
+<indexterm zone="NstPluginCapabilities"><primary sortas="NstPluginCapabilities">NstPluginCapabilities</primary></indexterm><programlisting>typedef enum {
+	NAUTILUS_CAPS_NONE = 0,
+	NAUTILUS_CAPS_SEND_DIRECTORIES = 1 &lt;&lt; 0,
+	NAUTILUS_CAPS_SEND_IMAGES = 1 &lt;&lt; 1,
+} NstPluginCapabilities;
+</programlisting>
+<para>
+Capabilities of the plugin.</para>
+<para>
+</para><variablelist role="enum">
+<varlistentry id="NAUTILUS-CAPS-NONE--CAPS" role="constant">
+<term><literal>NAUTILUS_CAPS_NONE</literal></term>
+<listitem><simpara> No capabilities
+</simpara></listitem>
+</varlistentry>
+<varlistentry id="NAUTILUS-CAPS-SEND-DIRECTORIES--CAPS" role="constant">
+<term><literal>NAUTILUS_CAPS_SEND_DIRECTORIES</literal></term>
+<listitem><simpara> The plugin can send whole directories without compression
+</simpara></listitem>
+</varlistentry>
+<varlistentry id="NAUTILUS-CAPS-SEND-IMAGES--CAPS" role="constant">
+<term><literal>NAUTILUS_CAPS_SEND_IMAGES</literal></term>
+<listitem><simpara> The plugin only sends images which could be resized
+</simpara></listitem>
+</varlistentry>
+</variablelist></refsect2>
+<refsect2 id="NST-INIT-PLUGIN--CAPS" role="macro">
+<title>NST_INIT_PLUGIN()</title>
+<indexterm zone="NST-INIT-PLUGIN--CAPS"><primary sortas="NST_INIT_PLUGIN">NST_INIT_PLUGIN</primary></indexterm><programlisting>#define             NST_INIT_PLUGIN(plugininfo)</programlisting>
+<para>
+Call this on an <link linkend="NstPluginInfo"><type>NstPluginInfo</type></link> structure to make it available to nautilus-sendto.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>plugininfo</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="NstPluginInfo"><type>NstPluginInfo</type></link> structure representing the plugin
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

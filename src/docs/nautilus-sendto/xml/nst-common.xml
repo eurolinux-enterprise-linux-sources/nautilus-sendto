@@ -1,0 +1,59 @@
+<refentry id="nautilus-sendto-nst-common">
+<refmeta>
+<refentrytitle role="top_of_page" id="nautilus-sendto-nst-common.top_of_page">nst-common</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>NAUTILUS-SENDTO Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>nst-common</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="nautilus-sendto-nst-common.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+<link linkend="gboolean">gboolean</link>            <link linkend="copy-files-to">copy_files_to</link>                       (<link linkend="GList">GList</link> *file_list,
+                                                         <link linkend="GFile">GFile</link> *dest);
+</synopsis>
+</refsynopsisdiv>
+
+
+
+
+
+
+
+
+
+<refsect1 id="nautilus-sendto-nst-common.description" role="desc">
+<title role="desc.title">Description</title>
+<para>
+</para>
+</refsect1>
+
+<refsect1 id="nautilus-sendto-nst-common.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="copy-files-to" role="function">
+<title>copy_files_to ()</title>
+<indexterm zone="copy-files-to"><primary sortas="copy_files_to">copy_files_to</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            copy_files_to                       (<link linkend="GList">GList</link> *file_list,
+                                                         <link linkend="GFile">GFile</link> *dest);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>file_list</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>dest</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

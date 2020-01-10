@@ -1,0 +1,10 @@
+<indexdiv>
+<indexdiv><title>N</title>
+<indexentry><primaryie linkends="NstPlugin"><link linkend="NstPlugin">NstPlugin</link></primaryie></indexentry>
+<indexentry><primaryie linkends="NstPluginCapabilities"><link linkend="NstPluginCapabilities">NstPluginCapabilities</link></primaryie></indexentry>
+<indexentry><primaryie linkends="NstPluginInfo"><link linkend="NstPluginInfo">NstPluginInfo</link></primaryie></indexentry>
+<indexentry><primaryie linkends="NST-INIT-PLUGIN--CAPS"><link linkend="NST-INIT-PLUGIN--CAPS">NST_INIT_PLUGIN</link></primaryie></indexentry>
+<indexentry><primaryie linkends="nst-plugin-capabilities-get-type"><link linkend="nst-plugin-capabilities-get-type">nst_plugin_capabilities_get_type</link></primaryie></indexentry>
+<indexentry><primaryie linkends="NST-TYPE-PLUGIN-CAPABILITIES--CAPS"><link linkend="NST-TYPE-PLUGIN-CAPABILITIES--CAPS">NST_TYPE_PLUGIN_CAPABILITIES</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

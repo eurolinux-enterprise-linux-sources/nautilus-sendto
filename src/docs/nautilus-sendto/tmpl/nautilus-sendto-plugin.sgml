@@ -1,0 +1,61 @@
+<!-- ##### SECTION Title ##### -->
+nautilus-sendto-plugin
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT NstPluginInfo ##### -->
+<para>
+
+</para>
+
+@icon: 
+@id: 
+@description: 
+@gettext_package: 
+@never_unload: 
+@capabilities: 
+@init: 
+@get_contacts_widget: 
+@validate_destination: 
+@send_files: 
+@destroy: 
+
+<!-- ##### STRUCT NstPlugin ##### -->
+<para>
+
+</para>
+
+@module: 
+@info: 
+
+<!-- ##### ENUM NstPluginCapabilities ##### -->
+<para>
+
+</para>
+
+@NAUTILUS_CAPS_NONE: 
+@NAUTILUS_CAPS_SEND_DIRECTORIES: 
+@NAUTILUS_CAPS_SEND_IMAGES: 
+
+<!-- ##### MACRO NST_INIT_PLUGIN ##### -->
+<para>
+
+</para>
+
+@plugininfo: 
+
+
