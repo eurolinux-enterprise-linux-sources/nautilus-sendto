@@ -1,0 +1,259 @@
+# Hungarian translation of nautilus-sendto.
+# Copyright (C) 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the nautilus-sendto package.
+#
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2012.
+# Szabolcs Varga <shirokuma at shirokuma dot hu>, 2005.
+# Kalman Kemenczy <kkemenczy at novell dot com>, 2008.
+# Balázs Úr <urbalazs at gmail dot com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-sendto master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-03-20 14:12+0000\n"
+"PO-Revision-Date: 2013-03-20 15:34+0100\n"
+"Last-Translator: Balázs Úr <urbalazs at gmail dot com>\n"
+"Language-Team: Hungarian <kde-i18n-doc@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../src/nautilus-sendto.c:53
+#| msgid "Run from build directory"
+msgid "Run from build directory (ignored)"
+msgstr "Futtatás a build könyvtárból (mellőzve)"
+
+#: ../src/nautilus-sendto.c:54
+#| msgid "Use XID as parent to the send dialogue"
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr "Az XID használata a küldési ablak szülőjeként (mellőzve)"
+
+#: ../src/nautilus-sendto.c:55
+msgid "Files to send"
+msgstr "Elküldendő fájlok"
+
+#: ../src/nautilus-sendto.c:56
+msgid "Output version information and exit"
+msgstr "Verzióinformációk kiírása és kilépés"
+
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:253
+msgid "Archive"
+msgstr "Archívum"
+
+#: ../src/nautilus-sendto.c:520
+#, c-format
+msgid "Could not parse command-line options: %s\n"
+msgstr "Nem dolgozhatók fel a parancssori kapcsolók: %s\n"
+
+#: ../src/nautilus-sendto.c:535
+#, c-format
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "URI címekre vagy fájlnevekre számít paraméterekként\n"
+
+#~ msgid "Sharing %d folder"
+#~ msgid_plural "Sharing %d folders"
+#~ msgstr[0] "%d mappa megosztása"
+#~ msgstr[1] "%d mappa megosztása"
+
+#~ msgid "Sharing %d folders and files"
+#~ msgstr "%d mappa és fájl megosztása"
+
+#~ msgid "Sharing %d video"
+#~ msgid_plural "Sharing %d videos"
+#~ msgstr[0] "%d videó megosztása"
+#~ msgstr[1] "%d videó megosztása"
+
+#~ msgid "Sharing %d photo"
+#~ msgid_plural "Sharing %d photos"
+#~ msgstr[0] "%d fénykép megosztása"
+#~ msgstr[1] "%d fénykép megosztása"
+
+#~ msgid "Sharing %d image"
+#~ msgid_plural "Sharing %d images"
+#~ msgstr[0] "%d kép megosztása"
+#~ msgstr[1] "%d kép megosztása"
+
+#~ msgid "Sharing %d text file"
+#~ msgid_plural "Sharing %d text files"
+#~ msgstr[0] "%d szövegfájl megosztása"
+#~ msgstr[1] "%d szövegfájl megosztása"
+
+#~ msgid "Sharing %d file"
+#~ msgid_plural "Sharing %d files"
+#~ msgstr[0] "%d fájl megosztása"
+#~ msgstr[1] "%d fájl megosztása"
+
+#~ msgid "_Send"
+#~ msgstr "_Küldés"
+
+#~ msgid "Files"
+#~ msgstr "Fájlok"
+
+#~ msgid "_Cancel"
+#~ msgstr "Mé_gse"
+
+#~ msgid "Send _packed in:"
+#~ msgstr "Küldés _tömörítve:"
+
+#~| msgid "Email"
+#~ msgid "Mail"
+#~ msgstr "Levél"
+
+#~ msgid "Cannot get contact: %s"
+#~ msgstr "A névjegy nem kérhető le: %s"
+
+#~ msgid "Could not find contact: %s"
+#~ msgstr "A névjegy nem található: %s"
+
+#~ msgid "Cannot create searchable view."
+#~ msgstr "A kereshető nézet nem hozható létre."
+
+#~ msgid "Success"
+#~ msgstr "Sikerült"
+
+#~ msgid "An argument was invalid."
+#~ msgstr "Egy argumentum érvénytelen."
+
+#~ msgid "The address book is busy."
+#~ msgstr "A címjegyzék foglalt."
+
+#~ msgid "The address book is offline."
+#~ msgstr "A címjegyzék nem érhető el."
+
+#~ msgid "The address book does not exist."
+#~ msgstr "A címjegyzék nem létezik."
+
+#~ msgid "The \"Me\" contact does not exist."
+#~ msgstr "Az „Én” névjegy nem létezik."
+
+#~ msgid "The address book is not loaded."
+#~ msgstr "A címjegyzék nincs betöltve."
+
+#~ msgid "The address book is already loaded."
+#~ msgstr "A címjegyzék már be van töltve."
+
+#~ msgid "Permission was denied when accessing the address book."
+#~ msgstr "A hozzáférés megtagadva a címjegyzék elérése közben."
+
+#~ msgid "The contact was not found."
+#~ msgstr "A névjegy nem található."
+
+#~ msgid "This contact ID already exists."
+#~ msgstr "Ez a névjegy-azonosító már létezik."
+
+#~ msgid "The protocol is not supported."
+#~ msgstr "A protokoll nem támogatott."
+
+#~ msgid "The operation was cancelled."
+#~ msgstr "A művelet megszakítva."
+
+#~ msgid "The operation could not be cancelled."
+#~ msgstr "A művelet nem szakítható meg."
+
+#~ msgid "The address book authentication failed."
+#~ msgstr "A címjegyzék hitelesítése meghiúsult."
+
+#~ msgid ""
+#~ "Authentication is required to access the address book and was not given."
+#~ msgstr ""
+#~ "A címjegyzék eléréséhez hitelesítés szükséges, ami nem került megadásra."
+
+#~ msgid "A secure connection is not available."
+#~ msgstr "Nem áll rendelkezésre biztonságos kapcsolat."
+
+#~ msgid "A CORBA error occurred whilst accessing the address book."
+#~ msgstr "CORBA hiba történt a címjegyzék elérésekor."
+
+#~ msgid "The address book source does not exist."
+#~ msgstr "A címjegyzékforrás nem létezik."
+
+#~ msgid "An unknown error occurred."
+#~ msgstr "Ismeretlen hiba történt."
+
+#~ msgid "Unable to send file"
+#~ msgstr "Nem küldhető el a fájl"
+
+#~ msgid "There is no connection to gajim remote service."
+#~ msgstr "Nincs kapcsolat a gajim távoli szolgáltatáshoz."
+
+#~ msgid "Sending file failed"
+#~ msgstr "A fájl küldése meghiúsult"
+
+#~ msgid "Recipient is missing."
+#~ msgstr "A címzett hiányzik."
+
+#~ msgid "Unknown recipient."
+#~ msgstr "Ismeretlen címzett."
+
+#~ msgid "Instant Message (Gajim)"
+#~ msgstr "Azonnali üzenet (Gajim)"
+
+#~ msgid "New CD/DVD"
+#~ msgstr "Új CD/DVD"
+
+#~ msgid "Existing CD/DVD"
+#~ msgstr "Meglévő CD/DVD"
+
+#~ msgid "CD/DVD Creator"
+#~ msgstr "CD/DVD-készítő"
+
+#~ msgid "Instant Message (Pidgin)"
+#~ msgstr "Azonnali üzenet (Pidgin)"
+
+#~ msgid "Removable disks and shares"
+#~ msgstr "Cserélhető lemezek és megosztások"
+
+#~ msgid "Uploading '%s'"
+#~ msgstr "„%s” feltöltése"
+
+#~ msgid "Preparing upload"
+#~ msgstr "Feltöltés előkészítése"
+
+#~ msgid "Service '%s' is not configured."
+#~ msgstr "A(z) „%s” szolgáltatás nincs beállítva."
+
+#~ msgid "_Configure"
+#~ msgstr "_Beállítás"
+
+#~ msgid "Logged in to service '%s'."
+#~ msgstr "Bejelentkezve a(z) „%s” szolgáltatásba."
+
+#~| msgid "Could not find contact: %s"
+#~ msgid "Could not log in to service '%s'."
+#~ msgstr "Nem lehet belépni a(z) „%s” szolgáltatásba."
+
+#~ msgid "UPnP Media Server"
+#~ msgstr "UPnP médiakiszolgáló"
+
+#~ msgid "Send To..."
+#~ msgstr "Küldés…"
+
+#~ msgid "Send file by mail, instant message..."
+#~ msgstr "Fájl küldése levélben, azonnali üzenetként…"
+
+#~ msgid "Send files by mail, instant message..."
+#~ msgstr "Fájlok küldése levélben, azonnali üzenetként…"
+
+#~ msgid "Could not load any plugins."
+#~ msgstr "Nem tölthetők be bővítmények."
+
+#~ msgid "Please verify your installation"
+#~ msgstr "Ellenőrizze a telepítést"
+
+#~ msgid "<b>Compression</b>"
+#~ msgstr "<b>Tömörítés</b>"
+
+#~ msgid "<b>Destination</b>"
+#~ msgstr "<b>Cél</b>"
+
+#~ msgid "Send _as:"
+#~ msgstr "Küldés _módja:"
+
+#~ msgid "Send t_o:"
+#~ msgstr "Küldés _célja:"

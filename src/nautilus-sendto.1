@@ -1,0 +1,27 @@
+.TH NAUTILUS-SENDTO 1 2006\-07\-18 "GNOME" "GNOME"
+.SH NAME
+nautilus\-sendto \- convenience application to send a file via email
+.SH SYNOPSIS
+.B nautilus-sendto
+.RI [ OPTIONS " " | " " FILES... ]
+.SH DESCRIPTION
+Send FILE(s) via email.
+
+This command will open the default mailer after having attached the files mentioned
+on the command-line. If a directory is passed instead of files, it will have been
+zipped up before being attached.
+
+The application is intented to integrate with nautilus and is
+written for the GNOME graphical desktop.
+.SH OPTIONS
+.TP
+.B \-?,  \-\-help
+Show a help message listing all the options and their meanings.
+.SH AUTHOR
+Written by Roberto Majadas <roberto.majadas@openshine.com>
+.PP
+This manual page was originally written by Oystein Gisnas for the
+Debian system.
+.\" Copyright 2006 Oystein Gisnas
+.\" You may copy this manual page under the terms of the version 2 of
+.\" the GNU General Public License.

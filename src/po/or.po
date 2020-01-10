@@ -1,0 +1,269 @@
+# translation of or.po to Oriya
+# Oriya translation of nautilus-sendto.HEAD.pot.
+# Copyright (C) 2006, 2009, Free Software Foundation, Inc.
+# This file is distributed under the same license as the nautilus-sendto package.
+# $Id: or.po,v 1.2 2006/04/07 13:53:03 hadess Exp $
+#
+# Gora Mohanty <gora_mohanty@yahoo.co.in>, 2006.
+# Manoj Kumar Giri <mgiri@redhat.com>, 2009, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: or\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-03-20 14:12+0000\n"
+"PO-Revision-Date: 2013-03-22 18:00+0530\n"
+"Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
+"Language-Team: Oriya <oriya-it@googlegroups.com>\n"
+"Language: or\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n"
+"\n"
+
+#: ../src/nautilus-sendto.c:53
+msgid "Run from build directory (ignored)"
+msgstr "ନିର୍ମାଣ ଡିରେକ୍ଟୋରୀରୁ ଚଲାନ୍ତୁ (ଅଗ୍ରହଣୀୟ)"
+
+#: ../src/nautilus-sendto.c:54
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr "ପଠା ହୋଇଥିବା ସଂଳାପରେ XID କୁ ମୂଖ୍ୟ ଭାବରେ ବ୍ୟବହାର କରନ୍ତୁ (ଅଗ୍ରହଣୀୟ)"
+
+#: ../src/nautilus-sendto.c:55
+#| msgid "Unable to send file"
+msgid "Files to send"
+msgstr "ପଠାଇବାକୁ ଥିବା ଫାଇଲ"
+
+#: ../src/nautilus-sendto.c:56
+msgid "Output version information and exit"
+msgstr "ସଂସ୍କରଣ ସୂଚନା ଫଳାଫଳ ଦିଅନ୍ତୁ ଏବଂ ପ୍ରସ୍ଥାନ କରନ୍ତୁ"
+
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:253
+msgid "Archive"
+msgstr "ଅଭିଲେଖ"
+
+#: ../src/nautilus-sendto.c:520
+#, c-format
+msgid "Could not parse command-line options: %s\n"
+msgstr "ନିର୍ଦ୍ଦେଶ ନାମା ବିକଳ୍ପଗୁଡ଼ିକୁ ବିଶ୍ଳେଷଣ କରିପାରିଲା ନାହିଁ: %s\n"
+
+#: ../src/nautilus-sendto.c:535
+#, c-format
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "URIs କିମ୍ବା ଫାଇଲନାମଗୁଡ଼ିକୁ ବିକଳ୍ପ ଭାବରେ ପଠାଯାଇଥାଏ\n"
+
+#~ msgid "Last plugin used to send"
+#~ msgstr "ପଠାଇବା ପାଇଁ ବ୍ୟବହାର ହୋଇଥିବା ଅନ୍ତିମ ପ୍ଲଗଇନ"
+
+#~ msgid "Last type of archive used"
+#~ msgstr "ବ୍ୟବହାର ହୋଇଥିବା ଅନ୍ତିମ ପ୍ରକାର ଆଲେଖୀ"
+
+#~ msgid ""
+#~ "Used to store which plugin was used the last time files were sent using "
+#~ "nautilus-sendto."
+#~ msgstr ""
+#~ "ଗତ ଥର nautilus-sendto ବ୍ୟବହାର କରି ଫାଇଲଗୁଡ଼ିକୁ ପଠାଇବା ପୂର୍ବରୁ କେଉଁ ପ୍ଲଗଇନ ବ୍ୟବହୃତ "
+#~ "ହୋଇଥିଲା।"
+
+#~ msgid ""
+#~ "Used to store which type of archive was used the last time (0: zip, 1: "
+#~ "tar.gz, 2: tar.bz2)."
+#~ msgstr ""
+#~ "ଗତଥର କେଉଁ ଆଲେଖୀ ବ୍ୟବହୃତ ହୋଇଥିଲା ତାହା ସଂରକ୍ଷଣ କରିବା ପାଇଁ (0: zip, 1: tar.gz, 2: "
+#~ "tar.bz2)."
+
+#~| msgid "Send to..."
+#~ msgid "_Send to..."
+#~ msgstr "କୁ ପଠାନ୍ତୁ (_S)..."
+
+#~ msgid "Send files to remote devices, or people"
+#~ msgstr "ସୂଦୂର ଉପକରଣ, କିମ୍ବା ବ୍ଯକ୍ତି ପାଖକୁ ଫାଇଲ ପଠାନ୍ତୁ"
+
+#~ msgid "Send to..."
+#~ msgstr "ପଠାନ୍ତୁ..."
+
+#~ msgid "Nautilus Integration"
+#~ msgstr "ନଟିଲସ ସଂଯୁକ୍ତିକରଣ"
+
+#~ msgid "Provides integration with Nautilus"
+#~ msgstr "ନଟିଲସ ସହିତ ସଂଯୁକ୍ତିକରଣ ପ୍ରଦାନ କରେ"
+
+#~ msgid "Send To..."
+#~ msgstr "ପଠାନ୍ତୁ..."
+
+#~ msgid "Send file by mail, instant message..."
+#~ msgstr "ଡାକରେ ଫାଇଲ ପଠାନ୍ତୁ, ତୁରନ୍ତ ସନ୍ଦେଶ..."
+
+#~ msgid "Send files by mail, instant message..."
+#~ msgstr "ଡାକରେ ଫାଇଲଗୁଡ଼ିକ ପଠାନ୍ତୁ, ତୁରନ୍ତ ସନ୍ଦେଶ..."
+
+#~ msgid "Files"
+#~ msgstr "ଫାଇଲଗୁଡ଼ିକ"
+
+#~ msgid "Nautilus Sendto"
+#~ msgstr "ନଟିଲସ ସେଣ୍ଡଟୁ"
+
+#~ msgid "Could not load any plugins."
+#~ msgstr "କୌଣସି ପ୍ଲଗଇନଗୁଡ଼ିକୁ ଧାରଣ କରିପାରିଲା ନାହିଁ।"
+
+#~ msgid "Please verify your installation"
+#~ msgstr "ଆପଣଙ୍କର ସ୍ଥାପନାକୁ ଯାଞ୍ଚକରନ୍ତୁ"
+
+#~ msgid "<b>Compression</b>"
+#~ msgstr "<b>ସଙ୍କୋଚନ</b>"
+
+#~ msgid "<b>Destination</b>"
+#~ msgstr "<b>ଲକ୍ଷ୍ଯସ୍ଥଳ</b>"
+
+#~| msgid "Send as:"
+#~ msgid "Send _as:"
+#~ msgstr "ଏହି ପରି ଭାବରେ ପଠାନ୍ତୁ (_a):"
+
+#~| msgid "Send packed in"
+#~ msgid "Send _packed in:"
+#~ msgstr "ସାଇତି କରି ପଠାନ୍ତୁ (_p):"
+
+#~| msgid "Send to:"
+#~ msgid "Send t_o:"
+#~ msgstr "କୁ ପଠାନ୍ତୁ (_o):"
+
+#~ msgid "_Send"
+#~ msgstr "ପଠାନ୍ତୁ (_S)"
+
+#~ msgid "Programming error, could not find the device in the list"
+#~ msgstr "ପ୍ରଗାମିଙ୍ଗ ତ୍ରୁଟି, ତାଲିକାରେ ଉପକରଣ ପାଇ ପାରିଲା ନାହିଁ"
+
+#~ msgid "Obex Push file transfer unsupported"
+#~ msgstr "Obex Push ଫାଇଲ ପରିବହନ ସମର୍ଥିତ ନୁହଁ"
+
+#~| msgid "Bluetooth (OBEX)"
+#~ msgid "Bluetooth (OBEX Push)"
+#~ msgstr "ବ୍ଲୁଟୂଥ (OBEX Push)"
+
+#~ msgid "The contact selected cannot receive files."
+#~ msgstr "ବଛାଯାଇଥିବା ସମ୍ପର୍କ ଫାଇଲଗୁଡ଼ିକୁ ଗ୍ରହଣ କରିପାରିବ ନାହିଁ।"
+
+#~ msgid "The contact selected is offline."
+#~ msgstr "ବଛାଯାଇଥିବା ସମ୍ପର୍କ ଅଫଲାଇନ ଅଛି।"
+
+#~ msgid "No error message"
+#~ msgstr "କୌଣସି ତ୍ରୁଟି ସନ୍ଦେଶ ନାହିଁ"
+
+#~| msgid "Instant Message (Gaim)"
+#~ msgid "Instant Message (Empathy)"
+#~ msgstr "ତୁରନ୍ତ ସନ୍ଦେଶ (Empathy)"
+
+#~ msgid "Email"
+#~ msgstr "ଇ-ଡାକ"
+
+#~ msgid "Cannot get contact: %s"
+#~ msgstr "ସମ୍ପର୍କ ପାଇ ପାରିବ ନାହିଁ: %s"
+
+#~ msgid "Could not find contact: %s"
+#~ msgstr "ସମ୍ପର୍କ ଖୋଜି ପାରିଲା ନାହିଁ: %s"
+
+#~ msgid "Cannot create searchable view."
+#~ msgstr "ସନ୍ଧାନଯୋଗ୍ୟ ଦୃଶ୍ୟ ସୃଷ୍ଟିକରିପାରିଲା ନାହିଁ।"
+
+#~ msgid "Success"
+#~ msgstr "ସଫଳତା"
+
+#~ msgid "An argument was invalid."
+#~ msgstr "ଗୋଟିଏ ସ୍ୱତନ୍ତ୍ରଚର ଅବୈଧ ଅଛି।"
+
+#~ msgid "The address book is busy."
+#~ msgstr "ଠିକଣା ପୁସ୍ତକଟି ବ୍ୟସ୍ତ ଅଛି।"
+
+#~ msgid "The address book is offline."
+#~ msgstr "ଠିକଣା ପୁସ୍ତକଟି ଅଫଲାଇନ ଅଛି।"
+
+#~ msgid "The address book does not exist."
+#~ msgstr "ଠିକଣା ପୁସ୍ତକଟି ଅବସ୍ଥିତ ନାହିଁ।"
+
+#~ msgid "The \"Me\" contact does not exist."
+#~ msgstr "\"Me\" ସମ୍ପର୍କ ଅବସ୍ଥିତ ନାହିଁ।"
+
+#~ msgid "The address book is not loaded."
+#~ msgstr "ଠିକଣା ପୁସ୍ତକଟି ଧାରଣ ହୋଇନାହିଁ।"
+
+#~ msgid "The address book is already loaded."
+#~ msgstr "ଠିକଣା ପୁସ୍ତକଟି ପୂର୍ବରୁ ଧାରଣ ହୋଇଛି।"
+
+#~ msgid "Permission was denied when accessing the address book."
+#~ msgstr "ଠିକଣା ବହିକୁ ଅଭିଗମ୍ୟ କରିବା ସମୟରେ ଅନୁମତିକୁ ବାରଣ କରାଯାଇଛି।"
+
+#~ msgid "The contact was not found."
+#~ msgstr "ସମ୍ପର୍କଟି ମିଳୁନାହିଁ।"
+
+#~ msgid "This contact ID already exists."
+#~ msgstr "ସମ୍ପର୍କ ID ପୂର୍ବରୁ ଅବସ୍ଥିତ ଅଛି।"
+
+#~ msgid "The protocol is not supported."
+#~ msgstr "ପ୍ରୋଟୋକଲଟି ସମର୍ଥିତ ନୁହଁ।"
+
+#~ msgid "The operation was cancelled."
+#~ msgstr "ପ୍ରୟୋଗଟି ବାତିଲ ହୋଇଛି।"
+
+#~ msgid "The operation could not be cancelled."
+#~ msgstr "ପ୍ରୟୋଗକୁ ବାତିଲ କରିପାରିଲା ନାହିଁ।"
+
+#~ msgid "The address book authentication failed."
+#~ msgstr "ଠିକଣା ପୁସ୍ତକ ବୈଧିକରଣ ବିଫଳ ହୋଇଛି।"
+
+#~ msgid ""
+#~ "Authentication is required to access the address book and was not given."
+#~ msgstr "ଠିକଣା ପୁସ୍ତକକୁ ଅଭିଗମ୍ୟ କରିବା ପାଇଁ ବୈଧିକରଣ ଆବଶ୍ୟକ ଏବଂ ପ୍ରଦାନ କରାଯାଇନାହିଁ।"
+
+#~ msgid "A secure connection is not available."
+#~ msgstr "ଗୋଟିଏ ସୁରକ୍ଷିତ ସଂଯୋଗ ଉପଲବ୍ଧ ନାହିଁ।"
+
+#~ msgid "A CORBA error occurred whilst accessing the address book."
+#~ msgstr "ଠିକଣା ପୁସ୍ତକକୁ ଅଭିଗମ୍ୟ କରିବା ସମୟରେ ଗୋଟିଏ CORBA ତ୍ରୁଟି ଘଟିଛି।"
+
+#~ msgid "The address book source does not exist."
+#~ msgstr "ଠିକଣା ପୁସ୍ତକ ଉତ୍ସ ଅବସ୍ଥିତ ନାହିଁ।"
+
+#~ msgid "An unknown error occurred."
+#~ msgstr "ଗୋଟିଏ ଅଜଣା ତ୍ରୁଟି ଘଟିଛି।"
+
+#~ msgid "Instant Message (Gaim)"
+#~ msgstr "ତୁରନ୍ତ ସନ୍ଦେଶ (ଜି.ଏ.ଆଇ.ଏମ.)"
+
+#~ msgid "There is no connection to gajim remote service."
+#~ msgstr "gajim ସୂଦୀର ସର୍ଭିସକୁ କୌଣସି ସଂଯୋଗ ନାହିଁ।"
+
+#~ msgid "Sending file failed"
+#~ msgstr "ଫାଇଲ ପଠାଇବା ବିଫଳ ହୋଇଛି"
+
+#~ msgid "Recipient is missing."
+#~ msgstr "ଗ୍ରହଣକର୍ତ୍ତା ଅନୁପସ୍ଥିତ ଅଛି।"
+
+#~ msgid "Unknown recipient."
+#~ msgstr "ଅଜଣା ଗ୍ରହଣକର୍ତ୍ତା।"
+
+#~| msgid "Instant Message (Gaim)"
+#~ msgid "Instant Message (Gajim)"
+#~ msgstr "ତୁରନ୍ତ ସନ୍ଦେଶ (Gajim)"
+
+#~ msgid "New CD/DVD"
+#~ msgstr "ନୂତନ CD/DVD"
+
+#~ msgid "Existing CD/DVD"
+#~ msgstr "ସ୍ଥିତବାନ CD/DVD"
+
+#~ msgid "CD/DVD Creator"
+#~ msgstr "CD/DVD ସୃଷ୍ଟିକର୍ତ୍ତା"
+
+#~| msgid "Instant Message (Gaim)"
+#~ msgid "Instant Message (Pidgin)"
+#~ msgstr "ତୁରନ୍ତ ସନ୍ଦେଶ (Pidgin)"
+
+#~ msgid "Removable disks and shares"
+#~ msgstr "କଢ଼ାଯୋଗ୍ୟ ଡିସ୍କ ଏବଂ ସହଭାଗୀ"
+
+#~ msgid "UPnP Media Server"
+#~ msgstr "UPnP ମେଡିଆ ସର୍ଭର"

@@ -1,0 +1,340 @@
+# translation of nautilus-sendto.master.es.po to Español
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER, 2004.
+#
+# Jesse Aviles <jesseaviles@gmail.com>, 2008.
+# Jorge González <jorgegonz@svn.gnome.org>, 2007, 2009, 2010, 2011.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-sendto.master.es\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-03-20 14:12+0000\n"
+"PO-Revision-Date: 2013-03-20 17:58+0100\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
+"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: ../src/nautilus-sendto.c:53
+#| msgid "Run from build directory"
+msgid "Run from build directory (ignored)"
+msgstr "Ejecutar desde la carpeta de construcción (ignorada)"
+
+#: ../src/nautilus-sendto.c:54
+#| msgid "Use XID as parent to the send dialogue"
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr "Usar XID como el padre para enviar el diálogo (ignorada)"
+
+#: ../src/nautilus-sendto.c:55
+msgid "Files to send"
+msgstr "Archivos para enviar"
+
+#: ../src/nautilus-sendto.c:56
+msgid "Output version information and exit"
+msgstr "Mostrar información de la versión y salir"
+
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:253
+msgid "Archive"
+msgstr "Archivador"
+
+#: ../src/nautilus-sendto.c:520
+#, c-format
+msgid "Could not parse command-line options: %s\n"
+msgstr "No se pudieron analizar las opciones de la línea de comandos: %s\n"
+
+#: ../src/nautilus-sendto.c:535
+#, c-format
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "Espera que se pasen como opciones URI o nombres de archivo\n"
+
+#~ msgid "Sharing %d folder"
+#~ msgid_plural "Sharing %d folders"
+#~ msgstr[0] "Compartiendo una carpeta"
+#~ msgstr[1] "Compartiendo %d carpetas"
+
+#~ msgid "Sharing %d folders and files"
+#~ msgstr "Compartiendo %d archivos y carpetas"
+
+#~ msgid "Sharing %d video"
+#~ msgid_plural "Sharing %d videos"
+#~ msgstr[0] "Compartiendo un vídeo"
+#~ msgstr[1] "Compartiendo %d vídeos"
+
+#~ msgid "Sharing %d photo"
+#~ msgid_plural "Sharing %d photos"
+#~ msgstr[0] "Compartiendo una foto"
+#~ msgstr[1] "Compartiendo %d fotos"
+
+#~ msgid "Sharing %d image"
+#~ msgid_plural "Sharing %d images"
+#~ msgstr[0] "Compartiendo una imagen"
+#~ msgstr[1] "Compartiendo %d imágenes"
+
+#~ msgid "Sharing %d text file"
+#~ msgid_plural "Sharing %d text files"
+#~ msgstr[0] "Compartiendo un archivo de texto"
+#~ msgstr[1] "Compartiendo %d archivos de texto"
+
+#~ msgid "Sharing %d file"
+#~ msgid_plural "Sharing %d files"
+#~ msgstr[0] "Compartiendo un archivo"
+#~ msgstr[1] "Compartiendo %d archivos"
+
+#~ msgid "_Send"
+#~ msgstr "_Enviar"
+
+#~ msgid "Files"
+#~ msgstr "Archivos"
+
+#~ msgid "_Cancel"
+#~ msgstr "_Cancelar"
+
+#~ msgid "Send _packed in:"
+#~ msgstr "Enviar em_paquetado en:"
+
+#~ msgid "Mail"
+#~ msgstr "Correo-e"
+
+#~ msgid "Cannot get contact: %s"
+#~ msgstr "No se puede obtener el contacto: %s"
+
+#~ msgid "Could not find contact: %s"
+#~ msgstr "No se puede encontrar el contacto: %s"
+
+#~ msgid "Cannot create searchable view."
+#~ msgstr "No se puede crear una vista buscable."
+
+#~ msgid "Success"
+#~ msgstr "Éxito"
+
+#~ msgid "An argument was invalid."
+#~ msgstr "Un argumento no era válido."
+
+#~ msgid "The address book is busy."
+#~ msgstr "La libreta direcciones está ocupada."
+
+#~ msgid "The address book is offline."
+#~ msgstr "La libreta de direcciones está desconectada."
+
+#~ msgid "The address book does not exist."
+#~ msgstr "La libreta de direcciones no existe."
+
+#~ msgid "The \"Me\" contact does not exist."
+#~ msgstr "El contacto «Yo» no existe."
+
+#~ msgid "The address book is not loaded."
+#~ msgstr "La libreta de direcciones no está cargado."
+
+#~ msgid "The address book is already loaded."
+#~ msgstr "La libreta de direcciones ya está cargado."
+
+#~ msgid "Permission was denied when accessing the address book."
+#~ msgstr "Se denegó el permiso al acceder a la libreta de direcciones."
+
+#~ msgid "The contact was not found."
+#~ msgstr "No se encontró el contacto."
+
+#~ msgid "This contact ID already exists."
+#~ msgstr "Este ID de contacto ya existe."
+
+#~ msgid "The protocol is not supported."
+#~ msgstr "El protocolo no está soportado."
+
+#~ msgid "The operation was cancelled."
+#~ msgstr "La operación se canceló."
+
+#~ msgid "The operation could not be cancelled."
+#~ msgstr "La operación no pudo cancelarse."
+
+#~ msgid "The address book authentication failed."
+#~ msgstr ""
+#~ "Falló la verificación de la autenticidad de la libreta de direcciones."
+
+#~ msgid ""
+#~ "Authentication is required to access the address book and was not given."
+#~ msgstr ""
+#~ "Se requiere autenticación para acceder a la libreta de direcciones y no "
+#~ "se proporcionó."
+
+#~ msgid "A secure connection is not available."
+#~ msgstr "No está disponible una conexión segura."
+
+#~ msgid "A CORBA error occurred whilst accessing the address book."
+#~ msgstr "Ocurrió un error CORBA al acceder a la libreta de direcciones."
+
+#~ msgid "The address book source does not exist."
+#~ msgstr "La fuente de la libreta de drirecciones no existe."
+
+#~ msgid "An unknown error occurred."
+#~ msgstr "Ocurrió un error desconocido."
+
+#~ msgid "Unable to send file"
+#~ msgstr "No es posible enviar el archivo"
+
+#~ msgid "There is no connection to gajim remote service."
+#~ msgstr "No hay ninguna conexión con el servicio remoto de gajim."
+
+#~ msgid "Sending file failed"
+#~ msgstr "Ha fallado el envío del archivo"
+
+#~ msgid "Recipient is missing."
+#~ msgstr "Falta el destinatario."
+
+#~ msgid "Unknown recipient."
+#~ msgstr "Destinatario desconocido."
+
+#~ msgid "Instant Message (Gajim)"
+#~ msgstr "Mensaje instantáneo (Gajim)"
+
+#~ msgid "New CD/DVD"
+#~ msgstr "CD/DVD nuevo"
+
+#~ msgid "Existing CD/DVD"
+#~ msgstr "CD/DVD existente"
+
+#~ msgid "CD/DVD Creator"
+#~ msgstr "Creador de CD/DVD"
+
+#~ msgid "Instant Message (Pidgin)"
+#~ msgstr "Mensaje instantáneo (Pidgin)"
+
+#~ msgid "Removable disks and shares"
+#~ msgstr "Soportes extraíbles y comparticiones"
+
+#~ msgid "Uploading '%s'"
+#~ msgstr "Subiendo «%s»"
+
+#~ msgid "Preparing upload"
+#~ msgstr "Preparando la subida"
+
+#~ msgid "Service '%s' is not configured."
+#~ msgstr "El servicio «%s» no está configurado"
+
+#~ msgid "_Configure"
+#~ msgstr "_Configurar"
+
+#~ msgid "Logged in to service '%s'."
+#~ msgstr "Sesión iniciada en el servicio «%s»."
+
+#~ msgid "Could not log in to service '%s'."
+#~ msgstr "No se pudo iniciar sesión en el servicio «%s»."
+
+#~ msgid "UPnP Media Server"
+#~ msgstr "Servidor multimedia UPnP"
+
+#~ msgid "Send To..."
+#~ msgstr "Enviar a..."
+
+#~ msgid "Send file by mail, instant message..."
+#~ msgstr "Enviar un archivo por correo, por mensaje instantáneo..."
+
+#~ msgid "Send files by mail, instant message..."
+#~ msgstr "Enviar archivos por correo, por mensaje instantáneo..."
+
+#~ msgid "Last plugin used to send"
+#~ msgstr "El último complemento que se usó para enviar"
+
+#~ msgid "Last type of archive used"
+#~ msgstr "El último tipo de archivo usado"
+
+#~ msgid ""
+#~ "Used to store which plugin was used the last time files were sent using "
+#~ "nautilus-sendto."
+#~ msgstr ""
+#~ "Usado para almacenar qué complemento se usó la última vez que se enviaron "
+#~ "archivos usando nautilus-sendto."
+
+#~ msgid ""
+#~ "Used to store which type of archive was used the last time (0: zip, 1: "
+#~ "tar.gz, 2: tar.bz2)."
+#~ msgstr ""
+#~ "Usado para almacenar qué tipo de archivo se envió la última vez (0: zip, "
+#~ "1: tar.gz, 2: tar.bz2)."
+
+#~ msgid "_Send to..."
+#~ msgstr "_Enviar a..."
+
+#~ msgid "Send files to remote devices, or people"
+#~ msgstr "Enviar archivos a dispositivos remotos o personas"
+
+#~ msgid "Send to..."
+#~ msgstr "Enviar a..."
+
+#~ msgid "Nautilus Integration"
+#~ msgstr "Integración con Nautilus"
+
+#~ msgid "Provides integration with Nautilus"
+#~ msgstr "Proporciona integración con Nautilus"
+
+#~ msgid "Nautilus Sendto"
+#~ msgstr "Nautilus Sendto"
+
+#~ msgid "Could not load any plugins."
+#~ msgstr "No se pudo cargar ningún complemento."
+
+#~ msgid "Please verify your installation"
+#~ msgstr "Compruebe su instalación"
+
+#~ msgid "<b>Compression</b>"
+#~ msgstr "<b>Compresión</b>"
+
+#~ msgid "<b>Destination</b>"
+#~ msgstr "<b>Destino</b>"
+
+#~ msgid "Send _as:"
+#~ msgstr "Enviar co_mo:"
+
+#~ msgid "Send t_o:"
+#~ msgstr "Enviar _a:"
+
+#~ msgid "Programming error, could not find the device in the list"
+#~ msgstr ""
+#~ "Error de programación, no se pudo encontrar el dispositivo en la lista"
+
+#~ msgid "Obex Push file transfer unsupported"
+#~ msgstr "La transferencia de archivos Obex Push no está soportada"
+
+#~ msgid "Bluetooth (OBEX Push)"
+#~ msgstr "Bluetooth (OBEX Push)"
+
+#~ msgid "The contact selected cannot receive files."
+#~ msgstr "El contacto seleccionado no puede recibir archivos."
+
+#~ msgid "The contact selected is offline."
+#~ msgstr "El contacto seleccionado está desconectado."
+
+#~ msgid "No error message"
+#~ msgstr "Sin mensaje de error"
+
+#~ msgid "Instant Message (Empathy)"
+#~ msgstr "Mensaje instantáneo (Empathy)"
+
+#~ msgid "Instant Message (Gaim)"
+#~ msgstr "Mensaje instantáneo (Gaim)"
+
+#~ msgid "Default folder to use"
+#~ msgstr "Carpeta predeterminada a usar"
+
+#~ msgid "Email (Balsa)"
+#~ msgstr "Correo-e (Balsa)"
+
+#~ msgid "Email (Claws Mail)"
+#~ msgstr "Correo-e (correo Claws)"
+
+#~ msgid "Email (Thunderbird)"
+#~ msgstr "Correo-e (Thunderbird)"
+
+#~ msgid "Device does not support Obex Push file transfer"
+#~ msgstr "El dispositivo no soporta la transferencia de archivos OBEX Push"
+
+#~ msgid "You don't insert the package name"
+#~ msgstr "No inserta el nombre del paquete"

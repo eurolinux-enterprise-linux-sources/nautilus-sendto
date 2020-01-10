@@ -1,0 +1,318 @@
+# translation of nautilus-sendto.po.master.po to Hindi
+# Hindi translation for nautilus-sendto.
+# Copyright (C) 2009 nautilus-sendto's COPYRIGHT HOLDER
+# This file is distributed under the same license as the nautilus-sendto package.
+#
+# Rajesh Ranjan <rajesh672@gmail.com>, 2009.
+# rajesh <rajesh>, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-sendto.po.master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-03-20 14:12+0000\n"
+"PO-Revision-Date: 2013-03-22 14:42+0530\n"
+"Last-Translator: raj <raj>\n"
+"Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+
+#: ../src/nautilus-sendto.c:53
+#| msgid "Run from build directory"
+msgid "Run from build directory (ignored)"
+msgstr "बिल्ड निर्देशिका से चलाएँ (अगर अनदेखा किया जाता है)"
+
+#: ../src/nautilus-sendto.c:54
+#| msgid "Use XID as parent to the send dialogue"
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr ""
+"XID को बतौर जनक प्रेषित संवाद भेजने के लिए उपयोग करें (अनदेखा किया गया)"
+
+#: ../src/nautilus-sendto.c:55
+msgid "Files to send"
+msgstr "भेजने के लिए फ़ाइल"
+
+#: ../src/nautilus-sendto.c:56
+msgid "Output version information and exit"
+msgstr "आउटपुट संस्करण सूचना और निकास"
+
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:253
+msgid "Archive"
+msgstr "अभिलेख"
+
+#: ../src/nautilus-sendto.c:520
+#, c-format
+msgid "Could not parse command-line options: %s\n"
+msgstr "कमांड लाइन विकल्प विश्लेषित नहीं कर सका: %s\n"
+
+#: ../src/nautilus-sendto.c:535
+#, c-format
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "URI या फ़ाइलनाम की आशा करता है जिसे बतौर विकल्प भेजा जाना है\n"
+
+#~ msgid "Sharing %d folder"
+#~ msgid_plural "Sharing %d folders"
+#~ msgstr[0] "%d फ़ोल्डर साझा कर रहा है"
+#~ msgstr[1] "%d फ़ोल्डर साझा कर रहा है"
+
+#~ msgid "Sharing %d folders and files"
+#~ msgstr "%d फ़ोल्डर और फ़ाइलें साझा कर रहा है"
+
+#~ msgid "Sharing %d video"
+#~ msgid_plural "Sharing %d videos"
+#~ msgstr[0] "%d वीडियो साझा कर रहा है"
+#~ msgstr[1] "%d वीडियो साझा कर रहा है"
+
+#~ msgid "Sharing %d photo"
+#~ msgid_plural "Sharing %d photos"
+#~ msgstr[0] "%d तस्वीर साझा कर रहा है"
+#~ msgstr[1] "%d तस्वीरें साझा कर रहा है"
+
+#~ msgid "Sharing %d image"
+#~ msgid_plural "Sharing %d images"
+#~ msgstr[0] "%d छवि साझा कर रहा है"
+#~ msgstr[1] "%d छवियाँ साझा कर रहा है"
+
+#~ msgid "Sharing %d text file"
+#~ msgid_plural "Sharing %d text files"
+#~ msgstr[0] "%d पाठ फ़ाइल साझा कर रहा है"
+#~ msgstr[1] "%d पाठ फ़ाइलें साझा कर रहा है"
+
+#~ msgid "Sharing %d file"
+#~ msgid_plural "Sharing %d files"
+#~ msgstr[0] "%d फ़ाइल साझा कर रहा है"
+#~ msgstr[1] "%d फ़ाइलें साझा कर रहा है"
+
+#~ msgid "_Send"
+#~ msgstr "भेजें (_S)"
+
+#~ msgid "Files"
+#~ msgstr "फ़ाइल"
+
+#~ msgid "_Cancel"
+#~ msgstr "रद्द करें (_C)"
+
+#~ msgid "Send _packed in:"
+#~ msgstr "पैक किया भेजें (_p):"
+
+#~| msgid "Email"
+#~ msgid "Mail"
+#~ msgstr "मेल"
+
+#~ msgid "Cannot get contact: %s"
+#~ msgstr "संपर्क नहीं पा सकता है: %s"
+
+#~ msgid "Could not find contact: %s"
+#~ msgstr "संपर्क नहीं पा सका: %s"
+
+#~ msgid "Cannot create searchable view."
+#~ msgstr "खोजने योग्य दृश्य नहीं बना सकता है."
+
+#~ msgid "Success"
+#~ msgstr "सफलता"
+
+#~ msgid "An argument was invalid."
+#~ msgstr "तर्क अवैध था."
+
+#~ msgid "The address book is busy."
+#~ msgstr "पता पुस्तिका व्यस्त है."
+
+#~ msgid "The address book is offline."
+#~ msgstr "पता पुस्तिका ऑफ़लाइन है."
+
+#~ msgid "The address book does not exist."
+#~ msgstr "पता पुस्तिका मौजूद नहीं है."
+
+#~ msgid "The \"Me\" contact does not exist."
+#~ msgstr "\"Me\" संपर्क मौजूद नहीं है."
+
+#~ msgid "The address book is not loaded."
+#~ msgstr "पता पुस्तिका लोड किया हुआ नहीं है."
+
+#~ msgid "The address book is already loaded."
+#~ msgstr "पता पुस्तिका पहले से लोड है."
+
+#~ msgid "Permission was denied when accessing the address book."
+#~ msgstr "अनुमति मना किया गया था जब पता पुस्तिका की पहुंच ले रहा था."
+
+#~ msgid "The contact was not found."
+#~ msgstr "संपर्क नहीं मिला था."
+
+#~ msgid "This contact ID already exists."
+#~ msgstr "यह संपर्क ID पहले से मौजूद है."
+
+#~ msgid "The protocol is not supported."
+#~ msgstr "प्रोटोकॉल समर्थित नहीं है."
+
+#~ msgid "The operation was cancelled."
+#~ msgstr "संक्रिया रद्द की गई थी."
+
+#~ msgid "The operation could not be cancelled."
+#~ msgstr "संक्रिया रद्द नहीं की जा सकी."
+
+#~ msgid "The address book authentication failed."
+#~ msgstr "पता पुस्तिका सत्यापन विफल."
+
+#~ msgid ""
+#~ "Authentication is required to access the address book and was not given."
+#~ msgstr "सत्यापन पता पुस्तिका की पहुँच के लिए जरूरी था और नहीं दिया गया था."
+
+#~ msgid "A secure connection is not available."
+#~ msgstr "सुरक्षित कनेक्शन उपलब्ध नहीं है."
+
+#~ msgid "A CORBA error occurred whilst accessing the address book."
+#~ msgstr "कोबरा त्रुटि आई जब पता पुस्तिका की पहुँच ली जा रही थी."
+
+#~ msgid "The address book source does not exist."
+#~ msgstr "पता पुस्तिका स्रोत मौजूद नहीं है."
+
+#~ msgid "An unknown error occurred."
+#~ msgstr "अज्ञात त्रुटि पायी गई."
+
+#~ msgid "Unable to send file"
+#~ msgstr "फ़ाइल भेजने में असमर्थ"
+
+#~ msgid "There is no connection to gajim remote service."
+#~ msgstr "gajim दूरस्थ सेवा में कोई कनेक्शन नहीं है."
+
+#~ msgid "Sending file failed"
+#~ msgstr "फ़ाइल भेजना विफल रहा"
+
+#~ msgid "Recipient is missing."
+#~ msgstr "प्राप्तकर्ता अनुपस्थित है."
+
+#~ msgid "Unknown recipient."
+#~ msgstr "अज्ञात प्राप्तकर्ता."
+
+#~ msgid "Instant Message (Gajim)"
+#~ msgstr "इंस्टैंट मैसेज (Gajim)"
+
+#~ msgid "New CD/DVD"
+#~ msgstr "नया CD/DVD"
+
+#~ msgid "Existing CD/DVD"
+#~ msgstr "CD/DVD छोड़ रहा है"
+
+#~ msgid "CD/DVD Creator"
+#~ msgstr "CD/DVD सर्जक"
+
+#~ msgid "Instant Message (Pidgin)"
+#~ msgstr "इंस्टैंट मैसेज (पिज़िन)"
+
+#~ msgid "Removable disks and shares"
+#~ msgstr "विस्थापनीय डिस्क व शेयर"
+
+#~ msgid "Uploading '%s'"
+#~ msgstr "'%s' अपलोड कर रहा है"
+
+#~ msgid "Preparing upload"
+#~ msgstr "अपलोड की तैयारी कर रहा है"
+
+#~ msgid "Service '%s' is not configured."
+#~ msgstr "सेवा '%s' विन्यस्त नहीं है."
+
+#~ msgid "_Configure"
+#~ msgstr "विन्यस्त करें (_C)"
+
+#~ msgid "Logged in to service '%s'."
+#~ msgstr "सर्विस '%s' में लॉगिन."
+
+#~| msgid "Could not find contact: %s"
+#~ msgid "Could not log in to service '%s'."
+#~ msgstr "सर्विस '%s' में लॉगिन नहीं कर सका."
+
+#~ msgid "UPnP Media Server"
+#~ msgstr "UPnP मीडिया सर्वर"
+
+#~ msgid "Last plugin used to send"
+#~ msgstr "भेजने के लिए प्रयुक्त अंतिम प्लगिन"
+
+#~ msgid "Last type of archive used"
+#~ msgstr "प्रयुक्त अभिलेख का अंतिम प्रकार"
+
+#~ msgid ""
+#~ "Used to store which plugin was used the last time files were sent using "
+#~ "nautilus-sendto."
+#~ msgstr ""
+#~ "जमा करने के लिए प्रयुक्त कि कौन से प्लगिन को प्रयोग किया गया था जब अंतिम बार फ़ाइलें "
+#~ "nautilus-sendto के प्रयोग से भेजी गई थी."
+
+#~ msgid ""
+#~ "Used to store which type of archive was used the last time (0: zip, 1: "
+#~ "tar.gz, 2: tar.bz2)."
+#~ msgstr ""
+#~ "जमा करने के लिए प्रयुक्त कि कौन सा अभिलेख अंतिम बार प्रयोग किया गया था (0: zip, "
+#~ "1: tar.gz, 2: tar.bz2)."
+
+#~ msgid "_Send to..."
+#~ msgstr "इसमें भेजें (_S)..."
+
+#~ msgid "Send files to remote devices, or people"
+#~ msgstr "दूरस्थ युक्ति या लोगों को फ़ाइलें भेजें"
+
+#~ msgid "Send to..."
+#~ msgstr "यहाँ भेजें..."
+
+#~ msgid "Nautilus Integration"
+#~ msgstr "नॉटिलस एकीकरण"
+
+#~ msgid "Provides integration with Nautilus"
+#~ msgstr "नॉटिलस के साथ एकीकरण प्रदान करता है"
+
+#~ msgid "Send To..."
+#~ msgstr "इसमें भेजें..."
+
+#~ msgid "Send file by mail, instant message..."
+#~ msgstr "डाक से फ़ाइल भेजें, तत्काल संदेश..."
+
+#~ msgid "Send files by mail, instant message..."
+#~ msgstr "डाक से फ़ाइलें भेजें, तत्काल संदेश..."
+
+#~ msgid "Nautilus Sendto"
+#~ msgstr "Nautilus Sendto"
+
+#~ msgid "Could not load any plugins."
+#~ msgstr "किसी प्लगिन को लोड नहीं कर सका."
+
+#~ msgid "Please verify your installation"
+#~ msgstr "कृपया अपना संस्थापन जाँचें"
+
+#~ msgid "<b>Compression</b>"
+#~ msgstr "<b>संकुचन</b>"
+
+#~ msgid "<b>Destination</b>"
+#~ msgstr "<b>गंतव्य</b>"
+
+#~ msgid "Send _as:"
+#~ msgstr "ऐसे भेजें (_a):"
+
+#~ msgid "Send t_o:"
+#~ msgstr "यहाँ भेजें (_o):"
+
+#~ msgid "Programming error, could not find the device in the list"
+#~ msgstr "प्रोग्रामिंग त्रुटि, सूची में युक्ति नहीं पा सका"
+
+#~ msgid "Obex Push file transfer unsupported"
+#~ msgstr "Obex Push फ़ाइल हस्तांतरण असमर्थित"
+
+#~ msgid "Bluetooth (OBEX Push)"
+#~ msgstr "ब्लूटूथ (OBEX पुश)"
+
+#~ msgid "The contact selected cannot receive files."
+#~ msgstr "चुना गया संपर्क फ़ाइल नहीं पा सकता है."
+
+#~ msgid "The contact selected is offline."
+#~ msgstr "चुना गया संपर्क ऑफ़लाइन है."
+
+#~ msgid "No error message"
+#~ msgstr "कोई त्रुटि संदेश नहीं"
+
+#~ msgid "Instant Message (Empathy)"
+#~ msgstr "इंस्टैंट मैसेज (एंपेथी)"

@@ -1,0 +1,52 @@
+# Alexander Nyakhaychyk <nab@mail.by>, 2008.
+# Ladyko Andrey <fylh.if@gmail.com>, 2009.
+# Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2011, 2012, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-sendto.master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-03-20 14:12+0000\n"
+"PO-Revision-Date: 2012-01-07 12:05+0300\n"
+"Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
+"Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
+"Language: be\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../src/nautilus-sendto.c:53
+msgid "Run from build directory (ignored)"
+msgstr "Запусціць з каталога кампіляцыі (ігнаруецца)"
+
+#: ../src/nautilus-sendto.c:54
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr "Выкарыстаць XID як бацькоўскі для дыялогу пасылкі (ігнаруецца)"
+
+#: ../src/nautilus-sendto.c:55
+msgid "Files to send"
+msgstr "Файлы для пасылкі"
+
+#: ../src/nautilus-sendto.c:56
+msgid "Output version information and exit"
+msgstr "Вывесці інфармацыю аб версіі праграмы і выйсці"
+
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:253
+msgid "Archive"
+msgstr "Архіў"
+
+#: ../src/nautilus-sendto.c:520
+#, c-format
+msgid "Could not parse command-line options: %s\n"
+msgstr "Не ўдалося разабраць опцыі загаднага радка: %s\n"
+
+#: ../src/nautilus-sendto.c:535
+#, c-format
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "Чакае перадачы адрасоў і назваў файлаў праз опцыі\n"
+

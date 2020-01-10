@@ -1,0 +1,64 @@
+AC_PREREQ(2.52)
+
+AC_INIT([nautilus-sendto],
+        [3.8.0],
+        [https://bugzilla.gnome.org/enter_bug.cgi?product=nautilus-sendto],
+        [nautilus-sendto])
+
+AC_CONFIG_HEADERS([config.h])
+AC_CONFIG_MACRO_DIR([m4])
+AC_CONFIG_AUX_DIR([build-aux])
+
+AM_INIT_AUTOMAKE([1.11 dist-xz no-dist-gzip check-news])
+
+# Enable silent build when available (Automake 1.11)
+m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
+
+AM_MAINTAINER_MODE
+
+# Check for programs
+AC_PROG_CC
+AC_PROG_INSTALL
+AC_PROG_MAKE_SET
+
+# Initialize libtool
+LT_INIT([disable-static])
+
+GLIB_GSETTINGS
+
+GNOME_DEBUG_CHECK
+GNOME_COMPILE_WARNINGS([maximum])
+GNOME_CXX_WARNINGS
+GNOME_MAINTAINER_MODE_DEFINES
+GOBJECT_INTROSPECTION_REQUIRE([0.6.7])
+
+ERROR_CFLAGS="-Wall -Wextra -Werror -Wno_missing_field_initializers -Wno_unused_parameter"
+
+dnl --------------------------------------------------
+
+GLIB_REQUIRED=2.25.9
+
+AC_SUBST(GLIB_REQUIRED)
+AC_SUBST(GTHREAD_REQUIRED)
+AC_SUBST(GTK_REQUIRED)
+
+PKG_CHECK_MODULES(NAUTILUS_SENDTO,		\
+	 glib-2.0 >= $GLIB_REQUIRED		\
+	 gio-2.0)
+AC_SUBST(NAUTILUS_SENDTO_CFLAGS)
+AC_SUBST(NAUTILUS_SENDTO_LIBS)
+
+IT_PROG_INTLTOOL([0.35.0])
+
+GETTEXT_PACKAGE=nautilus-sendto
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [GetText Package])
+
+AM_GLIB_GNU_GETTEXT
+
+AC_CONFIG_FILES([
+Makefile
+src/Makefile
+po/Makefile.in
+])
+AC_OUTPUT

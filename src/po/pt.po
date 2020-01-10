@@ -1,0 +1,343 @@
+# nautilus-sendto's Portuguese translation.
+# Copyright © 2004, 2009, 2011, 2012, 2013 nautilus-sendto
+# This file is distributed under the same license as the nautilus-sendto package.
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2004.
+# António Lima <amrlima@gmail.com>, 2009, 2011, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: 3.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-21 23:53+0000\n"
+"PO-Revision-Date: 2013-03-16 23:59+0000\n"
+"Last-Translator: António Lima <amrlima@gmail.com>\n"
+"Language-Team: gnome_pt@yahoogroups.com\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
+
+#: ../src/nautilus-sendto.c:53
+msgid "Run from build directory (ignored)"
+msgstr "Executar a partir de diretório de compilação (ignorado)"
+
+#: ../src/nautilus-sendto.c:54
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr "Utilizar XID como pai para o diálogo de envio (ignorado)"
+
+#: ../src/nautilus-sendto.c:55
+msgid "Files to send"
+msgstr "Ficheiros a enviar"
+
+#: ../src/nautilus-sendto.c:56
+msgid "Output version information and exit"
+msgstr "Retornar informação de versão e sair"
+
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:253
+msgid "Archive"
+msgstr "Arquivo"
+
+#: ../src/nautilus-sendto.c:520
+#, c-format
+msgid "Could not parse command-line options: %s\n"
+msgstr "Incapaz de processar opções de linha de comando: %s\n"
+
+#: ../src/nautilus-sendto.c:535
+#, c-format
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "Espera que URIs ou nomes de ficheiros sejam passados como opções\n"
+
+#~ msgid "Sharing %d folder"
+#~ msgid_plural "Sharing %d folders"
+#~ msgstr[0] "A partilhar %d pasta"
+#~ msgstr[1] "A partilhar %d pastas"
+
+#~ msgid "Sharing %d folders and files"
+#~ msgstr "A partilhar %d pastas e ficheiros"
+
+#~ msgid "Sharing %d video"
+#~ msgid_plural "Sharing %d videos"
+#~ msgstr[0] "A partilhar %d vídeo"
+#~ msgstr[1] "A partilhar %d vídeos"
+
+#~ msgid "Sharing %d photo"
+#~ msgid_plural "Sharing %d photos"
+#~ msgstr[0] "A partilhar %d foto"
+#~ msgstr[1] "A partilhar %d fotos"
+
+#~ msgid "Sharing %d image"
+#~ msgid_plural "Sharing %d images"
+#~ msgstr[0] "A partilhar %d imagem"
+#~ msgstr[1] "A partilhar %d imagens"
+
+#~ msgid "Sharing %d text file"
+#~ msgid_plural "Sharing %d text files"
+#~ msgstr[0] "A partilhar %d ficheiro de texto"
+#~ msgstr[1] "A partilhar %d ficheiros de texto"
+
+#~ msgid "Sharing %d file"
+#~ msgid_plural "Sharing %d files"
+#~ msgstr[0] "A partilhar %d ficheiro"
+#~ msgstr[1] "A partilhar %d ficheiros"
+
+#~ msgid "_Send"
+#~ msgstr "_Enviar"
+
+#~ msgid "Files"
+#~ msgstr "Ficheiros"
+
+#~ msgid "_Cancel"
+#~ msgstr "_Cancelar"
+
+#~ msgid "Send _packed in:"
+#~ msgstr "Enviar _empacotado como:"
+
+#~ msgid "Mail"
+#~ msgstr "E-mail"
+
+#~ msgid "Cannot get contact: %s"
+#~ msgstr "Incapaz de obter contacto: %s"
+
+#~ msgid "Could not find contact: %s"
+#~ msgstr "Incapaz de encontrar contacto: %s"
+
+#~ msgid "Cannot create searchable view."
+#~ msgstr "Incapaz de criar vista procurável."
+
+#~ msgid "Success"
+#~ msgstr "Sucesso"
+
+#~ msgid "An argument was invalid."
+#~ msgstr "Um argumento era inválido."
+
+#~ msgid "The address book is busy."
+#~ msgstr "O livro de endereços está ocupado."
+
+#~ msgid "The address book is offline."
+#~ msgstr "O livro de endereços está desligado."
+
+#~ msgid "The address book does not exist."
+#~ msgstr "O livro de endereços não existe."
+
+#~ msgid "The \"Me\" contact does not exist."
+#~ msgstr "O contacto \"Eu\" não existe."
+
+#~ msgid "The address book is not loaded."
+#~ msgstr "O livro de endereços não se encontra carregado."
+
+#~ msgid "The address book is already loaded."
+#~ msgstr "O livro de endereços já se encontra carregado."
+
+#~ msgid "Permission was denied when accessing the address book."
+#~ msgstr "Permissão negada ao aceder ao livro de endereços."
+
+#~ msgid "The contact was not found."
+#~ msgstr "Não foi possível encontrar o contacto."
+
+#~ msgid "This contact ID already exists."
+#~ msgstr "Este ID de contacto já existe."
+
+#~ msgid "The protocol is not supported."
+#~ msgstr "O protocolo não é suportado."
+
+#~ msgid "The operation was cancelled."
+#~ msgstr "A operação foi cancelada."
+
+#~ msgid "The operation could not be cancelled."
+#~ msgstr "Não foi possível cancelar a operação."
+
+#~ msgid "The address book authentication failed."
+#~ msgstr "A autenticação do livro de endereços falhou."
+
+#~ msgid ""
+#~ "Authentication is required to access the address book and was not given."
+#~ msgstr ""
+#~ "Autenticação é necessária para aceder ao livro de endereços e não foi "
+#~ "fornecida"
+
+#~ msgid "A secure connection is not available."
+#~ msgstr "Não se encontra disponível uma ligação segura."
+
+#~ msgid "A CORBA error occurred whilst accessing the address book."
+#~ msgstr "Ocorreu um erro CORBA ao aceder ao livro de endereços."
+
+#~ msgid "The address book source does not exist."
+#~ msgstr "A fonte do livro de endereços não existe."
+
+#~ msgid "An unknown error occurred."
+#~ msgstr "Ocorreu um erro desconhecido."
+
+#~ msgid "Unable to send file"
+#~ msgstr "Incapaz de enviar ficheiro"
+
+#~ msgid "There is no connection to gajim remote service."
+#~ msgstr "Não existe nenhuma ligação ao serviço remoto do gajim."
+
+#~ msgid "Sending file failed"
+#~ msgstr "Falha ao enviar ficheiro"
+
+#~ msgid "Recipient is missing."
+#~ msgstr "Destinatário em falta."
+
+#~ msgid "Unknown recipient."
+#~ msgstr "Destinatário desconhecido."
+
+#~ msgid "Instant Message (Gajim)"
+#~ msgstr "Mensagem Instantânea (Gajim)"
+
+#~ msgid "New CD/DVD"
+#~ msgstr "Novo CD/DVD"
+
+#~ msgid "Existing CD/DVD"
+#~ msgstr "CD/DVD Existente"
+
+#~ msgid "CD/DVD Creator"
+#~ msgstr "Criador de CD/DVD"
+
+#~ msgid "Instant Message (Pidgin)"
+#~ msgstr "Mensagem Instantânea (Pidgin)"
+
+#~ msgid "Removable disks and shares"
+#~ msgstr "Discos e partilhas removíveis"
+
+#~ msgid "Uploading '%s'"
+#~ msgstr "A enviar '%s'"
+
+#~ msgid "Preparing upload"
+#~ msgstr "A preparar envio"
+
+#~ msgid "Service '%s' is not configured."
+#~ msgstr "O serviço '%s' não está configurado."
+
+#~ msgid "_Configure"
+#~ msgstr "_Configurar"
+
+#~ msgid "Logged in to service '%s'."
+#~ msgstr "Com sessão iniciada no serviço '%s'."
+
+#~ msgid "Could not log in to service '%s'."
+#~ msgstr "Não foi possível iniciar sessão no serviço '%s'."
+
+#~ msgid "UPnP Media Server"
+#~ msgstr "Servidor de Media UPnP"
+
+#~ msgid "Last plugin used to send"
+#~ msgstr "Último plugin utilizado para enviar"
+
+#~ msgid "Last type of archive used"
+#~ msgstr "Último tipo de arquivo utilizado"
+
+#~ msgid ""
+#~ "Used to store which plugin was used the last time files were sent using "
+#~ "nautilus-sendto."
+#~ msgstr ""
+#~ "Utilizado para armazenar qual o plugin utilizado na última vez em que "
+#~ "ficheiros foram enviados utilizando o nautilus-sendto."
+
+#~ msgid ""
+#~ "Used to store which type of archive was used the last time (0: zip, 1: "
+#~ "tar.gz, 2: tar.bz2)."
+#~ msgstr ""
+#~ "Utilizado para armazenar o tipo de arquivo utilizado (0: zip, 1: tar.gz, "
+#~ "2: tar.bz2)."
+
+#~ msgid "_Send to..."
+#~ msgstr "_Enviar Para..."
+
+#~ msgid "Send files to remote devices, or people"
+#~ msgstr "Enviar ficheiros para dispositivos remotos, ou pessoas"
+
+#~ msgid "Send to..."
+#~ msgstr "Enviar para..."
+
+#~ msgid "Nautilus Integration"
+#~ msgstr "Integração no Nautilus"
+
+#~ msgid "Provides integration with Nautilus"
+#~ msgstr "Disponibiliza integração com o Nautilus"
+
+#~ msgid "Send To..."
+#~ msgstr "Enviar Para..."
+
+#~ msgid "Send file by mail, instant message..."
+#~ msgstr "Enviar ficheiro por email, mensagem instantânea..."
+
+#~ msgid "Send files by mail, instant message..."
+#~ msgstr "Enviar ficheiros por email, mensagem instantânea..."
+
+#~ msgid "Nautilus Sendto"
+#~ msgstr "EnviarPara Nautilus"
+
+#~ msgid "Could not load any plugins."
+#~ msgstr "Incapaz de carregar qualquer plugin"
+
+#~ msgid "Please verify your installation"
+#~ msgstr "Por favor, verifique a sua instalação"
+
+#~ msgid "<b>Compression</b>"
+#~ msgstr "<b>Compressão</b>"
+
+#~ msgid "<b>Destination</b>"
+#~ msgstr "<b>Destino</b>"
+
+#~ msgid "Send _as:"
+#~ msgstr "Enviar _como:"
+
+#~ msgid "Send t_o:"
+#~ msgstr "Enviar _para:"
+
+#~ msgid "Programming error, could not find the device in the list"
+#~ msgstr "Erro de programação, incapaz de encontrar o dispositivo na lista"
+
+#~ msgid "Obex Push file transfer unsupported"
+#~ msgstr "Transferência de ficheiros Obex Push não suportada"
+
+#~ msgid "Bluetooth (OBEX Push)"
+#~ msgstr "Bluetooth (OBEX Push)"
+
+#~ msgid "The contact selected cannot receive files."
+#~ msgstr "O contacto selecionado não pode receber ficheiros."
+
+#~ msgid "The contact selected is offline."
+#~ msgstr "O contacto selecionado está desligado."
+
+#~ msgid "No error message"
+#~ msgstr "Nenhuma mensagem de erro"
+
+#~| msgid "Instant Message (Gaim)"
+#~ msgid "Instant Message (Empathy)"
+#~ msgstr "Mensagem Instantânea (Empathy)"
+
+#~ msgid "Instant Message (Gaim)"
+#~ msgstr "Mensagem Instantânea (Gaim)"
+
+#~ msgid "Default folder to use"
+#~ msgstr "Pasta a utilizar por omissão"
+
+#~ msgid "FOLDER"
+#~ msgstr "PASTA"
+
+#~ msgid "You don't insert the package name"
+#~ msgstr "Não foi especificado o nome do pacote"
+
+#~ msgid ""
+#~ ".zip\n"
+#~ ".tar.gz\n"
+#~ ".tar.bz2"
+#~ msgstr ""
+#~ ".zip\n"
+#~ ".tar.gz\n"
+#~ ".tar.bz2"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "Nautilus Sendto component"
+#~ msgstr "Componente EnviarPara do Nautilus"
+
+#~ msgid "You don't insert any email address"
+#~ msgstr "Não introduziu qualquer endereço de email"

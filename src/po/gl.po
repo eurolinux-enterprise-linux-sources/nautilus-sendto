@@ -1,0 +1,260 @@
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2010 Fran Diéguez.
+# Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
+# colaborar connosco, podes atopar máis información en <http://trasno.net>
+# Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2005, 2006.
+# Ignacio Casal Quinteiro <icq@cvs.gnome.org>, 2007.
+# Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2007.
+# Fran Diéguez <frandieguez@ubuntu.com>, 2010.
+# Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.
+# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: gl\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-21 19:14+0100\n"
+"PO-Revision-Date: 2013-03-21 19:15+0200\n"
+"Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
+"Language-Team: gnome-l10n-gl@gnome.org\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+
+#: ../src/nautilus-sendto.c:53
+msgid "Run from build directory (ignored)"
+msgstr "Executar desde o cartafol de construción (ignorada)"
+
+#: ../src/nautilus-sendto.c:54
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr "Usar o XID como pai para o diálogo de envío (ignorada)"
+
+#: ../src/nautilus-sendto.c:55
+msgid "Files to send"
+msgstr "Ficheiros a enviar"
+
+#: ../src/nautilus-sendto.c:56
+msgid "Output version information and exit"
+msgstr "Mostrar a información de versión e saír"
+
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:253
+msgid "Archive"
+msgstr "Arquivo"
+
+#: ../src/nautilus-sendto.c:520
+#, c-format
+msgid "Could not parse command-line options: %s\n"
+msgstr "Non foi posíbel analizar as opcións da liña de ordes: %s\n"
+
+#: ../src/nautilus-sendto.c:535
+#, c-format
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "Expera que se pasen como opcións URIs ou nomes de ficheiros\n"
+
+#~ msgid "Sharing %d folder"
+#~ msgid_plural "Sharing %d folders"
+#~ msgstr[0] "Compartir %d cartafol"
+#~ msgstr[1] "Compartir %d cartafoles"
+
+#~ msgid "Sharing %d folders and files"
+#~ msgstr "Compartir %d cartafoles e ficheiros"
+
+#~ msgid "Sharing %d video"
+#~ msgid_plural "Sharing %d videos"
+#~ msgstr[0] "Compartir %d vídeo"
+#~ msgstr[1] "Compartir %d vídeos"
+
+#~ msgid "Sharing %d photo"
+#~ msgid_plural "Sharing %d photos"
+#~ msgstr[0] "Compartir %d foto"
+#~ msgstr[1] "Compartir %d fotos"
+
+#~ msgid "Sharing %d image"
+#~ msgid_plural "Sharing %d images"
+#~ msgstr[0] "Compartir %d imaxe"
+#~ msgstr[1] "Compartir %d imaxes"
+
+#~ msgid "Sharing %d text file"
+#~ msgid_plural "Sharing %d text files"
+#~ msgstr[0] "Compartir %d ficheiro de texto"
+#~ msgstr[1] "Compartir %d ficheiros de texto"
+
+#~ msgid "Sharing %d file"
+#~ msgid_plural "Sharing %d files"
+#~ msgstr[0] "Compartir %d ficheiro"
+#~ msgstr[1] "Compartir %d ficheiros"
+
+#~ msgid "_Send"
+#~ msgstr "_Enviar"
+
+#~ msgid "Files"
+#~ msgstr "Ficheiros"
+
+#~ msgid "_Cancel"
+#~ msgstr "_Cancelar"
+
+#~ msgid "Send _packed in:"
+#~ msgstr "E_nviar empaquetado en:"
+
+#~ msgid "Mail"
+#~ msgstr "Correo electrónico"
+
+#~ msgid "Cannot get contact: %s"
+#~ msgstr "Non foi posíbel obter o contacto: %s"
+
+#~ msgid "Could not find contact: %s"
+#~ msgstr "Non foi posíbel atopar o contacto: %s"
+
+#~ msgid "Cannot create searchable view."
+#~ msgstr "Non foi posíbel crear a visualización buscábel."
+
+#~ msgid "Success"
+#~ msgstr "Éxito"
+
+#~ msgid "An argument was invalid."
+#~ msgstr "Un argumento foi inválido"
+
+#~ msgid "The address book is busy."
+#~ msgstr "A axenda de enderezos está ocupada."
+
+#~ msgid "The address book is offline."
+#~ msgstr "A axenda de enderezos está fóra de liña."
+
+#~ msgid "The address book does not exist."
+#~ msgstr "A axenda de enderezos non existe."
+
+#~ msgid "The \"Me\" contact does not exist."
+#~ msgstr "O contacto «Eu» non existe."
+
+#~ msgid "The address book is not loaded."
+#~ msgstr "A axenda de enderezos non está cargada."
+
+#~ msgid "The address book is already loaded."
+#~ msgstr "A axenda de enderezos xa está cargada."
+
+#~ msgid "Permission was denied when accessing the address book."
+#~ msgstr "Denegouse o permiso ao acceder á axenda de enderezos."
+
+#~ msgid "The contact was not found."
+#~ msgstr "Non se encontrou o contacto."
+
+#~ msgid "This contact ID already exists."
+#~ msgstr "O ID do contacto xa existe."
+
+#~ msgid "The protocol is not supported."
+#~ msgstr "O protocolo non é compatíbel."
+
+#~ msgid "The operation was cancelled."
+#~ msgstr "Cancelouse a operación."
+
+#~ msgid "The operation could not be cancelled."
+#~ msgstr "A operación non foi cancelada."
+
+#~ msgid "The address book authentication failed."
+#~ msgstr "A autenticación da axenda de enderezos fallou."
+
+#~ msgid ""
+#~ "Authentication is required to access the address book and was not given."
+#~ msgstr ""
+#~ "Requírese autenticación para acceder á axenda de enderezos e non foi "
+#~ "proporcionada."
+
+#~ msgid "A secure connection is not available."
+#~ msgstr "Non está dispoñíbel unha conexión segura."
+
+#~ msgid "A CORBA error occurred whilst accessing the address book."
+#~ msgstr "Produciuse un erro CORBA ao acceder á axenda de enderezos."
+
+#~ msgid "The address book source does not exist."
+#~ msgstr "A axenda de enderezos orixe non existe."
+
+#~ msgid "An unknown error occurred."
+#~ msgstr "Produciuse un erro descoñecido."
+
+#~ msgid "Unable to send file"
+#~ msgstr "Non foi posíbel enviar o ficheiro"
+
+#~ msgid "There is no connection to gajim remote service."
+#~ msgstr "Non hai conexión co servizo remoto gajim."
+
+#~ msgid "Sending file failed"
+#~ msgstr "Produciuse un erro ao enviar o ficheiro"
+
+#~ msgid "Recipient is missing."
+#~ msgstr "Falta o destinatario."
+
+#~ msgid "Unknown recipient."
+#~ msgstr "Destinatario descoñecido."
+
+#~ msgid "Instant Message (Gajim)"
+#~ msgstr "Mensaxe instantánea (Gajim)"
+
+#~ msgid "New CD/DVD"
+#~ msgstr "Novo CD/DVD"
+
+#~ msgid "Existing CD/DVD"
+#~ msgstr "CD/DVD existente"
+
+#~ msgid "CD/DVD Creator"
+#~ msgstr "Creador de CD/DVD"
+
+#~ msgid "Instant Message (Pidgin)"
+#~ msgstr "Mensaxe instantánea (Pidgin)"
+
+#~ msgid "Removable disks and shares"
+#~ msgstr "Discos extraíbeis e recursos compartidos"
+
+#~ msgid "Uploading '%s'"
+#~ msgstr "Subindo «%s»"
+
+#~ msgid "Preparing upload"
+#~ msgstr "Preparando a subida"
+
+#~ msgid "Service '%s' is not configured."
+#~ msgstr "O servizo «%s» non está configurado."
+
+#~ msgid "_Configure"
+#~ msgstr "_Configurar"
+
+#~ msgid "Logged in to service '%s'."
+#~ msgstr "Sesión iniciada no servizo «%s»."
+
+#~ msgid "Could not log in to service '%s'."
+#~ msgstr "Non foi posíbel iniciar sesión no servizo «%s»."
+
+#~ msgid "UPnP Media Server"
+#~ msgstr "Servidor multimedia UPnP"
+
+#~ msgid "Send To..."
+#~ msgstr "Enviar a...."
+
+#~ msgid "Send file by mail, instant message..."
+#~ msgstr "Enviar un ficheiro por correo, por mensaxe instantánea..."
+
+#~ msgid "Send files by mail, instant message..."
+#~ msgstr "Enviar ficheiros por correo, por mensaxe instantánea..."
+
+#~ msgid "Could not load any plugins."
+#~ msgstr "Non foi posíbel cargar algún engadidos."
+
+#~ msgid "Please verify your installation"
+#~ msgstr "Comprobe a súa instalación."
+
+#~ msgid "<b>Destination</b>"
+#~ msgstr "<b>Destino</b>"
+
+#~ msgid "Send _as:"
+#~ msgstr "Enviar _como:"
+
+#~ msgid "Send t_o:"
+#~ msgstr "Enviar _a:"
+
+#~ msgid "<b>Compression</b>"
+#~ msgstr "<b>Compresión</b>"
+
+#~ msgid "Email"
+#~ msgstr "Correo-e"

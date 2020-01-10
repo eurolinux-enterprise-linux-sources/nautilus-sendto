@@ -1,0 +1,251 @@
+# Persian translation for nautilus-sendto.
+# Copyright (C) 2010 nautilus-sendto's COPYRIGHT HOLDER
+# This file is distributed under the same license as the nautilus-sendto package.
+# Arash Mousavi <mousavi.arash@gmail.com>, 2010, 2012, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-sendto gnome-2-32\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-03-20 14:12+0000\n"
+"PO-Revision-Date: 2013-03-22 12:10+0330\n"
+"Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
+"Language-Team: Persian\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: ../src/nautilus-sendto.c:53
+#| msgid "Run from build directory"
+msgid "Run from build directory (ignored)"
+msgstr "اجرا از پوشه ساخت (نادیده گرفته شده)"
+
+#: ../src/nautilus-sendto.c:54
+#| msgid "Use XID as parent to the send dialogue"
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr "استفاده از XID به عنوان والد برای محاوره‌ی ارسال (نادیده گرفته شده)"
+
+#: ../src/nautilus-sendto.c:55
+msgid "Files to send"
+msgstr "پرونده برای ارسال"
+
+#: ../src/nautilus-sendto.c:56
+msgid "Output version information and exit"
+msgstr "اطلاعات نسخه را نمایش و خارج می‌شود"
+
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:253
+msgid "Archive"
+msgstr "آرشیو"
+
+#: ../src/nautilus-sendto.c:520
+#, c-format
+msgid "Could not parse command-line options: %s\n"
+msgstr "امکان تجزیه گزینه‌های خط فرمان وجود ندارد: %s\n"
+
+#: ../src/nautilus-sendto.c:535
+#, c-format
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "انتظار آدرس و یا نام یک پرونده را به عنوان گزینه را داشتم\n"
+
+#~ msgid "Sharing %d folder"
+#~ msgid_plural "Sharing %d folders"
+#~ msgstr[0] "درحال به اشتراک‌گذاری %Id پوشه"
+
+#~ msgid "Sharing %d folders and files"
+#~ msgstr "درحال به اشتراک‌گذاری %Id پوشه و پرونده"
+
+#~ msgid "Sharing %d video"
+#~ msgid_plural "Sharing %d videos"
+#~ msgstr[0] "درحال به اشتراک‌گذاری %Id ویدئو"
+
+#~ msgid "Sharing %d photo"
+#~ msgid_plural "Sharing %d photos"
+#~ msgstr[0] "درحال به اشتراک‌گذاری %Id عکس"
+
+#~ msgid "Sharing %d image"
+#~ msgid_plural "Sharing %d images"
+#~ msgstr[0] "درحال به اشتراک‌گذاری %Id تصویر"
+
+#~ msgid "Sharing %d text file"
+#~ msgid_plural "Sharing %d text files"
+#~ msgstr[0] "درحال به اشتراک‌گذاری %Id پرونده متنی"
+
+#~ msgid "Sharing %d file"
+#~ msgid_plural "Sharing %d files"
+#~ msgstr[0] "درحال به اشتراک‌گذاری %Id پرونده"
+
+#~ msgid "_Send"
+#~ msgstr "_ارسال"
+
+#~ msgid "Files"
+#~ msgstr "پرونده‌ها"
+
+#~ msgid "_Cancel"
+#~ msgstr "_لغو"
+
+#~ msgid "Send _packed in:"
+#~ msgstr "ارسال _بسته‌شده در:"
+
+#~ msgid "Mail"
+#~ msgstr "پست الکترونیک"
+
+#~ msgid "Cannot get contact: %s"
+#~ msgstr "عدم امکان برقراری تماس: %s"
+
+#~ msgid "Could not find contact: %s"
+#~ msgstr "عدم امکان یافتن تماس: %s"
+
+#~ msgid "Cannot create searchable view."
+#~ msgstr "عدم امکان ساخت نمای قابل جستجو."
+
+#~ msgid "Success"
+#~ msgstr "موفق"
+
+#~ msgid "An argument was invalid."
+#~ msgstr "یک آرگومان اشتباه بود."
+
+#~ msgid "The address book is busy."
+#~ msgstr "دفتر تلفن مشغول است."
+
+#~ msgid "The address book is offline."
+#~ msgstr "دفتر تلفن برون‌خط است."
+
+#~ msgid "The address book does not exist."
+#~ msgstr "دفتر تلفن وجود ندارد."
+
+#~ msgid "The \"Me\" contact does not exist."
+#~ msgstr "مشخصات تماس «من» وجود ندارد."
+
+#~ msgid "The address book is not loaded."
+#~ msgstr "دفتر تلفن بارگیری نشده است."
+
+#~ msgid "The address book is already loaded."
+#~ msgstr "دفتر تلفن قبلا بارگیری شده است."
+
+#~ msgid "Permission was denied when accessing the address book."
+#~ msgstr "مجوز دسترسی در هنگام برقراری ارتباط با دفتر تلفن داده نشد."
+
+#~ msgid "The contact was not found."
+#~ msgstr "مشخصات تماس پیدا نشد."
+
+#~ msgid "This contact ID already exists."
+#~ msgstr "شناسه تماس از قبل وجود دارد."
+
+#~ msgid "The protocol is not supported."
+#~ msgstr "این پرتکل پشتیبانی نمی‌شود."
+
+#~ msgid "The operation was cancelled."
+#~ msgstr "عملیات لغو شد."
+
+#~ msgid "The operation could not be cancelled."
+#~ msgstr "امکان لغو عملیات وجود ندارد."
+
+#~ msgid "The address book authentication failed."
+#~ msgstr "تایید هویت برای دفتر تلفن شکست خورد."
+
+#~ msgid ""
+#~ "Authentication is required to access the address book and was not given."
+#~ msgstr "برای دسترسی به دفتر تلفن احتیاج به تایید هویت است که داده نشده است."
+
+#~ msgid "A secure connection is not available."
+#~ msgstr "ارتباط امنی وجود ندارد."
+
+#~ msgid "A CORBA error occurred whilst accessing the address book."
+#~ msgstr "درهنگام تلاش برای دسترسی به دفتر تلفن یک خطای CORBA رخ داد."
+
+#~ msgid "The address book source does not exist."
+#~ msgstr "منبع دفتر تلفن وجود ندارد."
+
+#~ msgid "An unknown error occurred."
+#~ msgstr "یک خطای ناشناخته وجود رخ داد."
+
+#~ msgid "Unable to send file"
+#~ msgstr "عدم امکان ارسال پرونده"
+
+#~ msgid "There is no connection to gajim remote service."
+#~ msgstr "هیچ ارتباطی به سرویس دوردست gajim وجود ندارد."
+
+#~ msgid "Sending file failed"
+#~ msgstr "ارسال پرونده شکست خورد"
+
+#~ msgid "Recipient is missing."
+#~ msgstr "گیرنده ازجا افتاده است."
+
+#~ msgid "Unknown recipient."
+#~ msgstr "گیرنده ناشناس است."
+
+#~ msgid "Instant Message (Gajim)"
+#~ msgstr "پیغام فوری (Gajim)"
+
+#~ msgid "New CD/DVD"
+#~ msgstr "سی‌دی/دی‌وی‌دی جدید"
+
+#~ msgid "Existing CD/DVD"
+#~ msgstr "سی‌دی/دی‌وی‌دی موجود"
+
+#~ msgid "CD/DVD Creator"
+#~ msgstr "سازنده سی‌دی/دی‌وی‌دی"
+
+#~ msgid "Instant Message (Pidgin)"
+#~ msgstr "پیغام فوری (پیجین)"
+
+#~ msgid "Removable disks and shares"
+#~ msgstr "دیسک‌ها و اشتراک‌گذاری‌های جدا شدنی"
+
+#~ msgid "Uploading '%s'"
+#~ msgstr "درحال بارگذاری «%s»"
+
+#~ msgid "Preparing upload"
+#~ msgstr "درحال آماده‌سازی بارگذاری"
+
+#~ msgid "Service '%s' is not configured."
+#~ msgstr "سرویس «%s» پیکربندی نشده است."
+
+#~ msgid "_Configure"
+#~ msgstr "_پیکربندی"
+
+#~ msgid "Logged in to service '%s'."
+#~ msgstr "وارد سرویس «%s» شد."
+
+#~ msgid "Could not log in to service '%s'."
+#~ msgstr "نمی‌توان وارد سرویس «%s» شد."
+
+#~ msgid "UPnP Media Server"
+#~ msgstr "کارگزار رسانه‌ای UPnP"
+
+#~ msgid "Send To..."
+#~ msgstr "ارسال به..."
+
+#~ msgid "Send file by mail, instant message..."
+#~ msgstr "ارسال پرونده به با پست‌الکترونیکی، پیام فوری..."
+
+#~ msgid "Send files by mail, instant message..."
+#~ msgstr "ارسال پرونده به با پست‌الکترونیکی، پیام فوری..."
+
+#~ msgid "Could not load any plugins."
+#~ msgstr "امکان بارگیری هیچ‌نوع افزونه‌ای نیست."
+
+#~ msgid "Please verify your installation"
+#~ msgstr "لطفا نحوه نصب خود را بررسی کنید"
+
+#~ msgid "<b>Compression</b>"
+#~ msgstr "<b>فشرده‌سازی</b>"
+
+#~ msgid "<b>Destination</b>"
+#~ msgstr "<b>مقصد</b>"
+
+#~ msgid "Send _as:"
+#~ msgstr "ارسال به _عنوان:"
+
+#~ msgid "Send t_o:"
+#~ msgstr "ارسال _به:"
+
+#~ msgid "Email"
+#~ msgstr "پست الکترونیکی"

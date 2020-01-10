@@ -1,0 +1,231 @@
+# French translation of nautilus-sendto
+# Copyright (C) 2004-2012 Free Software Foundation, Inc.
+# This file is distributed under the GNU General Public License Version 2.
+#
+# Jean-Michel Ardantz <jmardantz@ifrance.com>, 2004.
+# Christophe Bliard <christophe.bliard@trux.info>, 2006.
+# Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+# Claude Paroz <claude@2xlibre.net>, 2007-2011.
+# Cédric Felizard <cedric@felizard.fr>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-sendto HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-03-20 14:12+0000\n"
+"PO-Revision-Date: 2013-03-24 19:26+0100\n"
+"Last-Translator: Alexandre Franke <alexandre.franke@gmail.com>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+
+#: ../src/nautilus-sendto.c:53
+msgid "Run from build directory (ignored)"
+msgstr "Exécuter à partir du répertoire de construction (ignoré)"
+
+#: ../src/nautilus-sendto.c:54
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr "Utiliser le XID comme parent pour la fenêtre d'envoi (ignoré)"
+
+#: ../src/nautilus-sendto.c:55
+msgid "Files to send"
+msgstr "Fichiers à envoyer"
+
+#: ../src/nautilus-sendto.c:56
+msgid "Output version information and exit"
+msgstr "Retourne les informations de version et quitte"
+
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:253
+msgid "Archive"
+msgstr "Archive"
+
+#: ../src/nautilus-sendto.c:520
+#, c-format
+msgid "Could not parse command-line options: %s\n"
+msgstr "Impossible d'analyser les options de la ligne de commande : %s\n"
+
+#: ../src/nautilus-sendto.c:535
+#, c-format
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "Les options attendues sont des URI ou des noms de fichiers\n"
+
+#~ msgid "Sharing %d folder"
+#~ msgid_plural "Sharing %d folders"
+#~ msgstr[0] "Partage de %d dossier"
+#~ msgstr[1] "Partage de %d dossiers"
+
+#~ msgid "Sharing %d folders and files"
+#~ msgstr "Partage de %d dossiers et fichiers"
+
+#~ msgid "Sharing %d video"
+#~ msgid_plural "Sharing %d videos"
+#~ msgstr[0] "Partage de %d vidéo"
+#~ msgstr[1] "Partage de %d vidéos"
+
+#~ msgid "Sharing %d photo"
+#~ msgid_plural "Sharing %d photos"
+#~ msgstr[0] "Partage de %d photo"
+#~ msgstr[1] "Partage de %d photos"
+
+#~ msgid "Sharing %d image"
+#~ msgid_plural "Sharing %d images"
+#~ msgstr[0] "Partage de %d image"
+#~ msgstr[1] "Partage de %d images"
+
+#~ msgid "Sharing %d text file"
+#~ msgid_plural "Sharing %d text files"
+#~ msgstr[0] "Partage de %d fichier texte"
+#~ msgstr[1] "Partage de %d fichiers texte"
+
+#~ msgid "Sharing %d file"
+#~ msgid_plural "Sharing %d files"
+#~ msgstr[0] "Partage de %d fichier"
+#~ msgstr[1] "Partage de %d fichiers"
+
+#~ msgid "_Send"
+#~ msgstr "_Envoyer"
+
+#~ msgid "Files"
+#~ msgstr "Fichiers"
+
+#~ msgid "_Cancel"
+#~ msgstr "_Annuler"
+
+#~ msgid "Send _packed in:"
+#~ msgstr "Envoyer une copie com_pressée dans :"
+
+#~ msgid "Mail"
+#~ msgstr "Courrier électronique"
+
+#~ msgid "Cannot get contact: %s"
+#~ msgstr "Impossible d'obtenir le contact : %s"
+
+#~ msgid "Could not find contact: %s"
+#~ msgstr "Impossible de trouver le contact : %s"
+
+#~ msgid "Cannot create searchable view."
+#~ msgstr "Impossible de créer une vue de recherche."
+
+#~ msgid "Success"
+#~ msgstr "Réussi"
+
+#~ msgid "An argument was invalid."
+#~ msgstr "Un paramètre n'était pas valide."
+
+#~ msgid "The address book is busy."
+#~ msgstr "Le carnet d'adresses est occupé."
+
+#~ msgid "The address book is offline."
+#~ msgstr "Le carnet d'adresses est déconnecté."
+
+#~ msgid "The address book does not exist."
+#~ msgstr "Le carnet d'adresses n'existe pas."
+
+#~ msgid "The \"Me\" contact does not exist."
+#~ msgstr "Le contact « Moi » n'existe pas."
+
+#~ msgid "The address book is not loaded."
+#~ msgstr "Le carnet d'adresses n'est pas chargé."
+
+#~ msgid "The address book is already loaded."
+#~ msgstr "Le carnet d'adresses est déjà chargé."
+
+#~ msgid "Permission was denied when accessing the address book."
+#~ msgstr "L'accès au carnet d'adresses a été refusé."
+
+#~ msgid "The contact was not found."
+#~ msgstr "Le contact n'a pas été trouvé."
+
+#~ msgid "This contact ID already exists."
+#~ msgstr "Cet identifiant de contact existe déjà."
+
+#~ msgid "The protocol is not supported."
+#~ msgstr "Le protocole n'est pas pris en charge."
+
+#~ msgid "The operation was cancelled."
+#~ msgstr "L'opération a été annulée."
+
+#~ msgid "The operation could not be cancelled."
+#~ msgstr "L'opération n'a pas pu être annulée."
+
+#~ msgid "The address book authentication failed."
+#~ msgstr "L'authentification au carnet d'adresses a échoué."
+
+#~ msgid ""
+#~ "Authentication is required to access the address book and was not given."
+#~ msgstr ""
+#~ "Ce carnet d'adresses exige une authentification et vous ne l'avez pas "
+#~ "fournie."
+
+#~ msgid "A secure connection is not available."
+#~ msgstr "Aucune connexion sécurisée n'est disponible."
+
+#~ msgid "A CORBA error occurred whilst accessing the address book."
+#~ msgstr ""
+#~ "Une erreur CORBA s'est produite lors de l'accès au carnet d'adresses."
+
+#~ msgid "The address book source does not exist."
+#~ msgstr "La source du carnet d'adresses n'existe pas."
+
+#~ msgid "An unknown error occurred."
+#~ msgstr "Une erreur inconnue s'est produite."
+
+#~ msgid "Unable to send file"
+#~ msgstr "Impossible d'envoyer le fichier"
+
+#~ msgid "There is no connection to gajim remote service."
+#~ msgstr "Il n'y a pas de connexion au service à distance de Gajim."
+
+#~ msgid "Sending file failed"
+#~ msgstr "L'envoi du fichier a échoué"
+
+#~ msgid "Recipient is missing."
+#~ msgstr "Le destinataire est manquant."
+
+#~ msgid "Unknown recipient."
+#~ msgstr "Destinataire inconnu."
+
+#~ msgid "Instant Message (Gajim)"
+#~ msgstr "Messagerie instantanée (Gajim)"
+
+#~ msgid "New CD/DVD"
+#~ msgstr "Nouveau CD/DVD"
+
+#~ msgid "Existing CD/DVD"
+#~ msgstr "CD/DVD existant"
+
+#~ msgid "CD/DVD Creator"
+#~ msgstr "Créateur de CD/DVD"
+
+#~ msgid "Instant Message (Pidgin)"
+#~ msgstr "Messagerie instantanée (Pidgin)"
+
+#~ msgid "Removable disks and shares"
+#~ msgstr "Partages et disques amovibles"
+
+#~ msgid "Uploading '%s'"
+#~ msgstr "Envoi de « %s »"
+
+#~ msgid "Preparing upload"
+#~ msgstr "Préparation de l'envoi"
+
+#~ msgid "Service '%s' is not configured."
+#~ msgstr "Le service « %s » n'est pas configuré."
+
+#~ msgid "_Configure"
+#~ msgstr "_Configurer"
+
+#~ msgid "Logged in to service '%s'."
+#~ msgstr "Connecté au service « %s »."
+
+#~ msgid "Could not log in to service '%s'."
+#~ msgstr "Impossible de se connecter au service « %s »."
+
+#~ msgid "UPnP Media Server"
+#~ msgstr "Serveur média UPnP"

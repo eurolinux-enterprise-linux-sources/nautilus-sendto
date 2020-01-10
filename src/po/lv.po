@@ -1,0 +1,315 @@
+# Latvian translation for nautilus-sendto.
+# Copyright (C) 2009 nautilus-sendto's COPYRIGHT HOLDER
+# This file is distributed under the same license as the nautilus-sendto package.
+#
+# Peteris Krisjanis <pecisk@gmail.com>, 2009.
+# Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-sendto master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-21 09:44+0200\n"
+"PO-Revision-Date: 2013-03-21 09:44+0200\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latviešu <lata-l10n@googlegroups.com>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Gtranslator 2.91.5\n"
+
+#: ../src/nautilus-sendto.c:53
+msgid "Run from build directory (ignored)"
+msgstr "Palaist no būvējuma mapes (ignorēts)"
+
+#: ../src/nautilus-sendto.c:54
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr "Lietojiet XID kā vecāku, lai aizsūtītu dialoglodziņu (ignorēts)"
+
+#: ../src/nautilus-sendto.c:55
+msgid "Files to send"
+msgstr "Sūtāmās datnes"
+
+#: ../src/nautilus-sendto.c:56
+msgid "Output version information and exit"
+msgstr "Izdrukāt versijas informāciju un iziet"
+
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:253
+msgid "Archive"
+msgstr "Arhīvs"
+
+#: ../src/nautilus-sendto.c:520
+#, c-format
+msgid "Could not parse command-line options: %s\n"
+msgstr "Neizdevās parsēt komandrindas opcijas — %s\n"
+
+#: ../src/nautilus-sendto.c:535
+#, c-format
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "Sagaida URI vai datnes nosaukumus kā opcijas\n"
+
+#~ msgid "Sharing %d folder"
+#~ msgid_plural "Sharing %d folders"
+#~ msgstr[0] "Koplieto %d mapi"
+#~ msgstr[1] "Koplieto %d mapes"
+#~ msgstr[2] "Koplieto %d mapju"
+
+#~ msgid "Sharing %d folders and files"
+#~ msgstr "Koplieto %d mapes un datnes"
+
+#~ msgid "Sharing %d video"
+#~ msgid_plural "Sharing %d videos"
+#~ msgstr[0] "Koplieto %d video"
+#~ msgstr[1] "Koplieto %d video"
+#~ msgstr[2] "Koplieto %d video"
+
+#~ msgid "Sharing %d photo"
+#~ msgid_plural "Sharing %d photos"
+#~ msgstr[0] "Koplieto %d fotogrāfiju"
+#~ msgstr[1] "Koplieto %d fotogrāfijas"
+#~ msgstr[2] "Koplieto %d fotogrāfiju"
+
+#~ msgid "Sharing %d image"
+#~ msgid_plural "Sharing %d images"
+#~ msgstr[0] "Koplieto %d attēlu"
+#~ msgstr[1] "Koplieto %d attēlus"
+#~ msgstr[2] "Koplieto %d attēlu"
+
+#~ msgid "Sharing %d text file"
+#~ msgid_plural "Sharing %d text files"
+#~ msgstr[0] "Koplieto %d teksta datni"
+#~ msgstr[1] "Koplieto %d teksta datnes"
+#~ msgstr[2] "Koplieto %d teksta datņu"
+
+#~ msgid "Sharing %d file"
+#~ msgid_plural "Sharing %d files"
+#~ msgstr[0] "Koplieto %d datni"
+#~ msgstr[1] "Koplieto %d datnes"
+#~ msgstr[2] "Koplieto %d datņu"
+
+#~ msgid "_Send"
+#~ msgstr "_Sūtīt"
+
+#~ msgid "Files"
+#~ msgstr "Datnes"
+
+#~ msgid "_Cancel"
+#~ msgstr "At_celt"
+
+#~ msgid "Send _packed in:"
+#~ msgstr "Sūtīt sa_pakotu kā:"
+
+#~ msgid "Mail"
+#~ msgstr "Pasts"
+
+#~ msgid "Cannot get contact: %s"
+#~ msgstr "Nevar iegūt kontaktu — %s"
+
+#~ msgid "Could not find contact: %s"
+#~ msgstr "Neizdevās atrast kontaktu — %s"
+
+#~ msgid "Cannot create searchable view."
+#~ msgstr "Nevar izveidot meklējamo skatu."
+
+#~ msgid "Success"
+#~ msgstr "Veiksmīgi"
+
+#~ msgid "An argument was invalid."
+#~ msgstr "Parametrs bija nederīgs."
+
+#~ msgid "The address book is busy."
+#~ msgstr "Adrešu grāmata ir aizņemta."
+
+#~ msgid "The address book is offline."
+#~ msgstr "Adrešu grāmata ir nesaistē."
+
+#~ msgid "The address book does not exist."
+#~ msgstr "Adrešu grāmata neeksistē."
+
+#~ msgid "The \"Me\" contact does not exist."
+#~ msgstr "“Es” kontakts neeksistē."
+
+#~ msgid "The address book is not loaded."
+#~ msgstr "Adrešu grāmata nav ielādēta."
+
+#~ msgid "The address book is already loaded."
+#~ msgstr "Adrešu grāmata jau ir ielādēta."
+
+#~ msgid "Permission was denied when accessing the address book."
+#~ msgstr "Pieeja adrešu grāmatai liegta."
+
+#~ msgid "The contact was not found."
+#~ msgstr "Kontakts netika atrasts."
+
+#~ msgid "This contact ID already exists."
+#~ msgstr "Šis kontakta ID jau eksistē."
+
+#~ msgid "The protocol is not supported."
+#~ msgstr "Protokols nav atbalstīts."
+
+#~ msgid "The operation was cancelled."
+#~ msgstr "Darbība tika atcelta."
+
+#~ msgid "The operation could not be cancelled."
+#~ msgstr "Darbību nevarēja atcelt."
+
+#~ msgid "The address book authentication failed."
+#~ msgstr "Adrešu grāmatas autentifikācija neizdevās."
+
+#~ msgid ""
+#~ "Authentication is required to access the address book and was not given."
+#~ msgstr ""
+#~ "Lai piekļūtu adrešu grāmatai, ir nepieciešama autorizācija, kas netika "
+#~ "dota."
+
+#~ msgid "A secure connection is not available."
+#~ msgstr "Drošs savienojums nav pieejams."
+
+#~ msgid "A CORBA error occurred whilst accessing the address book."
+#~ msgstr "CORBA kļūda, piekļūstot adrešu grāmatai."
+
+#~ msgid "The address book source does not exist."
+#~ msgstr "Adrešu grāmatas avots neeksistē."
+
+#~ msgid "An unknown error occurred."
+#~ msgstr "Gadījās nezināma kļūda."
+
+#~ msgid "Unable to send file"
+#~ msgstr "Nevar nosūtīt datni"
+
+#~ msgid "There is no connection to gajim remote service."
+#~ msgstr "Nav savienojuma ar gajim attālināto servisu."
+
+#~ msgid "Sending file failed"
+#~ msgstr "Neizdevās nosūtīt datni"
+
+#~ msgid "Recipient is missing."
+#~ msgstr "Nav norādīts adresāts."
+
+#~ msgid "Unknown recipient."
+#~ msgstr "Nezināms adresāts."
+
+#~ msgid "Instant Message (Gajim)"
+#~ msgstr "Tūlītējs ziņojums (Gajim)"
+
+#~ msgid "New CD/DVD"
+#~ msgstr "Jauns CD/DVD"
+
+#~ msgid "Existing CD/DVD"
+#~ msgstr "Esošs CD/DVD"
+
+#~ msgid "CD/DVD Creator"
+#~ msgstr "CD/DVD veidotājs"
+
+#~ msgid "Instant Message (Pidgin)"
+#~ msgstr "Tūlītējs ziņojums (Pidgin)"
+
+#~ msgid "Removable disks and shares"
+#~ msgstr "Izņemamie diski un koplietojumi"
+
+#~ msgid "Uploading '%s'"
+#~ msgstr "Augšupielādē “%s”"
+
+#~ msgid "Preparing upload"
+#~ msgstr "Gatavo augšupielādēšanai"
+
+#~ msgid "Service '%s' is not configured."
+#~ msgstr "Serviss “%s” nav nokonfigurēts."
+
+#~ msgid "_Configure"
+#~ msgstr "_Konfigurēt"
+
+#~ msgid "Logged in to service '%s'."
+#~ msgstr "Pieteicies servisā “%s”."
+
+#~ msgid "Could not log in to service '%s'."
+#~ msgstr "Neizdevās pieteikties servisam “%s”."
+
+#~ msgid "UPnP Media Server"
+#~ msgstr "UPnP mediju serveris"
+
+#~ msgid "Last plugin used to send"
+#~ msgstr "Pēdējais spraudnis, kas izmantots sūtīšanai"
+
+#~ msgid "Last type of archive used"
+#~ msgstr "Pēdējais izmantotais arhīva tips"
+
+#~ msgid ""
+#~ "Used to store which plugin was used the last time files were sent using "
+#~ "nautilus-sendto."
+#~ msgstr ""
+#~ "Tiek izmantots, lai saglabātu kurš spraudnis tika pēdējais izmantots "
+#~ "nautilus-sendto."
+
+#~ msgid ""
+#~ "Used to store which type of archive was used the last time (0: zip, 1: "
+#~ "tar.gz, 2: tar.bz2)."
+#~ msgstr ""
+#~ "Tiek izmantots, lai saglabātu arhīva tipu, kas tika izmantots pēdējo "
+#~ "reizi (0: zip, 1: tar.gz, 2: tar.bz2)."
+
+#~ msgid "_Send to..."
+#~ msgstr "_Sūtīt uz..."
+
+#~ msgid "Send files to remote devices, or people"
+#~ msgstr "Sūtīt failus uz attālinātām iekārtām, vai cilvēkiem"
+
+#~ msgid "Send to..."
+#~ msgstr "Sūtīt uz..."
+
+#~ msgid "Send To..."
+#~ msgstr "Sūtīt _uz..."
+
+#~ msgid "Send file by mail, instant message..."
+#~ msgstr "Sūtīt failu izmantojot e-pastu, tūlītējo paziņojumu..."
+
+#~ msgid "Send files by mail, instant message..."
+#~ msgstr "Sūtīt failus izmantojot e-pastu, tūlītējo paziņojumu..."
+
+#~ msgid "Nautilus Sendto"
+#~ msgstr "Nautilus Sendto"
+
+#~ msgid "Could not load any plugins."
+#~ msgstr "Neizdevās ielādēt nevienu spraudni."
+
+#~ msgid "Please verify your installation"
+#~ msgstr "Lūdzu, pārbaudiet savu instalāciju"
+
+#~ msgid "<b>Compression</b>"
+#~ msgstr "<b>Saspiešana</b>"
+
+#~ msgid "<b>Destination</b>"
+#~ msgstr "<b>Mērķis</b>"
+
+#~ msgid "Send _as:"
+#~ msgstr "Sūtīt _kā:"
+
+#~ msgid "Send t_o:"
+#~ msgstr "Sūtīt _uz:"
+
+#~ msgid "Programming error, could not find the device in the list"
+#~ msgstr "Programmēšanas kļūda, neizdevās atrast iekārtu sarakstā"
+
+#~ msgid "Obex Push file transfer unsupported"
+#~ msgstr "Obex Push failu pārraide neatbalstīta"
+
+#~ msgid "Bluetooth (OBEX Push)"
+#~ msgstr "Bluetooth (OBEX Push)"
+
+#~ msgid "The contact selected cannot receive files."
+#~ msgstr "Izvēlētais kontakts nevar saņemt failus."
+
+#~ msgid "The contact selected is offline."
+#~ msgstr "Izvēlētais kontakts ir nesaistē."
+
+#~ msgid "No error message"
+#~ msgstr "Nav kļūdas paziņojuma"
+
+#~ msgid "Instant Message (Empathy)"
+#~ msgstr "Tūlītējs ziņojums (Empathy)"

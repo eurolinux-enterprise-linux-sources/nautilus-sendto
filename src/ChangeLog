@@ -1,0 +1,4462 @@
+commit 7c4c519a93dfcdc95a515710f2ab03d6c6e7f0b0
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Mar 20 15:10:42 2013 +0100
+
+    build: Update DOAP and man page for changes
+
+ nautilus-sendto.1    | 10 +++++-----
+ nautilus-sendto.doap |  2 +-
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+commit 565b9f654e45f0297a846fc60623869d070a4fe7
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Mar 20 15:10:19 2013 +0100
+
+    build: Remove obsolete file
+    
+    We don't have a ChangeLog anymore, so no need to mention it.
+
+ ChangeLog.README | 16 ----------------
+ 1 file changed, 16 deletions(-)
+
+commit 6cd1c77b582bc3eee23e4f3aced185986e263e7e
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Sat Jan 26 17:42:51 2013 +0100
+
+    main: Strip down nautilus-sendto to only send e-mails
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=680983
+
+ Makefile.am                                        |   4 +-
+ NEWS                                               |   9 +
+ configure.in                                       | 191 +----
+ data/Makefile.am                                   |  15 -
+ data/nautilus-sendto-convert                       |   3 -
+ data/nautilus-sendto.pc.in                         |  10 -
+ data/nautilus-sendto.ui                            | 187 -----
+ data/org.gnome.Nautilus.Sendto.gschema.xml.in      |  20 -
+ data/pack-entry.ui                                 | 107 ---
+ docs/Makefile.am                                   |   1 -
+ docs/nautilus-sendto/Makefile.am                   | 106 ---
+ docs/nautilus-sendto/nautilus-sendto-docs.sgml     |  34 -
+ docs/nautilus-sendto/version.xml.in                |   1 -
+ po/POTFILES.in                                     |  17 +-
+ src/Makefile.am                                    |  31 +-
+ src/nautilus-sendto-command.c                      | 725 ----------------
+ src/nautilus-sendto-mimetype.c                     |  90 --
+ src/nautilus-sendto-mimetype.h                     |  28 -
+ src/nautilus-sendto.c                              | 546 ++++++++++++
+ src/plugins/.cvsignore                             |   2 -
+ src/plugins/Makefile.am                            |  82 --
+ src/plugins/evolution/Makefile.am                  |  37 -
+ src/plugins/evolution/e-contact-entry.c            | 934 ---------------------
+ src/plugins/evolution/e-contact-entry.h            |  86 --
+ src/plugins/evolution/econtactentry-marshal.list   |   1 -
+ src/plugins/evolution/evolution.c                  | 504 -----------
+ src/plugins/evolution/evolution.plugin             |   6 -
+ src/plugins/evolution/update-from-egg.sh           |  25 -
+ src/plugins/gajim/Makefile.am                      |  19 -
+ src/plugins/gajim/gajim.c                          | 517 ------------
+ src/plugins/nautilus-burn/Makefile.am              |  20 -
+ src/plugins/nautilus-burn/nautilus-burn.c          | 187 -----
+ src/plugins/nautilus-sendto-filelist.c             | 210 -----
+ src/plugins/nautilus-sendto-filelist.h             |  54 --
+ src/plugins/nautilus-sendto-packer.c               | 439 ----------
+ src/plugins/nautilus-sendto-packer.h               |  54 --
+ src/plugins/nautilus-sendto-plugin.c               | 154 ----
+ src/plugins/nautilus-sendto-plugin.h               | 136 ---
+ src/plugins/nautilus-sendto-progress.c             | 197 -----
+ src/plugins/nautilus-sendto-progress.h             |  48 --
+ src/plugins/nst-common.c                           | 103 ---
+ src/plugins/nst-common.h                           |  24 -
+ src/plugins/nst-plugin-marshal.list                |   3 -
+ src/plugins/pidgin/Makefile.am                     |  20 -
+ src/plugins/pidgin/pidgin.c                        | 475 -----------
+ src/plugins/removable-devices/Makefile.am          |  21 -
+ src/plugins/removable-devices/removable-devices.c  | 306 -------
+ .../removable-devices/removable-devices.plugin     |   6 -
+ src/plugins/socialweb/Makefile.am                  |  22 -
+ src/plugins/socialweb/socialweb.c                  | 536 ------------
+ src/plugins/socialweb/socialweb.plugin             |   6 -
+ src/plugins/test-progress.c                        |  19 -
+ src/plugins/upnp/Makefile.am                       |  19 -
+ src/plugins/upnp/upnp.c                            | 320 -------
+ src/test-mimetype-data                             |  57 --
+ src/test-mimetype.c                                |  90 --
+ src/totem-mime-types.h                             |  58 --
+ 57 files changed, 560 insertions(+), 7362 deletions(-)
+
+commit 3253fe55bc050873498dd986d8bd2dcd1df5b22a
+Author: Victor Ibragimov <victor.ibragimov@gmail.com>
+Date:   Tue Mar 19 21:52:55 2013 +0100
+
+    [l10n] Added Tadjik translation
+
+ po/LINGUAS |   1 +
+ po/tg.po   | 287 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 288 insertions(+)
+
+commit cef2dc9f213004fca56c8c1bff0aec52966cf4f9
+Author: Changwoo Ryu <cwryu@debian.org>
+Date:   Mon Mar 18 02:06:54 2013 +0900
+
+    Updated Korean translation
+
+ po/ko.po | 127 ++++++++++++++++++++++++---------------------------------------
+ 1 file changed, 48 insertions(+), 79 deletions(-)
+
+commit 2137d311a7b82001c8ffa00d35103176b9e9216b
+Author: Duarte Loreto <happyguy_pt@hotmail.com>
+Date:   Sun Mar 17 00:00:22 2013 +0000
+
+    Converted Portuguese translation to New Spelling (Novo AO)
+
+ po/pt.po | 815 +++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 407 insertions(+), 408 deletions(-)
+
+commit 453f2ccaf0c9569744d8889a786c8a9662ce5354
+Author: Sweta Kothari <swkothar@redhat.com>
+Date:   Fri Mar 15 12:28:42 2013 +0530
+
+    Updated gujarati file
+
+ po/gu.po | 397 ++++++++++++++++++++++++++++++++++++---------------------------
+ 1 file changed, 229 insertions(+), 168 deletions(-)
+
+commit 286bdc8c1b523267c460c5e084bdb07f0546a5e3
+Author: Aurimas Černius <aurisc4@gmail.com>
+Date:   Sat Mar 2 17:59:29 2013 +0200
+
+    Updated Lithuanian translation
+
+ po/lt.po | 187 ++++++++++++++++++---------------------------------------------
+ 1 file changed, 54 insertions(+), 133 deletions(-)
+
+commit 3af8d6eadc2e89ccbcd02c1013089c3b5fe5787d
+Author: Daniel Martinez <dmartinez@src.gnome.org>
+Date:   Tue Feb 19 23:06:59 2013 +0100
+
+    Added Aragonese translation
+
+ po/LINGUAS |   1 +
+ po/an.po   | 287 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 288 insertions(+)
+
+commit e1afad3ce033db687a6a59c060dd8bfa6bfe1389
+Author: Wouter Bolsterlee <uws@xs4all.nl>
+Date:   Fri Feb 15 20:59:02 2013 +0100
+
+    Updated Dutch translation
+
+ po/nl.po | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e3566ddd11c6c1b3291f6efa2c5abee7da7258dd
+Author: Anish A <aneesh.nl@gmail.com>
+Date:   Mon Feb 11 10:30:53 2013 +0400
+
+    Updated Malayalam Localization
+
+ po/ml.po | 78 +++++++++++++++++++++++++++++++++-------------------------------
+ 1 file changed, 40 insertions(+), 38 deletions(-)
+
+commit 673ce86c97ce8305a5d2e97c6077ff43d8bcc5a6
+Author: Gheyret Kenji <gheyret@gmail.com>
+Date:   Sun Jan 13 19:45:26 2013 +0900
+
+    Updated Uyghur translation
+    
+    Signed-off-by: Gheyret Kenji <gheyret@gmail.com>
+
+ po/ug.po | 34 ++++++++++++++++++----------------
+ 1 file changed, 18 insertions(+), 16 deletions(-)
+
+commit a916e3b54ea714b76c817e86ac34f87bc82e2ae6
+Author: TmTFx <f.t.public@gmail.com>
+Date:   Sat Dec 29 00:05:44 2012 -0200
+
+    Updated Friulian translation
+
+ po/LINGUAS |   1 +
+ po/fur.po  | 226 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 227 insertions(+)
+
+commit 5d5c676625536894fbf3a3ead142f6a20ed02a32
+Author: Pavol Klačanský <pavol@klacansky.com>
+Date:   Wed Oct 10 12:56:41 2012 +0100
+
+    Updated Slovak translation
+
+ po/sk.po | 32 ++++++++++++++++----------------
+ 1 file changed, 16 insertions(+), 16 deletions(-)
+
+commit c001500a185fc0e7082d2495b83456b5cc298abd
+Author: Andreas Henriksson <andreas@fatal.se>
+Date:   Wed Oct 10 13:29:32 2012 +0200
+
+    Fix building with new gupnp stack
+    
+    Since gupnp 0.19.0, internal linker flags are no longer leaked
+    to users of this library.
+    This means applications need to link to all libraries
+    that it uses directly, and nautilus-sendto uses symbols
+    from gssdp so should link to it.
+
+ configure.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e9fdd145b39ed98c242409208bc915f5bcbd1c55
+Author: Khoem Sokhem <khoemsokhem@khmeros.info>
+Date:   Wed Oct 3 17:24:53 2012 +0200
+
+    [l10n] Added Khmer translation
+
+ po/LINGUAS |   1 +
+ po/km.po   | 315 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 316 insertions(+)
+
+commit 29d247c7a73d046bb1299536529abcd9e9b5e20f
+Author: Rūdolfs Mazurs <rudolfsm@src.gnome.org>
+Date:   Mon Sep 24 16:41:27 2012 +0300
+
+    Updated Latvian translation
+
+ po/lv.po | 73 ++++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 37 insertions(+), 36 deletions(-)
+
+commit 0606e16fd0e8500edcab5a59176292e12fd89a8d
+Author: Nilamdyuti Goswami <nilamdyuti@gmail.com>
+Date:   Wed Sep 12 15:05:07 2012 +0530
+
+    Assamese translation updated
+
+ po/as.po | 265 ++++++++++++++++++++++++++++++++++++++++++---------------------
+ 1 file changed, 176 insertions(+), 89 deletions(-)
+
+commit 849cab95903ae3dd089239a0af0c0bc048f58c69
+Author: Colin Walters <walters@verbum.org>
+Date:   Tue Sep 4 19:20:02 2012 -0400
+
+    Only use C90 declarations
+    
+    Fixes the build with newer gnome-common.
+
+ src/plugins/gajim/gajim.c   | 3 ++-
+ src/plugins/pidgin/pidgin.c | 4 ++--
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+
+commit 6f5f0e855e170ac95016ce9f72498da40a81aed4
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   Tue Sep 4 19:48:41 2012 +0200
+
+    Updated Polish translation
+
+ po/pl.po | 63 ++++++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 34 insertions(+), 29 deletions(-)
+
+commit cb3e80398df57c5ac737189513d3d5610554ff13
+Author: Sandeep Sheshrao Shedmake <sshedmak@redhat.com>
+Date:   Fri Aug 17 11:12:55 2012 +0530
+
+    Updated Marathi Translations
+
+ po/mr.po | 418 ++++++++++++++++++++++++++++++++++++---------------------------
+ 1 file changed, 239 insertions(+), 179 deletions(-)
+
+commit f01ea855d60e073e7e868e522e3b9c23825f1740
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:   Thu Aug 16 23:59:29 2012 +0200
+
+    Updated Galician translations
+
+ po/gl.po | 93 +++++++++++++++++++++++++++++++++-------------------------------
+ 1 file changed, 48 insertions(+), 45 deletions(-)
+
+commit 45a88c1ac003e9fb5e5cb3801590e655ffad0281
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Jul 19 16:36:08 2012 +0100
+
+    build: Bump version number to 3.7.0, it's the future
+
+ configure.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 65d7c244f4ac2ad8d07de77b1c3822336d0e70ba
+Author: Nilamdyuti Goswami <nilamdyuti@gmail.com>
+Date:   Fri Jul 13 17:29:26 2012 +0530
+
+    Assamese translation reviewed
+
+ po/as.po | 309 +++++++++++++++++++++++----------------------------------------
+ 1 file changed, 110 insertions(+), 199 deletions(-)
+
+commit 8898c6259b6cdb2c122b9d773868f323800faeea
+Author: Daniel Mustieles <daniel.mustieles@gmail.com>
+Date:   Thu May 31 14:16:21 2012 +0200
+
+    Updated Spanish translation
+
+ po/es.po | 54 +++++++++++++++++++++++++++---------------------------
+ 1 file changed, 27 insertions(+), 27 deletions(-)
+
+commit d64f6aa64df20b778b86d9f91a17bf833ef82789
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri May 11 18:42:07 2012 +0100
+
+    evolution: Work-around possible e-d-s bug
+    
+    If somebody knows why that's broken, send in a postcard.
+
+ src/plugins/evolution/e-contact-entry.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit cbeeaf83c0be220caebb4ec9b3c7593dd6735c74
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri May 11 18:41:16 2012 +0100
+
+    evolution: Don't use random number of expected results
+    
+    11? Why 11? We expect a maximum of 15 items in the completion popup,
+    so use 15 there too.
+
+ src/plugins/evolution/e-contact-entry.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b08c6b7d672a1630db11aebb355c570e1ad81694
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri May 11 18:41:06 2012 +0100
+
+    evolution: Fix usage of underscore in signal name
+
+ src/plugins/evolution/e-contact-entry.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 4e94af346839f09fb1e3c17d6743d0d75ec27596
+Author: Tom Tryfonidis <tomtryf@gmail.com>
+Date:   Thu May 3 11:10:28 2012 +0300
+
+    Updated Greek translation
+
+ po/el.po | 77 ++++++++++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 43 insertions(+), 34 deletions(-)
+
+commit 02ef982e299ce1204406634537a730d156383de5
+Author: Andrej Žnidaršič <andrej.znidarsic@gmail.com>
+Date:   Mon Apr 16 22:25:01 2012 +0200
+
+    Updated Slovenian translation
+
+ po/sl.po | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 5e4f413c11832813442b9ff4d0df49c0c4cb538c
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Apr 11 15:20:07 2012 +0100
+
+    evolution: Also handle "%u" parameters
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=673465#c7
+
+ src/plugins/evolution/evolution.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 67219a8c02604804871ab0c687c14e7030c2727c
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Apr 11 11:59:14 2012 +0100
+
+    plugins: Fix compilation warning
+
+ src/plugins/nautilus-sendto-packer.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 7f600b8c8fa623633e8af8cf99d6a32ee3916e11
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Apr 11 11:58:27 2012 +0100
+
+    evolution: Fix compilation
+
+ src/plugins/evolution/evolution.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 119d3ed1850f61f15e2a64aed468041fe747861a
+Author: Milan Crha <mcrha@redhat.com>
+Date:   Wed Apr 11 11:54:42 2012 +0100
+
+    evolution: Fix possible double-free crash
+    
+    Due to error handling.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=644531
+
+ src/plugins/evolution/e-contact-entry.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+commit d382093aac2abadc0bf08932a1cb9d80a2ff44f2
+Author: Milan Crha <mcrha@redhat.com>
+Date:   Wed Apr 11 11:54:24 2012 +0100
+
+    evolution: Fix addressbook source handling
+
+ src/plugins/evolution/e-contact-entry.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit e8bcc2882c34a585fc5be7e4cbb761c2b1d5998d
+Author: Milan Crha <mcrha@redhat.com>
+Date:   Wed Apr 11 11:53:28 2012 +0100
+
+    evolution: Fix view-completed signal handling
+
+ src/plugins/evolution/e-contact-entry.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+commit 3eb262a424e797730ec3393a9489e0e6eafcc8b5
+Author: Milan Crha <mcrha@redhat.com>
+Date:   Wed Apr 11 11:51:58 2012 +0100
+
+    evolution: Fix double assignment
+
+ src/plugins/evolution/e-contact-entry.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit bd639b53469da0252f2f44c7995d8f4ae503431b
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Apr 11 11:43:31 2012 +0100
+
+    evolution: Finish incomplete cherry-pick
+    
+    From 42ca3421e3f0daff4bceaa7ad9964c0828770df9
+    
+    We were missing the headers inclusion.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=673299
+
+ src/plugins/evolution/evolution.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 22cc340fed0dc033ec564995538abab12432c5ea
+Author: Laurent Bigonville <bigon@bigon.be>
+Date:   Wed Apr 4 17:16:39 2012 +0200
+
+    Treat icedove as thunderbird
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=673511
+
+ src/plugins/evolution/evolution.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 554bfe5a1f890a412a1198741d96493b74c9f56a
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Apr 11 11:13:52 2012 +0100
+
+    evolution: Fix command generation
+    
+    Since the GAppInfo move. %U needs to be transformed so it
+    can be "printed" properly.
+    
+    Conflicts:
+    
+    	src/plugins/evolution/evolution.c
+
+ src/plugins/evolution/evolution.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 4e76d81bde8a6b3eff2a74258c2cbd555fcf1eb3
+Author: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>
+Date:   Thu Mar 22 17:14:58 2012 +0900
+
+    [l10n] Update Japanese translation
+
+ po/ja.po | 70 ++++++++++++++++++++++++++++++++++------------------------------
+ 1 file changed, 37 insertions(+), 33 deletions(-)
+
+commit f8afc705d38db9c8cdb9b153054c0d77f93a7d28
+Author: Javier Jardón <jjardon@gnome.org>
+Date:   Wed Mar 21 16:51:53 2012 +0000
+
+    evolution: mail_cmd is now part of EvolutionPlugin struct
+    
+    This completes commit dc61f9a50d80b965650288260d01ca2385aa9e5b
+
+ src/plugins/evolution/evolution.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 6d5f173c53974c28eb64711c2e0c1523070b9f83
+Author: Javier Jardón <jjardon@gnome.org>
+Date:   Wed Mar 21 16:45:10 2012 +0000
+
+    configure: Put m4 files in m4 directory and temporal autoconf ones in build-aux
+
+ configure.in | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 92c8c456d1c71e03f6f5e858646d68cacdb628a8
+Author: Javier Jardón <jjardon@gnome.org>
+Date:   Wed Mar 21 16:41:49 2012 +0000
+
+    configure.in: Generate xz tarballs by default
+
+ configure.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2c8466e5413dbafe4cad8db83d62edb96a702816
+Author: Javier Jardón <jjardon@gnome.org>
+Date:   Wed Mar 21 16:41:12 2012 +0000
+
+    build: Do not use deprecated autoconf/libtool macros
+
+ Makefile.am  |  2 ++
+ configure.in | 13 ++++++++-----
+ 2 files changed, 10 insertions(+), 5 deletions(-)
+
+commit 3b61168d017a60c55fe0f28b76061aad5a784930
+Author: Javier Jardón <jjardon@gnome.org>
+Date:   Wed Mar 21 16:11:38 2012 +0000
+
+    configure.in: Update bug-report field in AC_INIT
+
+ configure.in | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+commit b8bd9335081f0c08a3bef17c9fc070f49708f534
+Author: Javier Jardón <jjardon@gnome.org>
+Date:   Wed Mar 21 16:08:46 2012 +0000
+
+    Documentation fixes
+    
+    Ignore nst-enum-types.h and add a deprecated section
+    so gtk-doc-check passes again
+
+ docs/nautilus-sendto/Makefile.am               | 8 +++++++-
+ docs/nautilus-sendto/nautilus-sendto-docs.sgml | 5 +++++
+ 2 files changed, 12 insertions(+), 1 deletion(-)
+
+commit 31c43e4a66c484c2a892c5f89bab03fa07e6f4b4
+Author: YunQiang Su <yqsu@src.gnome.org>
+Date:   Tue Mar 20 23:57:10 2012 +0800
+
+    update Simplified Chinese (zh_CN) translation
+
+ po/zh_CN.po | 72 +++++++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 39 insertions(+), 33 deletions(-)
+
+commit 2d771a5dc7c356825aaac8b58adcb8820676c2cf
+Author: Krishnababu Krothapalli <kkrothap@redhat.com>
+Date:   Tue Mar 20 21:25:57 2012 +0530
+
+    Translations Updated with FUEL
+
+ po/te.po | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+commit dbe1bbc3745746178e091112958c1fd0e1d09b0f
+Author: Daniel Korostil <ted.korostiled@gmail.com>
+Date:   Sun Mar 18 17:56:53 2012 +0200
+
+    Uploaded Ukranian
+
+ po/uk.po | 66 ++++++++++++++++++++++++++++++++++------------------------------
+ 1 file changed, 35 insertions(+), 31 deletions(-)
+
+commit fe2aa32932b1eb8820a9282477b1904ea526be02
+Author: Bruce Cowan <bruce@bcowan.me.uk>
+Date:   Fri Mar 16 14:13:12 2012 +0000
+
+    Updated British English translation
+
+ po/en_GB.po | 66 ++++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 35 insertions(+), 31 deletions(-)
+
+commit 3d059617ab7e9dd4cc5026a05c4f16fbf8e4f1d5
+Author: Rajesh Ranjan <rranjan@redhat.com>
+Date:   Fri Mar 16 13:37:49 2012 +0530
+
+    hindi translation
+
+ po/hi.po | 409 +++++++++++++++++++++++++++++++++++++--------------------------
+ 1 file changed, 238 insertions(+), 171 deletions(-)
+
+commit b267cde4172d5e7719ec6c2b4abfdae8db536745
+Author: A S Alam <aalam@users.sf.net>
+Date:   Thu Mar 15 20:05:44 2012 +0530
+
+    update Punjabi Translation
+
+ po/pa.po | 64 ++++++++++++++++++++++++++++++++++------------------------------
+ 1 file changed, 34 insertions(+), 30 deletions(-)
+
+commit 19751c0a2f95929af1365eeef0bb6e983106ad54
+Author: Krishnababu Krothapalli <kkrothap@redhat.com>
+Date:   Thu Mar 15 13:02:45 2012 +0530
+
+    Updated Telugu Translations
+
+ po/te.po | 25 +++++++++++++++----------
+ 1 file changed, 15 insertions(+), 10 deletions(-)
+
+commit 79b60b7b6d74321341b12fbda084824bbe999e84
+Author: Antonio Fernandes C. Neto <fernandesn@gnome.org>
+Date:   Wed Mar 14 17:35:39 2012 -0300
+
+    Updated Brazilian Portuguese translation
+
+ po/pt_BR.po | 70 ++++++++++++++++++++++++++++++-------------------------------
+ 1 file changed, 35 insertions(+), 35 deletions(-)
+
+commit f92f89dac6ebab4841b3adcd84830455c20ca1ac
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Mar 14 17:18:13 2012 +0100
+
+    evolution: Update for ancient API change
+    
+    Apparently e_book_async_get_book_view() has returned TRUE if
+    the callback was going to be called for ages. We didn't get told.
+
+ src/plugins/evolution/e-contact-entry.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit dc61f9a50d80b965650288260d01ca2385aa9e5b
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Mar 14 16:29:26 2012 +0100
+
+    evolution: Fix getting default mailer for GNOME 3.0
+    
+    Using the handler for x-scheme-handler/mailto rather than
+    reading obsolete info in GConf.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=667780
+
+ src/plugins/evolution/evolution.c | 14 ++++++++------
+ 1 file changed, 8 insertions(+), 6 deletions(-)
+
+commit 719abec871fbfe981064a0b1d3d772374d8bf2dd
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Mar 14 16:11:01 2012 +0100
+
+    evolution: Remove unused assignment
+
+ src/plugins/evolution/e-contact-entry.c | 2 --
+ 1 file changed, 2 deletions(-)
+
+commit 76ca02055a515f99c5acafebe3a090dd78984d53
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Mar 14 16:17:55 2012 +0100
+
+    evolution: Port to newest e-d-s using GSettings
+
+ configure.in                      |  2 +-
+ src/plugins/evolution/evolution.c | 37 +++++++------------------------------
+ 2 files changed, 8 insertions(+), 31 deletions(-)
+
+commit 6752e07c19b0c7184c4254a39824e29e316636b6
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Mar 14 15:19:08 2012 +0100
+
+    main: Update for deprecation
+
+ src/nautilus-sendto-command.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit af6583d13b8ba24308f96d73b079a47911431283
+Author: Anita Reitere <nitalynx@gmail.com>
+Date:   Tue Mar 13 23:53:48 2012 +0200
+
+    Updated Latvian translation.
+
+ po/lv.po | 33 +++++++++++++++++----------------
+ 1 file changed, 17 insertions(+), 16 deletions(-)
+
+commit 13eb8f5508f371185bf3880c544a494827902a97
+Author: Carles Ferrando <carles.ferrando@gmail.com>
+Date:   Mon Mar 12 00:09:17 2012 +0100
+
+    [l10n]Updated Catalan (Valencian) translation
+
+ po/ca@valencia.po | 200 +++++++++++++++++++++++++++++++++++++++---------------
+ 1 file changed, 146 insertions(+), 54 deletions(-)
+
+commit 0054033044e57c6300ebc1588719382f81f9953e
+Author: Gil Forcada <gforcada@gnome.org>
+Date:   Mon Mar 12 00:09:14 2012 +0100
+
+    [l10n] Updated Catalan translation
+
+ po/ca.po | 20 ++++++++++++--------
+ 1 file changed, 12 insertions(+), 8 deletions(-)
+
+commit 0cd3b5beac773e1eb0c1674fb66b145672109692
+Author: António Lima <amrlima@gmail.com>
+Date:   Sun Mar 11 10:44:18 2012 +0000
+
+    Updated Portuguese translation
+
+ po/pt.po | 25 +++++++++++++++----------
+ 1 file changed, 15 insertions(+), 10 deletions(-)
+
+commit 16a58e53dbe5f64c5580038e25b20ef58b8aef8a
+Author: Arash Mousavi <amousavi@src.gnome.org>
+Date:   Sat Mar 10 19:22:12 2012 +0330
+
+    Updated Persian Translation
+
+ po/fa.po | 24 ++++++++++++++----------
+ 1 file changed, 14 insertions(+), 10 deletions(-)
+
+commit 93af60bf1e550427e3cfd32af5fb343ca9322c89
+Author: Seong-ho Cho <darkcircle.0426@gmail.com>
+Date:   Sat Mar 10 16:24:05 2012 +0900
+
+    Updated Korean translation
+
+ po/ko.po | 251 ++++++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 135 insertions(+), 116 deletions(-)
+
+commit adb9004170c207b993989155e51d6ade49236d6e
+Author: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>
+Date:   Fri Mar 9 19:09:10 2012 +0100
+
+    Updated Esperanto translation
+
+ po/eo.po | 34 +++++++++++++++++++---------------
+ 1 file changed, 19 insertions(+), 15 deletions(-)
+
+commit 02ce8baea4065fe5cf9d54fcfea4248b0b31f57c
+Author: Gianvito Cavasoli <gianvito@gmx.it>
+Date:   Thu Mar 8 21:34:06 2012 +0100
+
+    [l10n] Updated Italian translation
+
+ po/it.po | 24 ++++++++++++++----------
+ 1 file changed, 14 insertions(+), 10 deletions(-)
+
+commit 7d8e41d7df2c1c395702582b433e93ed54a6f982
+Author: Inaki Larranaga Murgoitio <dooteo@zundan.com>
+Date:   Tue Mar 6 17:54:18 2012 +0100
+
+    Updated Basque language
+
+ po/eu.po | 405 ++++++++++++++++++++++++++++++++++++---------------------------
+ 1 file changed, 230 insertions(+), 175 deletions(-)
+
+commit 0f16dd005ca1730cf8ac27cd178812a85fea22c6
+Author: Nilamdyuti Goswami <nilamdyuti@gmail.com>
+Date:   Mon Mar 5 22:58:55 2012 +0530
+
+    Assamese translation completed
+
+ po/as.po | 399 ++++++++++++++++++++++++++++++++++++---------------------------
+ 1 file changed, 229 insertions(+), 170 deletions(-)
+
+commit 7e4d7d9e95be0b8f99763eb0823849d63409c56a
+Author: Bruno Brouard <annoa.b@gmail.com>
+Date:   Sun Mar 4 21:06:28 2012 +0100
+
+    Updated French translation
+
+ po/fr.po | 20 ++++++++++++--------
+ 1 file changed, 12 insertions(+), 8 deletions(-)
+
+commit 83ce73b020c05d87b0a96d4e79d629b403dcb1ea
+Author: Mario Blättermann <mario.blaettermann@gmail.com>
+Date:   Sun Mar 4 15:53:46 2012 +0100
+
+    [l10n] Updated German translation
+
+ po/de.po | 36 ++++++++++++++++++++----------------
+ 1 file changed, 20 insertions(+), 16 deletions(-)
+
+commit 1b2f28575c6aac3f1cbea8fa68a4416b794ddcbe
+Author: Mattias Põldaru <mahfiaz@gmail.com>
+Date:   Wed Feb 29 20:06:43 2012 +0200
+
+    [l10n] Updated Estonian translation
+
+ po/et.po | 15 +++++++++------
+ 1 file changed, 9 insertions(+), 6 deletions(-)
+
+commit 06f2dbc8556f36580096e3993fe72691828e6007
+Author: Gabor Kelemen <kelemeng@gnome.hu>
+Date:   Wed Feb 29 03:24:22 2012 +0100
+
+    Updated Hungarian translation
+
+ po/hu.po | 197 ++++++++++++++++++++++++++++++++++++++++++++++-----------------
+ 1 file changed, 145 insertions(+), 52 deletions(-)
+
+commit 0aa3d3281d89b334466c37772ca08d93600e905f
+Author: Dr.T.Vasudevan <agnihot3@gmail.com>
+Date:   Tue Feb 28 17:17:14 2012 +0530
+
+    updated Tamil translation
+
+ po/ta.po | 20 ++++++++++++--------
+ 1 file changed, 12 insertions(+), 8 deletions(-)
+
+commit b2f8c3d791eaccc034ea62cfe785f0b09eff4575
+Author: Ask H. Larsen <asklarsen@gmail.com>
+Date:   Mon Feb 20 22:38:09 2012 +0100
+
+    Updated Danish translation
+
+ po/da.po | 18 +++++++++++-------
+ 1 file changed, 11 insertions(+), 7 deletions(-)
+
+commit 4309f93657eb88f00b893665ffd2fd33b5fc843a
+Author: Мирослав Николић <miroslavnikolic@rocketmail.com>
+Date:   Mon Feb 20 22:05:09 2012 +0100
+
+    Updated Serbian translation
+
+ po/sr.po       | 50 ++++++++++++++++++++++++++++++--------------------
+ po/sr@latin.po | 50 ++++++++++++++++++++++++++++++--------------------
+ 2 files changed, 60 insertions(+), 40 deletions(-)
+
+commit 13e749987b4259d114e43124343d3c891b406499
+Author: Praveen Arimbrathodiyil <pravi.a@gmail.com>
+Date:   Mon Feb 20 18:43:00 2012 +0530
+
+    nautilus-sendto ml translations updated by Anish
+
+ po/ml.po | 299 ++++++++++++++++++++++++++++++++++++++++-----------------------
+ 1 file changed, 189 insertions(+), 110 deletions(-)
+
+commit b59450d59681d2e5dd69ff02fe2be1341ce6bfaa
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   Sun Feb 19 21:51:50 2012 +0100
+
+    Updated Polish translation
+
+ po/pl.po | 18 +++++++++++-------
+ 1 file changed, 11 insertions(+), 7 deletions(-)
+
+commit d83bad94a5a9876647de6c3090a96bfbe49e0d6e
+Author: Yuri Myasoedov <omerta13@yandex.ru>
+Date:   Sat Feb 11 18:18:37 2012 +0400
+
+    Updated Russian translation
+
+ po/ru.po | 20 ++++++++++++--------
+ 1 file changed, 12 insertions(+), 8 deletions(-)
+
+commit 6df913f3cd32becfe69843a1fd1e039c2f273235
+Author: Wouter Bolsterlee <wbolster@gnome.org>
+Date:   Sat Feb 4 14:52:13 2012 +0100
+
+    Updated Dutch translation
+
+ po/nl.po | 295 ++++++++++++++++++++++++++++++++++++++++-----------------------
+ 1 file changed, 186 insertions(+), 109 deletions(-)
+
+commit 894226962830d7b984938307bada45c7bcbbd60b
+Author: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+Date:   Mon Jan 30 19:36:51 2012 +0800
+
+    Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+ po/zh_HK.po | 69 +++++++++++--------------------------------------------------
+ po/zh_TW.po | 69 +++++++++++--------------------------------------------------
+ 2 files changed, 24 insertions(+), 114 deletions(-)
+
+commit 6a741d86140fdde85b861f0c9bf4077afc6b6b8f
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:   Sat Jan 28 17:44:22 2012 +0100
+
+    Updated Norwegian bokmål translation
+
+ po/nb.po | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a6379ac23132a3c34f4f683884cbc98da9aba369
+Author: Marek Černocký <marek@manet.cz>
+Date:   Thu Jan 19 16:15:40 2012 +0100
+
+    Updated Czech translation
+
+ po/cs.po | 111 ++++++++-------------------------------------------------------
+ 1 file changed, 13 insertions(+), 98 deletions(-)
+
+commit 57f7c43868ae5e14f52d2393384405e519e1f89b
+Author: Daniel Nylander <po@danielnylander.se>
+Date:   Wed Jan 18 09:14:32 2012 +0100
+
+    Updated Swedish translation
+
+ po/sv.po | 44 ++++++++++++++++++++++++++++++++++++--------
+ 1 file changed, 36 insertions(+), 8 deletions(-)
+
+commit bf5fcff37dc5d2496c38cb7e45892ddb34a1cf3d
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:   Sun Jan 15 16:06:32 2012 +0100
+
+    Updated Galician translations
+
+ po/gl.po | 24 ++++++++++++++----------
+ 1 file changed, 14 insertions(+), 10 deletions(-)
+
+commit 7c74418c4d11917ced5ad643bcd95b5b634283da
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:   Sun Jan 15 13:46:49 2012 +0100
+
+    Updated Slovenian translation
+
+ po/sl.po | 26 ++++++++++++++++----------
+ 1 file changed, 16 insertions(+), 10 deletions(-)
+
+commit 9299ec9f59370046c5aecdd619c71469626d956e
+Author: Yaron Shahrabani <sh.yaron@gmail.com>
+Date:   Fri Jan 13 09:34:07 2012 +0200
+
+    Updated Hebrew translation.
+
+ po/he.po | 25 +++++++++++++++----------
+ 1 file changed, 15 insertions(+), 10 deletions(-)
+
+commit a7b68931d35a7b0c3aa83e00935401709b6f26c0
+Author: Patricia Santana Cruz <patriciasantanacruz@gmail.com>
+Date:   Tue Jan 10 10:48:53 2012 +0000
+
+    Replace deprecated symbols
+    
+    GtkVbox and GtkHbox are deprecated in GTK+3 and therefore, have been
+    replaced in the code by GtkBox objects with vertical and horizontal
+    orientation.
+    
+    Fixes https://bugzilla.gnome.org/show_bug.cgi?id=666241.
+
+ data/nautilus-sendto.ui                           | 6 ++++--
+ data/pack-entry.ui                                | 4 ++--
+ src/plugins/evolution/evolution.c                 | 2 +-
+ src/plugins/nautilus-sendto-packer.c              | 1 +
+ src/plugins/nautilus-sendto-packer.h              | 4 ++--
+ src/plugins/nautilus-sendto-progress.c            | 4 ++--
+ src/plugins/removable-devices/removable-devices.c | 2 +-
+ src/plugins/socialweb/socialweb.c                 | 2 +-
+ 8 files changed, 14 insertions(+), 11 deletions(-)
+
+commit c1c455aede3e9b66bd3eff59fba0b10ac465000b
+Author: Muhammet Kara <muhammet.k@gmail.com>
+Date:   Sun Jan 8 20:30:58 2012 +0200
+
+    [l10n]Updated Turkish translation
+
+ po/tr.po | 23 +++++++++++++++--------
+ 1 file changed, 15 insertions(+), 8 deletions(-)
+
+commit d3526902a2a5181cd4a99c5b0833c0deba98e521
+Author: Alexander Shopov <ash@kambanaria.org>
+Date:   Sun Jan 8 07:58:17 2012 +0200
+
+    Updated Bulgarian translation
+
+ po/bg.po | 22 +++++++++++++---------
+ 1 file changed, 13 insertions(+), 9 deletions(-)
+
+commit 2621813c225e05993ee48fb9c55dd2cabcbfa504
+Author: Timo Jyrinki <timo@debian.org>
+Date:   Sat Jan 7 12:49:00 2012 +0200
+
+    Updated Finnish translation by Jiri Grönroos.
+
+ po/fi.po | 295 +++++++++++++++++++++++++++++++++++++++------------------------
+ 1 file changed, 185 insertions(+), 110 deletions(-)
+
+commit e4056acd73e0a3aeb1071226f941b1d7465001d5
+Author: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>
+Date:   Sat Jan 7 12:05:59 2012 +0300
+
+    Updated Belarusian translation.
+
+ po/be.po | 27 +++++++++++++++------------
+ 1 file changed, 15 insertions(+), 12 deletions(-)
+
+commit 8c225768688192362b1c434be3fc483ac94fbe66
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:   Fri Jan 6 21:26:47 2012 +0100
+
+    Updated Norwegian bokmål translation
+
+ po/nb.po | 24 ++++++++++++++----------
+ 1 file changed, 14 insertions(+), 10 deletions(-)
+
+commit 57b0a5f82a423c8eb504b5c188bd3b00d8de572e
+Author: Daniel Mustieles <daniel.mustieles@gmail.com>
+Date:   Fri Jan 6 20:34:07 2012 +0100
+
+    Updated Spanish translation
+
+ po/es.po | 20 ++++++++++++--------
+ 1 file changed, 12 insertions(+), 8 deletions(-)
+
+commit 43ddc19820fdcab1f30b67580d9b2cd491577753
+Author: Patricia Santana Cruz <patriciasantanacruz@gmail.com>
+Date:   Fri Dec 30 17:28:30 2011 +0000
+
+    Add --version argument.
+    
+    Fixes https://bugzilla.gnome.org/show_bug.cgi?id=667030.
+
+ src/nautilus-sendto-command.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit be4ad5c691ec5135ef1efce21ea727c7905acf96
+Author: Patricia Santana Cruz <patriciasantanacruz@gmail.com>
+Date:   Thu Dec 15 12:41:32 2011 +0000
+
+    Explain libsocialweb usage in README file
+    
+    Wrote a small text explaining how to get libsocialweb working within
+    nautilus-sendto.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=666250
+
+ README | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+commit 9602575f14e5d471feeff5e6828d56c019fe9828
+Author: Hideki Yamane <henrich@debian.org>
+Date:   Sun Nov 27 17:43:05 2011 +0900
+
+    Updated Japanese translation
+
+ po/ja.po | 167 +++++++++++++--------------------------------------------------
+ 1 file changed, 34 insertions(+), 133 deletions(-)
+
+commit a0c52c696b1cf68781301766af0ecfd835cb9aed
+Author: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>
+Date:   Wed Oct 26 19:46:47 2011 +0200
+
+    Updated Esperanto translation
+
+ po/eo.po | 31 ++++++++++++++++++-------------
+ 1 file changed, 18 insertions(+), 13 deletions(-)
+
+commit 86b04e4a5e8c956d849087e0e9f1a53c008f9cfb
+Author: krishnababu k <kkrothap@redhat.ocm>
+Date:   Fri Oct 7 20:30:27 2011 +0530
+
+    Updated Telugu Translations done by Sasi Bhushan
+
+ po/te.po | 399 ++++++++++++++++++++++++++++++++++++---------------------------
+ 1 file changed, 228 insertions(+), 171 deletions(-)
+
+commit 916ce0a00a96aaa60b5ef724bc295c78c946e130
+Author: Gianvito Cavasoli <gianvito@gmx.it>
+Date:   Tue Sep 20 14:44:32 2011 +0200
+
+    l10n: Updated Italian translation
+
+ po/it.po | 321 +++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 139 insertions(+), 182 deletions(-)
+
+commit 5902c9b283cf2e41bb9e50b78e7414bbe8d25e53
+Author: Joe Hansen <joedalton2@yahoo.dk>
+Date:   Sun Sep 18 18:10:05 2011 +0200
+
+    Updated Danish translation
+
+ po/da.po | 345 +++++++++++++++++++++++++--------------------------------------
+ 1 file changed, 135 insertions(+), 210 deletions(-)
+
+commit 25235621383d5654ab3cb1bd5c03c6ed2446cc2d
+Author: Aron Xu <aronxu@gnome.org>
+Date:   Sat Sep 17 16:08:45 2011 +0000
+
+    Update Simplified Chinese translation.
+
+ po/zh_CN.po | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+
+commit 290f3464722c13cfad05aa72596a39d476c86799
+Author: Djavan Fagundes <djavanf@gnome.org>
+Date:   Sat Sep 17 11:44:38 2011 -0300
+
+    Updated Brazilian Portuguese translation
+
+ po/pt_BR.po | 423 +++++++++++++++++++++++++++++++++++-------------------------
+ 1 file changed, 244 insertions(+), 179 deletions(-)
+
+commit e672b0b043e94e29fb3e4a61eebb31f57c683f97
+Author: dmustieles <daniel.mustieles@gmail.com>
+Date:   Wed Sep 14 17:54:46 2011 +0200
+
+    Updated Spanish translation
+
+ po/es.po | 15 ++++++++-------
+ 1 file changed, 8 insertions(+), 7 deletions(-)
+
+commit c7326486688da19949912c864364536b253062ab
+Author: Yinghua Wang <wantinghard@gmail.com>
+Date:   Tue Sep 13 13:38:16 2011 +0800
+
+    update Simplified Chinese (zh_CN) translation
+
+ po/zh_CN.po | 19 ++++++++++++-------
+ 1 file changed, 12 insertions(+), 7 deletions(-)
+
+commit 50866bfd40602fefb4a96cae71a011cf8efcee79
+Author: A S Alam <aalam@users.sf.net>
+Date:   Sat Sep 10 15:21:23 2011 +0530
+
+    update PunjabiTranslation
+
+ po/pa.po | 86 +++++++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 47 insertions(+), 39 deletions(-)
+
+commit ff7fac5e41407e4fcf672713d8462f3d3d6e030b
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   Thu Sep 8 21:31:28 2011 +0200
+
+    Updated Polish translation
+
+ po/pl.po | 364 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 147 insertions(+), 217 deletions(-)
+
+commit 358f356e197be01a39021d657edc7920cb44b58f
+Author: Bruce Cowan <bruce@bcowan.me.uk>
+Date:   Thu Sep 8 17:28:25 2011 +0100
+
+    Updated British English translation
+
+ po/en_GB.po | 305 +++++++++++++++++++++++++++++++++++++-----------------------
+ 1 file changed, 188 insertions(+), 117 deletions(-)
+
+commit 6a89d84b8b43debbf066786b65134c40df309a89
+Author: António Lima <amrlima@gmail.com>
+Date:   Sun Sep 4 02:42:40 2011 +0100
+
+    Updated Portuguese translation
+
+ po/pt.po | 411 +++++++++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 229 insertions(+), 182 deletions(-)
+
+commit 8c4af4aa7f3e63fb41c297ec451d0283092346bf
+Author: Dr.T.Vasudevan <agnihot3@gmail.com>
+Date:   Fri Sep 2 16:58:12 2011 +0530
+
+    Updated Tamil translation
+
+ po/ta.po | 391 ++++++++++++++++++++++++++++++++++++---------------------------
+ 1 file changed, 226 insertions(+), 165 deletions(-)
+
+commit 389f95dc8552afa74254adbb85d302732a2f1bd8
+Author: Stas Solovey <whats_up@tut.by>
+Date:   Mon Aug 29 19:49:26 2011 +0400
+
+    Updated Russian translation
+
+ po/ru.po | 264 +++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 130 insertions(+), 134 deletions(-)
+
+commit 628912b8d977a24adee26f796f0d02da8d0036cf
+Author: Alexandre Franke <alexandre.franke@gmail.com>
+Date:   Mon Aug 29 13:02:36 2011 +0200
+
+    Update French translation
+
+ po/fr.po | 18 +++++++++++-------
+ 1 file changed, 11 insertions(+), 7 deletions(-)
+
+commit d50ff619f467cf7bf73666f84261e9ece95d56b4
+Author: Gil Forcada <gforcada@gnome.org>
+Date:   Wed Aug 24 23:43:28 2011 +0200
+
+    [l10n]Updated Catalan translation
+
+ po/ca.po | 396 ++++++++++++++++++++++++++++++++++++---------------------------
+ 1 file changed, 228 insertions(+), 168 deletions(-)
+
+commit 2f476bc0ca7577ec84ffc467127ca0fb2d66a439
+Author: Theppitak Karoonboonyanan <thep@linux.thai.net>
+Date:   Sat Aug 13 22:56:32 2011 +0700
+
+    Updated Thai translation.
+
+ po/th.po | 279 ++++++++++++++++++++++++++++++++++++++-------------------------
+ 1 file changed, 171 insertions(+), 108 deletions(-)
+
+commit cb27f84db884fd36e377019f9b5a99c9a72988fa
+Author: Alexander Shopov <ash@kambanaria.org>
+Date:   Thu Aug 11 06:47:59 2011 +0300
+
+    Updated Bulgarian translation
+
+ po/bg.po | 16 ++++++++++++----
+ 1 file changed, 12 insertions(+), 4 deletions(-)
+
+commit ce84c2d98b154d400f3b52d9b65a79217863d555
+Author: Aurimas Černius <aurisc4@gmail.com>
+Date:   Sat Jul 16 22:29:23 2011 +0300
+
+    Update Lithuanian translation
+
+ po/lt.po | 314 +++++++++++++++++++++++++++++++++++++++------------------------
+ 1 file changed, 194 insertions(+), 120 deletions(-)
+
+commit 810ebbef6000077b30d279cd29cc7e0cb4070bd4
+Author: Rudolfs Mazurs <rudolfs.mazurs@gmail.com>
+Date:   Wed Jul 13 21:16:35 2011 +0300
+
+    Updated Latvian translation.
+
+ po/lv.po | 362 ++++++++++++++++++++++++++++++++++++++-------------------------
+ 1 file changed, 219 insertions(+), 143 deletions(-)
+
+commit bb3fb3bad4bbc54ad8e109be3a3f166a832a667c
+Author: Arash Mousavi <amousavi@src.gnome.org>
+Date:   Wed Jul 13 02:27:11 2011 +0430
+
+    Added Persian translation
+
+ po/LINGUAS |   1 +
+ po/fa.po   | 309 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 310 insertions(+)
+
+commit 68d47d80f5fad74419c3438620aa9b3ab7072172
+Author: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>
+Date:   Sun Jun 26 23:45:29 2011 +0300
+
+    Updated Belarusian translation.
+
+ po/be.po | 378 ++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 178 insertions(+), 200 deletions(-)
+
+commit 98e684aa7c96cda47fa356be0892aa02196e64f9
+Author: Abduxukur Abdurixit <abdurixit@gmail.com>
+Date:   Sat Jun 11 23:45:39 2011 +0200
+
+    Added UG translation
+
+ po/ug.po | 177 ++++++++++++++++++++++++++++++++++++++++++++++-----------------
+ 1 file changed, 129 insertions(+), 48 deletions(-)
+
+commit 5a7c9200da309fc34e092f61ce7fec9c57a3bcde
+Author: Мирослав Николић <miroslavnikolic@rocketmail.com>
+Date:   Sun May 22 23:03:30 2011 +0200
+
+    Updated Serbian translation
+
+ po/sr.po       | 184 ++++++++++++++++++++++++++++++++++++++++++---------------
+ po/sr@latin.po | 184 ++++++++++++++++++++++++++++++++++++++++++---------------
+ 2 files changed, 274 insertions(+), 94 deletions(-)
+
+commit e2be9200ec7548abfaa2a2bee2e7143234df339b
+Author: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>
+Date:   Sun May 22 11:47:09 2011 +0200
+
+    Updated Esperanto translation
+
+ po/eo.po | 269 +++++++++++++++++++++++++++++++++++++++------------------------
+ 1 file changed, 166 insertions(+), 103 deletions(-)
+
+commit 1bfdb0114f38b6aa9b250bad7017162cf4fa093d
+Author: plesry <pspeter9931@gmail.com>
+Date:   Fri May 13 09:58:11 2011 +0800
+
+    Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+ po/zh_HK.po | 17 +++++++++++------
+ po/zh_TW.po | 17 +++++++++++------
+ 2 files changed, 22 insertions(+), 12 deletions(-)
+
+commit 363680163b139045282fa9df300b6f96ebeef6e6
+Author: Daniel Korostil <ted.korostiled@gmail.com>
+Date:   Fri May 6 20:23:06 2011 +0300
+
+    Uploaded Ukranian
+
+ po/uk.po | 372 ++++++++++++++++++++++++++++++++++++++-------------------------
+ 1 file changed, 226 insertions(+), 146 deletions(-)
+
+commit dd929d4dc503551154a7bcc9e2ff1fb720bb2af7
+Author: Lê Trường An <xinemdungkhoc1@gmail.com>
+Date:   Thu May 5 20:12:35 2011 +0700
+
+    Updated Vietnamese translation
+
+ po/vi.po | 24 +++++++++++++-----------
+ 1 file changed, 13 insertions(+), 11 deletions(-)
+
+commit 0e04f37762fe446c664b9ace65277edd3d861501
+Author: Christian Kirbach <Christian.Kirbach@googlemail.com>
+Date:   Mon Apr 25 15:34:53 2011 +0200
+
+    [l10n] Updated German translation
+
+ po/de.po | 407 ++++++++++++++++++++++++++++++++++++---------------------------
+ 1 file changed, 234 insertions(+), 173 deletions(-)
+
+commit 8898c3bc64849d09807dd2b1590b16a434e678b0
+Author: Muhammet Kara <muhammet.k@gmail.com>
+Date:   Sat Apr 23 02:53:09 2011 +0300
+
+    Added Turkish translation
+
+ po/LINGUAS |   1 +
+ po/tr.po   | 276 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 277 insertions(+)
+
+commit ba45a687e8af8d7ce6129d432b5b7da71150db5c
+Author: Jordi Serratosa <serratosa@gmail.com>
+Date:   Mon Apr 4 22:25:23 2011 +0200
+
+    [l10n]Fixes on Catalan translation
+
+ po/ca.po | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit 1bdaa1ff350bd8693d4ffe75efd737c6a6fff033
+Author: Nguyễn Thái Ngọc Duy <pclouds@gmail.com>
+Date:   Sun Apr 3 14:25:58 2011 +0700
+
+    Updated Vietnamese translation
+
+ po/vi.po | 89 ++++++++++++++++++++++++++++++----------------------------------
+ 1 file changed, 42 insertions(+), 47 deletions(-)
+
+commit c87b91d5df1f17835bc600fb274826f09b9269ca
+Author: Nguyễn Thái Ngọc Duy <pclouds@gmail.com>
+Date:   Sun Apr 3 14:19:44 2011 +0700
+
+    po/vi.po: import from Damned Lies
+
+ po/vi.po | 236 ++++++++++++++++++++++++---------------------------------------
+ 1 file changed, 90 insertions(+), 146 deletions(-)
+
+commit 3c8fec4ed92b4502318417c5089ed0e4e4448d6b
+Author: Mattias Põldaru <mahfiaz@gmail.com>
+Date:   Thu Mar 31 09:37:47 2011 +0300
+
+    [l10n] Updated Estonian translation
+
+ po/et.po | 160 ++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 77 insertions(+), 83 deletions(-)
+
+commit 4f6be8e6795b5fceb0c9ae57414e20cc088439d4
+Author: Abduxukur Abdurixit <abdurixit@gmail.com>
+Date:   Sun Mar 27 21:42:59 2011 +0200
+
+    Added UG translation
+
+ po/ug.po | 20 +++++++++-----------
+ 1 file changed, 9 insertions(+), 11 deletions(-)
+
+commit a228b399f636163cacc182f73cdcb3b1701c442e
+Author: Jiro Matsuzawa <matsuzawa.jr@gmail.com>
+Date:   Tue Mar 22 22:32:48 2011 +0900
+
+    Updated Japanese translation.
+
+ po/ja.po | 238 +++++++++++++++++++++++++++++++++++++++++++--------------------
+ 1 file changed, 164 insertions(+), 74 deletions(-)
+
+commit 35a0ee9f14eeb242ad9c8e559ae8b6a9079d8f95
+Author: Miroslav Nikolić <miroslavnikolic@rocketmail.com>
+Date:   Sat Mar 19 14:33:45 2011 +0100
+
+    Reviewed Serbian translation
+
+ po/sr.po       | 208 +++++++++++++++++++++++++++------------------------------
+ po/sr@latin.po | 206 ++++++++++++++++++++++++++------------------------------
+ 2 files changed, 193 insertions(+), 221 deletions(-)
+
+commit 86e5b95a1a6ee486f3c26e01ec621f874534f05f
+Author: Mattias Põldaru <mahfiaz@gmail.com>
+Date:   Tue Mar 15 13:41:04 2011 +0200
+
+    [l10n] Updated Estonian translation
+
+ po/et.po | 226 ++++++++++++++++++++++-----------------------------------------
+ 1 file changed, 78 insertions(+), 148 deletions(-)
+
+commit ece8cc1f8255e3c4db31095119a6299ab4c56080
+Author: Abduxukur Abdurixit <abdurixit@gmail.com>
+Date:   Fri Mar 4 22:17:20 2011 +0100
+
+    Added UG translation
+
+ po/ug.po | 51 +++++++++++++++++++++++++--------------------------
+ 1 file changed, 25 insertions(+), 26 deletions(-)
+
+commit 3a8ca7d61bdd562e8bea23881fe9765673ca534f
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:   Thu Feb 24 10:24:11 2011 +0100
+
+    Updated Norwegian bokmål translation.
+
+ po/nb.po | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit cc3c638ceb570f7af67bd61ac5109f78a09a8d14
+Author: Abduxukur Abdurixit <abdurixit@gmail.com>
+Date:   Sat Feb 19 15:40:12 2011 +0100
+
+    Added UG translation
+
+ po/ug.po | 43 ++++++++++++++++++++++---------------------
+ 1 file changed, 22 insertions(+), 21 deletions(-)
+
+commit ccf7eaf9739812a0b0b3cebebe56b070a2bbd9d6
+Author: Dirgita <dirgitadevina@yahoo.co.id>
+Date:   Sat Feb 12 17:14:07 2011 +0700
+
+    Updated Indonesian translation
+
+ po/id.po | 106 ++++++++++++++-------------------------------------------------
+ 1 file changed, 23 insertions(+), 83 deletions(-)
+
+commit 6bf6f66a1dcd03604c23f3fd6f0e4445da371f6e
+Author: Abduxukur Abdurixit <abdurixit@gmail.com>
+Date:   Sat Feb 12 00:05:32 2011 +0100
+
+    Added UG translation
+
+ po/ug.po | 193 +++++++++++++++++++--------------------------------------------
+ 1 file changed, 58 insertions(+), 135 deletions(-)
+
+commit 45cb0cfa1e946d36125668e2e30f4f3e715bb5f5
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Feb 2 13:31:21 2011 +0000
+
+    main: Remove useless code
+    
+    The search path handling is now cleaner.
+
+ src/nautilus-sendto-command.c | 9 +--------
+ 1 file changed, 1 insertion(+), 8 deletions(-)
+
+commit 45577aca28eaa944f74ec5b5a4f3c7e8a508c9f9
+Author: Emilio Pozuelo Monfort <pochu27@gmail.com>
+Date:   Sat Jan 22 19:01:11 2011 +0000
+
+    Require libpeas-1.0 in the .pc file
+    
+    Since nautilus-sendto-plugin.h includes libpeas/peas.h
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=640288
+
+ data/nautilus-sendto.pc.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 31b30b676a84a8620f34522ca09a222c01374d30
+Author: Emilio Pozuelo Monfort <pochu27@gmail.com>
+Date:   Sat Jan 22 18:18:41 2011 +0000
+
+    Exclude outdated plugins instead of hardcoding the rest
+    
+    So nautilus-sendto doesn't try to build a plugin for which
+    you don't have the right build dependencies.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=640284
+
+ configure.in            | 4 ++--
+ src/plugins/Makefile.am | 3 +--
+ 2 files changed, 3 insertions(+), 4 deletions(-)
+
+commit 12a2b33a2ca737e503e25140f29ab762feeec0b3
+Author: Emilio Pozuelo Monfort <pochu27@gmail.com>
+Date:   Sat Jan 22 18:23:06 2011 +0000
+
+    Fix build with recent gtk+
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=640283
+
+ configure.in                  | 2 +-
+ src/nautilus-sendto-command.c | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 7392bf9fc6df52155fb5dc7da6f9c7d669deee7e
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:   Sun Jan 30 18:05:50 2011 +0100
+
+    Updated Galician translations
+
+ po/gl.po | 17 +++++++++++------
+ 1 file changed, 11 insertions(+), 6 deletions(-)
+
+commit 43624b6a20c32594e964932745e71956045f6384
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Nov 16 02:50:03 2010 +0000
+
+    data: Fix up UI
+    
+    Thanks to Matthias Clasen (again!).
+
+ data/nautilus-sendto.ui | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit b8e09a5a166a5dc55487fc2e8d9b7e9ea679b90b
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:   Mon Jan 24 21:49:11 2011 +0100
+
+    Updated Slovenian translation
+
+ po/sl.po | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+
+commit 0fb8e7400d43a2440e766a133fb3efae519575df
+Author: Marek Černocký <marek@manet.cz>
+Date:   Mon Jan 24 15:40:35 2011 +0100
+
+    Updated Czech translation
+
+ po/cs.po | 22 ++++++++++++++--------
+ 1 file changed, 14 insertions(+), 8 deletions(-)
+
+commit 638c5d49530cf6218f11d94cec6f248d475a3f05
+Author: Khaled Hosny <khaledhosny@eglug.org>
+Date:   Sun Jan 23 15:45:04 2011 +0200
+
+    Updated Arabic translation
+
+ po/ar.po | 382 +++++++++++++++++++++++++++++++++++++++------------------------
+ 1 file changed, 237 insertions(+), 145 deletions(-)
+
+commit 6d74820b330dcb8e7f8ac08640b9551f35b8de08
+Author: Yaron Shahrabani <sh.yaron@gmail.com>
+Date:   Sun Jan 23 02:42:13 2011 +0200
+
+    Updated Hebrew translation.
+
+ po/he.po | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+commit ea4db87175dc47fe3cff416b3ef3425b812f4048
+Author: Jorge González <jorgegonz@svn.gnome.org>
+Date:   Sat Jan 22 16:42:45 2011 +0100
+
+    Updated Spanish translation
+
+ po/es.po | 23 ++++++++++++++---------
+ 1 file changed, 14 insertions(+), 9 deletions(-)
+
+commit 093c3f4d1cebb9ab79fbd79385f8d0cf32828576
+Author: Daniel Nylander <po@danielnylander.se>
+Date:   Sat Jan 22 14:07:27 2011 +0100
+
+    Updated Swedish translation
+
+ po/sv.po | 18 ++++++++++++------
+ 1 file changed, 12 insertions(+), 6 deletions(-)
+
+commit 6517b5720bdd1a353b60241f968ab64bcf327711
+Author: Ivar Smolin <okul@linux.ee>
+Date:   Sat Jan 22 11:52:04 2011 +0200
+
+    [l10n] Updated Estonian translation
+
+ po/et.po | 15 +++++++++------
+ 1 file changed, 9 insertions(+), 6 deletions(-)
+
+commit a116a24e2472ce9ee8f83adba09a616d1e3cd13d
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:   Thu Jan 20 19:18:11 2011 +0100
+
+    Add missing file
+
+ po/POTFILES.in | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 56121fe58467aa157443d7a6e809b4bbecc2f896
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:   Thu Jan 20 19:17:53 2011 +0100
+
+    Updated Norwegian bokmål translation
+
+ po/nb.po | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+
+commit 67b9e92075cee9414207f3192e361b2b06a0d0b4
+Author: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+Date:   Thu Jan 20 22:51:35 2011 +0800
+
+    Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+ po/zh_HK.po | 263 ++++++++++++++++++++++++++++++++----------------------------
+ po/zh_TW.po | 263 ++++++++++++++++++++++++++++++++----------------------------
+ 2 files changed, 282 insertions(+), 244 deletions(-)
+
+commit 5f2da28dedc3392d9bdeac21b0eeeeb90458519d
+Author: Yaron Shahrabani <sh.yaron@gmail.com>
+Date:   Sun Jan 16 22:19:55 2011 +0200
+
+    Updated Hebrew translation.
+
+ po/he.po | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+commit 1c4e50e3263dcd1ad9f0c81e47909ebf4d1a18c1
+Author: Claude Paroz <claude@2xlibre.net>
+Date:   Sun Jan 16 20:39:19 2011 +0100
+
+    Updated French translation
+    
+    Contributed by Cédric Félizard and Claude Paroz
+
+ po/fr.po | 266 ++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 125 insertions(+), 141 deletions(-)
+
+commit 9577d286d4eb4e461886a95aa5809f96f8c0f2a6
+Author: Claude Paroz <claude@2xlibre.net>
+Date:   Sun Jan 16 20:33:48 2011 +0100
+
+    Missing prefix before ui file in POTFILES.in
+
+ po/POTFILES.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b5614978ee4af47919b4b5b8194ad440ca8b9785
+Author: Giannis Katsampirhs <juankatsampirhs@gmail.com>
+Date:   Fri Jan 14 20:09:05 2011 +0200
+
+    Updated Greek translation
+
+ po/el.po | 304 ++++++++++++++++++++++++++++++++++++++++-----------------------
+ 1 file changed, 193 insertions(+), 111 deletions(-)
+
+commit 3c19efc00439651c6b56c745df8a318e6f715495
+Author: Alexander Shopov <ash@kambanaria.org>
+Date:   Fri Jan 14 07:33:28 2011 +0200
+
+    Updated Bulgarian translation
+
+ po/bg.po | 264 +++++++++++++++++++++++++++++----------------------------------
+ 1 file changed, 123 insertions(+), 141 deletions(-)
+
+commit 37d88c517957f60cbc1a830bbd0bb8979a1db09b
+Author: Andika Triwidada <andika@gmail.com>
+Date:   Tue Jan 11 11:33:49 2011 +0700
+
+    Updated Indonesian translation
+
+ po/id.po | 83 +++++++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 46 insertions(+), 37 deletions(-)
+
+commit aadf8b0a6acd5d1a8e19f90377d3cdd76bdeefe8
+Author: Ivar Smolin <okul@linux.ee>
+Date:   Sun Jan 9 20:37:19 2011 +0200
+
+    [l10n] Updated Estonian translation
+
+ po/et.po | 13 +++++++------
+ 1 file changed, 7 insertions(+), 6 deletions(-)
+
+commit e323efd3d0df6b916fff943a46f9b6b3f42ebc0f
+Author: Petr Kovar <pknbe@volny.cz>
+Date:   Mon Jan 3 21:51:02 2011 +0100
+
+    Update Czech translation by Marek Cernocky
+    
+    Reviewed by Petr Kovar.
+
+ po/cs.po | 408 +++++++++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 230 insertions(+), 178 deletions(-)
+
+commit 924a9e86c6c606b7e2d5fd77a6e73d18b6ae3a6b
+Author: Daniel Nylander <po@danielnylander.se>
+Date:   Wed Dec 29 16:00:16 2010 +0100
+
+    Updated Swedish translation
+
+ po/sv.po | 370 +++++++++++++++++++++++++++++++++------------------------------
+ 1 file changed, 193 insertions(+), 177 deletions(-)
+
+commit 55d0ab1ef00f66f092bdc896d6adc4a81cdb92f2
+Author: Nguyễn Thái Ngọc Duy <pclouds@gmail.com>
+Date:   Sun Dec 26 19:02:30 2010 +0700
+
+    Updated Vietnamese translation
+
+ po/vi.po | 103 +++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 50 insertions(+), 53 deletions(-)
+
+commit 466d16ae6bc356e72702280cba8ebfa00a10eb60
+Author: Nguyễn Thái Ngọc Duy <pclouds@gmail.com>
+Date:   Sun Dec 26 18:53:36 2010 +0700
+
+    po/vi.po: import from Damned Lies
+
+ po/vi.po | 418 +++++++++++++++++++++++++++++++++++++++++++++------------------
+ 1 file changed, 300 insertions(+), 118 deletions(-)
+
+commit 1b7f06e4bcbd541ef9b0b3695e23d5f8f8e6afbf
+Author: Gheyret T.Kenji <gheyret@gmail.com>
+Date:   Thu Dec 23 19:32:54 2010 +0100
+
+    Added UG translation
+
+ po/ug.po | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 96e0372ffb034342a66165c8a4b24a93a9f97e7d
+Author: Ivar Smolin <okul@linux.ee>
+Date:   Mon Dec 20 15:24:28 2010 +0200
+
+    [l10n] Updated Estonian translation
+
+ po/et.po | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit cfc2a7aee41984d3c68c8f0e3766cbe3918a03dc
+Author: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>
+Date:   Thu Dec 2 02:26:21 2010 +0200
+
+    Updated Romanian translation
+
+ po/ro.po | 315 +++++++++++++++++++++++++++++++++++++++------------------------
+ 1 file changed, 195 insertions(+), 120 deletions(-)
+
+commit c1753e29dba908d4fe58d3cb15bbe57b33b539f8
+Author: Aron Xu <aronxu@gnome.org>
+Date:   Wed Nov 24 00:26:56 2010 +0800
+
+    Update Simplified Chinese translation.
+
+ po/zh_CN.po | 54 ++++++++++++++++++++++++++++++------------------------
+ 1 file changed, 30 insertions(+), 24 deletions(-)
+
+commit e129ab187d24907306366663e5f50645d04fc188
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:   Sat Nov 20 19:14:24 2010 +0100
+
+    Updated Norwegian bokmål translation
+
+ po/nb.po | 261 ++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 125 insertions(+), 136 deletions(-)
+
+commit 5b54b9edc8599325b6ff66e81d8d51c897389f37
+Author: Gheyret T.Kenji <gheyret@gmail.com>
+Date:   Sat Nov 20 12:56:44 2010 +0100
+
+    Added UG translation
+
+ po/ug.po | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+commit 6f4103d9a0115ab8c59782c513a934305ceb8581
+Author: Gheyret T.Kenji <gheyret@gmail.com>
+Date:   Sat Nov 13 22:53:37 2010 +0100
+
+    Added UG translation
+
+ po/ug.po | 66 ++++++++++++++++++++++++++++++++++------------------------------
+ 1 file changed, 35 insertions(+), 31 deletions(-)
+
+commit 10a381218682854a4ef1c8864cd6efaeca0f7aba
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:   Sat Nov 13 01:56:12 2010 +0100
+
+    Updated Galician translations
+
+ po/gl.po | 67 +++++++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 37 insertions(+), 30 deletions(-)
+
+commit 1a8b0a0c3c56f07915f0f014324cec0277e2f3c0
+Author: Ivar Smolin <okul@linux.ee>
+Date:   Wed Nov 10 14:14:42 2010 +0200
+
+    [l10n] Updated Estonian translation
+
+ po/et.po | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 32a82fc6eee67ce95bb8d300d4234cf31569be69
+Author: Ivar Smolin <okul@linux.ee>
+Date:   Mon Nov 8 20:33:01 2010 +0200
+
+    [l10n] Updated Estonian translation
+
+ po/et.po | 258 +++++++++++++++++++++++++++++++++++++++------------------------
+ 1 file changed, 160 insertions(+), 98 deletions(-)
+
+commit 8fed0a0a0bbadcc23f6e045c6120bab371e94d83
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Nov 8 14:55:14 2010 +0000
+
+    data: Fix GSettings path
+
+ data/org.gnome.Nautilus.Sendto.gschema.xml.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 813fed8b95541716307bfba0d475e4eb4ad7898b
+Author: Yaron Shahrabani <sh.yaron@gmail.com>
+Date:   Sat Nov 6 17:19:56 2010 +0200
+
+    Updated Hebrew translation.
+
+ po/he.po | 52 +++++++++++++++++++++++++++++-----------------------
+ 1 file changed, 29 insertions(+), 23 deletions(-)
+
+commit e2d81a37e04a76ef7873610746cdac9a83ee0aa6
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:   Sat Nov 6 15:39:01 2010 +0100
+
+    Updated Slovenian translation
+
+ po/sl.po | 354 ++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 166 insertions(+), 188 deletions(-)
+
+commit 44fb32bcfb173effaee8f7e5aabdac1f1d29586a
+Author: Jorge González <jorgegonz@svn.gnome.org>
+Date:   Sat Nov 6 11:00:34 2010 +0100
+
+    Updated Spanish translation
+
+ po/es.po | 67 +++++++++++++++++++++++++++++++++-------------------------------
+ 1 file changed, 35 insertions(+), 32 deletions(-)
+
+commit cd2f0c559f0284c1e6f1bf73605600c1816bb53c
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Nov 4 17:29:19 2010 +0000
+
+    main: Handle delete events as well
+    
+    So that the dialog will close on "Escape" or when closing
+    from the window manager.
+
+ src/nautilus-sendto-command.c | 31 +++++++++++++++++++++++--------
+ 1 file changed, 23 insertions(+), 8 deletions(-)
+
+commit 6e7b65343f3fd5be80517996a825ce09518aeda5
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Nov 4 17:17:59 2010 +0000
+
+    plugins: Tweak packing filename
+    
+    Don't stop the common filenames on a dash or underscore.
+
+ src/plugins/nautilus-sendto-packer.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit 9acc54879e8284779a75ddf6d99f33d7a8973031
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Nov 4 17:17:39 2010 +0000
+
+    main: Don't allow shrinking too small
+    
+    We still want to see the widgets...
+
+ data/nautilus-sendto.ui | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a2550f8acbf1f6f0e98edc184d1e298904f447c0
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Nov 4 17:05:35 2010 +0000
+
+    socialweb: Implement sending, with error reporting
+    
+    The UI still looks a bit untidy, but the functionality is here.
+
+ src/plugins/socialweb/socialweb.c | 234 +++++++++++++++++++++++++++++++-------
+ 1 file changed, 196 insertions(+), 38 deletions(-)
+
+commit 68f1a5e01f1453ec2ad44ce707931faab02e949b
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Nov 4 17:03:02 2010 +0000
+
+    plugins: Add error quarks
+
+ src/plugins/nautilus-sendto-plugin.c | 10 ++++++++++
+ src/plugins/nautilus-sendto-plugin.h |  8 ++++++++
+ 2 files changed, 18 insertions(+)
+
+commit deb838b7d6a8b1c393a495cb804a0d3268085ef8
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Nov 4 16:52:44 2010 +0000
+
+    main: Actually print an error when file is not readable
+
+ src/nautilus-sendto-command.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit dc5c23e30e1115fbb7d7fd52a279272bc7bc92b9
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Nov 4 16:32:59 2010 +0000
+
+    plugins: Add a progress bar helper widget
+
+ src/plugins/Makefile.am                |   8 +-
+ src/plugins/nautilus-sendto-progress.c | 197 +++++++++++++++++++++++++++++++++
+ src/plugins/nautilus-sendto-progress.h |  48 ++++++++
+ src/plugins/test-progress.c            |  19 ++++
+ 4 files changed, 271 insertions(+), 1 deletion(-)
+
+commit d799c188d6c584c9e53575267dca6d3b64b53020
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Nov 4 16:31:59 2010 +0000
+
+    plugins: Export display name as well
+    
+    That save us some code.
+
+ src/plugins/nautilus-sendto-filelist.c | 3 ++-
+ src/plugins/nautilus-sendto-filelist.h | 1 +
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+commit 300a48bdd6486fb84d90d7fd6562580ba9edb299
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Nov 3 23:43:07 2010 +0000
+
+    main: Make UI loading from system work again
+    
+    nautilus-sendto couldn't work uninstalled since the "cleanup"
+    of the tree some time ago.
+
+ src/Makefile.am | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 46d11344b3b581c0405d4d2eff30bfb926bbbcf1
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Nov 3 17:02:01 2010 +0000
+
+    lib: Add helper function to get info about files
+    
+    This will make it easier for us to write plugins, so we can gather
+    all the interesting information about files in one place.
+
+ src/plugins/Makefile.am                |   3 +-
+ src/plugins/nautilus-sendto-filelist.c | 209 +++++++++++++++++++++++++++++++++
+ src/plugins/nautilus-sendto-filelist.h |  53 +++++++++
+ src/plugins/nst-plugin-marshal.list    |   1 +
+ 4 files changed, 265 insertions(+), 1 deletion(-)
+
+commit f203050aa720923ac3351937b354c42ae93a6355
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Nov 3 17:01:06 2010 +0000
+
+    main: Fix ext/plugin confusion
+    
+    This allows the send-files function to work.
+
+ src/nautilus-sendto-command.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+
+commit f69adc436b47ddb94ddb5d4c4b1d7c546b8e12f4
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Nov 3 14:58:35 2010 +0000
+
+    build: Update libsocialweb requirements
+    
+    Needed for the video upload support.
+
+ configure.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit fd09a25d7085646af6709daf828244ea585fc91f
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Nov 3 14:57:54 2010 +0000
+
+    build: Remove nautilus-extension checks
+    
+    Not needed anymore.
+
+ configure.in | 2 --
+ 1 file changed, 2 deletions(-)
+
+commit 5a23403065e3dc5c4c39d9006a1fb2a0235ac5d2
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Nov 2 17:09:00 2010 +0000
+
+    socialweb: Add support for uploading videos
+    
+    Though there's still no uploading done.
+
+ src/plugins/socialweb/socialweb.c | 44 ++++++++++++++++++++++++++-------------
+ 1 file changed, 30 insertions(+), 14 deletions(-)
+
+commit f7d090f3bf8a5d0719dcc921e0cd46f3f2936033
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Nov 1 13:23:06 2010 +0000
+
+    Remove nautilus extension
+    
+    The code is now directly in nautilus, as is done in Rhythmbox
+    and Evolution.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=633485
+
+ configure.in                           |  20 -----
+ po/POTFILES.in                         |   2 -
+ src/Makefile.am                        |   2 +-
+ src/extension/Makefile.am              |  22 -----
+ src/extension/nautilus-nste.c          | 157 ---------------------------------
+ src/extension/nautilus-nste.h          |  51 -----------
+ src/extension/nautilus-sendto-module.c |  56 ------------
+ 7 files changed, 1 insertion(+), 309 deletions(-)
+
+commit abd41bc23e2b790a97420b2e398e8e9860e16c18
+Author: Carles Ferrando <carles.ferrando@gmail.com>
+Date:   Fri Oct 29 21:38:26 2010 +0100
+
+    Updated Catalan (Valencian) translation
+
+ po/ca@valencia.po | 140 ++++++++++++++++++++++++------------------------------
+ 1 file changed, 63 insertions(+), 77 deletions(-)
+
+commit 2fa4b53bc9798b7becd488f88bc23d5f84ef7077
+Author: Aron Xu <aronxu@gnome.org>
+Date:   Mon Oct 25 15:35:20 2010 +0800
+
+    Update Simplified Chinese translation.
+
+ po/zh_CN.po | 354 +++++++++++++++++++++++++++++++++---------------------------
+ 1 file changed, 197 insertions(+), 157 deletions(-)
+
+commit 54836d946eb6b68253769cf6fba4e79f18328a47
+Author: Gheyret T.Kenji <gheyret@gmail.com>
+Date:   Sat Oct 23 11:21:19 2010 +0200
+
+    Added UG translation
+
+ po/LINGUAS |   1 +
+ po/ug.po   | 298 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 299 insertions(+)
+
+commit 457cd41dea6adc60b6477d967ccb2857f28a613c
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Oct 21 14:53:24 2010 +0100
+
+    Up the version to 2.91.0
+    
+    So people can easily disable their nautilus-sendto plugins
+    when running with this version.
+
+ configure.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 06653bc1800e1b877d13ed802eab47caea4e3972
+Author: Aron Xu <aronxu@gnome.org>
+Date:   Wed Oct 13 19:09:39 2010 +0800
+
+    Update Simplified Chinese translation.
+
+ po/zh_CN.po | 22 ++++++++--------------
+ 1 file changed, 8 insertions(+), 14 deletions(-)
+
+commit 83537f49d4cde85c6e18b4c843d4f57621561feb
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Oct 11 19:11:20 2010 +0100
+
+    Fix for newer libpeas
+    
+    Updated API, renamed plugins files, and fix introspection
+    annotations.
+
+ configure.in                                       |  2 +-
+ src/nautilus-sendto-command.c                      | 29 +++++++++-------------
+ src/plugins/evolution/Makefile.am                  |  2 +-
+ src/plugins/evolution/evolution.nst-plugin         |  6 -----
+ src/plugins/evolution/evolution.plugin             |  6 +++++
+ src/plugins/nautilus-sendto-plugin.c               |  4 +--
+ src/plugins/removable-devices/Makefile.am          |  2 +-
+ .../removable-devices/removable-devices.nst-plugin |  6 -----
+ .../removable-devices/removable-devices.plugin     |  6 +++++
+ src/plugins/socialweb/Makefile.am                  |  2 +-
+ src/plugins/socialweb/socialweb.nst-plugin         |  6 -----
+ src/plugins/socialweb/socialweb.plugin             |  6 +++++
+ 12 files changed, 36 insertions(+), 41 deletions(-)
+
+commit e70590a16232309978e15d27ad85f23e46356c74
+Author: Jorge González <jorgegonz@svn.gnome.org>
+Date:   Sat Oct 9 13:19:36 2010 +0200
+
+    Updated Spanish translation
+
+ po/es.po | 370 ++++++++++++++++++++++++++++++++++++---------------------------
+ 1 file changed, 209 insertions(+), 161 deletions(-)
+
+commit 0055e79769373633c9d9bca61e06a86314f4d3b8
+Author: A S Alam <aalam@users.sf.net>
+Date:   Sat Oct 9 08:50:26 2010 +0530
+
+    updating translation for Punjabi
+
+ po/pa.po | 389 +++++++++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 217 insertions(+), 172 deletions(-)
+
+commit 52441f45fc63de39496e733ae9f6e9272c377ced
+Author: Kibavuidi Nsiangani <lundombe01@zaya-dio.com>
+Date:   Tue Oct 5 22:17:13 2010 +0200
+
+    Added Kikongo translation
+
+ po/LINGUAS |   1 +
+ po/kg.po   | 325 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 326 insertions(+)
+
+commit 450e9021059fe4a992cbcace4fec8d3081d5b239
+Author: Yaron Shahrabani <sh.yaron@gmail.com>
+Date:   Thu Sep 30 22:00:38 2010 +0200
+
+    Updated Hebrew translation.
+
+ po/he.po | 344 ++++++++++++++++++++++++++++-----------------------------------
+ 1 file changed, 152 insertions(+), 192 deletions(-)
+
+commit 9b4df11162462e0dc184acc2b887ef6f71046967
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Sep 21 16:46:06 2010 +0100
+
+    Fix run-time warning with newer GTK+
+
+ data/nautilus-sendto.ui | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 2577cef482a3b2dcc3b921b796e7f0f438adf2f1
+Author: Salomon Sickert <sickert@in.tum.de>
+Date:   Tue Sep 21 12:56:00 2010 +0200
+
+    Plugin API cleanup
+    
+    Rename supports_mime_type to create_widgets, and simply don't
+    create widgets when the mime-types are not supported.
+
+ src/nautilus-sendto-command.c                     | 13 ++------
+ src/plugins/evolution/evolution.c                 | 13 ++++----
+ src/plugins/nautilus-sendto-plugin.c              | 23 ++++++-------
+ src/plugins/nautilus-sendto-plugin.h              | 39 +++++++++++++----------
+ src/plugins/removable-devices/removable-devices.c | 14 ++++----
+ src/plugins/socialweb/socialweb.c                 | 22 ++++++-------
+ 6 files changed, 56 insertions(+), 68 deletions(-)
+
+commit 6f50d54898c2d58c8748bb728f97a44ff18e6f46
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Sep 21 11:40:02 2010 +0100
+
+    Fix socialweb plugin for latest API changes
+
+ src/plugins/socialweb/socialweb.c | 18 ++++++++++++++----
+ 1 file changed, 14 insertions(+), 4 deletions(-)
+
+commit d5f80ecdc8199ae2bb77d829d8f48a0b2226c1fb
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Sep 21 11:38:54 2010 +0100
+
+    Add ID parameter to the send call
+    
+    So the plugin knows which page should send
+
+ src/plugins/evolution/evolution.c                 | 1 +
+ src/plugins/nautilus-sendto-plugin.c              | 4 +++-
+ src/plugins/nautilus-sendto-plugin.h              | 4 +++-
+ src/plugins/removable-devices/removable-devices.c | 1 +
+ 4 files changed, 8 insertions(+), 2 deletions(-)
+
+commit 62c677d2ade43334e4323f4921a210bfdc6b8fa2
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Sep 21 11:37:00 2010 +0100
+
+    Fix sending when plugin implements multiple pages
+    
+    We can't get the plugin from its ID, because IDs are attached
+    to pages, not plugins, so store info about the plugin in the treeview.
+
+ src/nautilus-sendto-command.c | 13 ++++++-------
+ 1 file changed, 6 insertions(+), 7 deletions(-)
+
+commit fa4be2725acf38cbf40e06eedfb42773f7bbf24d
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Sep 21 10:39:10 2010 +0100
+
+    Rename socialweb plugin to avoid confusion
+
+ src/plugins/socialweb/socialweb.nst-plugin | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 16dce9eaae0c67cbad2c6e9818417641dfc44a75
+Author: Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>
+Date:   Mon Sep 20 21:10:27 2010 +0900
+
+    Updated Japanese translation
+
+ po/ja.po | 281 ++++++++++++++++++++++++++++-----------------------------------
+ 1 file changed, 123 insertions(+), 158 deletions(-)
+
+commit c19d8b7caeb93f0e91ef27641a6a03de6f0b9183
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:   Wed Sep 1 20:48:30 2010 +0200
+
+    Updated Galician translations
+
+ po/gl.po | 156 ++++++++++++++++++++++++++++++++++++++++++++++-----------------
+ 1 file changed, 115 insertions(+), 41 deletions(-)
+
+commit 772e0e6691400f664b6bbaca42ceac93b5435953
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Sep 1 15:15:14 2010 +0100
+
+    Add support for parenting the dialogue
+
+ src/nautilus-sendto-command.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+
+commit f03f355a8442d44bbda50ef75fdb370764a73be4
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Sep 1 15:00:27 2010 +0100
+
+    Re-add window icon
+    
+    As it were in 2.32
+
+ data/nautilus-sendto.ui | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 55f2c7a400bad4989c02c8dd0ecfe2b056c5637a
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Sep 1 10:36:27 2010 +0100
+
+    Add a contextual menu for non-local files
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=627040
+
+ src/extension/nautilus-nste.c | 14 --------------
+ 1 file changed, 14 deletions(-)
+
+commit 2de9f2aed66d24117838ddb622bc26c2063a9486
+Author: Dirgita <dirgitadevina@yahoo.co.id>
+Date:   Wed Sep 1 01:01:01 2010 +0700
+
+    Updated Indonesian translation
+
+ po/id.po | 301 +++++++++++++++++++++++++++++++++++++--------------------------
+ 1 file changed, 175 insertions(+), 126 deletions(-)
+
+commit c77339fdec3e6ea90e430fa30c190e317f7c9a9a
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   Tue Aug 31 16:49:00 2010 +0100
+
+    Fix command-line help glitch
+    
+    nautilus-sendo --help says
+    
+    Usage:
+    nautilus-sendto [OPTION...] [FILES...] nautilus-sendto
+    
+    The second 'nautilus-sendto' here is redundant and confusing. With the
+    patch below, it says just
+    
+    Usage:
+    nautilus-sendto [OPTION...] [FILES...]
+    which is the intended output
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=627849
+
+ src/nautilus-sendto-command.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b7ec5f1af3c40720a9c9a59a3e1b5b1f8f29750a
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Aug 27 20:33:16 2010 +0100
+
+    Fix dynamic changes in "can-send" from plugins
+    
+    When the plugin changes its own "can-send" status, apply it
+    straight away if the page is the selected one. Otherwise it
+    will take going to another page and back for it to be applied.
+
+ src/nautilus-sendto-command.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit 5488e21706a3d28d2c9c284c02236c37b75e7983
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Aug 27 17:06:10 2010 +0100
+
+    evolution: export whether the packer is setup
+    
+    to the front-end
+
+ src/plugins/evolution/evolution.c | 15 +++++++++++----
+ 1 file changed, 11 insertions(+), 4 deletions(-)
+
+commit e7454655d8670f35944edd1f574137ad4bffb1a6
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Aug 27 17:05:34 2010 +0100
+
+    Fix warning when cancel is pressed
+    
+    We already exited the main loop, no point doing it again.
+
+ src/nautilus-sendto-command.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+commit 735fbd9c784b7026bea4fa1a01108f3d8f8c0bb9
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Aug 27 16:50:28 2010 +0100
+
+    Clean up global variables
+    
+    And clean up the NautilusSendto structure when done.
+
+ src/nautilus-sendto-command.c | 73 +++++++++++++++++++------------------------
+ 1 file changed, 33 insertions(+), 40 deletions(-)
+
+commit f5ea4b3e6067d2ed904d79084c1c1c1f0cdcf0be
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Aug 27 16:32:47 2010 +0100
+
+    Rework widget additions
+    
+    Widget additions are now made by the plugins themselves, so
+    that plugins can handle multiple pages by themselves.
+    
+    This means:
+    - plugin files don't need to be translated anymore
+    - a get_object() API kludge was added to work-around
+      a libpeas bug where it does not allow direct access
+      to the plugin object
+    - plugins now emit "add-widget" for each page they'd like to add
+    - plugins emit "can-send" when the status of whether you
+      can send changes
+    
+    Add proof of concept libsocialweb plugin.
+
+ .gitignore                                         |   6 +-
+ configure.in                                       |  21 +-
+ po/POTFILES.in                                     |   2 +
+ src/Makefile.am                                    |   2 -
+ src/nautilus-sendto-command.c                      | 252 +++++++++------
+ src/plugins/Makefile.am                            |  13 +-
+ src/plugins/evolution/Makefile.am                  |   4 +-
+ src/plugins/evolution/evolution.c                  |  48 +--
+ src/plugins/evolution/evolution.nst-plugin         |   6 +
+ src/plugins/evolution/evolution.nst-plugin.in      |   6 -
+ src/plugins/nautilus-sendto-plugin.c               |  45 +--
+ src/plugins/nautilus-sendto-plugin.h               |  25 +-
+ src/plugins/nst-plugin-marshal.list                |   2 +
+ src/plugins/removable-devices/Makefile.am          |   3 -
+ src/plugins/removable-devices/removable-devices.c  |  24 +-
+ .../removable-devices/removable-devices.nst-plugin |   6 +
+ .../removable-devices.nst-plugin.in                |   6 -
+ src/plugins/socialweb/Makefile.am                  |  22 ++
+ src/plugins/socialweb/socialweb.c                  | 356 +++++++++++++++++++++
+ src/plugins/socialweb/socialweb.nst-plugin         |   6 +
+ 20 files changed, 671 insertions(+), 184 deletions(-)
+
+commit 651f53d5b7704e286930f97cd5611e8ae206db6a
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Aug 27 15:41:11 2010 +0100
+
+    Don't translate plugin files
+    
+    The translation will not be used.
+
+ .gitignore | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 9a4f539d3d34a4789c479ff475dfbf52c09c79fd
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Aug 23 16:38:21 2010 +0100
+
+    Make ->send_files asynchronous
+    
+    So that the UI is not blocked, and progress reports can be made
+    from within the plugin itself.
+
+ src/nautilus-sendto-command.c                     | 29 +++++++++++--
+ src/plugins/evolution/evolution.c                 | 20 +++++++--
+ src/plugins/nautilus-sendto-plugin.c              | 51 ++++++++++++++++++-----
+ src/plugins/nautilus-sendto-plugin.h              | 21 ++++++----
+ src/plugins/removable-devices/removable-devices.c | 26 +++++++++---
+ 5 files changed, 117 insertions(+), 30 deletions(-)
+
+commit ac0cc3bcb97eb1b93a7efa95b8a2cd1cd0f825da
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Aug 20 19:08:03 2010 +0100
+
+    Change the return value of the send_files method
+    
+    Now an enum, so we can get status reports from plugins some
+    other way when the process of sending will be long.
+
+ src/nautilus-sendto-command.c                     |  6 +++---
+ src/plugins/evolution/evolution.c                 |  4 ++--
+ src/plugins/nautilus-sendto-plugin.c              | 10 ++++++----
+ src/plugins/nautilus-sendto-plugin.h              | 14 +++++++++++---
+ src/plugins/removable-devices/removable-devices.c |  4 ++--
+ 5 files changed, 24 insertions(+), 14 deletions(-)
+
+commit 5c824137b3b1df0d87e2841a2640c14bcbb2f57b
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Aug 20 18:57:19 2010 +0100
+
+    Move enum types parsing to src/plugins
+    
+    So it can be exported in the public library
+
+ src/Makefile.am         | 26 --------------------------
+ src/plugins/Makefile.am | 30 +++++++++++++++++++++++++++++-
+ 2 files changed, 29 insertions(+), 27 deletions(-)
+
+commit 91d25632e6e1c1b6c3d340ac0569ae520096c35a
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Aug 20 18:52:05 2010 +0100
+
+    Merge some helper libraries into one
+    
+    So that the packer can be exported to other plugins.
+
+ src/plugins/Makefile.am                   |  21 +-
+ src/plugins/evolution/Makefile.am         |   2 +-
+ src/plugins/evolution/evolution.c         |   2 +-
+ src/plugins/nautilus-sendto-packer.c      | 434 ++++++++++++++++++++++++++++++
+ src/plugins/nautilus-sendto-packer.h      |  54 ++++
+ src/plugins/nst-common.c                  | 408 ----------------------------
+ src/plugins/nst-common.h                  |  34 ---
+ src/plugins/removable-devices/Makefile.am |   2 +-
+ 8 files changed, 498 insertions(+), 459 deletions(-)
+
+commit 33161cda94ae0c7699ed5ae6032150da79b27fe1
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Aug 20 18:44:21 2010 +0100
+
+    Only parts we control should be unsensitive
+    
+    The plugins know better which parts of their UI shouldn't
+    be sensitive.
+
+ src/nautilus-sendto-command.c | 18 ++++++++++++++++--
+ 1 file changed, 16 insertions(+), 2 deletions(-)
+
+commit ffe1152c5c787d3460d19aef56a788a655a50c76
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Aug 20 17:48:44 2010 +0100
+
+    Make nautilus_sendto_plugin_init() fail properly
+    
+    If we fail to load the introspection data, exit out.
+
+ src/nautilus-sendto-command.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+
+commit 4a26157727afef3ee1bb7a64354d4d8f710f42df
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Aug 20 17:48:22 2010 +0100
+
+    Add separator in the treeview
+
+ src/nautilus-sendto-command.c | 45 +++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 41 insertions(+), 4 deletions(-)
+
+commit 4b0eae946b4354ab721663f615e96eed45d68033
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Aug 20 16:43:57 2010 +0100
+
+    Port to libpeas 0.5.5
+
+ configure.in                  | 2 +-
+ src/nautilus-sendto-command.c | 1 -
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+
+commit ea6b043fc56778411fd69bbd0d4a396aa7328c32
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Aug 18 15:58:54 2010 +0100
+
+    Make sure test-mimetype-data is shipped
+
+ .gitignore      | 1 +
+ src/Makefile.am | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 0aa504a9cb0799d05d146b174304eab1c73dc658
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Aug 18 15:57:05 2010 +0100
+
+    Update POTFILES.in for file movement
+
+ po/POTFILES.in | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+commit 56a921fbd4fb2ccd13f348b917c219468453a6f2
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Aug 18 15:55:12 2010 +0100
+
+    Implement setting the title and flesh out test
+    
+    Turns out setting the title also requires the number of folders
+    if we're going to differentiate them in the UI.
+    
+    Implement test case in a way that doesn't crash.
+
+ src/Makefile.am                |  1 +
+ src/nautilus-sendto-command.c  | 11 ++++---
+ src/nautilus-sendto-mimetype.c | 61 +++++++++++++++++++++++++++++++++-
+ src/nautilus-sendto-mimetype.h |  3 +-
+ src/test-mimetype-data         | 57 ++++++++++++++++++++++++++++++++
+ src/test-mimetype.c            | 74 ++++++++++++++++++++++++++++++++----------
+ src/totem-mime-types.h         | 58 +++++++++++++++++++++++++++++++++
+ 7 files changed, 241 insertions(+), 24 deletions(-)
+
+commit 0ca00f4b3d19e6d26070550833d42bae9ec953a3
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Aug 18 14:24:46 2010 +0100
+
+    Add starts of a test case for setting the title
+
+ Makefile.decl                  | 53 ++++++++++++++++++++++++++++++++++++++++++
+ src/Makefile.am                | 13 ++++++++++-
+ src/nautilus-sendto-command.c  | 11 +++++++--
+ src/nautilus-sendto-mimetype.c | 31 ++++++++++++++++++++++++
+ src/nautilus-sendto-mimetype.h | 27 +++++++++++++++++++++
+ src/test-mimetype.c            | 50 +++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 182 insertions(+), 3 deletions(-)
+
+commit abd3f289890b017684874382c4caa4e8e04e36d2
+Author: daniel g. siegel <dgsiegel@gnome.org>
+Date:   Tue Aug 17 12:36:05 2010 +0200
+
+    cleanup directory tree
+    
+    moved data files, such as the ui files, the pkgconfig file
+    and the gconf/gsettings schema files to data. src should now
+    only contain source code
+
+ .gitignore                                    |  16 ++-
+ Makefile.am                                   |   2 +-
+ configure.in                                  |   3 +-
+ data/Makefile.am                              |  15 +++
+ data/nautilus-sendto-convert                  |   3 +
+ data/nautilus-sendto.pc.in                    |  10 ++
+ data/nautilus-sendto.ui                       | 183 ++++++++++++++++++++++++++
+ data/org.gnome.Nautilus.Sendto.gschema.xml.in |  20 +++
+ data/pack-entry.ui                            | 107 +++++++++++++++
+ src/Makefile.am                               |  15 ---
+ src/nautilus-sendto-command.c                 |   2 +-
+ src/nautilus-sendto-convert                   |   3 -
+ src/nautilus-sendto.pc.in                     |  10 --
+ src/nautilus-sendto.ui                        | 183 --------------------------
+ src/org.gnome.Nautilus.Sendto.gschema.xml.in  |  20 ---
+ src/plugins/Makefile.am                       |   1 -
+ src/plugins/nst-common.c                      |   2 +-
+ src/plugins/pack-entry.ui                     | 107 ---------------
+ 18 files changed, 354 insertions(+), 348 deletions(-)
+
+commit 247c02897a224db66ded46ee53cd55dbd1b25d18
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Aug 16 16:55:23 2010 +0100
+
+    Make sending actually work
+
+ src/nautilus-sendto-command.c | 114 ++++++++++--------------------------------
+ 1 file changed, 27 insertions(+), 87 deletions(-)
+
+commit 2641dfe5cea05035b3af561f1ab8ddce14e95fc5
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Aug 16 16:54:57 2010 +0100
+
+    evo: Add explicit support for packing files
+
+ src/plugins/evolution/evolution.c | 22 ++++++++++++++++++----
+ 1 file changed, 18 insertions(+), 4 deletions(-)
+
+commit 65f98e010ac74bbf9d36ca7ccb4e3c71a08ffb85
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Aug 16 16:17:10 2010 +0100
+
+    Require introspection
+    
+    Otherwise the plugin loading just won't work.
+
+ configure.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e02415731565c77907ff4f184d14f8416dd4cd29
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Aug 16 15:55:27 2010 +0100
+
+    Use the new packer features in the Evolution plugin
+
+ src/plugins/evolution/evolution.c | 24 +++++++++++++++++++++++-
+ 1 file changed, 23 insertions(+), 1 deletion(-)
+
+commit 535fc09ebb03cd23828e29ec5f2303ceb0d5fc59
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Aug 16 15:53:29 2010 +0100
+
+    Export packer functionality to the plugins
+    
+    Make it possible to force packing from plugins, and export
+    whether the entry has a filename when the selection is enabled.
+
+ src/plugins/nst-common.c | 105 +++++++++++++++++++++++++++++++++++++++++++----
+ src/plugins/nst-common.h |  14 +++++--
+ 2 files changed, 106 insertions(+), 13 deletions(-)
+
+commit 79e98a74605c4b645bdbd5a41feafe6d0f7d05e5
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Aug 16 14:58:58 2010 +0100
+
+    Update POTFILES.in
+    
+    For new code and UI files
+
+ po/POTFILES.in | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+commit 9464b0736c502d7c863f1a78d2eae1c1e4bd782a
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Aug 16 14:54:29 2010 +0100
+
+    Add missing pack-entry.ui file
+
+ src/plugins/pack-entry.ui | 107 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 107 insertions(+)
+
+commit 39784e3d792a0c5a0525fd645ac51d366818fe30
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Aug 16 14:49:48 2010 +0100
+
+    Remove GConf call from the install target
+    
+    We don't use GConf anymore...
+
+ Makefile.am | 4 ----
+ 1 file changed, 4 deletions(-)
+
+commit 68fda37e38eac8be4d8aace46ca0222617b94228
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Aug 16 14:37:12 2010 +0100
+
+    Fix loading packer UI file from uninstalled
+
+ src/nautilus-sendto-command.c |  6 ++++--
+ src/plugins/Makefile.am       |  5 ++++-
+ src/plugins/nst-common.c      | 11 ++++++++---
+ 3 files changed, 16 insertions(+), 6 deletions(-)
+
+commit 365b84f03527a4db910dd836f7fa6040ae9f9447
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Aug 16 14:28:43 2010 +0100
+
+    Allow running from build dir
+    
+    With the "-b" command-line option.
+
+ src/nautilus-sendto-command.c | 27 ++++++++++++++++-----------
+ 1 file changed, 16 insertions(+), 11 deletions(-)
+
+commit 24eed28d40afb345e95eec55fa87f6700e966e6c
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Aug 16 14:20:05 2010 +0100
+
+    Make gtk-doc compile
+    
+    By linking against the needed library.
+
+ docs/nautilus-sendto/Makefile.am | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 5335cefd3851c08e30485d4a4ae0509bc9254690
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Aug 11 17:45:48 2010 +0100
+
+    First throw of our new sharing UI
+    
+    The port is powered by libpeas for plugins. See:
+    http://live.gnome.org/Nautilus/Future/Sharing
+    for background about sharing.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=626553
+
+ configure.in                                       |  42 +-
+ src/Makefile.am                                    |  28 +-
+ src/extension/Makefile.am                          |  22 +
+ src/extension/nautilus-nste.c                      | 171 +++++
+ src/extension/nautilus-nste.h                      |  51 ++
+ src/extension/nautilus-sendto-module.c             |  56 ++
+ src/nautilus-nste.c                                | 176 ------
+ src/nautilus-nste.h                                |  51 --
+ src/nautilus-sendto-command.c                      | 694 +++++++--------------
+ src/nautilus-sendto-module.c                       |  60 --
+ src/nautilus-sendto-plugin.h                       | 116 ----
+ src/nautilus-sendto.ui                             | 495 +++------------
+ src/plugins/Makefile.am                            |  41 +-
+ src/plugins/evolution/Makefile.am                  |  10 +-
+ src/plugins/evolution/evolution.c                  | 319 ++++++----
+ src/plugins/evolution/evolution.nst-plugin.in      |   6 +
+ src/plugins/nautilus-burn/nautilus-burn.c          |  16 +-
+ src/plugins/nautilus-sendto-plugin.c               | 111 ++++
+ src/plugins/nautilus-sendto-plugin.h               | 101 +++
+ src/plugins/nst-common.c                           | 321 ++++++++++
+ src/plugins/nst-common.h                           |  31 +-
+ src/plugins/removable-devices/Makefile.am          |   7 +-
+ src/plugins/removable-devices/removable-devices.c  | 182 +++---
+ .../removable-devices.nst-plugin.in                |   6 +
+ 24 files changed, 1570 insertions(+), 1543 deletions(-)
+
+commit 3b7e55f35882ecb35b5801fe75f9c5798f964cbf
+Author: Ahmed Noor Kader Mustajir Md Eusoff <sir.ade@gmail.com>
+Date:   Sun Aug 8 21:14:46 2010 +0200
+
+    Added Malay translation
+
+ po/LINGUAS |   1 +
+ po/ms.po   | 226 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 227 insertions(+)
+
+commit d2e96e99d4e1548f862c3b6e567c22934ed8d49a
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:   Wed Jul 21 14:40:45 2010 +0200
+
+    Updated Galician translations
+
+ po/gl.po | 122 ++++++++-------------------------------------------------------
+ 1 file changed, 14 insertions(+), 108 deletions(-)
+
+commit d33c3cd5f8302a273eb212ace01455d217d1f033
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Jul 19 14:48:10 2010 +0100
+
+    Remove bluetooth plugin from POTFILES.in
+    
+    It's now in gnome-bluetooth itself.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=624733
+
+ po/POTFILES.in | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit b2b281f13231dd8275e043492731bd66eb1b68c3
+Author: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>
+Date:   Thu Jul 15 01:32:03 2010 +0300
+
+    po: Updated Romanian translation
+
+ po/ro.po | 158 ++++++++++++++++++++++++++++-----------------------------------
+ 1 file changed, 71 insertions(+), 87 deletions(-)
+
+commit 00821fc8f8a1ea9ab7fe1381eca88a0079d3c164
+Author: Gabor Kelemen <kelemeng@gnome.hu>
+Date:   Wed Jul 7 11:45:36 2010 +0200
+
+    Updated Hungarian translation
+
+ po/hu.po | 67 ++++------------------------------------------------------------
+ 1 file changed, 4 insertions(+), 63 deletions(-)
+
+commit ed8630bf9f2f209a9ca61737b73a9c4543bbda35
+Author: Gabor Kelemen <kelemeng@gnome.hu>
+Date:   Wed Jul 7 11:36:44 2010 +0200
+
+    Updated Hungarian translation
+
+ po/hu.po | 245 ++++++++++++++++++++++++++++-----------------------------------
+ 1 file changed, 108 insertions(+), 137 deletions(-)
+
+commit 4b6ffeffd17300dfc9e50bdcd08acb4075623476
+Author: Kristjan Schmidt <kristjan.schmidt@googlemail.com>
+Date:   Wed Jun 30 20:10:05 2010 +0200
+
+    Add Esperanto translation
+
+ po/LINGUAS | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 6d7cc69d199eef52e8d5e3c93c9845949d64eea3
+Author: Kristjan Schmidt <kristjan.schmidt@googlemail.com>
+Date:   Wed Jun 30 20:10:04 2010 +0200
+
+    Add Esperanto translation
+
+ po/eo.po | 285 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 285 insertions(+)
+
+commit 52f91de036a557fea8cb5bb442c3ef7b4b082248
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Jun 29 15:04:47 2010 +0100
+
+    2.90.0
+
+ NEWS            | 18 ++++++++++++++++--
+ src/Makefile.am |  4 ++--
+ 2 files changed, 18 insertions(+), 4 deletions(-)
+
+commit 7933c013716ae04285be20f875ff47ab893451d9
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Jun 23 19:06:10 2010 +0100
+
+    Remove Bluetooth plugin
+    
+    It now lives in gnome-bluetooth.
+
+ configure.in                                 |  11 +-
+ src/plugins/bluetooth/Makefile.am            |  32 --
+ src/plugins/bluetooth/bluetooth-marshal.list |   1 -
+ src/plugins/bluetooth/bluetooth.c            | 561 ---------------------------
+ 4 files changed, 1 insertion(+), 604 deletions(-)
+
+commit cc36a0c5956127e5d52210197d6cf3c2eb5de036
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Jun 23 19:03:29 2010 +0100
+
+    Port to GSettings
+    
+    And disable the bluetooth plugin for now (the gnome-bluetooth
+    version is already ported to GSettings)
+
+ Makefile.am                                  |  9 ++----
+ configure.in                                 | 13 +++-----
+ nst.schemas.in                               | 35 --------------------
+ po/POTFILES.in                               |  3 +-
+ src/Makefile.am                              | 10 +++++-
+ src/nautilus-sendto-command.c                | 48 +++++++++++++---------------
+ src/nautilus-sendto-convert                  |  3 ++
+ src/org.gnome.Nautilus.Sendto.gschema.xml.in | 20 ++++++++++++
+ 8 files changed, 62 insertions(+), 79 deletions(-)
+
+commit b7c0447195998c60a40ccbf2dd27a395f26451ca
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Jun 23 19:01:37 2010 +0100
+
+    Add required dbus and dbus-glib CFLAGS
+
+ src/plugins/gajim/Makefile.am | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 35985ea70949914ee6731f010b6e96ff1726c2b4
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Jun 23 18:38:44 2010 +0100
+
+    Port to GTK+ 3.0
+
+ configure.in              | 8 ++++----
+ src/nautilus-sendto.pc.in | 2 +-
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+
+commit 65f860b9c13d75151290d71f4bfdf7aefb8ba562
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Jun 10 18:52:40 2010 +0100
+
+    Add DOAP file
+
+ nautilus-sendto.doap | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+
+commit c4f591ebe5af99c0483dd04a608cebda9bbffe49
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Jun 10 18:34:08 2010 +0100
+
+    Fix handling of shadowed mounts
+    
+    Fix duplicate mounts appearing in the "removable device" section
+    when a mount is shadowed.
+
+ src/plugins/removable-devices/removable-devices.c | 26 ++++++++++++++++++++++-
+ 1 file changed, 25 insertions(+), 1 deletion(-)
+
+commit ff902cb60e1ace5ca4af09f9c9f7d76517c8e5d5
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Jun 9 18:18:15 2010 +0100
+
+    Remove never_unload from the plugin struct
+    
+    Seeing as we never want to unload them now.
+
+ src/nautilus-sendto-plugin.h                      | 4 +---
+ src/plugins/bluetooth/bluetooth.c                 | 1 -
+ src/plugins/evolution/evolution.c                 | 1 -
+ src/plugins/gajim/gajim.c                         | 1 -
+ src/plugins/nautilus-burn/nautilus-burn.c         | 1 -
+ src/plugins/pidgin/pidgin.c                       | 1 -
+ src/plugins/removable-devices/removable-devices.c | 1 -
+ src/plugins/upnp/upnp.c                           | 1 -
+ 8 files changed, 1 insertion(+), 10 deletions(-)
+
+commit c76410275933ff05701cda346944e30498d27b2e
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Jun 9 18:12:42 2010 +0100
+
+    Never unload modules once init() has been done
+    
+    Because they might register new types, and when they're unloaded,
+    kaboom!
+
+ src/nautilus-sendto-command.c | 2 --
+ 1 file changed, 2 deletions(-)
+
+commit 99a19ae7549b8ad8f874748cbc89cda9b0e4d9a5
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Jun 9 17:42:19 2010 +0100
+
+    Never unload plugins that use D-Bus internally
+    
+    As the new types will be unloaded, and kaboom!
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=608126
+
+ src/plugins/pidgin/pidgin.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 91aa1610f6ed1d36abe1d7bf1f607616cf8187da
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Jun 9 17:39:13 2010 +0100
+
+    Remove Empathy plugin
+    
+    It now lives in Empathy itself.
+
+ configure.in                    |  15 +-
+ src/plugins/empathy/Makefile.am |  19 ---
+ src/plugins/empathy/empathy.c   | 293 ----------------------------------------
+ 3 files changed, 1 insertion(+), 326 deletions(-)
+
+commit 6756a352ce9560a343aa4f31c96ab9247ee20b83
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Jun 9 17:36:38 2010 +0100
+
+    Remove plugin to use sendto from Evolution
+    
+    And not the plugin to use evolution-data-server in nautilus-sendto.
+
+ Makefile.am                                        |   8 +-
+ configure.in                                       |  19 ----
+ evolution/Makefile.am                              |  17 ----
+ evolution/nautilus-sendto.c                        | 112 ---------------------
+ ...g-gnome-evolution-send-attachments-to.eplug.xml |  28 ------
+ evolution/plugin.mk                                |  11 --
+ po/POTFILES.in                                     |   2 -
+ 7 files changed, 1 insertion(+), 196 deletions(-)
+
+commit 52ed3fb5981cddcd84d787912fa548043ff568da
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Jun 9 17:29:08 2010 +0100
+
+    Fix thunderbird's mailto command
+    
+    Seeing as it's the only mailer to be such a pain.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=614222
+
+ src/plugins/evolution/evolution.c | 13 +++++++++++--
+ 1 file changed, 11 insertions(+), 2 deletions(-)
+
+commit 90859ca39bb877b665bb99da73c47569dc6a55b0
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Jun 9 17:13:01 2010 +0100
+
+    Make the last selected medium's widget grab focus
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=615214
+
+ src/nautilus-sendto-command.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 86c61296477d353942156213f0daa497539d9680
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:   Mon Jun 7 20:51:07 2010 +0200
+
+    Updated Slovenian translation
+
+ po/sl.po | 671 +++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 331 insertions(+), 340 deletions(-)
+
+commit 17aff593fbda9c47b7f46a1df87b38c9a69c0aa6
+Author: Sira Nokyoongtong <gumaraa@gmail.com>
+Date:   Mon Jun 7 11:49:46 2010 +0700
+
+    Updated Thai translation.
+
+ po/th.po | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 6d9294461935516991082e535a09b28d27105abe
+Author: Andre Klapper <a9016009@gmx.de>
+Date:   Sat May 29 03:42:30 2010 +0200
+
+    Compile with -DGSEAL_ENABLE. Fixes bug 612493.
+
+ src/nautilus-sendto-command.c           | 2 +-
+ src/plugins/evolution/e-contact-entry.c | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 2d140007d1b9b541d922ceda04439c17bce70fd9
+Author: Andre Klapper <a9016009@gmx.de>
+Date:   Sat May 29 03:42:04 2010 +0200
+
+    Bump GTK+ requirement to 2.18
+
+ configure.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 15effd7fe52140b103632f1f79095f705ce6ea05
+Author: Gintautas Miliauskas <gintautas@miliauskas.lt>
+Date:   Wed May 26 23:06:22 2010 +0300
+
+    Updated Lithuanian translation
+
+ po/lt.po | 161 +++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 70 insertions(+), 91 deletions(-)
+
+commit c20884380f7627582f9bd4f954d51c81b2f94a84
+Author: Thomas Thurman <tthurman@gnome.org>
+Date:   Thu May 13 18:12:50 2010 -0400
+
+    Updated Shavian translation
+
+ po/en@shaw.po | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit 8d83d4a35385095ec3d7650478ae1c9a4b604144
+Author: Thomas Thurman <tthurman@gnome.org>
+Date:   Wed May 12 18:41:42 2010 -0400
+
+    Updated Shavian transliteration
+
+ po/en@shaw.po | 86 ++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 44 insertions(+), 42 deletions(-)
+
+commit 26c5bac968a392f334620e716b5345d66204ac6b
+Author: Torstein Adolf Winterseth <kvikende@fsfe.org>
+Date:   Sat May 1 08:52:36 2010 +0200
+
+    Added Norwegian Nynorsk translation
+
+ po/LINGUAS |   1 +
+ po/nn.po   | 293 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 294 insertions(+)
+
+commit 92ef2aa0f16bc56e30885e11e24cebd54e258131
+Author: Gil Forcada <gforcada@gnome.org>
+Date:   Wed Apr 21 22:52:59 2010 +0200
+
+    Added ca@valencia
+
+ po/LINGUAS | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 6e979fea011f4cf1d97e500c76e374c6ec6c695a
+Author: Carles Ferrando <carles.ferrando@gmail.com>
+Date:   Wed Apr 21 22:52:47 2010 +0200
+
+    Added Catalan (Valencian) translation
+
+ po/ca@valencia.po | 348 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 348 insertions(+)
+
+commit 2f30fac6a966fc48bff5ead4d919a46553dbbd48
+Author: Yannig Marchegay <yannig@marchegay.org>
+Date:   Wed Apr 14 19:01:11 2010 +0200
+
+    Updated Occitan translation
+
+ po/oc.po | 281 ++++++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 154 insertions(+), 127 deletions(-)
+
+commit dc2c5f486785a7b2e869ea67fda0a8178df86e5d
+Author: Andika Triwidada <andika@gmail.com>
+Date:   Wed Apr 14 15:12:44 2010 +0700
+
+    Added Indonesian translation, contributed by Imam Musthaqim
+    Updated Indonesian translation
+    Added id to LINGUAS
+
+ po/LINGUAS |   1 +
+ po/id.po   | 285 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 286 insertions(+)
+
+commit 04cdf528ac8b27c2acdc43d8b409c573a2ce6c4e
+Author: Theppitak Karoonboonyanan <thep@linux.thai.net>
+Date:   Thu Apr 8 15:15:16 2010 +0700
+
+    Updated Thai translation.
+
+ po/th.po | 357 +++++++++++++++++++++++++++++++++++++++++++++++----------------
+ 1 file changed, 267 insertions(+), 90 deletions(-)
+
+commit 62a40673bf9c885b266e8058d22b9400f61c3b88
+Author: Jordi Serratosa <jordis.lists@gmail.com>
+Date:   Fri Apr 2 18:47:35 2010 +0200
+
+    Fixes to Catalan translation
+
+ po/ca.po | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 4894df8857e78b711dea172676f1698f97f42dc4
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Mar 29 17:20:27 2010 +0100
+
+    2.28.4
+
+ NEWS         | 9 +++++++++
+ configure.in | 2 +-
+ 2 files changed, 10 insertions(+), 1 deletion(-)
+
+commit 9b6d0bccbe02d746b5483eb809c3ca162026203e
+Author: Kostas Papadimas <pkst@gnome.org>
+Date:   Sun Mar 28 11:40:35 2010 +0300
+
+    Updated Greek translation
+
+ po/el.po | 52 ++++++++++++++++++----------------------------------
+ 1 file changed, 18 insertions(+), 34 deletions(-)
+
+commit 450ea1995aafd9d0ff43774d1a2a1cd0846ee9c3
+Author: parimbra <parimbra@redhat.com>
+Date:   Fri Mar 26 12:41:02 2010 +0530
+
+    nautilus-sendto Malayalam translation reviewed by Praveen Arimbrathodiyil
+
+ po/ml.po | 53 +++++++++++++++++++++++++----------------------------
+ 1 file changed, 25 insertions(+), 28 deletions(-)
+
+commit b55ea46b41d1f129296677db2003096d49e23983
+Author: parimbra <parimbra@redhat.com>
+Date:   Fri Mar 26 12:27:38 2010 +0530
+
+    Malayalam translation updated by Labeeb
+
+ po/ml.po | 98 +++++++++++++++++++++++++++++++++-------------------------------
+ 1 file changed, 51 insertions(+), 47 deletions(-)
+
+commit b22f9c17c8543bb4eb2d4c0346bb012ead3f6392
+Author: Inaki Larranaga Murgoitio <dooteo@zundan.com>
+Date:   Wed Mar 24 14:43:39 2010 +0100
+
+    Updated Basque language
+
+ po/eu.po | 18 +++++++++---------
+ 1 file changed, 9 insertions(+), 9 deletions(-)
+
+commit f4768fce52e9e46b70060aabedbec9b544d3ccf6
+Author: Wouter Bolsterlee <wbolster@gnome.org>
+Date:   Sat Mar 20 17:02:15 2010 +0100
+
+    Dutch translation updated by Wouter Bolsterlee
+
+ po/nl.po | 236 ++++++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 129 insertions(+), 107 deletions(-)
+
+commit 2ac045230516883b1fca6982feb946af0c2859e9
+Author: Tommi Vainikainen <thv@iki.fi>
+Date:   Fri Mar 19 08:51:16 2010 +0200
+
+    Updated Finnish translation
+
+ po/fi.po | 177 +++++++++++++++++++++++++++++----------------------------------
+ 1 file changed, 80 insertions(+), 97 deletions(-)
+
+commit 504b2aed4304ea18073d285f2b46e97195b039cb
+Author: Nikos Bakaoukas <nikolaos.x1@gmail.com>
+Date:   Fri Mar 19 00:16:14 2010 +0200
+
+    Updated Greek translation for nautilus-sendto
+
+ po/el.po | 224 +++++++++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 123 insertions(+), 101 deletions(-)
+
+commit 5aa85678d6974db968647fed608659ffa630e843
+Author: Marcel Telka <marcel@telka.sk>
+Date:   Wed Mar 17 12:44:16 2010 +0100
+
+    Updated Slovak translation
+
+ po/sk.po | 275 ++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 133 insertions(+), 142 deletions(-)
+
+commit f573911cffcb12292a68ec89be99b3b0d61bf750
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Mar 15 16:29:16 2010 +0000
+
+    2.28.3
+
+ NEWS         | 12 ++++++++++++
+ configure.in |  2 +-
+ 2 files changed, 13 insertions(+), 1 deletion(-)
+
+commit a24437211fe39f7b3fab3db22bb4c862450874d0
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Mar 15 11:54:36 2010 +0000
+
+    Remove untranslatable string from help output
+    
+    "Nautilus Sendto" isn't a word, and you don't know whether to
+    translate it or not. So let's not and disable it completely.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=612882
+
+ src/nautilus-sendto-command.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit cdd50559affd4b7e1db2c2bd00b0d43e4fe858d9
+Author: Friedel Wolff <friedel@translate.org.za>
+Date:   Sat Mar 13 20:45:00 2010 +0100
+
+    Add Afrikaans translation
+
+ po/LINGUAS |   1 +
+ po/af.po   | 298 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 299 insertions(+)
+
+commit b6ec8175317eab960a3fc65e896983b87e694eba
+Author: Changwoo Ryu <cwryu@debian.org>
+Date:   Sun Mar 14 02:28:20 2010 +0900
+
+    Updated Korean translation
+
+ po/ko.po | 322 +++++++++++++++++++++++++++++++++++++++------------------------
+ 1 file changed, 198 insertions(+), 124 deletions(-)
+
+commit 5aca1f419c7b49ccd1657d70a47577fe9a6267f5
+Author: parimbra <parimbra@redhat.com>
+Date:   Fri Mar 5 20:04:03 2010 +0530
+
+    Jeevs translated nautilus-sendto to Malayalam
+
+ po/LINGUAS |   1 +
+ po/ml.po   | 289 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 290 insertions(+)
+
+commit 82936d1fc0e0d8a5ac1df708870f68c65f06b5b3
+Author: Claude Paroz <claude@2xlibre.net>
+Date:   Sun Feb 28 22:31:54 2010 +0100
+
+    Updated French translation
+
+ po/fr.po | 108 +++++++++++++++++++++++++--------------------------------------
+ 1 file changed, 42 insertions(+), 66 deletions(-)
+
+commit e3532a0fab7604dc547818909a6ea849a1ca6da3
+Author: Bruce Cowan <bcowan@fastmail.co.uk>
+Date:   Wed Feb 24 14:02:48 2010 +0000
+
+    Updated British English translation
+
+ po/en_GB.po | 240 +++++++++++++++++++++++++++++++++---------------------------
+ 1 file changed, 133 insertions(+), 107 deletions(-)
+
+commit 80b7dd366ab3c4c7d2c2c331ff95d9449d813fcc
+Author: Leonid Kanter <leon@asplinux.ru>
+Date:   Wed Feb 24 11:15:35 2010 +0200
+
+    Update Russian translation by Yuri Kozlov <yuray@komyakino.ru>
+
+ po/ru.po | 219 +++++++++++++++++++++++++++++++++------------------------------
+ 1 file changed, 116 insertions(+), 103 deletions(-)
+
+commit 20faa8c95df8e0834deedf82a9b44b88e366eed6
+Author: Fran Diéguez <frandieguez@ubuntu.com>
+Date:   Mon Feb 15 17:42:45 2010 +0100
+
+    Updated Galician Translation
+
+ po/gl.po | 141 ++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 66 insertions(+), 75 deletions(-)
+
+commit 24059d43a91576499c335f07185d1adde74b09e4
+Author: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+Date:   Wed Feb 10 06:13:31 2010 +0800
+
+    Updated Traditional Chinese translation (Added Hong Kong and Updated Taiwan).
+
+ po/LINGUAS  |   1 +
+ po/zh_HK.po | 304 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ po/zh_TW.po | 349 ++++++++++++++++++++++++++++++++++++++++++++++--------------
+ 3 files changed, 577 insertions(+), 77 deletions(-)
+
+commit b4f5bea82a3dcf3b11ab91c7008ecc7a6ece291d
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Feb 1 15:51:03 2010 +0000
+
+    Update EContactEntry from contact-lookup-applet
+    
+    To fix the first contact always being selected from the
+    completion popup when activating the entry with "Enter".
+
+ src/plugins/evolution/e-contact-entry.c | 27 +++++++++++++++------------
+ src/plugins/evolution/evolution.c       |  4 ++--
+ 2 files changed, 17 insertions(+), 14 deletions(-)
+
+commit dd954cc0376e68c446b0ee8cfc67998be5a325e2
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Feb 1 14:55:25 2010 +0000
+
+    Respect the "gtk-button-images" GtkSettings property
+    
+    And show/hide the send button's icon appropriately.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=607849
+
+ src/nautilus-sendto-command.c | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+
+commit ce027b0b83038d36e7be0116e4d2a472e310f605
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Jan 21 15:18:42 2010 +0000
+
+    Fix possible crasher in Bluetooth plugin
+    
+    Avoid crashing when the dbus_g_proxy_call() fails but returns
+    no error.
+    
+    https://bugzilla.redhat.com/show_bug.cgi?id=554142
+
+ src/plugins/bluetooth/bluetooth.c | 27 +++++++++++++++------------
+ 1 file changed, 15 insertions(+), 12 deletions(-)
+
+commit dae7823734654ac1af8befe9154073a6eaa7b1e7
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Jan 21 15:13:33 2010 +0000
+
+    Some gtk-doc cleanups
+
+ docs/nautilus-sendto/Makefile.am        |  6 ++++++
+ src/nautilus-sendto-plugin.h            |  9 +++++++++
+ src/plugins/evolution/e-contact-entry.c | 24 ++++++++++++------------
+ 3 files changed, 27 insertions(+), 12 deletions(-)
+
+commit 9f94a1a18d7b2b8dfce86b6ca08dff1871c1acee
+Author: Jamil Ahmed <itsjamil@gmail.com>
+Date:   Fri Jan 29 01:07:04 2010 +0600
+
+    Added Bengali translation
+
+ po/LINGUAS |   1 +
+ po/bn.po   | 301 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 302 insertions(+)
+
+commit b80a26d5fdb6ace6abc4c97376aeb6f8716505e8
+Author: Krasimir Chonov <mk2616@abv.bg>
+Date:   Thu Jan 28 12:08:13 2010 +0200
+
+    Updated Bulgarian translation
+
+ po/bg.po | 335 ++++++++++++++++++++++++++++++++++++++++++++++-----------------
+ 1 file changed, 244 insertions(+), 91 deletions(-)
+
+commit 9dbd7c4a47e2c337b7d75ab6480df2a04cd47d70
+Author: Miloš Popović <mpopovic@src.gnome.org>
+Date:   Tue Jan 26 19:53:33 2010 +0000
+
+    Added Serbian translations
+
+ po/LINGUAS     |   2 +
+ po/sr.po       | 295 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ po/sr@latin.po | 295 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 592 insertions(+)
+
+commit b5196937658721d5ccbcf90ac235c26577f8ee7d
+Author: Xandru Armesto Fernandez <xandru@softastur.org>
+Date:   Fri Jan 8 17:08:49 2010 +0100
+
+    Updated asturian translation
+
+ po/ast.po | 273 +++++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 145 insertions(+), 128 deletions(-)
+
+commit 4e57c835507bcf4d6480922a10a8fae0ffbbd656
+Author: Nils-Christoph Fiedler <fiedler@medienkompanie.de>
+Date:   Wed Jan 6 16:34:28 2010 +0100
+
+    Added LowGerman translation
+
+ po/nds.po | 287 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 287 insertions(+)
+
+commit 7a7f6463920bd37be7f0ef5aa00c7400135fb2b5
+Author: Nils-Christoph Fiedler <fiedler@medienkompanie.de>
+Date:   Wed Jan 6 16:34:23 2010 +0100
+
+    Added LowGerman translation
+
+ po/LINGUAS | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 6eb703d23f4341cc8d4af365d43e45538fc7532c
+Author: Maxim V. Dziumanenko <dziumanenko@gmail.com>
+Date:   Tue Jan 5 13:58:24 2010 +0200
+
+    Update Ukrainian translation
+
+ po/uk.po | 321 +++++++++++++++++++++++++++++++++++++++++++++++++--------------
+ 1 file changed, 250 insertions(+), 71 deletions(-)
+
+commit 5a2affe403664336b651fde9cba94b8341b41b2a
+Author: Thomas Thurman <tthurman@gnome.org>
+Date:   Fri Nov 27 19:31:22 2009 -0500
+
+    Shavian translation
+
+ po/LINGUAS    |   1 +
+ po/en@shaw.po | 286 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 287 insertions(+)
+
+commit c2b376303770fd4a57c890141d3adcb6ece5e8be
+Author: Peteris Krisjanis <pecisk@gmail.com>
+Date:   Tue Nov 24 22:22:26 2009 +0200
+
+    Added Latvian translation.
+
+ po/LINGUAS | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 20a6b9b4b678a641df69b31adfff087e9bf5f074
+Author: Peteris Krisjanis <pecisk@gmail.com>
+Date:   Tue Nov 24 22:21:44 2009 +0200
+
+    Added Latvian translation.
+
+ po/lv.po | 299 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 299 insertions(+)
+
+commit b95b43a873f2509d073593982c98e39a1955cc77
+Author: Funda Wang <fundawang@gmail.com>
+Date:   Thu Nov 19 23:27:05 2009 +0800
+
+    fix undefined references when linking plugins (bug#602365)
+
+ src/plugins/bluetooth/Makefile.am         | 2 +-
+ src/plugins/empathy/Makefile.am           | 2 +-
+ src/plugins/evolution/Makefile.am         | 2 +-
+ src/plugins/gajim/Makefile.am             | 2 +-
+ src/plugins/nautilus-burn/Makefile.am     | 2 +-
+ src/plugins/pidgin/Makefile.am            | 2 +-
+ src/plugins/removable-devices/Makefile.am | 2 +-
+ src/plugins/upnp/Makefile.am              | 2 +-
+ 8 files changed, 8 insertions(+), 8 deletions(-)
+
+commit 030b87e91ab2523f5d242d9ddac282425790701b
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Nov 17 18:20:51 2009 +0000
+
+    2.28.2
+
+ NEWS         | 9 +++++++++
+ configure.in | 2 +-
+ 2 files changed, 10 insertions(+), 1 deletion(-)
+
+commit b3331f7d3f8ea9cf3675d786b77fe30ac4fd248b
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Nov 17 18:19:40 2009 +0000
+
+    Fix distcheck of the nautilus extension
+    
+    Work-around shamelessly nicked from brasero
+
+ Makefile.am  |  4 +++-
+ configure.in | 13 +++++++++++--
+ 2 files changed, 14 insertions(+), 3 deletions(-)
+
+commit 7dc23505a77f52973ed0db44e4fde757867cf9ae
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Nov 17 18:18:29 2009 +0000
+
+    Fix distcheck in bluetooth plugin
+    
+    Need to mark the generated sources as such
+
+ src/plugins/bluetooth/Makefile.am | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+commit 7e4977cff453aa1205d61382bf8a755cc5058686
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Nov 17 16:46:32 2009 +0000
+
+    2.28.1
+
+ NEWS         | 18 ++++++++++++++++++
+ configure.in |  2 +-
+ 2 files changed, 19 insertions(+), 1 deletion(-)
+
+commit 575c4e33510ff373532304adc01ea011005bfc4d
+Author: Halton Huo <halton.huo@sun.com>
+Date:   Mon Nov 16 13:01:46 2009 +0000
+
+    Update .gitignore
+
+ .gitignore | 39 +++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 39 insertions(+)
+
+commit 244ccbe99af6ce42ed6200cd61fd3cdcb389108e
+Author: Halton Huo <halton.huo@sun.com>
+Date:   Mon Nov 16 13:00:20 2009 +0000
+
+    Add missing gthread-2.0 dependency
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=601632
+
+ configure.in | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit cbaabf29fc800f2a5c1999cce354173dbc7234fe
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:   Sun Nov 15 14:51:20 2009 +0100
+
+    Updated Norwegian bokmål translation.
+
+ po/nb.po | 236 ++++++++++++++++++++++++++++++++-------------------------------
+ 1 file changed, 121 insertions(+), 115 deletions(-)
+
+commit 4148e40c5fe8461f6ff551e6571153cf1d8091c0
+Author: Khaled Hosny <khaledhosny@eglug.org>
+Date:   Tue Nov 10 00:14:29 2009 +0200
+
+    Updated Arabic translation
+
+ po/ar.po | 290 ++++++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 155 insertions(+), 135 deletions(-)
+
+commit bf665dd43e4058e30aa399463927aaa10b7f2ba7
+Author: Khaled Hosny <khaledhosny@eglug.org>
+Date:   Mon Nov 9 23:57:33 2009 +0200
+
+    Remove non-existent file
+    
+    'pidgin_plugin' has been dropped.
+
+ po/POTFILES.in | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit e70629a046250fc7b07e31c5f5eca8bfd37edc60
+Author: Gabor Karsay <gabor.karsay@gmx.at>
+Date:   Fri Oct 30 15:17:16 2009 +0000
+
+    Add support for Seamonkey mailer
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=599819
+
+ src/plugins/evolution/evolution.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 7a1de842b46500724c7f25e9c791bbd9a81f1bf5
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Oct 30 15:14:31 2009 +0000
+
+    Fix compile-time warnings
+    
+    * Mark private functions as static
+    * Remove trailing spaces
+    * Fix type mismatch warnings
+
+ src/plugins/gajim/gajim.c | 124 ++++++++++++++++++++++++++--------------------
+ 1 file changed, 70 insertions(+), 54 deletions(-)
+
+commit 48103ab87df65fbdca6f66e322ff837ff23b2b8c
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Oct 30 15:05:16 2009 +0000
+
+    Escape commas as well as ampersands in filenames
+    
+    For Thunderbird to parse filenames properly.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=599388
+
+ src/nautilus-sendto-command.c | 23 ++++++++++++++++-------
+ 1 file changed, 16 insertions(+), 7 deletions(-)
+
+commit e11b71ad0ec0d77982dbd3bdc993117c0030e13f
+Author: Gabor Karsay <gabor.karsay@gmx.at>
+Date:   Fri Oct 30 14:04:11 2009 +0000
+
+    Fix balsa command-line
+    
+    Cater for the "--compose" flag already being added to the command-line
+    in default-applications.
+    
+    Use --attach to add files, as mentioned on the command-line.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=599393
+
+ src/plugins/evolution/evolution.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+commit 9df1b066232476b3f2d937423ee2f43c8d2a0cb6
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Oct 27 15:23:13 2009 +0000
+
+    Remove build requirement on gajim
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=599783
+
+ configure.in | 8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+
+commit 63255191bdd84ae07955ce83e4e5af4b05796a01
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Oct 16 18:39:02 2009 +0100
+
+    Update man page
+    
+    and removed obsoleted options
+    
+    https://bugzilla.redhat.com/show_bug.cgi?id=519524
+
+ nautilus-sendto.1 | 8 +-------
+ 1 file changed, 1 insertion(+), 7 deletions(-)
+
+commit 473e4f98d2bfbc46a71731776b456b7bac7eca0a
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Oct 16 18:38:49 2009 +0100
+
+    Fix command-line example in --help
+
+ src/nautilus-sendto-command.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 82d1a63bd08f403e2a584217631681a4533ed46c
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:   Thu Oct 8 14:42:17 2009 +0200
+
+    Updated Slovenian translation
+
+ po/sl.po | 332 +++++++++++++++++++++++++++++++++++++++++++++++++--------------
+ 1 file changed, 258 insertions(+), 74 deletions(-)
+
+commit 54bd600e6dd13a7280d646e58cc373779d5c1bf7
+Author: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>
+Date:   Sat Oct 3 20:48:13 2009 +0300
+
+    Updated Romanian translation
+
+ po/ro.po | 325 ++++++++++++++++++++++++++++++++++++++++++---------------------
+ 1 file changed, 220 insertions(+), 105 deletions(-)
+
+commit 751441ed874043f66db94260b617d54a3e95dd6e
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Oct 2 01:07:30 2009 +0100
+
+    Fix whitespace errors in pidgin plugin
+
+ src/plugins/pidgin/pidgin.c | 173 ++++++++++++++++++++++----------------------
+ 1 file changed, 86 insertions(+), 87 deletions(-)
+
+commit e992a9dbeb171d193ab65f479c34224a56db91b1
+Author: Pascal Terjan <pterjan@linuxfr.org>
+Date:   Fri Oct 2 00:08:18 2009 +0200
+
+    Use dbus API in pidgin plugin
+    
+    And drop pidgin_plugin which is no longer needed
+    
+    Signed-off-by: Pascal Terjan <pterjan@linuxfr.org>
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=597039
+
+ Makefile.am                            |   8 +-
+ configure.in                           |  19 +-
+ pidgin_plugin/Makefile.am              |  13 --
+ pidgin_plugin/nautilus-sendto-plugin.c | 359 ------------------------------
+ src/plugins/pidgin/pidgin.c            | 388 +++++++++++++++++++++------------
+ 5 files changed, 255 insertions(+), 532 deletions(-)
+
+commit 9f3bc7d7655737b259d179ef9f08ec3c62372c82
+Author: Jorge González <jorgegonz@svn.gnome.org>
+Date:   Mon Sep 28 22:00:34 2009 +0200
+
+    Updated Spanish translation
+
+ po/es.po | 70 ++++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 31 insertions(+), 39 deletions(-)
+
+commit 5610f4630c8f401db3c4a5411a37eda72f43d7d5
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Sep 28 16:59:21 2009 +0100
+
+    Resolve symbols immediately when loading modules
+    
+    Otherwise we'd exit mid-way if a plugin was badly built.
+
+ src/nautilus-sendto-command.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2414adbad93974c6cd29a11bb5f88074d38a8805
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Sep 24 15:11:20 2009 +0100
+
+    Disable empathy plugin from 2.29.1
+    
+    If Empathy >= 2.29.1, then don't build the empathy plugin
+    as Empathy ships its own.
+
+ configure.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2d1002770884b3c4e6e610369e1d22c4f58d1671
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Sep 23 19:28:55 2009 +0100
+
+    Fix excessive dependencies in the pkg-config file
+    
+    And bump the version.
+
+ configure.in              | 2 +-
+ src/nautilus-sendto.pc.in | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 293452387483e178978486ff7de15e7079f6000a
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Sep 24 10:42:27 2009 +0100
+
+    Add Anjal support
+    
+    Uses the same syntax as Evo for creating new mails
+    https://bugzilla.gnome.org/show_bug.cgi?id=595967
+
+ src/plugins/evolution/evolution.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 30f7af19e789352a7c0b7d4eaa5ca6aa36bd109b
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Sep 23 14:17:06 2009 +0100
+
+    Add gettext_package member for the plugin struct
+    
+    So plugins can be translated in their own modules.
+
+ src/nautilus-sendto-command.c                     | 2 +-
+ src/nautilus-sendto-plugin.h                      | 2 ++
+ src/plugins/bluetooth/bluetooth.c                 | 1 +
+ src/plugins/empathy/empathy.c                     | 1 +
+ src/plugins/evolution/evolution.c                 | 1 +
+ src/plugins/gajim/gajim.c                         | 1 +
+ src/plugins/nautilus-burn/nautilus-burn.c         | 1 +
+ src/plugins/pidgin/pidgin.c                       | 1 +
+ src/plugins/removable-devices/removable-devices.c | 1 +
+ src/plugins/upnp/upnp.c                           | 1 +
+ 10 files changed, 11 insertions(+), 1 deletion(-)
+
+commit 115d1f585a7fa27cc4d92e1e88e19eaff289c9d9
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Sep 23 13:28:06 2009 +0100
+
+    Update copyright information
+
+ src/nautilus-sendto-plugin.h | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit 82ad03867619fd02b50b00f34c2ec2e943551a7d
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Sep 23 13:11:14 2009 +0100
+
+    Fix compile-time warnings
+
+ src/plugins/bluetooth/Makefile.am | 6 +++---
+ src/plugins/upnp/upnp.c           | 1 -
+ 2 files changed, 3 insertions(+), 4 deletions(-)
+
+commit 302e510d6edb1bd0845e39d3f9d76eda7096a5b2
+Author: Dimitur Kirov <dkirov@gmail.com>
+Date:   Wed Sep 23 12:57:31 2009 +0100
+
+    Add pkg-config file and export header
+
+ configure.in              |  1 +
+ src/Makefile.am           |  8 +++++++-
+ src/nautilus-sendto.pc.in | 10 ++++++++++
+ 3 files changed, 18 insertions(+), 1 deletion(-)
+
+commit e8f5f478d88d81b92ad57615c7f73ef42edc357d
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Sep 23 12:41:50 2009 +0100
+
+    Remove object tree from the docs
+    
+    There aren't any.
+
+ docs/nautilus-sendto/nautilus-sendto-docs.sgml | 4 ----
+ 1 file changed, 4 deletions(-)
+
+commit 1ad0028cfdc4addffb2e819df45f92d2416aa312
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Sep 23 12:39:54 2009 +0100
+
+    Add some gtk-doc documentation to nautilus-sendto-plugin
+
+ src/nautilus-sendto-plugin.h | 59 +++++++++++++++++++++++++++++++++++---------
+ 1 file changed, 48 insertions(+), 11 deletions(-)
+
+commit 3bb763ca90af0fe7581f83e415faaef94f69929d
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Sep 23 11:52:39 2009 +0100
+
+    Add gtk-doc support
+    
+    gtk-doc support for documenting the plugins API.
+
+ Makefile.am                                    |  2 +-
+ configure.in                                   |  9 ++-
+ docs/Makefile.am                               |  1 +
+ docs/nautilus-sendto/Makefile.am               | 94 ++++++++++++++++++++++++++
+ docs/nautilus-sendto/nautilus-sendto-docs.sgml | 33 +++++++++
+ docs/nautilus-sendto/version.xml.in            |  1 +
+ src/Makefile.am                                | 16 +++--
+ src/nautilus-sendto-command.c                  |  3 +
+ src/nautilus-sendto-plugin.h                   |  4 --
+ 9 files changed, 148 insertions(+), 15 deletions(-)
+
+commit 7b01ee7320ae0651b5e946506762dd31019c2e59
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Sep 23 11:14:43 2009 +0100
+
+    Generate GObject enums for capabilities enum
+
+ src/Makefile.am | 30 +++++++++++++++++++++++++++++-
+ 1 file changed, 29 insertions(+), 1 deletion(-)
+
+commit fe45339bcb958bf42385e3cbaff91c025510fef7
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Sep 21 13:04:10 2009 +0100
+
+    2.28.0
+
+ NEWS         | 12 ++++++++++++
+ configure.in |  2 +-
+ 2 files changed, 13 insertions(+), 1 deletion(-)
+
+commit f47bee08aeb34313554aa79c9aa19a1da2681b5c
+Author: Zeeshan Ali (Khattak) <zeeshanak@gnome.org>
+Date:   Sat Aug 22 17:03:02 2009 +0300
+
+    Require gupnp (>= 0.13) instead of gupnp-av
+
+ configure.in            | 8 ++++----
+ src/plugins/upnp/upnp.c | 2 +-
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+
+commit 380cc5f472dfdeb77a93bfde22c6bee8c3f075b9
+Author: Zeeshan Ali (Khattak) <zeeshanak@gnome.org>
+Date:   Sun Aug 23 14:57:00 2009 +0300
+
+    Ability to deal with multiple/dynamic networks
+    
+    Use the new GUPnP API to be able to deal with multiple/dynamic networks.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=592799
+
+ src/plugins/upnp/upnp.c | 57 +++++++++++++++++++++++++++----------------------
+ 1 file changed, 31 insertions(+), 26 deletions(-)
+
+commit 99519ed25a8f00ad17dcbf5287edc27a415f91d5
+Author: Zeeshan Ali (Khattak) <zeeshanak@gnome.org>
+Date:   Sat Aug 22 16:53:39 2009 +0300
+
+    No need to look for all resources anymore
+    
+    No need to look for all UPnP resources and filtering out the MediaServer
+    devices, anymore.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=592799
+
+ src/plugins/upnp/upnp.c | 10 ++--------
+ 1 file changed, 2 insertions(+), 8 deletions(-)
+
+commit f2eeadfd405df9ac38d575b453d6345566843314
+Author: Zeeshan Ali (Khattak) <zeeshanak@gnome.org>
+Date:   Sat Aug 22 16:04:17 2009 +0300
+
+    Specify the network interface to gupnp-upload
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=592799
+
+ src/plugins/upnp/upnp.c | 18 ++++++++++++++----
+ 1 file changed, 14 insertions(+), 4 deletions(-)
+
+commit 344128424585dda373c0ac71eb4db491b2a6ce51
+Author: Fran Diéguez <fran.dieguez@glug.es>
+Date:   Tue Sep 15 23:08:23 2009 +0200
+
+    Updated Galician Translation
+
+ po/gl.po | 279 ++++++++++++++++++++++++++++++++++++++++++++++-----------------
+ 1 file changed, 207 insertions(+), 72 deletions(-)
+
+commit 18433255d77ac80790e0efe93aac1336a8635484
+Author: Christopher Aillon <caillon@redhat.com>
+Date:   Fri Sep 11 18:08:07 2009 +0100
+
+    Bug 582919 - Can't send attachments witn non ASCII filename through thunderbird.
+    
+    Properly quote the Thunderbird -compose argument as per:
+    http://kb.mozillazine.org/Command_line_arguments_-_Thunderbird
+    
+    Specifically, the format we want is:
+    thunderbird -compose "to='foo@bar.tld',attachment='file:///tmp/foo,file:///tmp/bar'"
+
+ src/plugins/evolution/evolution.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+commit 6e4cfe7d8196ccdb27f413c4a42abe7cd7c58794
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Sep 11 18:04:57 2009 +0100
+
+    Use automake 1.11's silent rules if available
+
+ configure.in                      | 3 +++
+ src/plugins/bluetooth/Makefile.am | 4 ++--
+ src/plugins/evolution/Makefile.am | 4 ++--
+ 3 files changed, 7 insertions(+), 4 deletions(-)
+
+commit 8bf5ddab98515d0f6c6ddce9dbcce2472b84b013
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Sep 11 18:03:53 2009 +0100
+
+    Bug 592440 - CD/DVD Creator item does not have an icon
+    
+    Require brasero to be present for the nautilus-burn plugin
+    to be present, and use brasero icons in the drop-down menu.
+    
+    Misc coding style fixes
+
+ src/plugins/nautilus-burn/nautilus-burn.c | 105 +++++++++++++++++-------------
+ 1 file changed, 59 insertions(+), 46 deletions(-)
+
+commit bd2e4f1cc1843e1edb500c693fb5d4f0b596968f
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Sep 11 17:34:04 2009 +0100
+
+    Make plugin capabilities an enumeration
+    
+    Instead of continually adding new members to the struct.
+
+ src/nautilus-sendto-command.c                     |  4 +--
+ src/nautilus-sendto-plugin.h                      | 30 ++++++++++++++---------
+ src/plugins/bluetooth/bluetooth.c                 |  2 +-
+ src/plugins/empathy/empathy.c                     |  2 +-
+ src/plugins/evolution/evolution.c                 |  2 +-
+ src/plugins/gajim/gajim.c                         |  2 +-
+ src/plugins/nautilus-burn/nautilus-burn.c         |  2 +-
+ src/plugins/pidgin/pidgin.c                       |  2 +-
+ src/plugins/removable-devices/removable-devices.c |  2 +-
+ src/plugins/upnp/upnp.c                           |  2 +-
+ 10 files changed, 28 insertions(+), 22 deletions(-)
+
+commit 9f0d2251af6c8f33d6843e56f7e4ac47e2d8acbe
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Sep 11 17:21:40 2009 +0100
+
+    Bug 594196 - Command line for claws mail incorrect
+    
+    Fix command-line arguments for Sylpheed and Claws. Spotted
+    by Johan Brannlund
+
+ src/plugins/evolution/evolution.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit 988f67e3f20095e1c8b4c32b262fd81b927f31cd
+Author: Denis ARNAUD <darnaud@src.gnome.org>
+Date:   Wed Sep 9 06:10:05 2009 +0200
+
+    Updated breton translation
+
+ po/br.po | 306 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 306 insertions(+)
+
+commit b58d704510e971c2c7ffe45e2377bbc1cbf00658
+Author: Denis ARNAUD <darnaud@src.gnome.org>
+Date:   Wed Sep 9 06:01:56 2009 +0200
+
+    added br in LINGUAS file
+
+ po/LINGUAS | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 8f851a123e7e125b5498327815f0769a106249fb
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Sep 2 16:04:56 2009 +0100
+
+    1.1.7
+
+ NEWS         | 10 ++++++++++
+ configure.in |  2 +-
+ 2 files changed, 11 insertions(+), 1 deletion(-)
+
+commit 33481edffe1821006c944ad26b92d853ecc70d1c
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Sep 2 16:03:21 2009 +0100
+
+    Update empathy requirements
+    
+    Up to 2.27.91 for the new APIs
+
+ configure.in | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit bb014358c6a2d1da48e556fb979b85d6c03c5681
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:   Tue Sep 1 12:39:29 2009 +0200
+
+    Port to Mission Control 5 (bug #593124).
+
+ src/plugins/empathy/empathy.c | 54 ++++++++++++++++++++++++++-----------------
+ 1 file changed, 33 insertions(+), 21 deletions(-)
+
+commit a48a9c6ff8a9a41a5f983d7f0d8ef76d8c35b687
+Author: Aron Xu <aronxu@gnome.org>
+Date:   Tue Sep 1 15:38:35 2009 +0800
+
+    Update Simplified Chinese translation.
+
+ po/zh_CN.po | 323 +++++++++++++++++++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 263 insertions(+), 60 deletions(-)
+
+commit ea7818bd89e2e09808ff9e6febef44e53ba9b3cd
+Author: Rajesh Ranjan <rranjan@rranjan.csb>
+Date:   Thu Aug 20 12:36:41 2009 +0530
+
+    hindi update by Rajesh Ranjan
+
+ po/LINGUAS |   1 +
+ po/hi.po   | 313 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 314 insertions(+)
+
+commit 92834021f326e6c4278f22834c28fd7755a39c32
+Author: Gabor Kelemen <kelemeng@gnome.hu>
+Date:   Sat Aug 15 02:09:51 2009 +0200
+
+    Hungarian translation updated
+
+ po/hu.po | 101 +++++++++++++++++++++++++++++----------------------------------
+ 1 file changed, 46 insertions(+), 55 deletions(-)
+
+commit 4101e8bc1a88931650130ebd5aa8bc3c533553af
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Aug 10 15:56:22 2009 +0100
+
+    Remove gaim requirements from configure (unused)
+
+ configure.in | 2 --
+ 1 file changed, 2 deletions(-)
+
+commit 5eff6e897089bbfd015a00dffa950b0346fa0096
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Aug 6 10:19:50 2009 +0100
+
+    Bug 590916 – nautilus-burn plugin enabled by default
+    
+    It's not disabled by default anymore, spotted by Emilio Pozuelo Monfort
+
+ configure.in | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 2d8150fd85cff480361ccd035560a274acc2c235
+Author: Mattias Põldaru <mahfiaz gmail com>
+Date:   Fri Jul 31 15:06:17 2009 +0300
+
+    Updating Estonian translation
+
+ po/et.po | 157 +++++++++++++++------------------------------------------------
+ 1 file changed, 37 insertions(+), 120 deletions(-)
+
+commit 4b31d77a4a7bac3896f7bd41e1cdaff5239eeadb
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Jul 29 17:35:46 2009 +0100
+
+    1.1.6
+
+ NEWS         | 18 ++++++++++++++++++
+ configure.in |  2 +-
+ 2 files changed, 19 insertions(+), 1 deletion(-)
+
+commit 054bc2312ca52e1a1add64bea0ecd5b08708b5c6
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Jul 29 17:08:55 2009 +0100
+
+    Fix warning due to GtkBuilder patch
+
+ src/nautilus-sendto-command.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit c7735102a4525c669cf06d3ed4521901961d940f
+Author: Sebastien Bacher <seb128@ubuntu.com>
+Date:   Wed Jul 29 16:40:43 2009 +0100
+
+    Bug 587368 – should use gtkbuilder rather than libglade
+    
+    Remove libglade dependency and use libglade instead
+
+ configure.in                              |   7 +-
+ po/POTFILES.in                            |   2 +-
+ src/Makefile.am                           |   8 +-
+ src/nautilus-sendto-command.c             |  34 +-
+ src/nautilus-sendto.glade                 | 509 ------------------------------
+ src/nautilus-sendto.ui                    | 498 +++++++++++++++++++++++++++++
+ src/plugins/bluetooth/Makefile.am         |   1 -
+ src/plugins/empathy/Makefile.am           |   1 -
+ src/plugins/evolution/Makefile.am         |   1 -
+ src/plugins/gajim/Makefile.am             |   1 -
+ src/plugins/nautilus-burn/Makefile.am     |   1 -
+ src/plugins/pidgin/Makefile.am            |   1 -
+ src/plugins/removable-devices/Makefile.am |   1 -
+ src/plugins/upnp/Makefile.am              |   1 -
+ 14 files changed, 524 insertions(+), 542 deletions(-)
+
+commit 8723e86a73f326450be7dc8b1c237efe3ecacd9f
+Author: Shankar Prasad <svenkate@redhat.com>
+Date:   Wed Jul 15 16:35:15 2009 +0530
+
+    Added & Updated Kannada(kn) translation and updated the LINGUAS file
+
+ po/LINGUAS |   1 +
+ po/kn.po   | 313 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 314 insertions(+)
+
+commit 3654f177ff722d19cf775248dc01e9ad03f98b65
+Author: Amitakhya Phukan <aphukan@fedoraproject.org>
+Date:   Tue Jul 14 17:02:06 2009 +0530
+
+    Adding as to LINGUAS and adding Assamese translations.
+
+ po/LINGUAS |   1 +
+ po/as.po   | 317 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 318 insertions(+)
+
+commit e97d1bdbc4222191fc736939696fcea963e3aba0
+Author: krishnababu k <kkrothap@redhat.ocm>
+Date:   Thu Jul 2 20:28:05 2009 +0530
+
+    Updated Telugu Translaions
+
+ po/te.po | 315 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 315 insertions(+)
+
+commit b90e7720d65f3e35465f30f43d03b6316cb3e85a
+Author: krishnababu k <kkrothap@redhat.ocm>
+Date:   Thu Jul 2 20:27:51 2009 +0530
+
+    Added entry in LINGUAS for telugu [te]
+
+ po/LINGUAS | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 7b05926e76f76d2a47dff4740b18197b5cc40d1d
+Author: ifelix <ifelix@redhat.com>
+Date:   Thu Jul 2 11:31:40 2009 +0530
+
+    Tamil Linguas added
+
+ po/LINGUAS | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 1841a3a2a845d35e333c7ee607824ad01f48f9ac
+Author: ifelix <ifelix@redhat.com>
+Date:   Thu Jul 2 11:31:18 2009 +0530
+
+    Updated Tamil Translations
+
+ po/ta.po | 316 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 316 insertions(+)
+
+commit 84566de888b7382522da80a32afecf62a6896b5e
+Author: Ladyko Andrey <fylh.if@gmail.com>
+Date:   Mon Jun 29 14:42:46 2009 +0300
+
+    Updated Belarusian translation
+
+ po/be.po | 212 +++++++++++++++++++++++++++++++++------------------------------
+ 1 file changed, 110 insertions(+), 102 deletions(-)
+
+commit f4410b7aed334f161b583380564124a08b15a0b6
+Author: Runa Bhattacharjee <runab@redhat.com>
+Date:   Fri Jun 26 17:07:22 2009 +0530
+
+    Added Bengali India (bn_IN) to the list of languages
+
+ po/LINGUAS | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit a77fb5b7ed981e9e20d5e1b1876e3d5fb167b12f
+Author: Runa Bhattacharjee <runab@redhat.com>
+Date:   Fri Jun 26 17:07:07 2009 +0530
+
+    Adding Bengali India Translations
+
+ po/bn_IN.po | 313 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 313 insertions(+)
+
+commit fa2697e1b0dd20eb675a77ad6d99914a2512dd37
+Author: Jonny Lamb <jonny.lamb@collabora.co.uk>
+Date:   Thu Jun 25 19:27:32 2009 +0100
+
+    Only display contacts which can accept files. (Closes: #576277)
+    
+    Signed-off-by: Jonny Lamb <jonny.lamb@collabora.co.uk>
+
+ src/plugins/empathy/empathy.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 1ba51330f2519f054ca7a654f28cdf2f8d607acf
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Jun 25 16:10:13 2009 +0100
+
+    Bug 586530 – Remove deprecated GTK+ symbols
+    
+    Easy!
+
+ src/nautilus-sendto-command.c           |  2 +-
+ src/plugins/evolution/e-contact-entry.h | 17 +++++++++++------
+ 2 files changed, 12 insertions(+), 7 deletions(-)
+
+commit 4d378babdf20aaa866ca3c3398e89b429dc4852f
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Jun 25 16:06:58 2009 +0100
+
+    Add deprecated flags when in maintainer-mode
+
+ src/Makefile.am                           | 1 +
+ src/plugins/bluetooth/Makefile.am         | 1 +
+ src/plugins/empathy/Makefile.am           | 1 +
+ src/plugins/evolution/Makefile.am         | 1 +
+ src/plugins/gajim/Makefile.am             | 1 +
+ src/plugins/nautilus-burn/Makefile.am     | 1 +
+ src/plugins/pidgin/Makefile.am            | 1 +
+ src/plugins/removable-devices/Makefile.am | 1 +
+ src/plugins/upnp/Makefile.am              | 1 +
+ 9 files changed, 9 insertions(+)
+
+commit 258a1e1a1c8aaa8544a4f491196daf6411300c46
+Author: Cosimo Cecchi <cosimo.cecchi@collabora.co.uk>
+Date:   Fri Jun 19 21:13:27 2009 +0200
+
+    Bug 584716 – Use the new Empathy file transfer API
+    
+    Empathy 2.27.3 changed its file transfer API; adapt the Empathy plugin
+    in nautilus-sendto to use it.
+
+ configure.in                  |   4 +-
+ src/plugins/empathy/empathy.c | 113 ++++++++++++++++--------------------------
+ 2 files changed, 44 insertions(+), 73 deletions(-)
+
+commit abe1a594f08cdc271d318dde24a5bb8080270729
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Jun 18 16:14:17 2009 +0100
+
+    Bug 579925 – Claws mail not listed as a known email client
+    
+    Check for "claws" as a Sylpheed type.
+
+ src/plugins/evolution/evolution.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 6734d638d474eb9e2fdee458f47783d684ee46e7
+Author: A S Alam <aalam@users.sf.net>
+Date:   Thu Jun 11 06:45:28 2009 +0530
+
+    updating translation for Punjabi (Gurmukhi) pa.po
+
+ po/pa.po | 142 +++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 69 insertions(+), 73 deletions(-)
+
+commit 45f7d62d5afcc477aabd1204ab1fc9de5d18f34d
+Author: Mark Krapivner <mark125@gmail.com>
+Date:   Mon May 25 23:35:14 2009 +0300
+
+    Updated Hebrew translation
+
+ po/he.po | 235 +++++++++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 131 insertions(+), 104 deletions(-)
+
+commit 6b2ac55672649530b1bf86cee697fd8cae532f10
+Author: A S Alam <aalam@users.sf.net>
+Date:   Mon May 25 21:52:37 2009 +0530
+
+    Updating Punjabi (Gurmukhi) Translation
+
+ po/pa.po | 329 +++++++++++++++++++++++++++++++++++++++++++++++++++------------
+ 1 file changed, 267 insertions(+), 62 deletions(-)
+
+commit 9499b437dc43de780001d759db46a22503fa5020
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue May 19 12:51:48 2009 +0100
+
+    Bug 582924 – Fix UI with long plugin descriptions
+    
+    - Ellipsise the plugin descriptions to avoid them resizing the
+      combo box bizarrely
+    - Make the dialogue resizeable
+    - Fix plugin loading for the uninstalled case
+    - Use a GtkListStore instead of a GtkTreeStore
+
+ src/nautilus-sendto-command.c | 25 ++++++++++++++++---------
+ src/nautilus-sendto.glade     |  2 +-
+ 2 files changed, 17 insertions(+), 10 deletions(-)
+
+commit 5edb2fd4e50dad685ad9e2c338cc0034065c432d
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue May 5 12:29:58 2009 +0100
+
+    Disable evolution plugin for newer Evos
+    
+    The Evolution attachment API for plugins changed in 2.27.1, so
+    our plugin doesn't build anymore. It will be moved to Evo itself now.
+    (Closes: #579099)
+
+ configure.in | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit bc898db2b685e551e5f26da446e8d6a0504dcfd9
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue May 5 10:49:48 2009 +0100
+
+    Release 1.1.5
+
+ NEWS         | 10 ++++++++++
+ configure.in |  2 +-
+ 2 files changed, 11 insertions(+), 1 deletion(-)
+
+commit 5018a6a11f9b4d0eca42869d9f0d22ee19e0e335
+Author: David Planella <david.planella@gmail.com>
+Date:   Sat May 2 16:56:37 2009 +0200
+
+    Updated Catalan translation by David Planella
+
+ po/ca.po | 206 ++++++++++++++++++++++++++++++++++++++-------------------------
+ 1 file changed, 124 insertions(+), 82 deletions(-)
+
+commit dc9851816ca9ae9c003714537fd940ff3d856667
+Author: Sweta Kothari <swkothar@redhat.com>
+Date:   Wed Apr 29 15:08:34 2009 +0530
+
+    Committed gu.po file and Added LINGUAS
+
+ po/LINGUAS |   1 +
+ po/gu.po   | 314 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 315 insertions(+)
+
+commit 7981dd7263682446d6dfe2ff4f4aea31b09fd099
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Apr 27 14:08:50 2009 +0100
+
+    Remove mention of Evolution in the mail plugin name
+    
+    As the plugin now supports Sylpheed, Thunderbird and Balsa as
+    well as Evolution.
+    
+    See https://bugzilla.redhat.com/show_bug.cgi?id=497775 for the confusion
+
+ po/ar.po                          | 4 ++--
+ po/ast.po                         | 4 ++--
+ po/be.po                          | 4 ++--
+ po/be@latin.po                    | 4 ++--
+ po/bg.po                          | 4 ++--
+ po/ca.po                          | 4 ++--
+ po/cs.po                          | 4 ++--
+ po/da.po                          | 4 ++--
+ po/de.po                          | 4 ++--
+ po/dz.po                          | 4 ++--
+ po/el.po                          | 4 ++--
+ po/en_CA.po                       | 4 ++--
+ po/en_GB.po                       | 4 ++--
+ po/es.po                          | 4 ++--
+ po/et.po                          | 4 ++--
+ po/eu.po                          | 4 ++--
+ po/fi.po                          | 4 ++--
+ po/fr.po                          | 4 ++--
+ po/gl.po                          | 4 ++--
+ po/he.po                          | 4 ++--
+ po/hu.po                          | 4 ++--
+ po/it.po                          | 4 ++--
+ po/ja.po                          | 4 ++--
+ po/ka.po                          | 4 ++--
+ po/ko.po                          | 4 ++--
+ po/lt.po                          | 4 ++--
+ po/mk.po                          | 4 ++--
+ po/mr.po                          | 4 ++--
+ po/nb.po                          | 4 ++--
+ po/ne.po                          | 4 ++--
+ po/nl.po                          | 4 ++--
+ po/oc.po                          | 4 ++--
+ po/or.po                          | 4 ++--
+ po/pa.po                          | 4 ++--
+ po/pl.po                          | 4 ++--
+ po/pt.po                          | 4 ++--
+ po/pt_BR.po                       | 4 ++--
+ po/ro.po                          | 4 ++--
+ po/ru.po                          | 4 ++--
+ po/rw.po                          | 2 +-
+ po/sk.po                          | 4 ++--
+ po/sl.po                          | 4 ++--
+ po/sq.po                          | 4 ++--
+ po/sv.po                          | 4 ++--
+ po/th.po                          | 4 ++--
+ po/uk.po                          | 4 ++--
+ po/vi.po                          | 6 +++---
+ po/zh_CN.po                       | 4 ++--
+ po/zh_TW.po                       | 4 ++--
+ src/plugins/evolution/evolution.c | 2 +-
+ 50 files changed, 99 insertions(+), 99 deletions(-)
+
+commit 7ffcea7a84006a26507461420862d1169c404185
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Sun Apr 26 12:43:32 2009 +0100
+
+    Remove calls to textdomain() in the plugins
+    
+    It's unnecessary. Spotted by Christian Persch <chpe@gnome.org>
+
+ src/plugins/bluetooth/bluetooth.c                 | 3 +--
+ src/plugins/empathy/empathy.c                     | 1 -
+ src/plugins/evolution/evolution.c                 | 1 -
+ src/plugins/gajim/gajim.c                         | 1 -
+ src/plugins/nautilus-burn/nautilus-burn.c         | 1 -
+ src/plugins/pidgin/pidgin.c                       | 1 -
+ src/plugins/removable-devices/removable-devices.c | 1 -
+ src/plugins/upnp/upnp.c                           | 1 -
+ 8 files changed, 1 insertion(+), 9 deletions(-)
+
+commit 0c2d16f7b1c158a6464c1084153c62525265c05b
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Sun Apr 26 12:16:00 2009 +0100
+
+    Bug 579929 – Plugins strings are not displayed translated
+    
+    Call the necessary gettext functions in all the plugins, and
+    translate the combo box labels. (Closes: #579929)
+
+ src/nautilus-sendto-command.c                     | 2 +-
+ src/plugins/bluetooth/bluetooth.c                 | 4 ++++
+ src/plugins/empathy/empathy.c                     | 4 ++++
+ src/plugins/evolution/evolution.c                 | 4 ++--
+ src/plugins/gajim/gajim.c                         | 6 ++++--
+ src/plugins/nautilus-burn/nautilus-burn.c         | 4 ++++
+ src/plugins/pidgin/pidgin.c                       | 4 ++++
+ src/plugins/removable-devices/removable-devices.c | 6 ++++++
+ src/plugins/upnp/upnp.c                           | 4 ++++
+ 9 files changed, 33 insertions(+), 5 deletions(-)
+
+commit ee7d2c9264f5b5bc7d11a71bba6dade1abedb9b7
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Apr 20 14:22:13 2009 +0100
+
+    More build fixes
+
+ .gitignore   |    5 +
+ ChangeLog    | 1267 ----------------------------------------------------------
+ Makefile.am  |    8 +
+ NEWS         |    9 +
+ configure.in |    2 +-
+ po/ChangeLog |  951 -------------------------------------------
+ 6 files changed, 23 insertions(+), 2219 deletions(-)
+
+commit 41582ab82cc8da820a653aa11305cb1260a780be
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Apr 20 14:18:13 2009 +0100
+
+    Use git to generate the ChangeLog, release 1.1.4.1
+
+ ChangeLog.README      |   16 +
+ ChangeLog.pre-1.1.4.1 | 1267 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 1283 insertions(+)
+
+commit 904b5462bb6d220c55a74b9608a540c68fc5a2c9
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Apr 20 11:19:24 2009 +0100
+
+    Bug 579486 – nautilus-sendto 1.1.4 crashes Pidgin on startup
+    
+    Fix infinite loop on startup when ignoring the "tmp" directory
+    in take_spool_files().
+    Use g_build_filename instead of g_build_path.
+
+ pidgin_plugin/nautilus-sendto-plugin.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+commit 49f4cdfb967bd66070c3a614a9e473f2b7f140ac
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Apr 17 16:36:51 2009 +0100
+
+    2009-04-17  Bastien Nocera  <hadess@hadess.net>
+    
+    	* NEWS: upd
+    	* configure.in: 1.1.4
+
+ ChangeLog    |  7 +++++++
+ NEWS         | 13 +++++++++++++
+ configure.in |  2 +-
+ 3 files changed, 21 insertions(+), 1 deletion(-)

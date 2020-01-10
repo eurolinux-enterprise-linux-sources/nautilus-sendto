@@ -1,0 +1,311 @@
+# Malyalam translation of nautilus-sendto.
+# Copyright (C) 2009-2010 nautilus-sendto'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nautilus-sendto package.
+# jeevz <jeevanism@gmail.com>, 2009.
+# Labeeb Elbiem <mmlabeeb@gmail.com>, 2010.
+# Reviewed by Praveen Arimbrathodiyil <pravi.a@gmail.com>, 2010.
+# Anish A <anish.nl@gmail.com>, 2010.
+# Jishnu Mohan <jishnu7@gmail.com>, 2012.
+# Ani Peter <peter.ani@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-sendto-master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-03-20 14:12+0000\n"
+"PO-Revision-Date: 2013-03-25 21:33+0530\n"
+"Last-Translator: Ani Peter <peter.ani@gmail.com>\n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: ../src/nautilus-sendto.c:53
+#| msgid "Run from build directory"
+msgid "Run from build directory (ignored)"
+msgstr "ബിള്‍ഡ് ഡയറക്ടറിയില്‍ നിന്നും പ്രവര്‍ത്തിപ്പിയ്ക്കുക"
+
+#: ../src/nautilus-sendto.c:54
+#| msgid "Use XID as parent to the send dialogue"
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr "ഡയലോഗ് അയയ്ക്കുന്നതിനു് പേരന്റായി എക്സ്ഐഡി ഉപയോഗിയ്ക്കുക"
+
+#: ../src/nautilus-sendto.c:55
+msgid "Files to send"
+msgstr "ആയ്ക്കേണ്ട ഫയല്‍"
+
+#: ../src/nautilus-sendto.c:56
+msgid "Output version information and exit"
+msgstr "പതിപ്പുവിവരം ഔട്ട്പുട്ട് ചെയ്ത് പുറത്തുകടക്കുക"
+
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:253
+msgid "Archive"
+msgstr "ആര്‍ക്കൈവ്"
+
+#: ../src/nautilus-sendto.c:520
+#, c-format
+msgid "Could not parse command-line options: %s\n"
+msgstr ""
+"ആജ്ഞാസ്ഥാനത്തു് നല്‍കിയ ഐച്ഛികങ്ങള്‍ വായിച്ചെടുക്കാന്‍ സാധിച്ചില്ല: %s\n"
+
+#: ../src/nautilus-sendto.c:535
+#, c-format
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "യുആര്‍ഐകളോ ഫയല്‍നാമങ്ങളോ ഐച്ഛികങ്ങളായി നല്‍കാന്‍ പ്രതീക്ഷിക്കുന്നു\n"
+
+#~ msgid "Sharing %d folder"
+#~ msgid_plural "Sharing %d folders"
+#~ msgstr[0] "%d ഫോള്‍ഡര്‍ പങ്കുവെയ്ക്കുന്നു"
+#~ msgstr[1] "%d ഫോള്‍ഡറുകള്‍ പങ്കുവെയ്ക്കുന്നു"
+
+#~ msgid "Sharing %d folders and files"
+#~ msgstr "%d ഫോള്‍ഡറുകളും ഫയലുകളും പങ്കുവെയ്ക്കുന്നു"
+
+#~ msgid "Sharing %d video"
+#~ msgid_plural "Sharing %d videos"
+#~ msgstr[0] "%d ചലചിത്രം പങ്കുവെയ്ക്കുന്നു"
+#~ msgstr[1] "%d ചലചിത്രങ്ങള്‍ പങ്കുവെയ്ക്കുന്നു"
+
+#~ msgid "Sharing %d photo"
+#~ msgid_plural "Sharing %d photos"
+#~ msgstr[0] "%d ചിത്രം പങ്കുവെയ്ക്കുന്നു"
+#~ msgstr[1] "%d ചിത്രങ്ങള്‍ പങ്കുവെയ്ക്കുന്നു"
+
+#~ msgid "Sharing %d image"
+#~ msgid_plural "Sharing %d images"
+#~ msgstr[0] "%d ചിത്രം പങ്കുവെയ്ക്കുന്നു"
+#~ msgstr[1] "%d ചിത്രങ്ങള്‍ പങ്കുവെയ്ക്കുന്നു"
+
+#~ msgid "Sharing %d text file"
+#~ msgid_plural "Sharing %d text files"
+#~ msgstr[0] "%d ലേഖന ഫയല്‍ പങ്കുവെയ്ക്കുന്നു"
+#~ msgstr[1] "%d ലേഖന ഫയലുകള്‍ പങ്കുവെയ്ക്കുന്നു"
+
+#~ msgid "Sharing %d file"
+#~ msgid_plural "Sharing %d files"
+#~ msgstr[0] "%d ഫയല്‍ പങ്കുവെയ്ക്കുന്നു"
+#~ msgstr[1] "%d ഫയലുകള്‍ പങ്കുവെയ്ക്കുന്നു"
+
+#~ msgid "_Send"
+#~ msgstr "_അയക്കുക"
+
+#~ msgid "Files"
+#~ msgstr "ഫയലുകള്‍"
+
+#~ msgid "_Cancel"
+#~ msgstr "_റദ്ദാക്കുക"
+
+#~ msgid "Send _packed in:"
+#~ msgstr "കെട്ടി_പ്പൂട്ടി അയക്കുക:"
+
+#~ msgid "Mail"
+#~ msgstr "ഈമെയില്‍"
+
+#~ msgid "Cannot get contact: %s"
+#~ msgstr "%s: ഈ വിലാസം ലഭിച്ചില്ല"
+
+#~ msgid "Could not find contact: %s"
+#~ msgstr "%s: ഈ വിലാസം കണ്ടെത്തിയില്ല"
+
+#~ msgid "Cannot create searchable view."
+#~ msgstr "തെരയാന്‍ അനുയോജ്യമായ കാഴ്ച ഒരുക്കാന്‍ സാധിച്ചില്ല."
+
+#~ msgid "Success"
+#~ msgstr "വിജയിച്ചിരിക്കുന്നു"
+
+#~ msgid "An argument was invalid."
+#~ msgstr "ഒരു ആര്‍ഗ്യുമെന്റ് അസാധുവായിരുന്നു."
+
+#~ msgid "The address book is busy."
+#~ msgstr "വിലാസപുസ്തകം മറ്റൊരുപയോഗത്തിലാണ്."
+
+#~ msgid "The address book is offline."
+#~ msgstr "വിലാസപുസ്തകം ഓഫ്‌‌ലൈന്‍ ആണ്."
+
+#~ msgid "The address book does not exist."
+#~ msgstr "ഈ വിലാസപുസ്തകം നിലവിലില്ല."
+
+#~ msgid "The \"Me\" contact does not exist."
+#~ msgstr "\"ഞാന്‍\" എന്ന വിലാസം  നിലവിലില്ല."
+
+#~ msgid "The address book is not loaded."
+#~ msgstr "വിലാസപുസ്തകം തുറന്നിട്ടില്ല."
+
+#~ msgid "The address book is already loaded."
+#~ msgstr "വിലാസപുസ്തകം ഇപ്പൊഴേ നിലവിലുണ്ട്."
+
+#~ msgid "Permission was denied when accessing the address book."
+#~ msgstr "വിലാസപുസ്തകം നോക്കുന്നതിനുള്ള അനുവാദമില്ല."
+
+#~ msgid "The contact was not found."
+#~ msgstr "ഈ വിലാസം കണ്ടെത്തിയില്ല"
+
+#~ msgid "This contact ID already exists."
+#~ msgstr "ഈ വിലാസത്തിന്റെ ഐഡി നിലവിലുണ്ട്."
+
+#~ msgid "The protocol is not supported."
+#~ msgstr "ഈ പ്രോട്ടോകോള്‍ പിന്തുണയില്ലാത്തതാണ്."
+
+#~ msgid "The operation was cancelled."
+#~ msgstr "ഈ നടപടി നിര്‍ത്തിയിരിക്കുന്നു"
+
+#~ msgid "The operation could not be cancelled."
+#~ msgstr "ഈ നടപടി നിറുത്താന്‍ സാധ്യമല്ല"
+
+#~ msgid "The address book authentication failed."
+#~ msgstr "വിലാസപുസ്തകത്തിലേക്കുള്ള തിരിച്ചറിയല്‍ പരിശോധന പരാജയപ്പെട്ടു"
+
+#~ msgid ""
+#~ "Authentication is required to access the address book and was not given."
+#~ msgstr "വിലാസപുസ്തകം പരിശോധിക്കാന്‍ ആവശ്യമായ തിരിച്ചറിയല്‍ നല്കിയിട്ടില്ല"
+
+#~ msgid "A secure connection is not available."
+#~ msgstr "സുരക്ഷിതമായ ഒരു ബന്ധം ലഭ്യമല്ല"
+
+#~ msgid "A CORBA error occurred whilst accessing the address book."
+#~ msgstr "വിലാസപുസ്തകം നോക്കുന്നതിനിടയില്‍ ഒരു കോര്‍ബ പിശക് സംഭവിച്ചു."
+
+#~ msgid "The address book source does not exist."
+#~ msgstr "വിലാസപുസ്തകത്തിന്റെ ഉറവിടം നിലവിലില്ല."
+
+#~ msgid "An unknown error occurred."
+#~ msgstr "അറിയപ്പെടാത്ത എന്തോ ഒരു തെറ്റ് സംഭവിച്ചു."
+
+#~ msgid "Unable to send file"
+#~ msgstr "ഫയല്‍ അയയ്ക്കാന്‍ പറ്റുന്നില്ല"
+
+#~ msgid "There is no connection to gajim remote service."
+#~ msgstr "ഗാജിം വിദൂര സേവനത്തിലേയ്ക്കു് ബന്ധമൊന്നും ഇല്ല."
+
+#~ msgid "Sending file failed"
+#~ msgstr "ഫയല്‍ അയയ്ക്കല്‍ പരാജയപ്പെട്ടു"
+
+#~ msgid "Recipient is missing."
+#~ msgstr "സ്വീകര്‍ത്താവിനെ നല്‍കിയിട്ടില്ല."
+
+#~ msgid "Unknown recipient."
+#~ msgstr "അറിയപ്പെടാത്ത സ്വീകര്‍ത്താവ്"
+
+#~ msgid "Instant Message (Gajim)"
+#~ msgstr "നിമിഷ സന്ദേശം (ഗാജിം)"
+
+#~ msgid "New CD/DVD"
+#~ msgstr "പുതിയ സിഡി/ഡിവിഡി"
+
+#~ msgid "Existing CD/DVD"
+#~ msgstr "നിലവിലുള്ള സിഡി/ഡിവിഡി"
+
+#~ msgid "CD/DVD Creator"
+#~ msgstr "സിഡി/ഡിവിഡി നിര്‍മാതാവ്"
+
+#~ msgid "Instant Message (Pidgin)"
+#~ msgstr "നിമിഷ സന്ദേശം (പിട്ഗിന്‍)"
+
+#~ msgid "Removable disks and shares"
+#~ msgstr "ഊരി മാറ്റാവുന്ന ഡിസ്കുകളും പങ്കിട്ടവയും"
+
+#~ msgid "Uploading '%s'"
+#~ msgstr "'%s' കയറ്റുമതി ചെയ്യുന്നു"
+
+#~ msgid "Preparing upload"
+#~ msgstr "കയറ്റുമതിയ്ക്ക് തയ്യാറെടുക്കുന്നു"
+
+#~ msgid "Service '%s' is not configured."
+#~ msgstr "'%s' സേവനം സജ്ജീകരിച്ചിട്ടില്ല."
+
+#~ msgid "_Configure"
+#~ msgstr "_സജ്ജീകരിയ്ക്കുക"
+
+#~ msgid "Logged in to service '%s'."
+#~ msgstr "'%s' സേവനത്തിലേയ്ക്ക് പ്രവേശിച്ചിരിക്കുന്നു"
+
+#~ msgid "Could not log in to service '%s'."
+#~ msgstr "'%s' സേവനത്തിലേയ്ക്ക് പ്രവേശിക്കാന്‍ സാധിക്കുന്നില്ല."
+
+#~ msgid "UPnP Media Server"
+#~ msgstr "ആഗോള പ്ലുഗ് ആന്‍ഡ്‌ പ്ലേ (യുപിഎന്‍പി) മാധ്യമ സേവകന്‍"
+
+#~ msgid "Last plugin used to send"
+#~ msgstr "അവസാനമായി അയയ്ക്കാന്‍ ഉപയോഗിച്ച സംയോജകം"
+
+#~ msgid "Last type of archive used"
+#~ msgstr "അവസാനമായി ഉപയോഗിച്ച ശേഖരത്തിന്റെ തരം"
+
+#~ msgid ""
+#~ "Used to store which plugin was used the last time files were sent using "
+#~ "nautilus-sendto."
+#~ msgstr ""
+#~ "നോട്ടിലസ്-സെന്‍ഡ്ടു ഉപയോഗിച്ച് കഴിഞ്ഞ പ്രാവശ്യം ഫയലുകള്‍ അയച്ചപ്പോള്‍ ഉപയോഗിച്ച സംയോജകം "
+#~ "ഏതാണെന്നു് ഓര്‍ത്തുവെക്കാന്‍ ഉപയോഗിച്ചിരിക്കുന്നു."
+
+#~ msgid ""
+#~ "Used to store which type of archive was used the last time (0: zip, 1: "
+#~ "tar.gz, 2: tar.bz2)."
+#~ msgstr ""
+#~ "കഴിഞ്ഞ പ്രാവശ്യം ഏതു തരം  ഫയല്‍ ചുരുക്കല്‍ സംവിധാനമാണ് ഉപയോഗിച്ചതെന്ന് ഓര്‍ത്തുവെച്ചിരിക്കുന്നു "
+#~ "(0: zip, 1: tar.gz, 2: tar.bz2)."
+
+#~ msgid "_Send to..."
+#~ msgstr "_അയക്കേണ്ടതു്..."
+
+#~ msgid "Send files to remote devices, or people"
+#~ msgstr "ഫയലുകള്‍ ദൂരെയുള്ള ഉപകരണങ്ങളിലേയ്ക്കോ ആളുകള്‍ക്കോ അയയ്ക്കുക"
+
+#~ msgid "Send to..."
+#~ msgstr "അയയ്ക്കേണ്ടതു്... "
+
+#~ msgid "Send To..."
+#~ msgstr "അയയ്ക്കേണ്ടതു്... "
+
+#~ msgid "Send file by mail, instant message..."
+#~ msgstr "കത്തായിട്ടോ നിമിഷ സന്ദേശമായിട്ടോ ഫയല്‍ അയയ്ക്കുക..."
+
+#~ msgid "Send files by mail, instant message..."
+#~ msgstr "കത്തായിട്ടോ നിമിഷ സന്ദേശമായിട്ടോ ഫയലുകള്‍ അയയ്ക്കുക..."
+
+#~ msgid "Could not load any plugins."
+#~ msgstr "ഒരു സംയോജകങ്ങളും തുറക്കാന്‍ സാധിച്ചില്ല."
+
+#~ msgid "Please verify your installation"
+#~ msgstr "നിങ്ങളുടെ ഇന്‍സ്റ്റലേഷന്‍ ശരിയാണോ എന്നു് ഉറപ്പു വരുത്തുക"
+
+#~ msgid "<b>Compression</b>"
+#~ msgstr "<b>ചുരുക്കുക</b>"
+
+#~ msgid "<b>Destination</b>"
+#~ msgstr "<b>ലക്ഷ്യസ്ഥാനം</b>"
+
+#~ msgid "Send _as:"
+#~ msgstr "അ_യക്കേണ്ടത്:"
+
+#~ msgid "Send t_o:"
+#~ msgstr "_ഇതിലേക്ക് അയക്കുക:"
+
+#~ msgid "Programming error, could not find the device in the list"
+#~ msgstr "പ്രോഗ്രാമിംഗ് തകരാറ്, പട്ടികയിലെ ഉപകരണം കണ്ടെത്താന്‍ സാധിച്ചില്ല "
+
+#~ msgid "Obex Push file transfer unsupported"
+#~ msgstr "ഒബെക്സ് പുഷ് ഫയല്‍ കൈമാറ്റ സംവിധാനത്തിന് പിന്തുണയില്ല"
+
+#~ msgid "Bluetooth (OBEX Push)"
+#~ msgstr "ബ്ലുടൂത്ത് (ഒബെക്സ് പുഷ്)"
+
+#~ msgid "The contact selected cannot receive files."
+#~ msgstr "തെരെഞ്ഞെടുത്ത സ്വീകര്‍ത്താവിന് ഫയലുകള്‍ സ്വീകരിക്കാന്‍ സാധ്യമല്ല."
+
+#~ msgid "The contact selected is offline."
+#~ msgstr "തെരെഞ്ഞെടുത്ത സ്വീകര്‍ത്താവ് ഓഫ്‌‌ലൈന്‍ ആണ്"
+
+#~ msgid "No error message"
+#~ msgstr "തകരാറു സന്ദേശങ്ങള്‍ ഒന്നുമില്ല"
+
+#~ msgid "Instant Message (Empathy)"
+#~ msgstr "നിമിഷ സന്ദേശം (എമ്പതി)"
+
+#~ msgid "Nautilus Sendto"
+#~ msgstr "നോട്ടിലസ് സെന്‍ഡ്ടു"

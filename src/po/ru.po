@@ -1,0 +1,217 @@
+# translation of nautilus-sendto.master.ru.po to Russian
+#
+# Leon Kanter <leon@asplinux.ru>, 2005.
+# Leonid Kanter <leon@asplinux.ru>, 2008.
+# Yuri Kozlov <yuray@komyakino.ru>, 2010.
+# Alexander Saprykin <xelfium@gmail.com>, 2010.
+# Stas Solovey <whats_up@tut.by>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ru\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-03-21 07:45+0000\n"
+"PO-Revision-Date: 2013-03-21 13:50+0600\n"
+"Last-Translator: Dmitriy S. Seregin <dseregin@59.ru>\n"
+"Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../src/nautilus-sendto.c:53
+msgid "Run from build directory (ignored)"
+msgstr "Запустить из каталога сборки (игнорируется)"
+
+#: ../src/nautilus-sendto.c:54
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr ""
+"Использовать XID как родителя по отношению к диалогу отправки (игнорируется)"
+
+#: ../src/nautilus-sendto.c:55
+msgid "Files to send"
+msgstr "Файлы для отправки"
+
+#: ../src/nautilus-sendto.c:56
+msgid "Output version information and exit"
+msgstr "Показать информацию о версии и выйти"
+
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:253
+msgid "Archive"
+msgstr "Архив"
+
+#: ../src/nautilus-sendto.c:520
+#, c-format
+msgid "Could not parse command-line options: %s\n"
+msgstr "Не удалось разобрать параметры командной строки: %s\n"
+
+#: ../src/nautilus-sendto.c:535
+#, c-format
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "Ожидается, что URI или имена файлов будут переданы как параметры\n"
+
+#~ msgid "Sharing %d folder"
+#~ msgid_plural "Sharing %d folders"
+#~ msgstr[0] "Открывается доступ к %d папке"
+#~ msgstr[1] "Открывается доступ к %d папкам"
+#~ msgstr[2] "Открывается доступ к %d папкам"
+
+#~ msgid "Sharing %d folders and files"
+#~ msgstr "Открывается доступ к %d папкам и файлам"
+
+#~ msgid "Sharing %d video"
+#~ msgid_plural "Sharing %d videos"
+#~ msgstr[0] "Открывается доступ к %d видео"
+#~ msgstr[1] "Открывается доступ к %d видео"
+#~ msgstr[2] "Открывается доступ к %d видео"
+
+#~ msgid "Sharing %d photo"
+#~ msgid_plural "Sharing %d photos"
+#~ msgstr[0] "Открывается доступ к %d фотоснимку"
+#~ msgstr[1] "Открывается доступ к %d фотоснимкам"
+#~ msgstr[2] "Открывается доступ к %d фотоснимкам"
+
+#~ msgid "Sharing %d image"
+#~ msgid_plural "Sharing %d images"
+#~ msgstr[0] "Открывается доступ к %d изображению"
+#~ msgstr[1] "Открывается доступ к %d изображениям"
+#~ msgstr[2] "Открывается доступ к %d изображениям"
+
+#~ msgid "Sharing %d text file"
+#~ msgid_plural "Sharing %d text files"
+#~ msgstr[0] "Открывается доступ к %d текстовому файлу"
+#~ msgstr[1] "Открывается доступ к %d текстовым файлам"
+#~ msgstr[2] "Открывается доступ к %d текстовым файлам"
+
+#~ msgid "Sharing %d file"
+#~ msgid_plural "Sharing %d files"
+#~ msgstr[0] "Открывается доступ к %d файлу"
+#~ msgstr[1] "Открывается доступ к %d файлам"
+#~ msgstr[2] "Открывается доступ к %d файлам"
+
+#~ msgid "_Send"
+#~ msgstr "_Отправить"
+
+#~ msgid "Files"
+#~ msgstr "Файлы"
+
+#~ msgid "_Cancel"
+#~ msgstr "О_тменить"
+
+#~ msgid "Send _packed in:"
+#~ msgstr "Отправить _запакованным в:"
+
+#~ msgid "Mail"
+#~ msgstr "Почта"
+
+#~ msgid "Cannot get contact: %s"
+#~ msgstr "Не удалось получить контакт: %s"
+
+#~ msgid "Could not find contact: %s"
+#~ msgstr "Не удалось найти контакт: %s"
+
+#~ msgid "Cannot create searchable view."
+#~ msgstr "Не удалось создать вид с поиском."
+
+#~ msgid "Success"
+#~ msgstr "Выполнено"
+
+#~ msgid "An argument was invalid."
+#~ msgstr "Указан неверный аргумент."
+
+#~ msgid "The address book is busy."
+#~ msgstr "Адресная книга занята."
+
+#~ msgid "The address book is offline."
+#~ msgstr "Адресная книга отключена."
+
+#~ msgid "The address book does not exist."
+#~ msgstr "Адресная книга не существует."
+
+#~ msgid "The \"Me\" contact does not exist."
+#~ msgstr "Контакт «Я» не существует."
+
+#~ msgid "The address book is not loaded."
+#~ msgstr "Адресная книга не загружена."
+
+#~ msgid "The address book is already loaded."
+#~ msgstr "Адресная книга уже загружена."
+
+#~ msgid "Permission was denied when accessing the address book."
+#~ msgstr "При попытке обращения к адресной книге доступ был запрещён."
+
+#~ msgid "The contact was not found."
+#~ msgstr "Контакт не найден."
+
+#~ msgid "This contact ID already exists."
+#~ msgstr "ID контакта уже существует."
+
+#~ msgid "The protocol is not supported."
+#~ msgstr "Протокол не поддерживается."
+
+#~ msgid "The operation was cancelled."
+#~ msgstr "Операция отменена."
+
+#~ msgid "The operation could not be cancelled."
+#~ msgstr "Операция не может быть отменена."
+
+#~ msgid "The address book authentication failed."
+#~ msgstr "Сбой аутентификации адресной книги."
+
+#~ msgid ""
+#~ "Authentication is required to access the address book and was not given."
+#~ msgstr "Для доступа к адресной книге требуется аутентификация."
+
+#~ msgid "A secure connection is not available."
+#~ msgstr "Безопасное соединение недоступно."
+
+#~ msgid "A CORBA error occurred whilst accessing the address book."
+#~ msgstr "При доступе к адресной книге произошла ошибка CORBA."
+
+#~ msgid "The address book source does not exist."
+#~ msgstr "Источник адресной книги не существует."
+
+#~ msgid "An unknown error occurred."
+#~ msgstr "Произошла неизвестная ошибка."
+
+#~ msgid "Unable to send file"
+#~ msgstr "Невозможно отправить файл"
+
+#~ msgid "There is no connection to gajim remote service."
+#~ msgstr "Нет соединения с удалённой службой gajim."
+
+#~ msgid "Sending file failed"
+#~ msgstr "Сбой при отправке файла"
+
+#~ msgid "Recipient is missing."
+#~ msgstr "Не указан получатель."
+
+#~ msgid "Unknown recipient."
+#~ msgstr "Неизвестный получатель."
+
+#~ msgid "Instant Message (Gajim)"
+#~ msgstr "Мгновенное сообщение (Gajim)"
+
+#~ msgid "New CD/DVD"
+#~ msgstr "Новый CD/DVD"
+
+#~ msgid "Existing CD/DVD"
+#~ msgstr "Существующий CD/DVD"
+
+#~ msgid "CD/DVD Creator"
+#~ msgstr "Создание CD/DVD"
+
+#~ msgid "Instant Message (Pidgin)"
+#~ msgstr "Мгновенное сообщение (Pidgin)"
+
+#~ msgid "Removable disks and shares"
+#~ msgstr "Съёмные диски и общие ресурсы"
+
+#~ msgid "Uploading '%s'"
+#~ msgstr "Отправка «%s»"
