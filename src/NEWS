@@ -1,4 +1,33 @@
 =============
+Version 3.8.4
+=============
+
+- Fix build with GCC 6
+- Updated translations
+
+=============
+Version 3.8.3
+=============
+
+- Fix handling of files in Recent or in the Trash
+- Fix help messages in some locales
+- Updated translations
+
+=============
+Version 3.8.2
+=============
+
+- Updated translations
+
+=============
+Version 3.8.1
+=============
+
+- Updated translations
+- Fix warnings when no mail client is installed
+- Remove support for ancient evolution versions
+
+=============
 Version 3.8.0
 =============
 

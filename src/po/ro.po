@@ -6,286 +6,237 @@
 # Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009, 2010.
 # Nichita Utiu <nikita.utiu@gmail.com>, 2010.
 # Daniel Șerbănescu <cyber19rider@gmail.com>, 2010.
+# Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: nautilus-sendto trunk\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=nautilus-sendto&component=general\n"
-"POT-Creation-Date: 2010-11-23 16:27+0000\n"
-"PO-Revision-Date: 2010-12-02 02:22+0300\n"
-"Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
-"Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product"
+"=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-06-22 11:05+0000\n"
+"PO-Revision-Date: 2015-06-22 19:47+0200\n"
+"Last-Translator: Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>\n"
+"Language-Team: Gnome Romanian Translation Team\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ro\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Virtaal 0.6.1\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
 
-#: ../src/nautilus-sendto-command.c:79
-msgid "Run from build directory"
-msgstr "Execută din dosarul de construcție"
+#: ../src/nautilus-sendto.c:53
+#| msgid "Run from build directory"
+msgid "Run from build directory (ignored)"
+msgstr "Execută din dosarul de construcție (ignorat)"
 
-#: ../src/nautilus-sendto-command.c:80
-msgid "Use XID as parent to the send dialogue"
-msgstr "Folosește XID ca părinte al dialogului de trimitere"
+#: ../src/nautilus-sendto.c:54
+#| msgid "Use XID as parent to the send dialogue"
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr "Folosește XID ca părinte al dialogului de trimitere (ignorat)"
 
-#: ../src/nautilus-sendto-command.c:81
+#: ../src/nautilus-sendto.c:55
 msgid "Files to send"
 msgstr "Fișiere de trimis"
 
-#. FIXME, this needs to be done in UI now
-#: ../src/nautilus-sendto-command.c:669
-#, c-format
-msgid "Expects URIs or filenames to be passed as options\n"
-msgstr "Se așteaptă adrese web sau nume de fișiere ca opțiuni\n"
+#: ../src/nautilus-sendto.c:56
+msgid "Output version information and exit"
+msgstr "Afișează informații despre versiune și ieși"
 
-#: ../src/nautilus-sendto-command.c:699
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:244
+msgid "Archive"
+msgstr "Arhivă"
+
+#: ../src/nautilus-sendto.c:507
 #, c-format
 msgid "Could not parse command-line options: %s\n"
 msgstr "Nu s-au putut analiza opțiunile din linia de comandă: %s\n"
 
-#: ../src/nautilus-sendto-mimetype.c:50
+#: ../src/nautilus-sendto.c:520
 #, c-format
-msgid "Sharing %d folder"
-msgid_plural "Sharing %d folders"
-msgstr[0] "Se partajează un dosar"
-msgstr[1] "Se partajează %d dosare"
-msgstr[2] "Se partajează %d de dosare"
+msgid "No mail client installed, not sending files\n"
+msgstr "Niciun client de email instalat, nu se trimit fișierele\n"
 
-#: ../src/nautilus-sendto-mimetype.c:52
+#: ../src/nautilus-sendto.c:526
 #, c-format
-msgid "Sharing %d folders and files"
-msgstr "Se partajează %d dosare și fișiere"
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "Se așteaptă adrese web sau nume de fișiere ca opțiuni\n"
 
-#: ../src/nautilus-sendto-mimetype.c:77
-#, c-format
-msgid "Sharing %d video"
-msgid_plural "Sharing %d videos"
-msgstr[0] "Se partajează un videoclip"
-msgstr[1] "Se partajează %d videoclipuri"
-msgstr[2] "Se partajează %d de videoclipuri"
+#~ msgid "Sharing %d folder"
+#~ msgid_plural "Sharing %d folders"
+#~ msgstr[0] "Se partajează un dosar"
+#~ msgstr[1] "Se partajează %d dosare"
+#~ msgstr[2] "Se partajează %d de dosare"
 
-#: ../src/nautilus-sendto-mimetype.c:79
-#, c-format
-msgid "Sharing %d photo"
-msgid_plural "Sharing %d photos"
-msgstr[0] "Se partajează o fotografie"
-msgstr[1] "Se partajează %d fotografii"
-msgstr[2] "Se partajează %d de fotografii"
+#~ msgid "Sharing %d folders and files"
+#~ msgstr "Se partajează %d dosare și fișiere"
 
-#: ../src/nautilus-sendto-mimetype.c:81
-#, c-format
-msgid "Sharing %d image"
-msgid_plural "Sharing %d images"
-msgstr[0] "Se partajează o imagine"
-msgstr[1] "Se partajează %d imagini"
-msgstr[2] "Se partajează %d de imagini"
+#~ msgid "Sharing %d video"
+#~ msgid_plural "Sharing %d videos"
+#~ msgstr[0] "Se partajează un videoclip"
+#~ msgstr[1] "Se partajează %d videoclipuri"
+#~ msgstr[2] "Se partajează %d de videoclipuri"
 
-#: ../src/nautilus-sendto-mimetype.c:83
-#, c-format
-msgid "Sharing %d text file"
-msgid_plural "Sharing %d text files"
-msgstr[0] "Se partajează un fișier text"
-msgstr[1] "Se partajează %d fișiere text"
-msgstr[2] "Se partajează %d de fișiere text"
+#~ msgid "Sharing %d photo"
+#~ msgid_plural "Sharing %d photos"
+#~ msgstr[0] "Se partajează o fotografie"
+#~ msgstr[1] "Se partajează %d fotografii"
+#~ msgstr[2] "Se partajează %d de fotografii"
 
-#: ../src/nautilus-sendto-mimetype.c:85
-#, c-format
-msgid "Sharing %d file"
-msgid_plural "Sharing %d files"
-msgstr[0] "Se partajează un fișier"
-msgstr[1] "Se partajează %d fișiere"
-msgstr[2] "Se partajează %d de fișiere"
+#~ msgid "Sharing %d image"
+#~ msgid_plural "Sharing %d images"
+#~ msgstr[0] "Se partajează o imagine"
+#~ msgstr[1] "Se partajează %d imagini"
+#~ msgstr[2] "Se partajează %d de imagini"
 
-#: ../data/nautilus-sendto.ui.h:1
-msgid "_Send"
-msgstr "_Trimite"
+#~ msgid "Sharing %d text file"
+#~ msgid_plural "Sharing %d text files"
+#~ msgstr[0] "Se partajează un fișier text"
+#~ msgstr[1] "Se partajează %d fișiere text"
+#~ msgstr[2] "Se partajează %d de fișiere text"
 
-#: ../src/plugins/nautilus-sendto-packer.c:200
-msgid "Files"
-msgstr "Fișiere"
+#~ msgid "Sharing %d file"
+#~ msgid_plural "Sharing %d files"
+#~ msgstr[0] "Se partajează un fișier"
+#~ msgstr[1] "Se partajează %d fișiere"
+#~ msgstr[2] "Se partajează %d de fișiere"
 
-#: ../src/plugins/evolution/evolution.c:308
-msgid "Mail"
-msgstr "Email"
+#~ msgid "_Send"
+#~ msgstr "_Trimite"
 
-#: ../src/plugins/evolution/e-contact-entry.c:153
-#, c-format
-msgid "Cannot get contact: %s"
-msgstr "Nu s-a putut obține contactul: %s"
+#~ msgid "Files"
+#~ msgstr "Fișiere"
 
-#: ../src/plugins/evolution/e-contact-entry.c:186
-#, c-format
-msgid "Could not find contact: %s"
-msgstr "Nu s-a putut găsi contactul: %s"
+#~ msgid "Mail"
+#~ msgstr "Email"
 
-#: ../src/plugins/evolution/e-contact-entry.c:414
-msgid "Cannot create searchable view."
-msgstr "Nu s-a putut crea vizualizarea capabilă de căutare."
+#~ msgid "Cannot get contact: %s"
+#~ msgstr "Nu s-a putut obține contactul: %s"
 
-#: ../src/plugins/evolution/e-contact-entry.c:886
-msgid "Success"
-msgstr "Succes"
+#~ msgid "Could not find contact: %s"
+#~ msgstr "Nu s-a putut găsi contactul: %s"
 
-#: ../src/plugins/evolution/e-contact-entry.c:888
-msgid "An argument was invalid."
-msgstr "Un argument nu a fost valid."
+#~ msgid "Cannot create searchable view."
+#~ msgstr "Nu s-a putut crea vizualizarea capabilă de căutare."
 
-#: ../src/plugins/evolution/e-contact-entry.c:890
-msgid "The address book is busy."
-msgstr "Agenda este ocupată."
+#~ msgid "Success"
+#~ msgstr "Succes"
 
-#: ../src/plugins/evolution/e-contact-entry.c:892
-msgid "The address book is offline."
-msgstr "Agenda este deconectată."
+#~ msgid "An argument was invalid."
+#~ msgstr "Un argument nu a fost valid."
 
-#: ../src/plugins/evolution/e-contact-entry.c:894
-msgid "The address book does not exist."
-msgstr "Nu există agenda."
+#~ msgid "The address book is busy."
+#~ msgstr "Agenda este ocupată."
 
-#: ../src/plugins/evolution/e-contact-entry.c:896
-msgid "The \"Me\" contact does not exist."
-msgstr "Contactul „Eu” nu există."
+#~ msgid "The address book is offline."
+#~ msgstr "Agenda este deconectată."
 
-#: ../src/plugins/evolution/e-contact-entry.c:898
-msgid "The address book is not loaded."
-msgstr "Agenda nu este încărcată."
+#~ msgid "The address book does not exist."
+#~ msgstr "Nu există agenda."
 
-#: ../src/plugins/evolution/e-contact-entry.c:900
-msgid "The address book is already loaded."
-msgstr "Agenda este deja încărcată."
+#~ msgid "The \"Me\" contact does not exist."
+#~ msgstr "Contactul „Eu” nu există."
 
-#: ../src/plugins/evolution/e-contact-entry.c:902
-msgid "Permission was denied when accessing the address book."
-msgstr "Permisiunea a fost refuzată la accesarea agendei."
+#~ msgid "The address book is not loaded."
+#~ msgstr "Agenda nu este încărcată."
 
-#: ../src/plugins/evolution/e-contact-entry.c:904
-msgid "The contact was not found."
-msgstr "Contactul nu a fost găsit."
+#~ msgid "The address book is already loaded."
+#~ msgstr "Agenda este deja încărcată."
 
-#: ../src/plugins/evolution/e-contact-entry.c:906
-msgid "This contact ID already exists."
-msgstr "Acest ID de contact există deja."
+#~ msgid "Permission was denied when accessing the address book."
+#~ msgstr "Permisiunea a fost refuzată la accesarea agendei."
 
-#: ../src/plugins/evolution/e-contact-entry.c:908
-msgid "The protocol is not supported."
-msgstr "Nu există suport pentru protocol."
+#~ msgid "The contact was not found."
+#~ msgstr "Contactul nu a fost găsit."
 
-#: ../src/plugins/evolution/e-contact-entry.c:910
-msgid "The operation was cancelled."
-msgstr "Operațiunea a fost anulată."
+#~ msgid "This contact ID already exists."
+#~ msgstr "Acest ID de contact există deja."
 
-#: ../src/plugins/evolution/e-contact-entry.c:912
-msgid "The operation could not be cancelled."
-msgstr "Operațiunea nu a putut fi anulată."
+#~ msgid "The protocol is not supported."
+#~ msgstr "Nu există suport pentru protocol."
 
-#: ../src/plugins/evolution/e-contact-entry.c:914
-msgid "The address book authentication failed."
-msgstr "Autentificarea agendei a eșuat."
+#~ msgid "The operation was cancelled."
+#~ msgstr "Operațiunea a fost anulată."
 
-#: ../src/plugins/evolution/e-contact-entry.c:916
-msgid ""
-"Authentication is required to access the address book and was not given."
-msgstr ""
-"Datele de autentificarea sunt obligatorii pentru a accesa agenda, dar nu au "
-"fost furnizate."
+#~ msgid "The operation could not be cancelled."
+#~ msgstr "Operațiunea nu a putut fi anulată."
 
-#: ../src/plugins/evolution/e-contact-entry.c:918
-msgid "A secure connection is not available."
-msgstr "Nicio conexiune securizată nu este disponibilă."
+#~ msgid "The address book authentication failed."
+#~ msgstr "Autentificarea agendei a eșuat."
 
-#: ../src/plugins/evolution/e-contact-entry.c:920
-msgid "A CORBA error occurred whilst accessing the address book."
-msgstr "A avut loc o eroare CORBA la accesarea agendei."
+#~ msgid ""
+#~ "Authentication is required to access the address book and was not given."
+#~ msgstr ""
+#~ "Datele de autentificarea sunt obligatorii pentru a accesa agenda, dar nu "
+#~ "au fost furnizate."
 
-#: ../src/plugins/evolution/e-contact-entry.c:922
-msgid "The address book source does not exist."
-msgstr "Sursa agendei nu există."
+#~ msgid "A secure connection is not available."
+#~ msgstr "Nicio conexiune securizată nu este disponibilă."
 
-#: ../src/plugins/evolution/e-contact-entry.c:924
-#: ../src/plugins/evolution/e-contact-entry.c:927
-msgid "An unknown error occurred."
-msgstr "A avut loc o eroare necunoscută."
+#~ msgid "A CORBA error occurred whilst accessing the address book."
+#~ msgstr "A avut loc o eroare CORBA la accesarea agendei."
 
-#: ../src/plugins/gajim/gajim.c:417
-msgid "Unable to send file"
-msgstr "Nu se poate trimite fișierul"
+#~ msgid "The address book source does not exist."
+#~ msgstr "Sursa agendei nu există."
 
-#: ../src/plugins/gajim/gajim.c:418
-msgid "There is no connection to gajim remote service."
-msgstr "Nu există nicio conexiune la serviciul la distanță gajim."
+#~ msgid "An unknown error occurred."
+#~ msgstr "A avut loc o eroare necunoscută."
 
-#: ../src/plugins/gajim/gajim.c:442 ../src/plugins/gajim/gajim.c:482
-msgid "Sending file failed"
-msgstr "Trimiterea fișierului a eșuat"
+#~ msgid "Unable to send file"
+#~ msgstr "Nu se poate trimite fișierul"
 
-#: ../src/plugins/gajim/gajim.c:443
-msgid "Recipient is missing."
-msgstr "Destinatarul lipsește."
+#~ msgid "There is no connection to gajim remote service."
+#~ msgstr "Nu există nicio conexiune la serviciul la distanță gajim."
 
-#: ../src/plugins/gajim/gajim.c:482
-msgid "Unknown recipient."
-msgstr "Destinatar necunoscut."
+#~ msgid "Sending file failed"
+#~ msgstr "Trimiterea fișierului a eșuat"
 
-#: ../src/plugins/gajim/gajim.c:505
-msgid "Instant Message (Gajim)"
-msgstr "Mesagerie instant (Gajim)"
+#~ msgid "Recipient is missing."
+#~ msgstr "Destinatarul lipsește."
 
-#: ../src/plugins/nautilus-burn/nautilus-burn.c:90
-msgid "New CD/DVD"
-msgstr "CD/DVD nou"
+#~ msgid "Unknown recipient."
+#~ msgstr "Destinatar necunoscut."
 
-#: ../src/plugins/nautilus-burn/nautilus-burn.c:97
-msgid "Existing CD/DVD"
-msgstr "CD/DVD existent"
+#~ msgid "Instant Message (Gajim)"
+#~ msgstr "Mesagerie instant (Gajim)"
 
-#: ../src/plugins/nautilus-burn/nautilus-burn.c:176
-msgid "CD/DVD Creator"
-msgstr "Creator de CD/DVD"
+#~ msgid "New CD/DVD"
+#~ msgstr "CD/DVD nou"
 
-#: ../src/plugins/pidgin/pidgin.c:464
-msgid "Instant Message (Pidgin)"
-msgstr "Mesagerie instant (Pidgin)"
+#~ msgid "Existing CD/DVD"
+#~ msgstr "CD/DVD existent"
 
-#: ../src/plugins/removable-devices/removable-devices.c:274
-msgid "Removable disks and shares"
-msgstr "Partajări și discuri detașabile"
+#~ msgid "CD/DVD Creator"
+#~ msgstr "Creator de CD/DVD"
 
-#: ../src/plugins/socialweb/socialweb.c:186
-#, c-format
-msgid "Uploading '%s'"
-msgstr "Se încarcă „%s”"
+#~ msgid "Instant Message (Pidgin)"
+#~ msgstr "Mesagerie instant (Pidgin)"
 
-#: ../src/plugins/socialweb/socialweb.c:256
-msgid "Preparing upload"
-msgstr "Se pregătește încărcarea"
+#~ msgid "Removable disks and shares"
+#~ msgstr "Partajări și discuri detașabile"
 
-#: ../src/plugins/socialweb/socialweb.c:316
-#, c-format
-msgid "Service '%s' is not configured."
-msgstr "Serviciul „%s” nu este configurat."
+#~ msgid "Uploading '%s'"
+#~ msgstr "Se încarcă „%s”"
 
-#: ../src/plugins/socialweb/socialweb.c:319
-#: ../src/plugins/socialweb/socialweb.c:336
-msgid "_Configure"
-msgstr "_Configurează"
+#~ msgid "Preparing upload"
+#~ msgstr "Se pregătește încărcarea"
 
-#: ../src/plugins/socialweb/socialweb.c:323
-#: ../src/plugins/socialweb/socialweb.c:343
-#, c-format
-msgid "Logged in to service '%s'."
-msgstr "Autentificat la serviciul „%s”."
+#~ msgid "Service '%s' is not configured."
+#~ msgstr "Serviciul „%s” nu este configurat."
 
-#: ../src/plugins/socialweb/socialweb.c:333
-#, c-format
-msgid "Could not log in to service '%s'."
-msgstr "Nu s-a putut autentifica la serviciul „%s”."
+#~ msgid "_Configure"
+#~ msgstr "_Configurează"
 
-#: ../src/plugins/upnp/upnp.c:309
-msgid "UPnP Media Server"
-msgstr "Server media UPnP"
+#~ msgid "Logged in to service '%s'."
+#~ msgstr "Autentificat la serviciul „%s”."
+
+#~ msgid "Could not log in to service '%s'."
+#~ msgstr "Nu s-a putut autentifica la serviciul „%s”."
+
+#~ msgid "UPnP Media Server"
+#~ msgstr "Server media UPnP"
 
 #~ msgid "Last plugin used to send"
 #~ msgstr "Ultimul modul de extensie folosit pentru trimitere"

@@ -1,3 +1,1319 @@
+commit b0589c577fc9f22885478e444f0d4f74256636b6 (HEAD -> master, tag: NAUTILUS_SENDTO_3_8_4)
+Author: Michael Catanzaro <mcatanzaro@gnome.org>
+Date:   Sun Jun 12 18:24:46 2016 -0500
+
+    3.8.4
+
+ NEWS         | 7 +++++++
+ configure.ac | 2 +-
+ 2 files changed, 8 insertions(+), 1 deletion(-)
+
+commit 6d1951b9797a0396cbb5c169bc16103fb4c02dd6
+Author: Michael Catanzaro <mcatanzaro@gnome.org>
+Date:   Sun Jun 12 18:23:46 2016 -0500
+
+    Rename configure.in
+
+ autogen.sh   |  2 +-
+ configure.ac | 64 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ configure.in | 64 ------------------------------------------------------------
+ 3 files changed, 65 insertions(+), 65 deletions(-)
+
+commit 999e1c5e26b1a9d25acd48383d0307bafc184b3d
+Author: Michael Catanzaro <mcatanzaro@gnome.org>
+Date:   Sun Jun 12 18:23:15 2016 -0500
+
+    Update .gitignore
+
+ .gitignore | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit e8b3e2f9f3ed31b6aa4be7375bacc6f2bac7c103
+Author: Michael Catanzaro <mcatanzaro@gnome.org>
+Date:   Sun Jun 12 18:22:42 2016 -0500
+
+    Remove INSTALL from version control
+
+ INSTALL | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 666fe2b913c31587943107f1135cf484ac17b450 (origin/master, origin/HEAD)
+Author: Cédric Valmary <cvalmary@yahoo.fr>
+Date:   Thu May 5 19:58:00 2016 +0000
+
+    Updated Occitan translation
+
+ po/oc.po | 71 ++++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 36 insertions(+), 35 deletions(-)
+
+commit 86fd0a3c877145b4d66dcfa57fbdafd5acddba15
+Author: Christian Hergert <christian@hergert.me>
+Date:   Tue Apr 12 17:57:25 2016 -0700
+
+    sendto: fix jhbuild build failure on recent GCC
+    
+    This appears to be safe, although should probably be rewritten to avoid
+    the use of non-literals. Either way, its breaking jhbuilds so might as
+    well set GCC ignore.
+
+ src/nautilus-sendto.c | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 65b7702806804c7b2917b691b7f7ee693c28e231
+Author: Fabio Tomat <f.t.public@gmail.com>
+Date:   Sat Apr 2 23:30:32 2016 +0000
+
+    Updated Friulian translation
+
+ po/fur.po | 29 ++++++++++++++---------------
+ 1 file changed, 14 insertions(+), 15 deletions(-)
+
+commit 14ddae88390f76a889e4c21c9040265e04e2a7f0
+Author: René Manassé GALEKWA <renemanasse@gmail.com>
+Date:   Thu Mar 24 09:47:57 2016 +0000
+
+    Added Lingala translation
+
+ po/LINGUAS |  1 +
+ po/ln.po   | 58 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 59 insertions(+)
+
+commit 0c853df28bd10c29f04a0ee92452cb43dadd1a1b (tag: NAUTILUS_SENDTO_3_8_3)
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Mar 21 13:07:54 2016 +0100
+
+    3.8.3
+
+ NEWS         | 8 ++++++++
+ configure.in | 2 +-
+ 2 files changed, 9 insertions(+), 1 deletion(-)
+
+commit 143664f71c123fb2b2601f46db671b67f2790895
+Author: hanniedu <lafeber-dumoleyn2@zonnet.nl>
+Date:   Fri Mar 4 10:40:25 2016 +0100
+
+    Updated Dutch translation Master 3.20
+
+ po/nl.po | 363 +++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 154 insertions(+), 209 deletions(-)
+
+commit 34b6876587506c57aba0c6ad98fb7f5e14229e6b
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Feb 29 18:17:22 2016 +0100
+
+    main: Fix handling of files in Recent or in the Trash
+    
+    Look up the target URI for files that fail to return a local file path
+    for g_file_get_path() calls.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=758988
+
+ src/nautilus-sendto.c | 35 +++++++++++++++++++++++++++++++++--
+ 1 file changed, 33 insertions(+), 2 deletions(-)
+
+commit f1d2c8458579926f1a5684d3c73116769353f8db
+Author: Cédric Valmary <cvalmary@yahoo.fr>
+Date:   Wed Feb 24 20:15:50 2016 +0000
+
+    Updated Occitan translation
+
+ po/oc.po | 52 ++++++++++++++++++++++++++--------------------------
+ 1 file changed, 26 insertions(+), 26 deletions(-)
+
+commit e49743759f3d9d2fd1ae76753e4161468c7253f3
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Feb 1 16:19:51 2016 +0100
+
+    main: Fix build on some systems
+    
+    As a follow-up to 4b6a5146068e5c4f0d60aabbf2901bc9a9bce4a2, make sure to
+    include locale.h to avoid setlocale() and LC_ALL not being defined.
+    
+    Those should already be dragged in by gi18n.h but it seems it doesn't work
+    on some systems.
+    
+    ://bugzilla.gnome.org/show_bug.cgi?id=760664
+
+ src/nautilus-sendto.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 4b6a5146068e5c4f0d60aabbf2901bc9a9bce4a2
+Author: Ting-Wei Lan <lantw@src.gnome.org>
+Date:   Mon Jan 11 14:34:50 2016 +0800
+
+    main: Fix help messages in some locales
+    
+    Call setlocale() first thing in the main() function
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=760433
+
+ src/nautilus-sendto.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 416358babb12a376fe04c7bf428b61af96a23166
+Author: Aurimas Černius <aurisc4@gmail.com>
+Date:   Sun Jan 10 17:24:30 2016 +0200
+
+    Updated Lithuanian translation
+
+ po/lt.po | 18 +++++++++---------
+ 1 file changed, 9 insertions(+), 9 deletions(-)
+
+commit c0880659521a49f80a5a48b78edb23130551b096
+Author: Cédric Valmary <cvalmary@yahoo.fr>
+Date:   Tue Nov 10 14:08:57 2015 +0000
+
+    Updated Occitan translation
+
+ po/oc.po | 104 +++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 52 insertions(+), 52 deletions(-)
+
+commit 7637a01dc732944f7c8f2bbf7684f426b40d25cb
+Author: Pedro Albuquerque <palbuquerque73@gmail.com>
+Date:   Sun Oct 4 08:28:29 2015 +0000
+
+    Updated Portuguese translation
+
+ po/pt.po | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a287c7b7be6473804800fad8150a3263ff78b711
+Author: Khaled Hosny <khaledhosny@eglug.org>
+Date:   Wed Sep 23 22:45:27 2015 +0200
+
+    Update Arabic translation
+
+ po/ar.po | 356 +++++++++++++++++++++------------------------------------------
+ 1 file changed, 116 insertions(+), 240 deletions(-)
+
+commit 037db203e7900f51d37f5422d294e00da7af3ab3
+Author: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+Date:   Wed Aug 26 12:51:42 2015 +0000
+
+    Updated Chinese (Taiwan) translation
+
+ po/zh_TW.po | 13 +++++++------
+ 1 file changed, 7 insertions(+), 6 deletions(-)
+
+commit 70ce3aa6fcdfd6c4710d9356fc4872a81f13d414
+Author: Pedro Albuquerque <palbuquerque73@gmail.com>
+Date:   Mon Jun 29 22:39:24 2015 +0000
+
+    Updated Portuguese translation
+
+ po/pt.po | 28 +++++++++++++++-------------
+ 1 file changed, 15 insertions(+), 13 deletions(-)
+
+commit b5ffa729f6c3eea019ecb382363a825451078dd2
+Author: Daniel Șerbănescu <daniel@serbanescu.dk>
+Date:   Mon Jun 22 19:47:55 2015 +0200
+
+    Updated Romanian Translation
+
+ po/ro.po | 369 +++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 160 insertions(+), 209 deletions(-)
+
+commit 910e55aa3f1fd8bdf140f3e95be9eec2f368de3d
+Author: Cédric Valmary <cvalmary@yahoo.fr>
+Date:   Thu Apr 30 07:53:08 2015 +0000
+
+    Updated Occitan translation
+
+ po/oc.po | 410 +++++++++++++++++++++++++--------------------------------------
+ 1 file changed, 163 insertions(+), 247 deletions(-)
+
+commit 6e752512486062a8c51c4e736eabdc7a55d73bee
+Author: Samir Ribic <samir.ribic@etf.unsa.ba>
+Date:   Fri Mar 13 20:29:40 2015 +0000
+
+    Added Bosnian translation
+
+ po/LINGUAS |  1 +
+ po/bs.po   | 52 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 53 insertions(+)
+
+commit 19d049cc38d23d055c2c0f16ef141817f7eaec4c
+Author: Sveinn í Felli <sv1@fellsnet.is>
+Date:   Thu Jan 29 15:15:38 2015 +0000
+
+    Added Icelandic translation
+
+ po/LINGUAS |  1 +
+ po/is.po   | 58 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 59 insertions(+)
+
+commit 7821a48b8ccf9a89e9fb0497683184e84fb06da8
+Author: Daniel Martinez <dmartinez@src.gnome.org>
+Date:   Fri Jan 23 09:56:35 2015 +0100
+
+    Update Aragonese translation
+
+ po/an.po | 355 +++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 151 insertions(+), 204 deletions(-)
+
+commit 0e35fba36eb1c1a431281dd27a8d74fe65526135
+Author: Muhammet Kara <muhammetk@gmail.com>
+Date:   Thu Dec 4 19:36:57 2014 +0000
+
+    Updated Turkish translation
+
+ po/tr.po | 344 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 143 insertions(+), 201 deletions(-)
+
+commit a7ba5598e8df1e5484c9c317609b0fc1a7da4ef1
+Author: Fabio Tomat <f.t.public@gmail.com>
+Date:   Wed Oct 15 09:11:01 2014 +0000
+
+    Updated Friulian translation
+
+ po/fur.po | 290 ++++++++++++++++++++++++++++----------------------------------
+ 1 file changed, 132 insertions(+), 158 deletions(-)
+
+commit 9dc22f33b40f4213e6aae253e1fba976b152fb52
+Author: Saibal Ray <sray@redhat.com>
+Date:   Fri Sep 26 05:33:25 2014 +0000
+
+    Updated Bengali (India) translation
+
+ po/bn_IN.po | 32 +++++++++++++++++++-------------
+ 1 file changed, 19 insertions(+), 13 deletions(-)
+
+commit c69c0c93fcf8bf8a6dd4a8bb64814ab90a69b31b
+Author: Krishnababu Krothapalli <k.meetme@gmail.com>
+Date:   Tue Sep 23 14:48:48 2014 +0000
+
+    Updated Telugu translation
+
+ po/te.po | 21 ++++++++++++---------
+ 1 file changed, 12 insertions(+), 9 deletions(-)
+
+commit ed05b67f9e2c050906032b5bcc3cb376d5bb1028
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Sep 23 10:33:18 2014 +0200
+
+    main: Create temp directories using g_mkdtemp()
+    
+    Rather than creating the temp directory name by hand.
+
+ src/nautilus-sendto.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit b8ee7f4055d9f9eb0cae227d20e7b02d2dd40587
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Sep 23 10:29:10 2014 +0200
+
+    main: Use g_mkdir_with_parents()
+    
+    Instead of creating the parent directory by hand.
+
+ src/nautilus-sendto.c | 8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+
+commit bde7a172f6b0d79d65a1bb70371e38a21d542092 (tag: NAUTILUS_SENDTO_3_8_2)
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Sep 22 22:00:05 2014 +0200
+
+    3.8.2
+
+ NEWS         | 6 ++++++
+ configure.in | 2 +-
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+
+commit 7a291d854166838322e71255fabab7acd731fe21
+Author: Rajesh Ranjan <rajeshkajha@yahoo.com>
+Date:   Sun Sep 21 02:19:05 2014 +0000
+
+    Updated Hindi translation
+
+ po/hi.po | 21 ++++++++++++---------
+ 1 file changed, 12 insertions(+), 9 deletions(-)
+
+commit 5a8ab792267dcab3c96b830fc30562423404e462
+Author: Pawan Chitrakar <chautari@gmail.com>
+Date:   Sat Sep 20 12:41:53 2014 +0000
+
+    Updated Nepali translation
+
+ po/ne.po | 270 +++++++++++++++++++++++++++++----------------------------------
+ 1 file changed, 123 insertions(+), 147 deletions(-)
+
+commit f40caba3e4ea67941be5d5b221fe951e74de0929
+Author: Saibal Ray <sray@redhat.com>
+Date:   Wed Sep 17 06:34:19 2014 +0000
+
+    Updated Bengali (India) translation
+
+ po/bn_IN.po | 317 ++++++------------------------------------------------------
+ 1 file changed, 29 insertions(+), 288 deletions(-)
+
+commit ae9e79c99a383ea10c03d664d310f8c8b3a73cd1
+Author: Manoj Kumar Giri <mgiri@redhat.com>
+Date:   Tue Sep 16 11:47:34 2014 +0000
+
+    Updated Oriya translation
+
+ po/or.po | 18 +++++++++++-------
+ 1 file changed, 11 insertions(+), 7 deletions(-)
+
+commit 58af52a468ac8c4eba71eef50f2a81f35c076395
+Author: Shankar Prasad <prasad.mvs@gmail.com>
+Date:   Thu Sep 11 12:23:44 2014 +0000
+
+    Updated Kannada translation
+
+ po/kn.po | 34 +++++++++++++++++++++-------------
+ 1 file changed, 21 insertions(+), 13 deletions(-)
+
+commit 090b9c571df2e97118ad12a6947754583cb97fca
+Author: Alexander Shopov <ash@kambanaria.org>
+Date:   Sun Sep 7 19:10:20 2014 +0300
+
+    Updated Bulgarian translation
+
+ po/bg.po | 281 ++++++---------------------------------------------------------
+ 1 file changed, 24 insertions(+), 257 deletions(-)
+
+commit 282496b378bde8a77af8beb8253aaf14075ba122
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   Thu Jul 31 19:43:59 2014 +0200
+
+    doap: add <programming-language>
+
+ nautilus-sendto.doap | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit a276e9778dc6bcf829aa23f44359e963f40a72eb
+Author: Olav Vitters <olav@vitters.nl>
+Date:   Wed Jul 30 20:59:05 2014 +0200
+
+    doap category apps
+
+ nautilus-sendto.doap | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d83c717cc6dfbf11f5f88f5850ad09ad68e4de75
+Author: Tom Tryfonidis <tomtryf@gmail.com>
+Date:   Wed Jul 9 23:17:26 2014 +0000
+
+    Updated Greek translation
+
+ po/el.po | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+
+commit 76937f2d8be5d37c2bc1e1a32ebe07250805ab36
+Author: Josef Andersson <josef.andersson@gmail.com>
+Date:   Wed Jun 11 19:26:53 2014 +0000
+
+    Updated Swedish translation
+
+ po/sv.po | 372 ++++++---------------------------------------------------------
+ 1 file changed, 30 insertions(+), 342 deletions(-)
+
+commit 07d752c77b323e90fb3793d5c8b7693d7df2b003
+Author: Dirgita <dirgitadevina@gmail.com>
+Date:   Tue Apr 22 14:22:08 2014 +0000
+
+    Updated Indonesian translation
+
+ po/id.po | 15 +++++++++------
+ 1 file changed, 9 insertions(+), 6 deletions(-)
+
+commit b630d36d4ac5e83e6ae8c9ced0617a6ec6d0c0cf
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   Sun Apr 6 19:06:21 2014 +0200
+
+    doap: update URLs
+
+ nautilus-sendto.doap | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 5d03770c66a024528d97a8154392a1da1953f1e9
+Author: Baurzhan Muftakhidinov <baurthefirst@gmail.com>
+Date:   Sun Mar 2 04:07:11 2014 +0000
+
+    Added Kazakh translation
+
+ po/LINGUAS |  1 +
+ po/kk.po   | 56 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 57 insertions(+)
+
+commit 7cb909de8fe4800401fae6007eb7a346cbc59aff
+Author: GunChleoc <fios@foramnagaidhlig.net>
+Date:   Wed Feb 5 12:24:07 2014 +0000
+
+    Added Scottish Gaelic translation
+
+ po/LINGUAS |  1 +
+ po/gd.po   | 58 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 59 insertions(+)
+
+commit febb5b16e72d9e8eab67df0c8c3a6513253f4fbe
+Author: Shankar Prasad <prasad.mvs@gmail.com>
+Date:   Mon Feb 3 13:22:06 2014 +0530
+
+    updated kn.po
+
+ po/kn.po | 233 ++++-----------------------------------------------------------
+ 1 file changed, 12 insertions(+), 221 deletions(-)
+
+commit fec53b534f6405d3a686d201a8bd890aef103d3a
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Dec 18 11:43:57 2013 +0100
+
+    doap: Correct project URL
+
+ nautilus-sendto.doap | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 352f7377cb643259bc877fc5ae0775c7e335e3a5
+Author: Akom Chotiphantawanon <knight2000@gmail.com>
+Date:   Fri Nov 1 14:54:03 2013 +0700
+
+    Updated Thai translation.
+
+ po/th.po | 347 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 141 insertions(+), 206 deletions(-)
+
+commit 3e69c915c9d19ee84ed0f0db410801607da558a5
+Author: Arash Mousavi <mousavi.arash@gmail.com>
+Date:   Mon Oct 7 17:53:10 2013 +0330
+
+    L10N: Updated Persian translations
+
+ po/fa.po | 28 ++++++++++++++++++----------
+ 1 file changed, 18 insertions(+), 10 deletions(-)
+
+commit 5213e61bb024f97fe00a9e1bde904d66cdeb1c27
+Author: Carles Ferrando <carles.ferrando@gmail.com>
+Date:   Sun Oct 6 22:04:34 2013 +0200
+
+    [l10n] Updated Catalan (Valencian) translation
+
+ po/ca@valencia.po | 16 +++++++++++-----
+ 1 file changed, 11 insertions(+), 5 deletions(-)
+
+commit 35cafa54f5c7cf68b268f7d7589bee1889e04d69
+Author: Victor Ibragimov <victor.ibragimov@gmail.com>
+Date:   Fri Oct 4 13:43:24 2013 +0500
+
+    Tajik translation updated
+
+ po/tg.po | 15 ++++++++-------
+ 1 file changed, 8 insertions(+), 7 deletions(-)
+
+commit 3d180483c0e4cebb256c7eb3dba6b8b67213c34f
+Author: Friedel Wolff <friedel@translate.org.za>
+Date:   Fri Sep 27 10:37:59 2013 +0200
+
+    Updated translation for Afrikaans (af)
+
+ po/af.po | 355 ++++++++++++++++++++++++---------------------------------------
+ 1 file changed, 135 insertions(+), 220 deletions(-)
+
+commit ccc8609ca6f645169779344c03e3449b67c4764c (tag: NAUTILUS_SENDTO_3_8_1)
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Sep 24 15:11:34 2013 +0200
+
+    3.10.0
+
+ NEWS         | 8 ++++++++
+ configure.in | 2 +-
+ 2 files changed, 9 insertions(+), 1 deletion(-)
+
+commit 55aee4f5085f6fb05b60a89b4060e84a39b80112
+Author: Daniel Korostil <ted.korostiled@gmail.com>
+Date:   Sat Sep 21 19:32:45 2013 +0300
+
+    Updated Ukrainian
+
+ po/uk.po | 15 ++++++++++-----
+ 1 file changed, 10 insertions(+), 5 deletions(-)
+
+commit 93b5750b9f48f6ca94c1682a66233bb6103a0983
+Author: António Lima <amrlima@gmail.com>
+Date:   Wed Sep 18 23:26:20 2013 +0100
+
+    Updated Portuguese translation
+
+ po/pt.po | 13 +++++++++----
+ 1 file changed, 9 insertions(+), 4 deletions(-)
+
+commit 682dac94ad56ad79515f2b34b53dcb6207909bc1
+Author: Inaki Larranaga Murgoitio <dooteo@zundan.com>
+Date:   Wed Sep 18 18:16:19 2013 +0200
+
+    Updated Basque language
+
+ po/eu.po | 19 ++++++++++++-------
+ 1 file changed, 12 insertions(+), 7 deletions(-)
+
+commit bbb6bbebf5e952761be3ab85c4ef0509d886e9bb
+Author: Nishio Futoshi <fut_nis@d3.dion.ne.jp>
+Date:   Thu Sep 19 00:00:45 2013 +0900
+
+    l10n: Update Japanese translation
+
+ po/ja.po | 282 +++++++--------------------------------------------------------
+ 1 file changed, 28 insertions(+), 254 deletions(-)
+
+commit 048c989e65828813709b8e8bd47603fa98b3a3b1
+Author: Timo Jyrinki <timo@debian.org>
+Date:   Wed Sep 18 11:23:11 2013 +0300
+
+    Finnish translation update
+
+ po/fi.po | 356 +++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 150 insertions(+), 206 deletions(-)
+
+commit 61d960cbcdf35a8067e8f25eb70a6e1d117f604d
+Author: Ask H. Larsen <asklarsen@gmail.com>
+Date:   Tue Sep 17 18:41:57 2013 +0200
+
+    Updated Danish translation
+
+ po/da.po | 16 +++++++++++-----
+ 1 file changed, 11 insertions(+), 5 deletions(-)
+
+commit cc9bdbd59923c43258d0023ca465774f9fa6be48
+Author: Changwoo Ryu <cwryu@debian.org>
+Date:   Sat Sep 14 20:25:17 2013 +0900
+
+    Updated Korean translation
+
+ po/ko.po | 15 ++++++++++-----
+ 1 file changed, 10 insertions(+), 5 deletions(-)
+
+commit 38b46b2f9423f2e8fd9ff4a73e9b332ad4c5b847
+Author: Rūdolfs Mazurs <rudolfsm@src.gnome.org>
+Date:   Thu Sep 12 09:41:26 2013 +0300
+
+    Updated Latvian translation
+
+ po/lv.po | 24 +++++++++++++++---------
+ 1 file changed, 15 insertions(+), 9 deletions(-)
+
+commit f309c03f8002bb1b9c793b9c763a638be9096426
+Author: Mattias Põldaru <mahfiaz@gmail.com>
+Date:   Thu Sep 12 08:37:34 2013 +0300
+
+    [l10n] Updated Estonian translation
+
+ po/et.po | 284 +++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 140 insertions(+), 144 deletions(-)
+
+commit deabe043a1ad9b8dad2c85380fd87a0918016fb2
+Author: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>
+Date:   Tue Sep 10 13:39:49 2013 +0300
+
+    Updated Belarusian translation.
+
+ po/be.po | 14 +++++++++-----
+ 1 file changed, 9 insertions(+), 5 deletions(-)
+
+commit dbfe3ea8ae05f719b291e9f9d9e4aba908e853b3
+Author: Мирослав Николић <miroslavnikolic@rocketmail.com>
+Date:   Thu Sep 5 22:48:50 2013 +0200
+
+    Updated Serbian translation
+
+ po/sr.po       | 17 ++++++++++-------
+ po/sr@latin.po | 17 ++++++++++-------
+ 2 files changed, 20 insertions(+), 14 deletions(-)
+
+commit 1090d2d90f1b3b715b88edb1565a2855df7037aa
+Author: Seán de Búrca <leftmostcat@gmail.com>
+Date:   Tue Sep 3 21:19:27 2013 -0600
+
+    Added Irish translation
+
+ po/LINGUAS |  1 +
+ po/ga.po   | 57 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 58 insertions(+)
+
+commit 1967eea80ed9b7985c3a79564ec6c1cda472e3c1
+Author: Gianvito Cavasoli <gianvito@gmx.it>
+Date:   Sat Aug 24 19:21:40 2013 +0200
+
+    [l10n] Updated Italian translation.
+
+ po/it.po | 189 ++++-----------------------------------------------------------
+ 1 file changed, 10 insertions(+), 179 deletions(-)
+
+commit c783bf8bd00bc14b07e56525b60cb5895d142cfb
+Author: Alexandre Franke <alexandre.franke@gmail.com>
+Date:   Thu Aug 22 16:00:44 2013 +0200
+
+    Update French translation
+
+ po/fr.po | 15 ++++++++++-----
+ 1 file changed, 10 insertions(+), 5 deletions(-)
+
+commit 82f0a8fa8c69b186f546f8481bab170bd0db0906
+Author: Dimitris Spingos <dmtrs32@gmail.com>
+Date:   Sun Aug 18 09:00:59 2013 +0300
+
+    Updated Greek translation
+
+ po/el.po | 17 ++++++++++-------
+ 1 file changed, 10 insertions(+), 7 deletions(-)
+
+commit 3bbd1385b8a4faf9ed797f79170649ef6fc6ba3d
+Author: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+Date:   Wed Aug 7 12:48:32 2013 +0800
+
+    Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+ po/zh_HK.po | 15 ++++++++++-----
+ po/zh_TW.po | 15 ++++++++++-----
+ 2 files changed, 20 insertions(+), 10 deletions(-)
+
+commit 0cf7e3ea691a9d3667d1f575f57af2cb88362fdc
+Author: Yuri Myasoedov <omerta13@yandex.ru>
+Date:   Sun Aug 4 15:09:37 2013 +0400
+
+    Updated Russian translation
+
+ po/ru.po | 15 ++++++++++-----
+ 1 file changed, 10 insertions(+), 5 deletions(-)
+
+commit a81ec6fd2353d137928d73d18849cd01a01eef73
+Author: 甘露(Gan  Lu) <rhythm.gan@gmail.com>
+Date:   Sat Aug 3 21:12:14 2013 +0800
+
+    Update Chinese simplified translation
+
+ po/zh_CN.po | 342 +++++++++++++++++++++++++-----------------------------------
+ 1 file changed, 142 insertions(+), 200 deletions(-)
+
+commit 29d6dc3ff29aa31984af143f78f9d7a358a62661
+Author: Yaron Shahrabani <sh.yaron@gmail.com>
+Date:   Wed Jul 31 11:56:26 2013 +0300
+
+    Updated Hebrew translation.
+
+ po/he.po | 24 +++++++++++-------------
+ 1 file changed, 11 insertions(+), 13 deletions(-)
+
+commit 659f3627c5ce09ab6dc1b5c05c8763388bd225ac
+Author: Victor Ibragimov <victor.ibragimov@gmail.com>
+Date:   Sun Jul 28 22:01:57 2013 +0100
+
+    Tajik translation updated
+
+ po/tg.po | 311 +++++++++++++++++++--------------------------------------------
+ 1 file changed, 94 insertions(+), 217 deletions(-)
+
+commit 731e59991a51105a7e9fd0729246366e36d69fca
+Author: Victor Ibragimov <victor.ibragimov@gmail.com>
+Date:   Sun Jul 28 21:58:51 2013 +0100
+
+    Tajik translation updated
+
+ po/tg.po | 61 +++++++++++++++++++++++++++++++------------------------------
+ 1 file changed, 31 insertions(+), 30 deletions(-)
+
+commit 227e06657f35f25dfc3891e2f9ea080262aa0369
+Author: Sweta Kothari <swkothar@redhat.com>
+Date:   Fri Jul 26 14:08:27 2013 +0530
+
+    updated Gujarati translations
+
+ po/gu.po | 17 ++++++++++-------
+ 1 file changed, 10 insertions(+), 7 deletions(-)
+
+commit 653334e104a8ff56a239b0e2eb7aec81f8de7c3b
+Author: Shantha kumar <shkumar@redhat.com>
+Date:   Wed Jul 24 15:16:16 2013 +0530
+
+    Tamil Translation Updated
+
+ po/ta.po | 23 +++++++++++++++--------
+ 1 file changed, 15 insertions(+), 8 deletions(-)
+
+commit 5da5c4b52cb8d8576e04dab7e218261ebad469df
+Author: Christian Kirbach <christian.kirbach@gmail.com>
+Date:   Sun Jul 14 12:08:57 2013 +0200
+
+    Updated German translation
+
+ po/de.po | 34 +++++++++++++++++++---------------
+ 1 file changed, 19 insertions(+), 15 deletions(-)
+
+commit 2bda026d0448dbecc4a5ff847f680a0f7f3ff3f2
+Author: Pavol Klačanský <pavol@klacansky.com>
+Date:   Sat Jul 13 18:30:07 2013 +0200
+
+    Updated slovak translation
+
+ po/sk.po | 206 ++++-----------------------------------------------------------
+ 1 file changed, 11 insertions(+), 195 deletions(-)
+
+commit f8e2095c726df48034eda98894487f919dffb890
+Author: Trần Ngọc Quân <vnwildman@gmail.com>
+Date:   Sat Jul 6 18:44:55 2013 +0700
+
+    Updated Vietnamese translation
+
+ po/vi.po | 196 ++++-----------------------------------------------------------
+ 1 file changed, 12 insertions(+), 184 deletions(-)
+
+commit 797f589c9284377c9c4cc31a486cc3e4b495baa2
+Author: Nguyễn Thái Ngọc Duy <pclouds@gmail.com>
+Date:   Sat Jul 6 18:44:33 2013 +0700
+
+    po/vi: import from Damned Lies
+
+ po/vi.po | 298 +++++++++++++++++++++++++++++----------------------------------
+ 1 file changed, 137 insertions(+), 161 deletions(-)
+
+commit f1e09e8f3d2db618d33229fcf4badaa037f6913f
+Author: Gil Forcada <gforcada@gnome.org>
+Date:   Fri Jul 5 02:20:15 2013 +0200
+
+    [l10n] Update Catalan translation
+
+ po/ca.po | 17 +++++++++++------
+ 1 file changed, 11 insertions(+), 6 deletions(-)
+
+commit de867618b6c4922a195a7a5190e35009727c50d4
+Author: Shankar Prasad <svenkate@redhat.com>
+Date:   Wed Jul 3 14:57:17 2013 +0530
+
+    updated kn translations
+
+ po/kn.po | 19 ++++++++++++-------
+ 1 file changed, 12 insertions(+), 7 deletions(-)
+
+commit 73ec8adffa9bd3a18e4b1da271e44076cf96341a
+Author: Andika Triwidada <andika@gmail.com>
+Date:   Tue Jul 2 19:47:39 2013 +0700
+
+    Updated Indonesian translation
+
+ po/id.po | 19 ++++++++++++-------
+ 1 file changed, 12 insertions(+), 7 deletions(-)
+
+commit a1002ece97d461da77b195a4c64802e543fbea88
+Author: Rafael Ferreira <rafael.f.f1@gmail.com>
+Date:   Fri Jun 28 17:11:08 2013 -0300
+
+    Updated Brazilian Portuguese translation
+
+ po/pt_BR.po | 19 +++++++++++--------
+ 1 file changed, 11 insertions(+), 8 deletions(-)
+
+commit 5013939802e64c49c0b246f29a690dd1c684d515
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:   Sat Jun 22 01:17:56 2013 +0200
+
+    Updated Galician translations
+
+ po/gl.po | 15 ++++++++++-----
+ 1 file changed, 10 insertions(+), 5 deletions(-)
+
+commit 3714a8c96725cfb626a30be95810aa4d632910e2
+Author: Marek Černocký <marek@manet.cz>
+Date:   Thu Jun 20 22:09:54 2013 +0200
+
+    Updated Czech translation
+
+ po/cs.po | 208 ++++++---------------------------------------------------------
+ 1 file changed, 17 insertions(+), 191 deletions(-)
+
+commit 57e61f770dee63e27535b3db77e11fdccf0fccb7
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:   Thu Jun 20 10:41:43 2013 +0200
+
+    Updated Norwegian bokmål translation
+
+ po/nb.po | 17 +++++++++++------
+ 1 file changed, 11 insertions(+), 6 deletions(-)
+
+commit b5dd78ed304e610e26c293397d2147999665b018
+Author: Sandeep Sheshrao Shedmake <sshedmak@redhat.com>
+Date:   Mon Jun 17 10:39:06 2013 +0530
+
+    Updated Marathi Translations
+
+ po/mr.po | 17 ++++++++++-------
+ 1 file changed, 10 insertions(+), 7 deletions(-)
+
+commit 03bb1e3694959706494bbd7b676e7de219ea98cb
+Author: Balázs Úr <urbalazs@src.gnome.org>
+Date:   Sun Jun 16 20:55:36 2013 +0200
+
+    Updated Hungarian translation
+
+ po/hu.po | 17 ++++++++++-------
+ 1 file changed, 10 insertions(+), 7 deletions(-)
+
+commit ad3db47698750ae26ee0d94e05bbd3b7501d28be
+Author: Aurimas Černius <aurisc4@gmail.com>
+Date:   Sun Jun 16 17:18:04 2013 +0300
+
+    Updated Lithuanian translation
+
+ po/lt.po | 18 ++++++++++--------
+ 1 file changed, 10 insertions(+), 8 deletions(-)
+
+commit 11adba1de562c9d53879b12e976dc7b0fad12bf6
+Author: A S Alam <aalam@users.sf.net>
+Date:   Fri Jun 14 09:58:17 2013 -0500
+
+    update Punjabi Translation
+
+ po/pa.po | 17 ++++++++++-------
+ 1 file changed, 10 insertions(+), 7 deletions(-)
+
+commit 16ee2efebfe3b50c2fc8130518578e5bfbbb87b8
+Author: Nilamdyuti Goswami <ngoswami@redhat.com>
+Date:   Fri Jun 14 17:48:57 2013 +0530
+
+    Assamese translation updated
+
+ po/as.po | 17 ++++++++++-------
+ 1 file changed, 10 insertions(+), 7 deletions(-)
+
+commit db3b00eb7aa6dfaf885e84a9c29da621a4ea96e5
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:   Thu Jun 13 21:23:32 2013 +0200
+
+    Updated Slovenian translation
+
+ po/sl.po | 23 ++++++++++++++++-------
+ 1 file changed, 16 insertions(+), 7 deletions(-)
+
+commit 0f143d537dda8a88b8c764d25b4a8f0377a31ab5
+Author: Daniel Mustieles <daniel.mustieles@gmail.com>
+Date:   Thu Jun 13 18:11:39 2013 +0200
+
+    Updated Spanish translation
+
+ po/es.po | 18 +++++++++++-------
+ 1 file changed, 11 insertions(+), 7 deletions(-)
+
+commit 3fd58e64cf4f3f6ecd2bd753accfb474dc2388f8
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   Thu Jun 13 18:08:45 2013 +0200
+
+    Updated Polish translation
+
+ po/pl.po | 15 ++++++++++-----
+ 1 file changed, 10 insertions(+), 5 deletions(-)
+
+commit 1db4d7bd362f9f80ee0c493f56838e5322623262
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Jun 13 17:07:14 2013 +0200
+
+    main: Fix warnings when no mail client is installed
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=701654
+
+ src/nautilus-sendto.c | 13 +++++++++++--
+ 1 file changed, 11 insertions(+), 2 deletions(-)
+
+commit aa74153c5b9fd448e40dffa895f63b23fa96b5f0
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Jun 13 17:03:57 2013 +0200
+
+    main: Remove support for ancient evolution versions
+
+ src/nautilus-sendto.c | 20 +++-----------------
+ 1 file changed, 3 insertions(+), 17 deletions(-)
+
+commit 9424843c4ed783fd064b36cedc1458c972dee75d
+Author: Yaron Shahrabani <sh.yaron@gmail.com>
+Date:   Sat May 25 11:42:17 2013 +0300
+
+    Updated Hebrew translation.
+
+ po/he.po | 348 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 145 insertions(+), 203 deletions(-)
+
+commit 005aa0134c1fe31566ceda2eb874dfabaff7e836
+Author: Gheyret Kenji <gheyret@gmail.com>
+Date:   Sat Apr 6 18:28:56 2013 +0900
+
+    Updated Uyghur translation
+    
+    Signed-off-by: Gheyret Kenji <gheyret@gmail.com>
+
+ po/ug.po | 337 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 139 insertions(+), 198 deletions(-)
+
+commit 3f32c96cc2df6ff9c66aa64c41d812d09e636c7a
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:   Wed Apr 3 14:05:13 2013 +0200
+
+    Updated Norwegian bokmål translation
+
+ po/nb.po | 278 +++++----------------------------------------------------------
+ 1 file changed, 21 insertions(+), 257 deletions(-)
+
+commit eeece69b6f4f6ec37c9a15b41e14c398b689aafb
+Author: Inaki Larranaga Murgoitio <dooteo@zundan.com>
+Date:   Tue Apr 2 22:37:16 2013 +0200
+
+    Updated Basque language
+
+ po/eu.po | 353 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 145 insertions(+), 208 deletions(-)
+
+commit 834b195b8f2dbe0c356700e21f51af3090e9a84e
+Author: Dimitris Spingos <dmtrs32@gmail.com>
+Date:   Wed Mar 27 12:32:11 2013 +0200
+
+    Updated Greek translation
+
+ po/el.po | 364 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 151 insertions(+), 213 deletions(-)
+
+commit dc67460dfa156bc7180c6704d8b57dc1d73a2289
+Author: Daniel Korostil <ted.korostiled@gmail.com>
+Date:   Tue Mar 26 18:56:08 2013 +0200
+
+    Update uk translation
+
+ po/uk.po | 359 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 148 insertions(+), 211 deletions(-)
+
+commit 8cef7e582b5386b77bd2d82deaba3032c13bf55e (tag: NAUTILUS_SENDTO_3_8_0)
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Mar 26 10:54:57 2013 +0100
+
+    3.8.0
+
+ NEWS         | 6 ++++++
+ configure.in | 2 +-
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+
+commit 874579a012f433a32a7e433ad2846e2f6992649f
+Author: Dirgita <dirgitadevina@yahoo.co.id>
+Date:   Tue Mar 26 15:46:17 2013 +0700
+
+    Updated Indonesian translation
+
+ po/id.po | 285 +++++++--------------------------------------------------------
+ 1 file changed, 28 insertions(+), 257 deletions(-)
+
+commit f2000d4f7294323a2159b62314b6794ba4972e66
+Author: A S Alam <aalam@users.sf.net>
+Date:   Mon Mar 25 22:47:37 2013 +0530
+
+    Punjabi: Translation updated (aalam)
+
+ po/pa.po | 350 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 144 insertions(+), 206 deletions(-)
+
+commit 29834d65ff50dd216672a22a606fa200433b1cbe
+Author: Ani Peter <apeter@redhat.com>
+Date:   Mon Mar 25 21:38:17 2013 +0530
+
+    Completed for Malayalam
+
+ po/ml.po | 354 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 147 insertions(+), 207 deletions(-)
+
+commit ba8b59f4bbcad452ab257ad959f1230b6627c942
+Author: Krishnababu Krothapalli <kkrothap@redhat.com>
+Date:   Mon Mar 25 16:13:37 2013 +0530
+
+    Updated Telugut Translations
+
+ po/te.po | 355 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 147 insertions(+), 208 deletions(-)
+
+commit 0e0f6cd88876a4adfea5c292bffcf16adcd2d986
+Author: Shankar Prasad <svenkate@redhat.com>
+Date:   Mon Mar 25 07:24:30 2013 +0530
+
+    Updated kn translations
+
+ po/kn.po | 420 +++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 182 insertions(+), 238 deletions(-)
+
+commit 532e2dd9d1d250af6dd8ed12f9802c188f3cf945
+Author: Petr Kovar <pkovar@redhat.com>
+Date:   Sun Mar 24 20:59:25 2013 +0100
+
+    Update Czech translation
+
+ po/cs.po | 371 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 155 insertions(+), 216 deletions(-)
+
+commit 6fff0a389e875fc56073fdf8fbf867c12582f94a
+Author: Alexandre Franke <alexandre.franke@gmail.com>
+Date:   Sun Mar 24 19:26:44 2013 +0100
+
+    Update French translation
+
+ po/fr.po | 348 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 143 insertions(+), 205 deletions(-)
+
+commit e712fce237931898021f4892631332c5262c9692
+Author: Ask H. Larsen <asklarsen@gmail.com>
+Date:   Sun Mar 24 14:50:18 2013 +0100
+
+    Updated Danish translation
+
+ po/da.po | 350 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 144 insertions(+), 206 deletions(-)
+
+commit 7a513a5b540a87900ee43c6932b24ed90e1e6093
+Author: Sandeep Sheshrao Shedmake <sshedmak@redhat.com>
+Date:   Sun Mar 24 07:36:15 2013 +0530
+
+    Updated Marathi Translations
+
+ po/mr.po | 357 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 146 insertions(+), 211 deletions(-)
+
+commit 3cc929fea3ea972d4f3d4b945e5bce49a46feb33
+Author: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>
+Date:   Sat Mar 23 23:06:06 2013 +0300
+
+    Updated Belarusian translation.
+
+ po/be.po | 284 +++++----------------------------------------------------------
+ 1 file changed, 21 insertions(+), 263 deletions(-)
+
+commit b0af7d15bd725455d5428ecac2a25651c8de5626
+Author: Pavol Klačanský <pavol@klacansky.com>
+Date:   Sat Mar 23 08:30:23 2013 +0100
+
+    Updated slovak translation
+
+ po/sk.po | 401 ++++++++++++++++++++++++++++-----------------------------------
+ 1 file changed, 177 insertions(+), 224 deletions(-)
+
+commit 853ca2930bda1043e01e2f3fad7a4d3b623806b9
+Author: Dr.T.Vasudevan <drtvasudevan@gmail.com>
+Date:   Sat Mar 23 09:28:44 2013 +0530
+
+    Updated Tamil translation
+
+ po/ta.po | 351 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 145 insertions(+), 206 deletions(-)
+
+commit 89e6f58e775a02ecbb352c84c19bc4eb9f1f019f
+Author: Aurimas Černius <aurisc4@gmail.com>
+Date:   Fri Mar 22 23:28:40 2013 +0200
+
+    Updated Lithuanian translation
+
+ po/lt.po | 284 +++++----------------------------------------------------------
+ 1 file changed, 21 insertions(+), 263 deletions(-)
+
+commit f4a27705a27bb7434773dd897526edcec92ede76
+Author: Gianvito Cavasoli <gianvito@gmx.it>
+Date:   Fri Mar 22 21:56:55 2013 +0100
+
+    [l10n] Updated Italian translation.
+
+ po/it.po | 356 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 147 insertions(+), 209 deletions(-)
+
+commit 4b45091deb1e2d3085b2d650cdc31b6e2c8de636
+Author: Dmitriy S. Seregin <dseregin@59.ru>
+Date:   Fri Mar 22 21:27:01 2013 +0400
+
+    Updated Russian translation
+
+ po/ru.po | 361 +++++++++++++++++++++++++--------------------------------------
+ 1 file changed, 140 insertions(+), 221 deletions(-)
+
+commit fc3100642762601c562ec75b534610df22b7c7b8
+Author: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+Date:   Fri Mar 22 21:40:04 2013 +0800
+
+    Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+ po/zh_HK.po | 332 ++++++++++++++++++++++++------------------------------------
+ po/zh_TW.po | 332 ++++++++++++++++++++++++------------------------------------
+ 2 files changed, 268 insertions(+), 396 deletions(-)
+
+commit 19a6b8da41edf82541ca5c56fadd544ae736b36e
+Author: ManojKumar Giri <mgiri@redhat.com>
+Date:   Fri Mar 22 19:06:43 2013 +0530
+
+    Updated Odia Language along with FUEL implementation
+
+ po/or.po | 462 +++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 198 insertions(+), 264 deletions(-)
+
+commit 9da476f11e9e064c9e560ee304c504b709fb57d3
+Author: Rajesh Ranjan <rranjan@redhat.com>
+Date:   Fri Mar 22 14:44:30 2013 +0530
+
+    hindi translation
+
+ po/hi.po | 360 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 149 insertions(+), 211 deletions(-)
+
+commit caa959bfe52126f3121003588a39ece3731fd76c
+Author: Sweta Kothari <swkothar@redhat.com>
+Date:   Fri Mar 22 14:42:29 2013 +0530
+
+    Updated gujarati file
+
+ po/gu.po | 349 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 144 insertions(+), 205 deletions(-)
+
+commit a7cc3d0e4f22b10eaea290e6d5a7e45939c3d7df
+Author: Nilamdyuti Goswami <ngoswami@redhat.com>
+Date:   Fri Mar 22 13:30:43 2013 +0530
+
+    Assamese translation updated
+
+ po/as.po | 355 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 147 insertions(+), 208 deletions(-)
+
+commit 694c39afb24560c3d82a7be14e8459e87e279d7e
+Author: Arash Mousavi <mousavi.arash@gmail.com>
+Date:   Fri Mar 22 12:10:58 2013 +0430
+
+    L10N: Updated Persian Translation
+
+ po/fa.po | 342 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 140 insertions(+), 202 deletions(-)
+
+commit 6a441a99fb5e16316ccc7b333eacf9d959ee7cb2
+Author: Duarte Loreto <happyguy_pt@hotmail.com>
+Date:   Thu Mar 21 23:54:23 2013 +0000
+
+    Updated Portuguese translation
+
+ po/pt.po | 742 +++++++++++++++++++++++++++++----------------------------------
+ 1 file changed, 339 insertions(+), 403 deletions(-)
+
+commit 9419260ad0e8ea2e514f2fa0c9c40231238334c9
+Author: Carles Ferrando <carles.ferrando@gmail.com>
+Date:   Thu Mar 21 23:01:49 2013 +0100
+
+    [l10n] Updated Catalan (Valencian) translation
+
+ po/ca@valencia.po | 417 +++---------------------------------------------------
+ 1 file changed, 21 insertions(+), 396 deletions(-)
+
+commit 917f3ce059f48691c2492ce729d88d2e73414d91
+Author: Gil Forcada <gforcada@gnome.org>
+Date:   Thu Mar 21 23:01:46 2013 +0100
+
+    [l10n] Updated Catalan translation
+
+ po/ca.po | 419 ++++-----------------------------------------------------------
+ 1 file changed, 23 insertions(+), 396 deletions(-)
+
+commit 793906c43cd655e611a2ad3d138968653e7fc2ca
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:   Thu Mar 21 19:15:40 2013 +0100
+
+    Updated Galician translations
+
+ po/gl.po | 350 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 143 insertions(+), 207 deletions(-)
+
+commit ca0fe80e28b8659e26945b076e375fded0d8cfd4
+Author: Mario Blättermann <mario.blaettermann@gmail.com>
+Date:   Thu Mar 21 12:07:26 2013 +0100
+
+    [l10n] Updated German translation
+
+ po/de.po | 353 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 145 insertions(+), 208 deletions(-)
+
+commit 407fd3364e68946f9e0adb30045d0c66364ac936
+Author: Мирослав Николић <miroslavnikolic@rocketmail.com>
+Date:   Thu Mar 21 10:11:56 2013 +0100
+
+    Updated Serbian translation
+
+ po/sr.po       | 372 ++++-----------------------------------------------------
+ po/sr@latin.po | 372 ++++-----------------------------------------------------
+ 2 files changed, 46 insertions(+), 698 deletions(-)
+
+commit 8632ad1d92f8990e00691490fab5aa6722d59b5e
+Author: Rūdolfs Mazurs <rudolfsm@src.gnome.org>
+Date:   Thu Mar 21 09:44:48 2013 +0200
+
+    Updated Latvian translation
+
+ po/lv.po | 372 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 155 insertions(+), 217 deletions(-)
+
+commit 4ca994373b718d735725fe639bacbe8a784300b6
+Author: Rafael Ferreira <rafael.f.f1@gmail.com>
+Date:   Wed Mar 20 20:53:20 2013 -0300
+
+    Updated Brazilian Portuguese translation
+
+ po/pt_BR.po | 360 +++++++++++++++++++++++++-----------------------------------
+ 1 file changed, 150 insertions(+), 210 deletions(-)
+
+commit 9a972cfe7ca488ff66fc1ffebc27e48f721e1d01
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:   Wed Mar 20 19:28:07 2013 +0100
+
+    Updated Slovenian translation
+
+ po/sl.po | 377 +++++++++------------------------------------------------------
+ 1 file changed, 54 insertions(+), 323 deletions(-)
+
+commit 229d8209ff3a26ccd50192b62cdc4301dbe874cc
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   Wed Mar 20 19:01:47 2013 +0100
+
+    Updated Polish translation
+
+ po/pl.po | 285 +++++----------------------------------------------------------
+ 1 file changed, 21 insertions(+), 264 deletions(-)
+
+commit 74ec29d6d7ceb3f781a19ab842724baa38f759b1
+Author: Daniel Mustieles <daniel.mustieles@gmail.com>
+Date:   Wed Mar 20 17:58:37 2013 +0100
+
+    Updated Spanish translation
+
+ po/es.po | 354 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 147 insertions(+), 207 deletions(-)
+
+commit fdabc6d7844dae6e2bbe8d553db68b8b1aa1ed6b (tag: NAUTILUS_SENDTO_3_7_92)
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Mar 20 15:22:28 2013 +0100
+
+    3.7.92
+
+ NEWS         | 2 +-
+ configure.in | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 50e684bacbb14e57857ea286c934d4b54bbe8ac8
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Mar 20 15:23:30 2013 +0100
+
+    build: Remove unneeded dependencies
+
+ configure.in | 7 -------
+ 1 file changed, 7 deletions(-)
+
+commit 616e71e7f2cb423660808119ec751d82970175c4
+Author: Changwoo Ryu <cwryu@debian.org>
+Date:   Thu Mar 21 00:20:35 2013 +0900
+
+    Updated Korean translation
+
+ po/ko.po | 338 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 139 insertions(+), 199 deletions(-)
+
+commit 3a3de77887c2fde53c3c75284b76a4f11472cfee
+Author: Balázs Úr <urbalazs@src.gnome.org>
+Date:   Wed Mar 20 15:34:24 2013 +0100
+
+    Updated Hungarian translation
+
+ po/hu.po | 363 ++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 151 insertions(+), 212 deletions(-)
+
 commit 7c4c519a93dfcdc95a515710f2ab03d6c6e7f0b0
 Author: Bastien Nocera <hadess@hadess.net>
 Date:   Wed Mar 20 15:10:42 2013 +0100
@@ -2758,7 +4074,7 @@ Date:   Wed Jun 30 20:10:04 2010 +0200
  po/eo.po | 285 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  1 file changed, 285 insertions(+)
 
-commit 52f91de036a557fea8cb5bb442c3ef7b4b082248
+commit 52f91de036a557fea8cb5bb442c3ef7b4b082248 (tag: NAUTILUS_SENDTO_2_90_0)
 Author: Bastien Nocera <hadess@hadess.net>
 Date:   Tue Jun 29 15:04:47 2010 +0100
 
@@ -3069,7 +4385,7 @@ Date:   Fri Apr 2 18:47:35 2010 +0200
  po/ca.po | 4 ++--
  1 file changed, 2 insertions(+), 2 deletions(-)
 
-commit 4894df8857e78b711dea172676f1698f97f42dc4
+commit 4894df8857e78b711dea172676f1698f97f42dc4 (tag: NAUTILUS_SENDTO_2_28_4)
 Author: Bastien Nocera <hadess@hadess.net>
 Date:   Mon Mar 29 17:20:27 2010 +0100
 
@@ -3151,7 +4467,7 @@ Date:   Wed Mar 17 12:44:16 2010 +0100
  po/sk.po | 275 ++++++++++++++++++++++++++++++---------------------------------
  1 file changed, 133 insertions(+), 142 deletions(-)
 
-commit f573911cffcb12292a68ec89be99b3b0d61bf750
+commit f573911cffcb12292a68ec89be99b3b0d61bf750 (tag: NAUTILUS_SENDTO_2_28_3)
 Author: Bastien Nocera <hadess@hadess.net>
 Date:   Mon Mar 15 16:29:16 2010 +0000
 
@@ -3412,7 +4728,7 @@ Date:   Thu Nov 19 23:27:05 2009 +0800
  src/plugins/upnp/Makefile.am              | 2 +-
  8 files changed, 8 insertions(+), 8 deletions(-)
 
-commit 030b87e91ab2523f5d242d9ddac282425790701b
+commit 030b87e91ab2523f5d242d9ddac282425790701b (tag: NAUTILUS_SENDTO_2_28_2)
 Author: Bastien Nocera <hadess@hadess.net>
 Date:   Tue Nov 17 18:20:51 2009 +0000
 
@@ -3445,7 +4761,7 @@ Date:   Tue Nov 17 18:18:29 2009 +0000
  src/plugins/bluetooth/Makefile.am | 8 +++++---
  1 file changed, 5 insertions(+), 3 deletions(-)
 
-commit 7e4977cff453aa1205d61382bf8a755cc5058686
+commit 7e4977cff453aa1205d61382bf8a755cc5058686 (tag: NAUTILUS_SENDTO_2_28_1)
 Author: Bastien Nocera <hadess@hadess.net>
 Date:   Tue Nov 17 16:46:32 2009 +0000
 
@@ -3790,7 +5106,7 @@ Date:   Wed Sep 23 11:14:43 2009 +0100
  src/Makefile.am | 30 +++++++++++++++++++++++++++++-
  1 file changed, 29 insertions(+), 1 deletion(-)
 
-commit fe45339bcb958bf42385e3cbaff91c025510fef7
+commit fe45339bcb958bf42385e3cbaff91c025510fef7 (tag: NAUTILUS_SENDTO_2_28_0)
 Author: Bastien Nocera <hadess@hadess.net>
 Date:   Mon Sep 21 13:04:10 2009 +0100
 
@@ -3947,7 +5263,7 @@ Date:   Wed Sep 9 06:01:56 2009 +0200
  po/LINGUAS | 1 +
  1 file changed, 1 insertion(+)
 
-commit 8f851a123e7e125b5498327815f0769a106249fb
+commit 8f851a123e7e125b5498327815f0769a106249fb (tag: NAUTILUS_SENDTO_1_1_7)
 Author: Bastien Nocera <hadess@hadess.net>
 Date:   Wed Sep 2 16:04:56 2009 +0100
 
@@ -4034,7 +5350,7 @@ Date:   Fri Jul 31 15:06:17 2009 +0300
  po/et.po | 157 +++++++++++++++------------------------------------------------
  1 file changed, 37 insertions(+), 120 deletions(-)
 
-commit 4b31d77a4a7bac3896f7bd41e1cdaff5239eeadb
+commit 4b31d77a4a7bac3896f7bd41e1cdaff5239eeadb (tag: NAUTILUS_SENDTO_1_1_6)
 Author: Bastien Nocera <hadess@hadess.net>
 Date:   Wed Jul 29 17:35:46 2009 +0100
 
@@ -4280,7 +5596,7 @@ Date:   Tue May 5 12:29:58 2009 +0100
  configure.in | 6 +++---
  1 file changed, 3 insertions(+), 3 deletions(-)
 
-commit bc898db2b685e551e5f26da446e8d6a0504dcfd9
+commit bc898db2b685e551e5f26da446e8d6a0504dcfd9 (tag: NAUTILUS_SENDTO_1_1_5)
 Author: Bastien Nocera <hadess@hadess.net>
 Date:   Tue May 5 10:49:48 2009 +0100
 
@@ -4410,7 +5726,7 @@ Date:   Sun Apr 26 12:16:00 2009 +0100
  src/plugins/upnp/upnp.c                           | 4 ++++
  9 files changed, 33 insertions(+), 5 deletions(-)
 
-commit ee7d2c9264f5b5bc7d11a71bba6dade1abedb9b7
+commit ee7d2c9264f5b5bc7d11a71bba6dade1abedb9b7 (tag: NAUTILUS_SENDTO_1_1_4_1)
 Author: Bastien Nocera <hadess@hadess.net>
 Date:   Mon Apr 20 14:22:13 2009 +0100
 
@@ -4446,17 +5762,3 @@ Date:   Mon Apr 20 11:19:24 2009 +0100
 
  pidgin_plugin/nautilus-sendto-plugin.c | 8 +++++---
  1 file changed, 5 insertions(+), 3 deletions(-)
-
-commit 49f4cdfb967bd66070c3a614a9e473f2b7f140ac
-Author: Bastien Nocera <hadess@hadess.net>
-Date:   Fri Apr 17 16:36:51 2009 +0100
-
-    2009-04-17  Bastien Nocera  <hadess@hadess.net>
-    
-    	* NEWS: upd
-    	* configure.in: 1.1.4
-
- ChangeLog    |  7 +++++++
- NEWS         | 13 +++++++++++++
- configure.in |  2 +-
- 3 files changed, 21 insertions(+), 1 deletion(-)

@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-sendto\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-02-26 23:29+0000\n"
+"PO-Revision-Date: 2013-01-30 23:51+0000\n"
+"Last-Translator: Samir Ribić <Unknown>\n"
+"Language-Team: Bosnian <bs@li.org>\n"
+"Language: bs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-10-23 07:18+0000\n"
+"X-Generator: Launchpad (build 17203)\n"
+
+#: ../src/nautilus-sendto.c:53
+msgid "Run from build directory (ignored)"
+msgstr "Pokreće iz direktorijuma izgradnje (zanemareno)"
+
+#: ../src/nautilus-sendto.c:54
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr "Koristi HID kao osnovu za prozorče slanja (zanemareno)"
+
+#: ../src/nautilus-sendto.c:55
+msgid "Files to send"
+msgstr "Datoteke za slanje"
+
+#: ../src/nautilus-sendto.c:56
+msgid "Output version information and exit"
+msgstr "Ispisuje podatke o izdanju i izlazi"
+
+#. Translators: the default archive nami if it
+#. * could not bje deduced from the provided files
+#: ../src/nautilus-sendto.c:244
+msgid "Archive"
+msgstr "Arhiva"
+
+#: ../src/nautilus-sendto.c:507
+#, c-format
+msgid "Could not parse command-line options: %s\n"
+msgstr "Nije moguć parse komandna-linija opcije: %s\n"
+
+#: ../src/nautilus-sendto.c:520
+#, c-format
+msgid "No mail client installed, not sending files\n"
+msgstr "Nije instaliran program za poštu, ne šaljem datoteke\n"
+
+#: ../src/nautilus-sendto.c:526
+#, c-format
+msgid "Expects URIs or filenames to be passed as options\n"
+msgstr "Očekuje URIs ili imena datoteka da bi prošle kao opcije\n"

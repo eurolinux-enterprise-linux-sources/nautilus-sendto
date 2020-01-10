@@ -8,9 +8,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: nautilus-sendto 2.91.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-22 21:39+0800\n"
-"PO-Revision-Date: 2013-03-22 20:03+0800\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-07-21 11:05+0000\n"
+"PO-Revision-Date: 2013-08-07 08:57+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
 "Language-Team: Chinese (traditional)\n"
 "Language: zh_TW\n"
@@ -38,16 +39,21 @@ msgstr "輸出版本資訊並結束"
 
 #. Translators: the default archive name if it
 #. * could not be deduced from the provided files
-#: ../src/nautilus-sendto.c:253
+#: ../src/nautilus-sendto.c:244
 msgid "Archive"
 msgstr "壓縮檔"
 
-#: ../src/nautilus-sendto.c:520
+#: ../src/nautilus-sendto.c:507
 #, c-format
 msgid "Could not parse command-line options: %s\n"
 msgstr "無法分析命令列選項：%s\n"
 
-#: ../src/nautilus-sendto.c:535
+#: ../src/nautilus-sendto.c:520
+#, c-format
+msgid "No mail client installed, not sending files\n"
+msgstr "尚未安裝郵件客戶端，不傳送檔案\n"
+
+#: ../src/nautilus-sendto.c:526
 #, c-format
 msgid "Expects URIs or filenames to be passed as options\n"
 msgstr "應使用 URI 或檔案名稱做為選項\n"
@@ -69,7 +75,7 @@ msgstr "應使用 URI 或檔案名稱做為選項\n"
 
 #~ msgid "Sharing %d image"
 #~ msgid_plural "Sharing %d images"
-#~ msgstr[0] "分享 %d 個圖片"
+#~ msgstr[0] "分享 %d 個影像"
 
 #~ msgid "Sharing %d text file"
 #~ msgid_plural "Sharing %d text files"

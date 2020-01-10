@@ -25,6 +25,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <glib/gi18n.h>
+#include <locale.h>
 #include <glib/gstdio.h>
 #include <gio/gio.h>
 
@@ -60,33 +61,19 @@ static const GOptionEntry entries[] = {
 static char *
 get_evo_cmd (void)
 {
-	char *tmp = NULL;
-	char *retval;
-	char *cmds[] = {
-		"evolution",
-		"evolution-2.0",
-		"evolution-2.2",
-		"evolution-2.4",
-		"evolution-2.6",
-		"evolution-2.8", /* for the future */
-		NULL};
-	guint i;
+	char *tmp, *retval;
 
-	for (i = 0; cmds[i] != NULL; i++) {
-		tmp = g_find_program_in_path (cmds[i]);
-		if (tmp != NULL)
-			break;
-	}
-
+	tmp = g_find_program_in_path ("evolution");
 	if (tmp == NULL)
 		return NULL;
 
 	retval = g_strdup_printf ("%s --component=mail %%s", tmp);
 	g_free (tmp);
+
 	return retval;
 }
 
-static void
+static gboolean
 init_mailer (NautilusSendto *nst)
 {
 	GAppInfo *app_info;
@@ -127,11 +114,16 @@ init_mailer (NautilusSendto *nst)
 			nst->type = MAILER_EVO;
 	}
 
+	if (nst->mail_cmd == NULL)
+		return FALSE;
+
 	/* Replace %U by %s */
 	while ((needle = g_strrstr (nst->mail_cmd, "%U")) != NULL)
 		needle[1] = 's';
 	while ((needle = g_strrstr (nst->mail_cmd, "%u")) != NULL)
 		needle[1] = 's';
+
+	return TRUE;
 }
 
 static char *
@@ -263,21 +255,17 @@ pack_files (GList *file_list)
 	const char *filename;
 	GList *l;
 	GString *cmd, *tmp;
-	char *pack_type, *tmp_dir, *tmp_work_dir, *packed_file;
+	char *pack_type, *tmp_work_dir, *packed_file;
 
 	file_roller_cmd = g_find_program_in_path ("file-roller");
 	filename = pack_filename_from_names (file_list);
 
 	g_assert (filename != NULL && *filename != '\0');
 
-	tmp_dir = g_strdup_printf ("%s/nautilus-sendto-%s",
-				   g_get_tmp_dir (), g_get_user_name ());
-	g_mkdir (tmp_dir, 0700);
-	tmp_work_dir = g_strdup_printf ("%s/nautilus-sendto-%s/%li",
-					g_get_tmp_dir (), g_get_user_name (),
-					time (NULL));
-	g_mkdir (tmp_work_dir, 0700);
-	g_free (tmp_dir);
+	tmp_work_dir = g_build_filename (g_get_tmp_dir (),
+					 "nautilus-sendto-XXXXXX",
+					 NULL);
+	tmp_work_dir = g_mkdtemp (tmp_work_dir);
 
 	pack_type = g_strdup (".zip");
 
@@ -392,8 +380,11 @@ send_files (NautilusSendto *nst)
 		get_evo_mailto (mailto, nst->file_list);
 	}
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wformat-nonliteral"
 	cmd = g_strdup_printf (nst->mail_cmd, mailto->str);
 	g_string_free (mailto, TRUE);
+#pragma GCC diagnostic pop
 
 	g_debug ("Mailer type: %d", nst->type);
 	g_debug ("Command: %s", cmd);
@@ -446,6 +437,34 @@ escape_ampersands_and_commas (const char *url)
 	return str;
 }
 
+static char *
+get_target_filename (GFile *file)
+{
+	GFileInfo *info;
+	const char *target;
+	GFile *new_file;
+	char *ret;
+
+	info = g_file_query_info (file, G_FILE_ATTRIBUTE_STANDARD_TARGET_URI, G_FILE_QUERY_INFO_NONE, NULL, NULL);
+	if (info == NULL)
+		return NULL;
+
+	target = g_file_info_get_attribute_string (info, G_FILE_ATTRIBUTE_STANDARD_TARGET_URI);
+	if (target == NULL) {
+		g_object_unref (info);
+		return NULL;
+	}
+
+	new_file = g_file_new_for_uri (target);
+	g_object_unref (info);
+
+	ret = g_file_get_path (new_file);
+	g_object_unref (new_file);
+
+	return ret;
+}
+
+
 static void
 nautilus_sendto_init (NautilusSendto *nst)
 {
@@ -462,8 +481,11 @@ nautilus_sendto_init (NautilusSendto *nst)
 		file = g_file_new_for_commandline_arg (filenames[i]);
 		filename = g_file_get_path (file);
 		if (filename == NULL) {
-			g_object_unref (file);
-			continue;
+			filename = get_target_filename (file);
+			if (filename == NULL) {
+				g_object_unref (file);
+				continue;
+			}
 		}
 
 		/* Get the mime-type, and whether the file is readable */
@@ -510,6 +532,7 @@ int main (int argc, char **argv)
 	NautilusSendto *nst;
 	int ret = 0;
 
+	setlocale (LC_ALL, "");
 	bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
@@ -529,7 +552,11 @@ int main (int argc, char **argv)
 
 	nst = g_new0 (NautilusSendto, 1);
 	nautilus_sendto_init (nst);
-	init_mailer (nst);
+	if (!init_mailer (nst)) {
+		g_print (_("No mail client installed, not sending files\n"));
+		goto out;
+	}
+
 
 	if (nst->file_list == NULL) {
 		g_print (_("Expects URIs or filenames to be passed as options\n"));

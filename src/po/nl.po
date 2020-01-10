@@ -2,290 +2,235 @@
 #
 # This file is distributed under the same license as the nautilus-sendto package.
 #
-# Reinout van Schouwen <reinout@cs.vu.nl>, 2004–2005
-# Wouter Bolsterlee <wbolster@gnome.org>, 2006–2012
 #
+# Reinout van Schouwen <reinout@cs.vu.nl>, 2004–2005.
+# Wouter Bolsterlee <wbolster@gnome.org>, 2006–2012.
+# Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2016.
+# Nathan Follens <nthn@unseen.is>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: nautilus-sendto\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-04 14:48+0100\n"
-"PO-Revision-Date: 2012-02-04 14:52+0100\n"
-"Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
-"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus-sendto&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-02-29 17:19+0000\n"
+"PO-Revision-Date: 2016-03-04 10:34+0100\n"
+"Last-Translator: Hannie Dumoleyn <hannie@ubuntu-nl.org>\n"
+"Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
 
-#: ../src/nautilus-sendto-command.c:80
-msgid "Run from build directory"
-msgstr "Uitvoeren vanuit build-map"
+#: ../src/nautilus-sendto.c:54
+msgid "Run from build directory (ignored)"
+msgstr "Uitvoeren vanuit build-map (genegeerd)"
 
-#: ../src/nautilus-sendto-command.c:81
-msgid "Use XID as parent to the send dialogue"
-msgstr "XID als parent gebruiken voor het verzenden-dialoogvenster"
+#: ../src/nautilus-sendto.c:55
+msgid "Use XID as parent to the send dialogue (ignored)"
+msgstr "XID als ouder gebruiken voor het verzenden-dialoogvenster (genegeerd)"
 
-#: ../src/nautilus-sendto-command.c:82
+#: ../src/nautilus-sendto.c:56
 msgid "Files to send"
 msgstr "Te verzenden bestanden"
 
-#: ../src/nautilus-sendto-command.c:83
+#: ../src/nautilus-sendto.c:57
 msgid "Output version information and exit"
-msgstr "Versieinformatie tonen en afsluiten"
+msgstr "Versie-informatie tonen en afsluiten"
 
-#. FIXME, this needs to be done in UI now
-#: ../src/nautilus-sendto-command.c:664
+#. Translators: the default archive name if it
+#. * could not be deduced from the provided files
+#: ../src/nautilus-sendto.c:245
+msgid "Archive"
+msgstr "Archief"
+
+#: ../src/nautilus-sendto.c:540
+#, c-format
+msgid "Could not parse command-line options: %s\n"
+msgstr "Verwerken van opdrachtregelparameters mislukt: %s\n"
+
+#: ../src/nautilus-sendto.c:553
+#, c-format
+msgid "No mail client installed, not sending files\n"
+msgstr "Geen e-mailcliënt geïnstalleerd, bestanden worden niet verzonden\n"
+
+#: ../src/nautilus-sendto.c:559
 #, c-format
 msgid "Expects URIs or filenames to be passed as options\n"
 msgstr "Verwacht URI's of bestandsnamen die als opties meegegeven worden\n"
 
-#: ../src/nautilus-sendto-command.c:694
-#, c-format
-msgid "Could not parse command-line options: %s\n"
-msgstr "Kon opdrachtregelparameters niet verwerken: %s\n"
+#~ msgid "Sharing %d folder"
+#~ msgid_plural "Sharing %d folders"
+#~ msgstr[0] "%d map delen"
+#~ msgstr[1] "%d mappen delen"
 
-#: ../src/nautilus-sendto-mimetype.c:50
-#, c-format
-msgid "Sharing %d folder"
-msgid_plural "Sharing %d folders"
-msgstr[0] "%d map delen"
-msgstr[1] "%d mappen delen"
+#~ msgid "Sharing %d folders and files"
+#~ msgstr "%d bestanden en mappen delen"
 
-#: ../src/nautilus-sendto-mimetype.c:52
-#, c-format
-msgid "Sharing %d folders and files"
-msgstr "%d bestanden en mappen delen"
+#~ msgid "Sharing %d video"
+#~ msgid_plural "Sharing %d videos"
+#~ msgstr[0] "%d video delen"
+#~ msgstr[1] "%d video's delen"
 
-#: ../src/nautilus-sendto-mimetype.c:77
-#, c-format
-msgid "Sharing %d video"
-msgid_plural "Sharing %d videos"
-msgstr[0] "%d video delen"
-msgstr[1] "%d video's delen"
+#~ msgid "Sharing %d photo"
+#~ msgid_plural "Sharing %d photos"
+#~ msgstr[0] "%d foto delen"
+#~ msgstr[1] "%d foto's delen"
 
-#: ../src/nautilus-sendto-mimetype.c:79
-#, c-format
-msgid "Sharing %d photo"
-msgid_plural "Sharing %d photos"
-msgstr[0] "%d foto delen"
-msgstr[1] "%d foto's delen"
+#~ msgid "Sharing %d image"
+#~ msgid_plural "Sharing %d images"
+#~ msgstr[0] "%d afbeelding delen"
+#~ msgstr[1] "%d afbeeldingen delen"
 
-#: ../src/nautilus-sendto-mimetype.c:81
-#, c-format
-msgid "Sharing %d image"
-msgid_plural "Sharing %d images"
-msgstr[0] "%d afbeelding delen"
-msgstr[1] "%d afbeeldingen delen"
+#~ msgid "Sharing %d text file"
+#~ msgid_plural "Sharing %d text files"
+#~ msgstr[0] "%d tekstbestand delen"
+#~ msgstr[1] "%d tekstbestanden delen"
 
-#: ../src/nautilus-sendto-mimetype.c:83
-#, c-format
-msgid "Sharing %d text file"
-msgid_plural "Sharing %d text files"
-msgstr[0] "%d tekstbestand delen"
-msgstr[1] "%d tekstbestanden delen"
+#~ msgid "Sharing %d file"
+#~ msgid_plural "Sharing %d files"
+#~ msgstr[0] "%d bestand delen"
+#~ msgstr[1] "%d bestanden delen"
 
-#: ../src/nautilus-sendto-mimetype.c:85
-#, c-format
-msgid "Sharing %d file"
-msgid_plural "Sharing %d files"
-msgstr[0] "%d bestand delen"
-msgstr[1] "%d bestanden delen"
+#~ msgid "_Send"
+#~ msgstr "Ver_sturen"
 
-#: ../data/nautilus-sendto.ui.h:1
-msgid "_Send"
-msgstr "Ver_sturen"
+#~ msgid "Files"
+#~ msgstr "Bestanden"
 
-#: ../src/plugins/nautilus-sendto-packer.c:200
-msgid "Files"
-msgstr "Bestanden"
+#~ msgid "_Cancel"
+#~ msgstr "_Annuleren"
 
-#: ../src/plugins/nautilus-sendto-progress.c:187
-msgid "_Cancel"
-msgstr "_Annuleren"
+#~ msgid "Send _packed in:"
+#~ msgstr "Versturen ver_pakt in"
 
-#: ../data/pack-entry.ui.h:1
-msgid "Send _packed in:"
-msgstr "Versturen ver_pakt in"
+#~ msgid "Mail"
+#~ msgstr "E-mail"
 
-#: ../src/plugins/evolution/evolution.c:308
-msgid "Mail"
-msgstr "E-mail"
+#~ msgid "Cannot get contact: %s"
+#~ msgstr "Kan contact niet opvragen: %s"
 
-#: ../src/plugins/evolution/e-contact-entry.c:153
-#, c-format
-msgid "Cannot get contact: %s"
-msgstr "Kan contact niet opvragen: %s"
+#~ msgid "Could not find contact: %s"
+#~ msgstr "Kan contact niet vinden: %s"
 
-#: ../src/plugins/evolution/e-contact-entry.c:186
-#, c-format
-msgid "Could not find contact: %s"
-msgstr "Kan contact niet vinden: %s"
+#~ msgid "Cannot create searchable view."
+#~ msgstr "Kan geen doorzoekbare weergave krijgen."
 
-#: ../src/plugins/evolution/e-contact-entry.c:414
-msgid "Cannot create searchable view."
-msgstr "Kan geen doorzoekbare weergave krijgen."
+#~ msgid "Success"
+#~ msgstr "Succesvol"
 
-#: ../src/plugins/evolution/e-contact-entry.c:886
-msgid "Success"
-msgstr "Succesvol"
+#~ msgid "An argument was invalid."
+#~ msgstr "Een parameter was ongeldig."
 
-#: ../src/plugins/evolution/e-contact-entry.c:888
-msgid "An argument was invalid."
-msgstr "Een parameter was ongeldig."
+#~ msgid "The address book is busy."
+#~ msgstr "Het adresboek is bezig."
 
-#: ../src/plugins/evolution/e-contact-entry.c:890
-msgid "The address book is busy."
-msgstr "Het adresboek is bezig."
+#~ msgid "The address book is offline."
+#~ msgstr "Het adresboek is offline."
 
-#: ../src/plugins/evolution/e-contact-entry.c:892
-msgid "The address book is offline."
-msgstr "Het adresboek is offline."
+#~ msgid "The address book does not exist."
+#~ msgstr "Het adresboek bestaat niet."
 
-#: ../src/plugins/evolution/e-contact-entry.c:894
-msgid "The address book does not exist."
-msgstr "Het adresboek bestaat niet."
+#~ msgid "The \"Me\" contact does not exist."
+#~ msgstr "Het ‘Ik’-contact bestaat niet."
 
-#: ../src/plugins/evolution/e-contact-entry.c:896
-msgid "The \"Me\" contact does not exist."
-msgstr "Het ‘Ik’-contact bestaat niet."
+#~ msgid "The address book is not loaded."
+#~ msgstr "Het adresboek is niet geladen."
 
-#: ../src/plugins/evolution/e-contact-entry.c:898
-msgid "The address book is not loaded."
-msgstr "Het adresboek is niet geladen."
+#~ msgid "The address book is already loaded."
+#~ msgstr "Het adresboek is reeds geladen."
 
-#: ../src/plugins/evolution/e-contact-entry.c:900
-msgid "The address book is already loaded."
-msgstr "Het adresboek is reeds geladen."
+#~ msgid "Permission was denied when accessing the address book."
+#~ msgstr "Toegang tot adresboek geweigerd."
 
-#: ../src/plugins/evolution/e-contact-entry.c:902
-msgid "Permission was denied when accessing the address book."
-msgstr "Toegang tot adresboek geweigerd."
+#~ msgid "The contact was not found."
+#~ msgstr "Het contact kon niet gevonden worden."
 
-#: ../src/plugins/evolution/e-contact-entry.c:904
-msgid "The contact was not found."
-msgstr "Het contact kon niet gevonden worden."
+#~ msgid "This contact ID already exists."
+#~ msgstr "Dit contact-ID bestaat al."
 
-#: ../src/plugins/evolution/e-contact-entry.c:906
-msgid "This contact ID already exists."
-msgstr "Dit contact-ID bestaat al."
+#~ msgid "The protocol is not supported."
+#~ msgstr "Het protocol wordt niet ondersteund."
 
-#: ../src/plugins/evolution/e-contact-entry.c:908
-msgid "The protocol is not supported."
-msgstr "Het protocol wordt niet ondersteund."
+#~ msgid "The operation was cancelled."
+#~ msgstr "De bewerking is geannuleerd."
 
-#: ../src/plugins/evolution/e-contact-entry.c:910
-msgid "The operation was cancelled."
-msgstr "De bewerking is geannuleerd."
+#~ msgid "The operation could not be cancelled."
+#~ msgstr "De bewerking kon niet geannuleerd worden."
 
-#: ../src/plugins/evolution/e-contact-entry.c:912
-msgid "The operation could not be cancelled."
-msgstr "De bewerking kon niet geannuleerd worden."
+#~ msgid "The address book authentication failed."
+#~ msgstr "Aanmelden voor adresboek is mislukt."
 
-#: ../src/plugins/evolution/e-contact-entry.c:914
-msgid "The address book authentication failed."
-msgstr "Aanmelden voor adresboek is mislukt."
+#~ msgid ""
+#~ "Authentication is required to access the address book and was not given."
+#~ msgstr "Het adresboek vereist aanmeldgegevens, maar deze zijn niet gegeven."
 
-#: ../src/plugins/evolution/e-contact-entry.c:916
-msgid ""
-"Authentication is required to access the address book and was not given."
-msgstr "Het adresboek vereist aanmeldgegevens, maar deze zijn niet gegeven."
+#~ msgid "A secure connection is not available."
+#~ msgstr "Een beveiligde verbinding is niet beschikbaar."
 
-#: ../src/plugins/evolution/e-contact-entry.c:918
-msgid "A secure connection is not available."
-msgstr "Een beveiligde verbinding is niet beschikbaar."
+#~ msgid "A CORBA error occurred whilst accessing the address book."
+#~ msgstr "Een CORBA-fout is opgetreden tijdens het gebruik van het adresboek."
 
-#: ../src/plugins/evolution/e-contact-entry.c:920
-msgid "A CORBA error occurred whilst accessing the address book."
-msgstr "Een CORBA-fout is opgetreden tijdens het gebruik van het adresboek."
+#~ msgid "The address book source does not exist."
+#~ msgstr "De adresboek-bron bestaat niet."
 
-#: ../src/plugins/evolution/e-contact-entry.c:922
-msgid "The address book source does not exist."
-msgstr "De adresboek-bron bestaat niet."
+#~ msgid "An unknown error occurred."
+#~ msgstr "Een onbekende fout is opgetreden."
 
-#: ../src/plugins/evolution/e-contact-entry.c:924
-#: ../src/plugins/evolution/e-contact-entry.c:927
-msgid "An unknown error occurred."
-msgstr "Een onbekende fout is opgetreden."
+#~ msgid "Unable to send file"
+#~ msgstr "Kon bestand niet verzenden"
 
-#: ../src/plugins/gajim/gajim.c:417
-msgid "Unable to send file"
-msgstr "Kon bestand niet verzenden"
+#~ msgid "There is no connection to gajim remote service."
+#~ msgstr "Er is geen verbinding met de gajim remote-service"
 
-#: ../src/plugins/gajim/gajim.c:418
-msgid "There is no connection to gajim remote service."
-msgstr "Er is geen verbinding met de gajim remote-service"
+#~ msgid "Sending file failed"
+#~ msgstr "Verzenden van bestand mislukt"
 
-#: ../src/plugins/gajim/gajim.c:442 ../src/plugins/gajim/gajim.c:482
-msgid "Sending file failed"
-msgstr "Verzenden van bestand mislukt"
+#~ msgid "Recipient is missing."
+#~ msgstr "Geadresseerde ontbreekt."
 
-#: ../src/plugins/gajim/gajim.c:443
-msgid "Recipient is missing."
-msgstr "Geadresseerde ontbreekt."
+#~ msgid "Unknown recipient."
+#~ msgstr "Onbekende geadresseerde"
 
-#: ../src/plugins/gajim/gajim.c:482
-msgid "Unknown recipient."
-msgstr "Onbekende geadresseerde"
+#~ msgid "Instant Message (Gajim)"
+#~ msgstr "Direct bericht (Gajim)"
 
-#: ../src/plugins/gajim/gajim.c:505
-msgid "Instant Message (Gajim)"
-msgstr "Direct bericht (Gajim)"
+#~ msgid "New CD/DVD"
+#~ msgstr "Nieuwe cd/dvd"
 
-#: ../src/plugins/nautilus-burn/nautilus-burn.c:90
-msgid "New CD/DVD"
-msgstr "Nieuwe cd/dvd"
+#~ msgid "Existing CD/DVD"
+#~ msgstr "Bestaande cd/dvd"
 
-#: ../src/plugins/nautilus-burn/nautilus-burn.c:97
-msgid "Existing CD/DVD"
-msgstr "Bestaande cd/dvd"
+#~ msgid "CD/DVD Creator"
+#~ msgstr "Cd/dvd-maker"
 
-#: ../src/plugins/nautilus-burn/nautilus-burn.c:176
-msgid "CD/DVD Creator"
-msgstr "Cd/dvd-maker"
+#~ msgid "Instant Message (Pidgin)"
+#~ msgstr "Direct bericht (Pidgin)"
 
-#: ../src/plugins/pidgin/pidgin.c:464
-msgid "Instant Message (Pidgin)"
-msgstr "Direct bericht (Pidgin)"
+#~ msgid "Removable disks and shares"
+#~ msgstr "Verwijderbare (gedeelde) schijven"
 
-#: ../src/plugins/removable-devices/removable-devices.c:274
-msgid "Removable disks and shares"
-msgstr "Verwijderbare (gedeelde) schijven"
+#~ msgid "Uploading '%s'"
+#~ msgstr "‘%s’ uploaden"
 
-#: ../src/plugins/socialweb/socialweb.c:186
-#, c-format
-msgid "Uploading '%s'"
-msgstr "‘%s’ uploaden"
+#~ msgid "Preparing upload"
+#~ msgstr "Upload voorbereiden"
 
-#: ../src/plugins/socialweb/socialweb.c:256
-msgid "Preparing upload"
-msgstr "Upload voorbereiden"
+#~ msgid "Service '%s' is not configured."
+#~ msgstr "Service ‘%s’ is niet geconfigureerd."
 
-#: ../src/plugins/socialweb/socialweb.c:316
-#, c-format
-msgid "Service '%s' is not configured."
-msgstr "Service ‘%s’ is niet geconfigureerd."
+#~ msgid "_Configure"
+#~ msgstr "_Configureren"
 
-#: ../src/plugins/socialweb/socialweb.c:319
-#: ../src/plugins/socialweb/socialweb.c:336
-msgid "_Configure"
-msgstr "_Configureren"
+#~ msgid "Logged in to service '%s'."
+#~ msgstr "Ingelogd bij service ‘%s’."
 
-#: ../src/plugins/socialweb/socialweb.c:323
-#: ../src/plugins/socialweb/socialweb.c:343
-#, c-format
-msgid "Logged in to service '%s'."
-msgstr "Ingelogd bij service ‘%s’."
+#~ msgid "Could not log in to service '%s'."
+#~ msgstr "Kon niet inloggne bij service ‘%s’."
 
-#: ../src/plugins/socialweb/socialweb.c:333
-#, c-format
-msgid "Could not log in to service '%s'."
-msgstr "Kon niet inloggne bij service ‘%s’."
-
-#: ../src/plugins/upnp/upnp.c:309
-msgid "UPnP Media Server"
-msgstr "UPnP-mediaserver"
+#~ msgid "UPnP Media Server"
+#~ msgstr "UPnP-mediaserver"
 
 #~ msgid "Last plugin used to send"
 #~ msgstr "Meest recent gebruikte plugin voor verzenden"
