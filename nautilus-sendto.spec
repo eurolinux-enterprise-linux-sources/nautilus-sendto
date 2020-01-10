@@ -1,13 +1,16 @@
 Name:           nautilus-sendto
 Epoch:          1
 Version:        3.8.0
-Release:        1%{?dist}
+Release:        5%{?dist}
 Summary:        Nautilus context menu for sending files
 
 Group:          User Interface/Desktops
 License:        GPLv2+
 URL:            ftp://ftp.gnome.org/pub/gnome/sources/%{name}
 Source0:        http://download.gnome.org/sources/%{name}/3.8/%{name}-%{version}.tar.xz
+
+Patch0: translations.patch
+Patch1: 0001-main-Fix-warnings-when-no-mail-client-is-installed.patch
 
 BuildRequires:  gettext
 BuildRequires:  gobject-introspection-devel
@@ -28,6 +31,8 @@ additional features.
 
 %prep
 %setup -q
+%patch0 -p2 -b .translations
+%patch1 -p1
 
 %build
 %configure
@@ -47,6 +52,20 @@ find $RPM_BUILD_ROOT \( -name '*.a' -o -name '*.la' \) -exec rm -f {} \;
 %{_mandir}/man1/nautilus-sendto.1.gz
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1:3.8.0-5
+- Mass rebuild 2014-01-24
+
+* Tue Jan 07 2014 Bastien Nocera <bnocera@redhat.com> 3.8.0-4
+- Fix critical messages when there's no default mailer
+Resolves: #1039545
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1:3.8.0-3
+- Mass rebuild 2013-12-27
+
+* Thu Dec 12 2013 Matthias Clasen <mclasen@redhat.com> - 1:3.8.0-2
+- Update translations
+- Resolves: #1030370
+
 * Tue Mar 26 2013 Kalev Lember <kalevlember@gmail.com> - 1:3.8.0-1
 - Update to 3.8.0
 

@@ -1,0 +1,56 @@
+From 1db4d7bd362f9f80ee0c493f56838e5322623262 Mon Sep 17 00:00:00 2001
+From: Bastien Nocera <hadess@hadess.net>
+Date: Thu, 13 Jun 2013 17:07:14 +0200
+Subject: [PATCH] main: Fix warnings when no mail client is installed
+
+https://bugzilla.gnome.org/show_bug.cgi?id=701654
+---
+ src/nautilus-sendto.c | 13 +++++++++++--
+ 1 file changed, 11 insertions(+), 2 deletions(-)
+
+diff --git a/src/nautilus-sendto.c b/src/nautilus-sendto.c
+index 83a544c..586efee 100644
+--- a/src/nautilus-sendto.c
++++ b/src/nautilus-sendto.c
+@@ -72,7 +72,7 @@ get_evo_cmd (void)
+ 	return retval;
+ }
+ 
+-static void
++static gboolean
+ init_mailer (NautilusSendto *nst)
+ {
+ 	GAppInfo *app_info;
+@@ -113,11 +113,16 @@ init_mailer (NautilusSendto *nst)
+ 			nst->type = MAILER_EVO;
+ 	}
+ 
++	if (nst->mail_cmd == NULL)
++		return FALSE;
++
+ 	/* Replace %U by %s */
+ 	while ((needle = g_strrstr (nst->mail_cmd, "%U")) != NULL)
+ 		needle[1] = 's';
+ 	while ((needle = g_strrstr (nst->mail_cmd, "%u")) != NULL)
+ 		needle[1] = 's';
++
++	return TRUE;
+ }
+ 
+ static char *
+@@ -515,7 +520,11 @@ int main (int argc, char **argv)
+ 
+ 	nst = g_new0 (NautilusSendto, 1);
+ 	nautilus_sendto_init (nst);
+-	init_mailer (nst);
++	if (!init_mailer (nst)) {
++		g_print (_("No mail client installed, not sending files\n"));
++		goto out;
++	}
++
+ 
+ 	if (nst->file_list == NULL) {
+ 		g_print (_("Expects URIs or filenames to be passed as options\n"));
+-- 
+1.8.4.2
+
