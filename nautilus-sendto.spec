@@ -1,6 +1,6 @@
 Name:           nautilus-sendto
 Version:        2.28.2
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Nautilus context menu for sending files
 
 Group:          User Interface/Desktops
@@ -107,6 +107,10 @@ fi
 %{_includedir}/nautilus-sendto/nautilus-sendto-plugin.h
 
 %changelog
+* Tue Jun 11 2013 Matthew Barnes <mbarnes@redhat.com> 2.28.2-4
+- Rebuild against newer evolution-data-server.
+Resolves: #973287
+
 * Fri May 14 2010 Matthias Clasen <mclasen@redhat.com> 2.28.2-3
 - Updated translations
 Resolves: #589228
